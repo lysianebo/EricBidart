@@ -1,0 +1,506 @@
+{
+    "sourceFile": "scss/pages/_accueil.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 122,
+            "patches": [
+                {
+                    "date": 1697987309928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697987318168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-bo\n\\ No newline at end of file\n+body{\n+    background-color: yellow;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987641102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n body{\n-    background-color: yellow;\n+    background-color: green;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987649761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n body{\n-    background-color: green;\n+    gr\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987655653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n body{\n-    gr\n+    display: grid;\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987661904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n body{\n     display: grid;\n-    \n+    grid\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987668942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n body{\n     display: grid;\n-    grid\n+    grid-template-rows: 15vh;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987676588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n body{\n     display: grid;\n-    grid-template-rows: 15vh;\n+    grid-template-rows: 15vh ;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987684648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n body{\n     display: grid;\n-    grid-template-rows: 15vh ;\n+    grid-template-rows: 15vh 73vh 15vh;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987693983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n body{\n+    w\n     display: grid;\n     grid-template-rows: 15vh 73vh 15vh;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987858350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n body{\n-    w\n+    b\n+    width: 100%;\n     display: grid;\n     grid-template-rows: 15vh 73vh 15vh;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987864398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n body{\n-    b\n+    background-color: yellow;\n     width: 100%;\n     display: grid;\n     grid-template-rows: 15vh 73vh 15vh;\n \n"
+                },
+                {
+                    "date": 1697987896107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n body{\n     background-color: yellow;\n-    width: 100%;\n-    display: grid;\n-    grid-template-rows: 15vh 73vh 15vh;\n+   \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987942733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n body{\n     background-color: yellow;\n-   \n+    width: 100%;\n+    display: grid;\n+    grid-template-rows: 15vh 73vh 15vh;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987947899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n body{\n     background-color: yellow;\n     width: 100%;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 15vh;\n+    grid-template-rows: 5vh 73vh 15vh;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987969767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n body{\n     background-color: yellow;\n     width: 100%;\n     display: grid;\n-    grid-template-rows: 5vh 73vh 15vh;\n+    grid-template-rows: 5vh 73vh 5vh;\n+    \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987980534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     background-color: yellow;\n     width: 100%;\n     display: grid;\n     grid-template-rows: 5vh 73vh 5vh;\n-    \n+    grid-template-columns: ;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697987993908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n body{\n     background-color: yellow;\n-    width: 100%;\n+    width: 50%;\n     display: grid;\n     grid-template-rows: 5vh 73vh 5vh;\n-    grid-template-columns: ;\n+    grid-template-columns: 1fr;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988024963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n body{\n     background-color: yellow;\n-    width: 50%;\n+    width: 100%;\n     display: grid;\n     grid-template-rows: 5vh 73vh 5vh;\n     grid-template-columns: 1fr;\n \n"
+                },
+                {
+                    "date": 1697988039188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     background-color: yellow;\n     width: 100%;\n     display: grid;\n     grid-template-rows: 5vh 73vh 5vh;\n-    grid-template-columns: 1fr;\n+    grid-template-columns: 100%;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988048286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     background-color: yellow;\n     width: 100%;\n     display: grid;\n     grid-template-rows: 5vh 73vh 5vh;\n-    grid-template-columns: 100%;\n+    grid-template-columns: 100vw;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988071038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,7 @@\n     width: 100%;\n     display: grid;\n     grid-template-rows: 5vh 73vh 5vh;\n     grid-template-columns: 100vw;\n+    he\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988085159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,7 @@\n     background-color: yellow;\n     width: 100%;\n     display: grid;\n     grid-template-rows: 5vh 73vh 5vh;\n-    grid-template-columns: 100vw;\n-    he\n+    height: 100vh;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988099127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n body{\n     background-color: yellow;\n     width: 100%;\n     display: grid;\n-    grid-template-rows: 5vh 73vh 5vh;\n+    grid-template-rows: 15vh 73vh 5vh;\n     height: 100vh;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988110686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n body{\n     background-color: yellow;\n-    width: 100%;\n+    width: 100;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n     height: 100vh;\n \n"
+                },
+                {
+                    "date": 1697988205603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n body{\n     background-color: yellow;\n-    width: 100;\n+    width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n-    height: 100vh;\n+    gr\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988212643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n-    gr\n+    grid-area: auto;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988286285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,9 @@\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n-    grid-area: auto;\n+   grid-template-areas: \"header header\"\n+                             \"text main\"\n+                             \"footer footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988294865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header header\"\n-                             \"text main\"\n+                             main\"\n                              \"footer footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988302791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n-   grid-template-areas: \"header header\"\n+   grid-template-areas: \"header\"\n                              main\"\n-                             \"footer footer\";\n+                             footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988310959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n-                             main\"\n+                            \"\" main\"\n                              footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988316133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n-                            \"\" main\"\n-                             footer\";\n+                            \" main\"\n+                             \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988325844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n-                            \" main\"\n+                            main\"\n                              \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988331529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n-                            main\"\n+                          main\"\n                              \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988337663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n-                          main\"\n+                         \"main\"\n                              \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988349756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n-   grid-template-areas: \"header\"\n+    grid-template-areas: \"header\"\n                          \"main\"\n-                             \"footer\";\n+                         \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697988355882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n body{\n     background-color: yellow;\n-    width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n     grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1697988369887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n body{\n     background-color: yellow;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 5vh;\n+    grid-template-rows: 15vh 73vh 15vh;\n     grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\";\n \n"
+                },
+                {
+                    "date": 1697988379090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n body{\n     background-color: yellow;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 15vh;\n+    grid-template-rows: 15vh 73vh 12vh;\n     grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\";\n \n"
+                },
+                {
+                    "date": 1697993066684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n body{\n-    background-color: yellow;\n     display: grid;\n     grid-template-rows: 15vh 73vh 12vh;\n     grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1697994069143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+body{\n+    background-color: yellow;\n+    width: 100vw;\n+    display: grid;\n+    grid-template-rows: 15vh 73vh 5vh;\n+   grid-template-areas: \"header\"\n+                            main\"\n+                             \"footer\";\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994075381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,16 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n-                            main\"\n-                             \"footer\";\n-\n-}\n-body{\n-    display: grid;\n-    grid-template-rows: 15vh 73vh 12vh;\n-    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994082885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n-   grid-template-areas: \"header\"\n+    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994090619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n body{\n     background-color: yellow;\n-    width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 5vh;\n+    grid-template-rows: 15vh 73vh 12vh;\n     grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\";\n \n"
+                },
+                {
+                    "date": 1697994108614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n body{\n     background-color: yellow;\n+    width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 12vh;\n-    grid-template-areas: \"header\"\n+    grid-template-rows: 15vh 73vh 5vh;\n+   grid-template-areas: \"header\"\n                          \"main\"\n-                         \"footer\";\n+                        \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994114222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n-                         \"main\"\n-                        \"footer\";\n+                            \" main\"\n+                             footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994121378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n-   grid-template-areas: \"header\"\n-                            \" main\"\n-                             footer\";\n+   grid-template-areas: \"header header\"\n+                             main\"\n+                             \"footer footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994132343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n-   grid-template-areas: \"header header\"\n-                             main\"\n-                             \"footer footer\";\n+   grid-template-areas: \"header\"\n+                          main\"\n+                             \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994145755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n-                          main\"\n-                             \"footer\";\n+                         \"main\"\n+                         \"footer\";\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994195117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n body{\n-    background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n-                         \"footer\";\n+                         \"footer\" ;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697994858581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n body{\n+    background-color: yellow;\n     width: 100vw;\n     display: grid;\n     grid-template-rows: 15vh 73vh 5vh;\n    grid-template-areas: \"header\"\n"
+                },
+                {
+                    "date": 1697994877241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 5vh;\n+    grid-template-rows: 15vh 7vh 5vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994889798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 7vh 5vh;\n+    grid-template-rows: 15vh 75vh 15vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994905883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 75vh 15vh;\n+    grid-template-rows: 15vh 75vh 12vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994912563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 75vh 12vh;\n+    grid-template-rows: 15vh 73vh 12vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994920886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 12vh;\n+    grid-template-rows: 15vh 73vh 1vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994926975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 1vh;\n+    grid-template-rows: 15vh 73vh 8vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994932956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 73vh 8vh;\n+    grid-template-rows: 15vh 7vh 8vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994947797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 7vh 8vh;\n+    grid-template-rows: 15vh 80vh vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994963898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 80vh vh;\n+    grid-template-rows: 15vh 80vh 6vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994972741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 80vh 6vh;\n+    grid-template-rows: 15vh vh 6vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994980484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh vh 6vh;\n+    grid-template-rows: 15vh 78vh vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697994987203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 78vh vh;\n+    grid-template-rows: 15vh 78vh 8vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697995000144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 78vh 8vh;\n+    grid-template-rows: 15vh 76vh 8vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697995008041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 76vh 8vh;\n+    grid-template-rows: 15vh 76vh vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697995082553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 15vh 76vh vh;\n+    grid-template-rows: 10vh 76vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697995096661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 10vh 76vh 9vh;\n+    grid-template-rows: 10vh vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1697995159403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n body{\n     background-color: yellow;\n     width: 100vw;\n     display: grid;\n-    grid-template-rows: 10vh vh 9vh;\n+    grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698004394878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +0,0 @@\n-body{\n-    background-color: yellow;\n-    width: 100vw;\n-    display: grid;\n-    grid-template-rows: 10vh 81vh 9vh;\n-   grid-template-areas: \"header\"\n-                         \"main\"\n-                         \"footer\" ;\n-\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004611931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+main\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004617199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-main\n\\ No newline at end of file\n+main{\n+    gri\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004623999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n main{\n-    gri\n+    grid-area: main;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004679523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n main{\n-    grid-area: main;\n+    grid-are: \"main\";\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004691834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n main{\n-    grid-are: \"main\";\n+    grid-area: \"main\";\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004697323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+main{\n+    grid-area: \"main;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004813504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +0,0 @@\n-main{\n-    grid-area: \"main;\n-}\n-main{\n-    grid-area: \"main\";\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698005473702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+body\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698005482441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +0,0 @@\n-body\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698005488753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+accueil\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698005497158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-accueil\n\\ No newline at end of file\n+.accueil{}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698005599618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n-.accueil{}\n\\ No newline at end of file\n+.accueil{\n+     background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n+     \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698010942513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n-     \n-}\n\\ No newline at end of file\n+      background-size: cover;\n+}\n"
+                },
+                {
+                    "date": 1698010952033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n       background-size: cover;\n }\n+.scu\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698010959827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n       background-size: cover;\n }\n-.scu\n\\ No newline at end of file\n+.sculpteur\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698010965332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n       background-size: cover;\n }\n-.sculpteur\n\\ No newline at end of file\n+.sculpteur{\n+    ba\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698010987747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n       background-size: cover;\n }\n .sculpteur{\n-    ba\n+    color: blue;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011029494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n       background-size: cover;\n }\n .sculpteur{\n     color: blue;\n+    te\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011075788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n       background-size: cover;\n }\n-.sculpteur{\n+sculpteur{\n     color: blue;\n-    te\n+    text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011087947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n       background-size: cover;\n }\n-sculpteur{\n-    color: blue;\n+#sculpteur{\n+    bacolor: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011101268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n       background-size: cover;\n }\n #sculpteur{\n-    bacolor: blue;\n+    \n+    background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011110723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n       background-size: cover;\n }\n #sculpteur{\n-    \n+    width: 60%;\n     background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011119569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,8 @@\n       background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n+    mar\n     background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011124682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n       background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n-    mar\n+    margin: auto;\n     background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011135297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n       background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n-    margin: auto;\n+    margin: auto auto;\n     background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011166025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n       background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n-    margin: auto auto;\n+    margin: 20 auto;\n     background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011174915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n       background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n-    margin: 20 auto;\n+    margin: 20vh auto;\n     background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011180593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n       background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n-    margin: 20vh auto;\n+    margin: 10vh auto;\n     background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011193107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n       background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n-    margin: 10vh auto;\n+    margin: 10vh;\n     background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011210879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n-    background-color: blue;\n+    // background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011259971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n-      background-size: cover;\n+      background-size: 100cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011272483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n-      background-size: 100cover;\n+      background-size: 100v cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011281788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n-      background-size: 100v cover;\n+     ba\n+      background-size: 100vh cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011288264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n-     ba\n+     background-repeat: no-repeat;\n       background-size: 100vh cover;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698011296293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100vh cover;\n+      background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011317183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: cover;\n+      background-size: c;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011330611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: c;\n+      background-size: 100contain;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011337674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100contain;\n+      background-size: 100vh , contain;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011347871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100vh , contain;\n+      background-size: 100 , contain;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011356894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100 , contain;\n+      background-size: 100vh , contain;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011374869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100vh , contain;\n+      background-size: 100vh contain;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011390569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100vh contain;\n+      background-size: 100%;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011407619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100%;\n+      background-size: fill;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011413245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: fill;\n+      background-size: fill 100%;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011420003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: fill 100%;\n+      background-size: fill ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011427523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: fill ;\n+      background-size: 100% fill ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011436878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100% fill ;\n+      background-size: 100% ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011446824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-      background-size: 100% ;\n+    background-size: 100% ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011471089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-.accueil{\n+main .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n     background-size: 100% ;\n }\n"
+                },
+                {
+                    "date": 1698011517776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n-main .accueil{\n+main ,.accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-    background-size: 100% ;\n+    background-size: cover% ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011539033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main ,.accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-    background-size: cover% ;\n+    background-size: c ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698011560090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main ,.accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n-    background-size: c ;\n+    background-size: cover ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698015087494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-main ,.accueil{\n+main .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n"
+                },
+                {
+                    "date": 1698015114955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-main .accueil{\n+main, .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n"
+                }
+            ],
+            "date": 1697987309928,
+            "name": "Commit-0",
+            "content": "bo"
+        }
+    ]
+}

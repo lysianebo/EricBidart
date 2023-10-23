@@ -1,0 +1,206 @@
+{
+    "sourceFile": "scss/pages/_presentation.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 47,
+            "patches": [
+                {
+                    "date": 1698000730894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698000744666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,10 @@\n         @keyframes bounce2 {\n           0%, 20%, 50%, 80%, 100% {\n             opacity: 0;transform: translateY(-500);\n           }\n-          40% {opacity: 1; translateY(1000px);}\n+          40% {opacity: 1; translateY(1000px);\n+          }\n           60% {opacity: 1;transform: translateY(1500px);}\n         }\n         p{\n             font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\n"
+                },
+                {
+                    "date": 1698001139201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,11 +61,12 @@\n         @keyframes bounce2 {\n           0%, 20%, 50%, 80%, 100% {\n             opacity: 0;transform: translateY(-500);\n           }\n-          40% {opacity: 1; translateY(1000px);\n+          40% {opacity: 1; transform: (1000px);\n           }\n-          60% {opacity: 1;transform: translateY(1500px);}\n+          60% {opacity: 1;transform: translateY(1500px);\n+          }\n         }\n         p{\n             font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\n             font-size: 20px;\n"
+                },
+                {
+                    "date": 1698001145094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n         @keyframes bounce2 {\n           0%, 20%, 50%, 80%, 100% {\n             opacity: 0;transform: translateY(-500);\n           }\n-          40% {opacity: 1; transform: (1000px);\n+          40% {opacity: 1; transform: tran(1000px);\n           }\n           60% {opacity: 1;transform: translateY(1500px);\n           }\n         }\n"
+                },
+                {
+                    "date": 1698003376733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n @import url(https://fonts.googleapis.com/css?family=Poiret+One);\n \n-\n-body, .presentation{\n+ .presentation{\n      background-image: url(images/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n@@ -61,9 +60,9 @@\n         @keyframes bounce2 {\n           0%, 20%, 50%, 80%, 100% {\n             opacity: 0;transform: translateY(-500);\n           }\n-          40% {opacity: 1; transform: tran(1000px);\n+          40% {opacity: 1; transform: tranlateY(1000px);\n           }\n           60% {opacity: 1;transform: translateY(1500px);\n           }\n         }\n"
+                },
+                {
+                    "date": 1698003382798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url(https://fonts.googleapis.com/css?family=Poiret+One);\n \n  .presentation{\n-     background-image: url(images/image-from-rawpixel-id-12419376-jpeg.jpg); \n+     background-image: url(publicimages/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n"
+                },
+                {
+                    "date": 1698003389028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url(https://fonts.googleapis.com/css?family=Poiret+One);\n \n  .presentation{\n-     background-image: url(publicimages/image-from-rawpixel-id-12419376-jpeg.jpg); \n+     background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n"
+                },
+                {
+                    "date": 1698003704850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,201 +56,6 @@\n           \n         \n           animation: bounce2 2s ease ;\n         }\n-        @keyframes bounce2 {\n-          0%, 20%, 50%, 80%, 100% {\n-            opacity: 0;transform: translateY(-500);\n-          }\n-          40% {opacity: 1; transform: tranlateY(1000px);\n-          }\n-          60% {opacity: 1;transform: translateY(1500px);\n-          }\n-        }\n-        p{\n-            font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\n-            font-size: 20px;\n-            padding: 20px 100px;\n-        }\n-        .content-container {\n-          height: 100%;\n-            display: flex;\n-            justify-content: space-around;\n-            align-items: center;\n-        \n-        }\n        \n-        \n-        .close-button{\n-            position: absolute;\n-            top: 10px;\n-            right: 50px;\n-            margin: 10px 30px;\n-            display: flex;\n-            justify-content: flex-end;\n-            color: black;\n-            background-color: white;\n-         \n-        }\n-        .grow {\n-            animation: grow 2s ease infinite;\n-          }\n-          @keyframes grow {\n-            from { transform: scale(0); }\n-            to { transform: scale(1); }\n-          }\n-          \n-          .fade-in {\n-            animation: fade-in 2s linear infinite;\n-          }\n-          @keyframes fade-in {\n-            from { opacity: 1; \n-            scale: 0%;}\n-            to { opacity: 1; \n-            scale: 1;}\n-          }\n-      \n-        .bounce-in {\n-            animation: bounce-in 2s ease 1s ;\n-          }\n-          @keyframes bounce-in {\n-            0% {\n-              opacity: 0;\n-              transform: scale(.3);\n-            }\n-            50% {\n-              opacity: 1;\n-              transform: scale(1.05);\n-            }\n-            70% { transform: scale(.9); }\n-            100% { transform: scale(1); }\n-          }\n-          \n-          .bounce-in-right {\n-            animation: bounce-in-right 2s ease 1s;\n-          }\n-          @keyframes bounce-in-right {\n-            0% {\n-              opacity: 0;\n-              transform: translateX(2000px);\n-            }\n-            60% {\n-              opacity: 1;\n-              transform: translateX(-30px);\n-            }\n-            80% { transform: translateX(10px); }\n-            100% { transform: translateX(0);\n-                transform: translateY(100px);  }\n-          }\n-          \n-          .bounce-out {\n-            animation: bounce-out 2s ease 1s;\n-          }\n-          @keyframes bounce-out {\n-            0% { transform: scale(1); }\n-            25% { transform: scale(.95); }\n-            50% {\n-              opacity: 1;\n-              transform: scale(1.1);\n-            }\n-            100% {\n-              opacity: 0;\n-              transform: scale(.3);\n-            } \n-          }\n-          \n-          .bounce-out-down {\n-            animation: bounce-out-down 2s ease 2s;\n-          }\n-          @keyframes bounce-out-down {\n-            0% { transform: translateY(0); }\n-            20% {\n-              opacity: 1;\n-              transform: translateY(-200px);\n-            }\n-            100% {\n-              opacity: 0;\n-              transform: translateY(200px);\n-            }\n-          }\n-          @keyframes flipper{\n-            from{\n-               transform: scale(0.0); \n-            }\n-            to{\n-               transform: scale(1); \n-            }\n-        }\n-        \n     \n-    .bounce-in {\n-        animation: bounce-in 2s ease 1s ;\n-      }\n-      @keyframes bounce-in {\n-        0% {\n-          opacity: 0;\n-          transform: scale(.3);\n-        }\n-        50% {\n-          opacity: 1;\n-          transform: scale(1.05);\n-        }\n-        70% { transform: scale(.9); }\n-        100% { transform: scale(1); }\n-      }\n-      \n-      .bounce-in-right {\n-        animation: bounce-in-right 2s ease 3s;\n-      }\n-      @keyframes bounce-in-right {\n-        0% {\n-          opacity: 0;\n-          transform: translateX(2000px);\n-        }\n-        60% {\n-          opacity: 1;\n-          transform: translateX(-30px);\n-        }\n-        80% { transform: translateX(10px); }\n-        100% { transform: translateX(0);\n-            transform: translateY(100px);  }\n-      }\n-      \n-      .bounce-out {\n-        animation: bounce-out 2s ease 4s;\n-      }\n-      @keyframes bounce-out {\n-        0% { transform: scale(1); }\n-        25% { transform: scale(.95); }\n-        50% {\n-          opacity: 1;\n-          transform: scale(1.1);\n-        }\n-        100% {\n-          opacity: 0;\n-          transform: scale(.3);\n-        } \n-      }\n-      \n-      .bounce-out-down {\n-        animation: bounce-out-down 2s ease;\n-      }\n-      @keyframes bounce-out-down {\n-        0% { transform: translateY(0); }\n-        20% {\n-          opacity: 1;\n-          transform: translateY(-200px);\n-        }\n-        100% {\n-          opacity: 0;\n-          transform: translateY(200px);\n-        }\n-      }\n-      @keyframes flipper{\n-        from{\n-           transform: scale(0.0); \n-        }\n-        to{\n-           transform: scale(1); \n-        }\n-    }\n-    \n"
+                },
+                {
+                    "date": 1698010524113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,14 +9,9 @@\n      justify-content: space-between;\n      height: 100vh;\n }\n \n-h1{\n-    margin: 50px;\n-        font-size: 60px;\n-        animation: flipper 1s ; \n-       \n-      } \n+\n     .circle {\n       position: absolute;\n       top: 250px;\n         background: none;\n"
+                },
+                {
+                    "date": 1698016274363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \n  .presentation{\n      background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n-     background-size: 100%;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      height: 100vh;\n"
+                },
+                {
+                    "date": 1698016289265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \n  .presentation{\n      background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n+     background-size: 100%;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      height: 100vh;\n"
+                },
+                {
+                    "date": 1698016309855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,9 @@\n  .presentation{\n      background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n      background-size: 100%;\n-     display: flex;\n-     flex-direction: column;\n-     justify-content: space-between;\n+   \n      height: 100vh;\n }\n \n \n"
+                },
+                {
+                    "date": 1698016320015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n  .presentation{\n      background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n      background-size: 100%;\n-   \n+     display: flex;\n+     flex-direction: column;\n+     justify-content: space-between;\n      height: 100vh;\n }\n \n \n"
+                },
+                {
+                    "date": 1698016328862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n-     height: 100vh;\n }\n \n \n     .circle {\n"
+                },
+                {
+                    "date": 1698016337122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n+     height: 100vh;\n }\n \n \n     .circle {\n"
+                },
+                {
+                    "date": 1698016483098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     }\n         \n         .circle:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n-            transform: scale(1.05);\n+            transform: scale(1.);\n         }\n         \n         /* Styles pour les contenus cachés */\n         .hidden {\n"
+                },
+                {
+                    "date": 1698016709204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     }\n         \n         .circle:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n-            transform: scale(1.);\n+            transform: scale(1.5);\n         }\n         \n         /* Styles pour les contenus cachés */\n         .hidden {\n@@ -46,8 +46,10 @@\n             transform: translate(-50%, -50%);\n             z-index: 1000;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n+\n+            \n           \n           \n         \n           animation: bounce2 2s ease ;\n"
+                },
+                {
+                    "date": 1698016721129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n             z-index: 1000;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n \n-            \n+            &\n           \n           \n         \n           animation: bounce2 2s ease ;\n"
+                },
+                {
+                    "date": 1698016726880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n             z-index: 1000;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n \n-            &\n+            \n           \n           \n         \n           animation: bounce2 2s ease ;\n"
+                },
+                {
+                    "date": 1698016732474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,8 @@\n           \n           \n         \n           animation: bounce2 2s ease ;\n+          &\n         }\n        \n     \n"
+                },
+                {
+                    "date": 1698016738408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,10 @@\n           \n           \n         \n           animation: bounce2 2s ease ;\n-          &\n+          &body{\n+            \n+          }\n         }\n        \n     \n"
+                },
+                {
+                    "date": 1698016744052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n           \n         \n           animation: bounce2 2s ease ;\n           &body{\n-            \n+            display \n           }\n         }\n        \n     \n"
+                },
+                {
+                    "date": 1698016782591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n           \n           \n         \n           animation: bounce2 2s ease ;\n-          &body{\n-            display \n+          body{\n+            display : none\n           }\n         }\n        \n     \n"
+                },
+                {
+                    "date": 1698016803247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n           \n         \n           animation: bounce2 2s ease ;\n           body{\n-            display : none\n+            opacity : none\n           }\n         }\n        \n     \n"
+                },
+                {
+                    "date": 1698016810081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n           \n         \n           animation: bounce2 2s ease ;\n           body{\n-            opacity : none\n+            opacity : 0\n           }\n         }\n        \n     \n"
+                },
+                {
+                    "date": 1698016834484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n             width: 100%;\n             height: 80%;\n             transform: translate(-50%, -50%);\n             z-index: 1000;\n+            \n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n \n             \n@@ -53,9 +54,9 @@\n           \n         \n           animation: bounce2 2s ease ;\n           body{\n-            opacity : 0\n+            opacity : 0}\n           }\n         }\n        \n     \n"
+                },
+                {
+                    "date": 1698016844849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             width: 100%;\n             height: 80%;\n             transform: translate(-50%, -50%);\n             z-index: 1000;\n-            \n+            background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n \n             \n"
+                },
+                {
+                    "date": 1698016869249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,8 @@\n         \n           animation: bounce2 2s ease ;\n           body{\n             opacity : 0}\n-          }\n+          \n         }\n        \n     \n"
+                },
+                {
+                    "date": 1698016891114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n             position: absolute;\n             top: 60%;\n             left: 50%;\n             width: 100%;\n-            height: 80%;\n+            height: 100%%;\n             transform: translate(-50%, -50%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n"
+                },
+                {
+                    "date": 1698016924972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,10 @@\n             position: absolute;\n             top: 60%;\n             left: 50%;\n             width: 100%;\n-            height: 100%%;\n-            transform: translate(-50%, -50%);\n+            height: 100%;\n+            transform: translatex(-50%, -50%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n"
+                },
+                {
+                    "date": 1698016946934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            transform: translatex(-50%, -50%);\n+            transform: translatex(-100%, -50%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n"
+                },
+                {
+                    "date": 1698016969016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            transform: translatex(-100%, -50%);\n+            transform: translatex(-50%, -50%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n"
+                },
+                {
+                    "date": 1698016974878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            transform: translatex(-50%, -50%);\n+            transform: translatex(-50%, -100%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n"
+                },
+                {
+                    "date": 1698016993040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            transform: translatex(-50%, -100%);\n+            transform: translatex(-50%, 100%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n"
+                },
+                {
+                    "date": 1698017027856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            transform: translatex(-50%, 100%);\n+            transform: translatex(0%, 100%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 80%;\n"
+                },
+                {
+                    "date": 1698017042252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,13 +42,13 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            transform: translatex(0%, 100%);\n+            transform: translatex(100%, 100%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-            max-width: 80%;\n+            max-width: 0%;\n \n             \n           \n           \n"
+                },
+                {
+                    "date": 1698017060391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,8 @@\n         /* Styles pour les contenus cachés */\n         .hidden {\n            display: none;\n             padding: 80px 30px;\n-            border-radius: 40px;\n             position: absolute;\n             top: 60%;\n             left: 50%;\n             width: 100%;\n@@ -46,9 +45,9 @@\n             transform: translatex(100%, 100%);\n             z-index: 1000;\n             background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-            max-width: 0%;\n+            max-width: 100%;\n \n             \n           \n           \n"
+                },
+                {
+                    "date": 1698017080221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n             \n           \n           \n         \n-          animation: bounce2 2s ease ;\n+          // animation: bounce2 2s ease ;\n           body{\n             opacity : 0}\n           \n         }\n"
+                },
+                {
+                    "date": 1698017143630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(100%, 100%);\n             z-index: 1000;\n-            background-color: blue;\n+            background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n \n             \n"
+                },
+                {
+                    "date": 1698017182893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,7 @@\n           \n           \n         \n           // animation: bounce2 2s ease ;\n-          body{\n-            opacity : 0}\n           \n-        }\n        \n     \n"
+                },
+                {
+                    "date": 1698017216193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n             z-index: 1000;\n             background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n-\n+        }\n             \n           \n           \n         \n"
+                },
+                {
+                    "date": 1698017265237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             left: 50%;\n             width: 100%;\n             height: 100%;\n             transform: translatex(100%, 100%);\n-            z-index: 1000;\n+            z-index: 1;\n             background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n         }\n"
+                },
+                {
+                    "date": 1698017277035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             left: 50%;\n             width: 100%;\n             height: 100%;\n             transform: translatex(100%, 100%);\n-            z-index: 1;\n+            z-index: 1000;\n             background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n         }\n"
+                },
+                {
+                    "date": 1698017295779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            transform: translatex(100%, 100%);\n+            transform: translatex(-100%, 100%);\n             z-index: 1000;\n             background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n"
+                },
+                {
+                    "date": 1698017366945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,12 @@\n             z-index: 1000;\n             background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n+             \n+          .bounce-in-right {\n+            animation: bounce-in-right 2s ease 1s;\n+          }\n         }\n             \n           \n           \n"
+                },
+                {
+                    "date": 1698017377275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n              \n           .bounce-in-right {\n-            animation: bounce-in-right 2s ease 1s;\n+           \n           }\n         }\n             \n           \n"
+                },
+                {
+                    "date": 1698017383502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,12 +46,10 @@\n             z-index: 1000;\n             background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n-             \n-          .bounce-in-right {\n-           \n-          }\n+             animation: bounce-in-right 2s ease 1s; \n+          \n         }\n             \n           \n           \n"
+                },
+                {
+                    "date": 1698017419735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n             z-index: 1000;\n             background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n-             animation: bounce-in-right 2s ease 1s; \n+            //  animation: bounce-in-right 2s ease 1s; \n           \n         }\n             \n           \n"
+                }
+            ],
+            "date": 1698000730894,
+            "name": "Commit-0",
+            "content": "@import url(https://fonts.googleapis.com/css?family=Poiret+One);\n\n\nbody, .presentation{\n     background-image: url(images/image-from-rawpixel-id-12419376-jpeg.jpg); \n     background-repeat: no-repeat;\n     background-size: 100%;\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     height: 100vh;\n}\n\nh1{\n    margin: 50px;\n        font-size: 60px;\n        animation: flipper 1s ; \n       \n      } \n    .circle {\n      position: absolute;\n      top: 250px;\n        background: none;\n        border: none;\n        cursor: pointer;\n        font-size: 16px;\n        font-weight: bold;\n        color: white;\n        padding: 10px;\n        border-radius: 50%;\n        width: 200px;\n        height: 200px;\n        box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n        transition: background-color 0.3s, transform 0.3s;\n    }\n        \n        .circle:hover {\n            background-color: rgba(0, 0, 0, 0.2);\n            transform: scale(1.05);\n        }\n        \n        /* Styles pour les contenus cachés */\n        .hidden {\n           display: none;\n            padding: 80px 30px;\n            border-radius: 40px;\n            position: absolute;\n            top: 60%;\n            left: 50%;\n            width: 100%;\n            height: 80%;\n            transform: translate(-50%, -50%);\n            z-index: 1000;\n            box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n            max-width: 80%;\n          \n          \n        \n          animation: bounce2 2s ease ;\n        }\n        @keyframes bounce2 {\n          0%, 20%, 50%, 80%, 100% {\n            opacity: 0;transform: translateY(-500);\n          }\n          40% {opacity: 1; translateY(1000px);}\n          60% {opacity: 1;transform: translateY(1500px);}\n        }\n        p{\n            font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\n            font-size: 20px;\n            padding: 20px 100px;\n        }\n        .content-container {\n          height: 100%;\n            display: flex;\n            justify-content: space-around;\n            align-items: center;\n        \n        }\n       \n        \n        .close-button{\n            position: absolute;\n            top: 10px;\n            right: 50px;\n            margin: 10px 30px;\n            display: flex;\n            justify-content: flex-end;\n            color: black;\n            background-color: white;\n         \n        }\n        .grow {\n            animation: grow 2s ease infinite;\n          }\n          @keyframes grow {\n            from { transform: scale(0); }\n            to { transform: scale(1); }\n          }\n          \n          .fade-in {\n            animation: fade-in 2s linear infinite;\n          }\n          @keyframes fade-in {\n            from { opacity: 1; \n            scale: 0%;}\n            to { opacity: 1; \n            scale: 1;}\n          }\n      \n        .bounce-in {\n            animation: bounce-in 2s ease 1s ;\n          }\n          @keyframes bounce-in {\n            0% {\n              opacity: 0;\n              transform: scale(.3);\n            }\n            50% {\n              opacity: 1;\n              transform: scale(1.05);\n            }\n            70% { transform: scale(.9); }\n            100% { transform: scale(1); }\n          }\n          \n          .bounce-in-right {\n            animation: bounce-in-right 2s ease 1s;\n          }\n          @keyframes bounce-in-right {\n            0% {\n              opacity: 0;\n              transform: translateX(2000px);\n            }\n            60% {\n              opacity: 1;\n              transform: translateX(-30px);\n            }\n            80% { transform: translateX(10px); }\n            100% { transform: translateX(0);\n                transform: translateY(100px);  }\n          }\n          \n          .bounce-out {\n            animation: bounce-out 2s ease 1s;\n          }\n          @keyframes bounce-out {\n            0% { transform: scale(1); }\n            25% { transform: scale(.95); }\n            50% {\n              opacity: 1;\n              transform: scale(1.1);\n            }\n            100% {\n              opacity: 0;\n              transform: scale(.3);\n            } \n          }\n          \n          .bounce-out-down {\n            animation: bounce-out-down 2s ease 2s;\n          }\n          @keyframes bounce-out-down {\n            0% { transform: translateY(0); }\n            20% {\n              opacity: 1;\n              transform: translateY(-200px);\n            }\n            100% {\n              opacity: 0;\n              transform: translateY(200px);\n            }\n          }\n          @keyframes flipper{\n            from{\n               transform: scale(0.0); \n            }\n            to{\n               transform: scale(1); \n            }\n        }\n        \n    \n    .bounce-in {\n        animation: bounce-in 2s ease 1s ;\n      }\n      @keyframes bounce-in {\n        0% {\n          opacity: 0;\n          transform: scale(.3);\n        }\n        50% {\n          opacity: 1;\n          transform: scale(1.05);\n        }\n        70% { transform: scale(.9); }\n        100% { transform: scale(1); }\n      }\n      \n      .bounce-in-right {\n        animation: bounce-in-right 2s ease 3s;\n      }\n      @keyframes bounce-in-right {\n        0% {\n          opacity: 0;\n          transform: translateX(2000px);\n        }\n        60% {\n          opacity: 1;\n          transform: translateX(-30px);\n        }\n        80% { transform: translateX(10px); }\n        100% { transform: translateX(0);\n            transform: translateY(100px);  }\n      }\n      \n      .bounce-out {\n        animation: bounce-out 2s ease 4s;\n      }\n      @keyframes bounce-out {\n        0% { transform: scale(1); }\n        25% { transform: scale(.95); }\n        50% {\n          opacity: 1;\n          transform: scale(1.1);\n        }\n        100% {\n          opacity: 0;\n          transform: scale(.3);\n        } \n      }\n      \n      .bounce-out-down {\n        animation: bounce-out-down 2s ease;\n      }\n      @keyframes bounce-out-down {\n        0% { transform: translateY(0); }\n        20% {\n          opacity: 1;\n          transform: translateY(-200px);\n        }\n        100% {\n          opacity: 0;\n          transform: translateY(200px);\n        }\n      }\n      @keyframes flipper{\n        from{\n           transform: scale(0.0); \n        }\n        to{\n           transform: scale(1); \n        }\n    }\n    \n"
+        }
+    ]
+}

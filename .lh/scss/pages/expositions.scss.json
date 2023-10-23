@@ -1,0 +1,58 @@
+{
+    "sourceFile": "scss/pages/expositions.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1697997117193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697997480370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-#background-video {\n+body {\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1697997486638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-body {\n+ {\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1697997494575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n- {\n+.gallerie_expositions {\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1697997502553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-.gallerie_expositions {\n+body {\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1697997522020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-body {\n+.expositions {\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1697997529729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-.expositions {\n+body {\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1697997565499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n \n-body {\n+.gallerie_expositions {\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n     height: 100%;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n+    \n }\n .child {\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1697997571337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     width: 100%;\n     height: 100%;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n-    \n+    grid\n }\n .child {\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1697997576646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     width: 100%;\n     height: 100%;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n-    grid\n+    grid-area: main;\n }\n .child {\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1697997594248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n-    height: 100%;\n+    height: 76vh%;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n     grid-area: main;\n }\n"
+                }
+            ],
+            "date": 1697997117193,
+            "name": "Commit-0",
+            "content": "\n#background-video {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n}\n.child {\n    display: flex;\n    flex-direction: column;\n    background: transparent;\n    padding: 1.5rem;\n    border-radius: 1rem;\n    /* border: 2px solid white;  */\n    height: 60vh;\n    opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n    transform: translateY(600px); /* Décalez les cartes vers le bas */\n}\n.child:hover {\n    transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n    background-color: #333; /* Change la couleur de fond lors du survol */\n}\n.details {\n\tmax-height: 0;\n    padding: 0;\n    overflow: hidden;\n    visibility: hidden;\n    transform: rotatex(-180deg);\n    transform-origin: top center ;\n    backface-visibility: hidden;\n    transition: 0.3s ease ;\n    padding: 15px;\n\t}\n.child:hover .details {\n    max-height: none;\n    overflow: visible;\n    visibility: visible;\n    transform: rotatex(0deg);\n}\n\n/* Animation pour la première carte */\n.child:nth-child(1)  {\n    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n}\n\n/* Animation pour la deuxième carte */\n.child:nth-child(2) {\n    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n}\n\n/* Animation pour la troisième carte */\n.child:nth-child(3)  {\n    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n}\n.child:nth-child(4)  {\n    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n}\n\n/* Animation pour la deuxième carte */\n.child:nth-child(5) {\n    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n}\n\n/* Animation pour la troisième carte */\n.child:nth-child(6)  {\n    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n}\n.child:nth-child(7)  {\n    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n}\n\n\n/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n@keyframes fadeInUp {\n    to {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\n#expositions{\n    margin: 20px;\n  } \n\n.gallerie_expositions{\n        display: grid;\n        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n        grid-gap: 1rem;\n        padding: 1rem;\n        border-radius: 1rem;\n      }\n.gallerie_expositions > child {\n        /* border-radius: 1rem;\n        border: 2px solid white; */\n        min-height: 54vh;\n      }\n.gallerie_expositions img, video{\n    object-fit: cover;\n  height: 350px;\n    border-radius: 1rem;\n    /* border: 1px solid white;\n} */\n}\n.gallerie_expositions img, video:hover{\n   transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n    background-color: #333; /* Change la couleur de fond lors du survol */\n}\n  \n   \n\n@keyframes flipper{\n    from{\n       transform: scale(0.0); \n    }\n    to{\n       transform: scale(1); \n    }\n}\n\n\n\n@media (max-width: 600px) {\n   /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n   .logo img {\n      width: 30%; /* Réduisez la taille du logo */\n   }\n   h1{\n    text-align: center;\n   }\n\n  }\n  \n"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "sourceFile": "scss/layout/_footer.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1697982677335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697982691845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,37 +18,4 @@\n \n \n \n }\n-\n-@media (max-width: 800px) {\n-    header{\n-        margin-bottom: 50px;\n-    }\n-  #icons {\n-    display: block;\n-  }\n-  #icons:before {\n-    content: \"\\2630\";\n-  }\n-  .active #icons:before {\n-    content: \"\\2715\";\n-  }\n-  nav ul {\n-    position: fixed;\n-    left: -100%;\n-    top: 5%;\n-    flex-direction: column;\n-    width: 100%;\n-    text-align: center;\n-    transition: 0.25s;\n-  }\n-  nav li {\n-    padding: 3px 0;\n-  \n-  }\n-   a:hover {\n-    color: lightblue;\n-  }\n-  nav.active ul {\n-    left: 0;\n-  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697982739399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n footer{ \n-    /* grid-area: 9/ 1 / 12 / 12;  */\n-    /* background: linear-gradient(90deg, #B0A9A0 20%,#A69E97 60%, #979390 90%); */\n     padding : 20px;\n     background:  black ;\n     text-align: center;\n     /* animation: transitionIn 1s; */\n"
+                },
+                {
+                    "date": 1697982765693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,12 @@\n footer{ \n     padding : 20px;\n     background:  black ;\n     text-align: center;\n-    /* animation: transitionIn 1s; */\n-    \n     grid-area: footer;\n }\n \n  footer img{\n   width: 30px;\n   height: 30px;\n   border-radius: 5px;\n-\n-  \n-\n-\n-\n }\n"
+                },
+                {
+                    "date": 1697989067917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n-footer{ \n-    padding : 20px;\n-    background:  black ;\n-    text-align: center;\n-    grid-area: footer;\n+footer {\n+  padding: 20px;\n+  background: black;\n+  text-align: center;\n+  grid-area: footer;\n }\n-\n- footer img{\n+ img {\n   width: 30px;\n   height: 30px;\n   border-radius: 5px;\n }\n"
+                },
+                {
+                    "date": 1697989073757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   padding: 20px;\n   background: black;\n   text-align: center;\n   grid-area: footer;\n-}\n+\n  img {\n   width: 30px;\n   height: 30px;\n   border-radius: 5px;\n"
+                },
+                {
+                    "date": 1697989090239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,6 @@\n   background: black;\n   text-align: center;\n   grid-area: footer;\n \n- img {\n-  width: 30px;\n-  height: 30px;\n-  border-radius: 5px;\n-}\n+ \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697989098543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,11 @@\n   padding: 20px;\n   background: black;\n   text-align: center;\n   grid-area: footer;\n-\n+  img {\n+    width: 30px;\n+    height: 30px;\n+    border-radius: 5px;\n+  } \n  \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697989206120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     width: 30px;\n     height: 30px;\n     border-radius: 5px;\n   } \n- \n+ p\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697989212205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,8 @@\n     width: 30px;\n     height: 30px;\n     border-radius: 5px;\n   } \n- p\n+ p{\n+  text-align: ;\n+ }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697989218468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     height: 30px;\n     border-radius: 5px;\n   } \n  p{\n-  text-align: ;\n+  text-align: right;\n  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698013942152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n footer {\n   padding: 20px;\n   background: black;\n   text-align: center;\n-  grid-area: footer;\n   img {\n     width: 30px;\n     height: 30px;\n     border-radius: 5px;\n"
+                },
+                {
+                    "date": 1698013952301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n footer {\n   padding: 20px;\n   background: black;\n   text-align: center;\n+  grid-area: footer;\n   img {\n     width: 30px;\n     height: 30px;\n     border-radius: 5px;\n"
+                }
+            ],
+            "date": 1697982677335,
+            "name": "Commit-0",
+            "content": "footer{ \n    /* grid-area: 9/ 1 / 12 / 12;  */\n    /* background: linear-gradient(90deg, #B0A9A0 20%,#A69E97 60%, #979390 90%); */\n    padding : 20px;\n    background:  black ;\n    text-align: center;\n    /* animation: transitionIn 1s; */\n    \n    grid-area: footer;\n}\n\n footer img{\n  width: 30px;\n  height: 30px;\n  border-radius: 5px;\n\n  \n\n\n\n}\n\n@media (max-width: 800px) {\n    header{\n        margin-bottom: 50px;\n    }\n  #icons {\n    display: block;\n  }\n  #icons:before {\n    content: \"\\2630\";\n  }\n  .active #icons:before {\n    content: \"\\2715\";\n  }\n  nav ul {\n    position: fixed;\n    left: -100%;\n    top: 5%;\n    flex-direction: column;\n    width: 100%;\n    text-align: center;\n    transition: 0.25s;\n  }\n  nav li {\n    padding: 3px 0;\n  \n  }\n   a:hover {\n    color: lightblue;\n  }\n  nav.active ul {\n    left: 0;\n  }"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+footer {
+  padding: 20px;
+  background: black;
+  text-align: center;
+  grid-area: footer;
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  } 
+ p{
+  text-align: right;
+ }
+}

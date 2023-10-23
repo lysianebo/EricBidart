@@ -1,0 +1,390 @@
+{
+    "sourceFile": "scss/pages/_expositions.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 93,
+            "patches": [
+                {
+                    "date": 1698000686430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698003860087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,14 +74,14 @@\n }\n \n \n /* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n-@keyframes fadeInUp {\n-    to {\n-        opacity: 1;\n-        transform: translateY(0);\n-    }\n-}\n+// @keyframes fadeInUp {\n+//     to {\n+//         opacity: 1;\n+//         transform: translateY(0);\n+//     }\n+// }\n \n #expositions{\n     margin: 20px;\n   } \n"
+                },
+                {
+                    "date": 1698003900759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,16 +111,16 @@\n }\n   \n    \n \n-@keyframes flipper{\n-    from{\n-       transform: scale(0.0); \n-    }\n-    to{\n-       transform: scale(1); \n-    }\n-}\n+// @keyframes flipper{\n+//     from{\n+//        transform: scale(0.0); \n+//     }\n+//     to{\n+//        transform: scale(1); \n+//     }\n+// }\n \n \n \n @media (max-width: 600px) {\n"
+                },
+                {
+                    "date": 1698003911209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,16 +111,16 @@\n }\n   \n    \n \n-// @keyframes flipper{\n-//     from{\n-//        transform: scale(0.0); \n-//     }\n-//     to{\n-//        transform: scale(1); \n-//     }\n-// }\n+@keyframes flipper{\n+    from{\n+       transform: scale(0.0); \n+    }\n+    to{\n+       transform: scale(1); \n+    }\n+}\n \n \n \n @media (max-width: 600px) {\n"
+                },
+                {
+                    "date": 1698003919447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,16 +111,16 @@\n }\n   \n    \n \n-@keyframes flipper{\n-    from{\n-       transform: scale(0.0); \n-    }\n-    to{\n-       transform: scale(1); \n-    }\n-}\n+// @keyframes flipper{\n+//     from{\n+//        transform: scale(0.0); \n+//     }\n+//     to{\n+//        transform: scale(1); \n+//     }\n+// }\n \n \n \n @media (max-width: 600px) {\n"
+                },
+                {
+                    "date": 1698005804264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,5 @@\n \n-.gallerie_expositions {\n-    position: fixed;\n-    top: 0;\n-    left: 0;\n     width: 100%;\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n"
+                },
+                {
+                    "date": 1698005831885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n \n+ {\n+    position: fixed;\n+    top: 0;\n+    left: 0;\n     width: 100%;\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n"
+                },
+                {
+                    "date": 1698005868043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n \n- {\n+\n+\n+.gallerie_expositions {\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1698005874144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n \n+main{\n+    \n+}\n \n-\n .gallerie_expositions {\n     position: fixed;\n     top: 0;\n     left: 0;\n"
+                },
+                {
+                    "date": 1698005880111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n main{\n-    \n+\n }\n \n .gallerie_expositions {\n     position: fixed;\n@@ -10,9 +10,9 @@\n     width: 100%;\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n-    grid-area: main;\n+ \n }\n .child {\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698005900088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,12 @@\n \n main{\n-\n+   grid-area: main;\n }\n \n .gallerie_expositions {\n     position: fixed;\n-    top: 0;\n-    left: 0;\n+  \n     width: 100%;\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n"
+                },
+                {
+                    "date": 1698005918742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n    grid-area: main;\n }\n \n .gallerie_expositions {\n+    ba\n     position: fixed;\n   \n     width: 100%;\n     height: 76vh;\n"
+                },
+                {
+                    "date": 1698010401610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,10 @@\n    grid-area: main;\n }\n \n .gallerie_expositions {\n-    ba\n+    background-image: ;\n     position: fixed;\n-  \n     width: 100%;\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n"
+                },
+                {
+                    "date": 1698010414797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,11 @@\n    grid-area: main;\n }\n \n .gallerie_expositions {\n-    background-image: ;\n+    ba\n     position: fixed;\n+  \n     width: 100%;\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n"
+                },
+                {
+                    "date": 1698012420615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n    grid-area: main;\n }\n \n .gallerie_expositions {\n-    ba\n     position: fixed;\n+     grid-area: main;\n   \n     width: 100%;\n     height: 76vh;\n     object-fit: cover;\n"
+                },
+                {
+                    "date": 1698012426123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,5 @@\n \n-main{\n-   grid-area: main;\n-}\n \n .gallerie_expositions {\n     position: fixed;\n      grid-area: main;\n"
+                },
+                {
+                    "date": 1698012444909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n \n+main{\n+   grid-area: main;\n+}\n \n .gallerie_expositions {\n     position: fixed;\n      grid-area: main;\n"
+                },
+                {
+                    "date": 1698012616727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,5 @@\n \n-main{\n-   grid-area: main;\n-}\n \n .gallerie_expositions {\n     position: fixed;\n      grid-area: main;\n"
+                },
+                {
+                    "date": 1698012625399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n \n \n+\n .gallerie_expositions {\n     position: fixed;\n      grid-area: main;\n   \n"
+                },
+                {
+                    "date": 1698012801330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,12 @@\n \n \n+.exposition {\n \n+        background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+\n+\n+        }\n .gallerie_expositions {\n     position: fixed;\n      grid-area: main;\n   \n"
+                },
+                {
+                    "date": 1698012821389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n         }\n .gallerie_expositions {\n     position: fixed;\n-     grid-area: main;\n+   \n   \n     width: 100%;\n     height: 76vh;\n     object-fit: cover;\n"
+                },
+                {
+                    "date": 1698012832857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n         background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n+        \n .gallerie_expositions {\n     position: fixed;\n    \n   \n"
+                },
+                {
+                    "date": 1698012842472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n-        \n+\n .gallerie_expositions {\n     position: fixed;\n    \n   \n"
+                },
+                {
+                    "date": 1698012883943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,16 @@\n \n \n         }\n \n-.gallerie_expositions {\n-    position: fixed;\n+// .gallerie_expositions {\n+//     position: fixed;\n    \n   \n-    width: 100%;\n-    height: 76vh;\n-    object-fit: cover;\n-    z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n+//     width: 100%;\n+//     height: 76vh;\n+//     object-fit: cover;\n+//     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n }\n .child {\n     display: flex;\n"
+                },
+                {
+                    "date": 1698012902011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n         /* border-radius: 1rem;\n         border: 2px solid white; */\n         min-height: 54vh;\n       }\n-.gallerie_expositions img, video{\n+.gallerie_expositions img{\n     object-fit: cover;\n   height: 350px;\n     border-radius: 1rem;\n     /* border: 1px solid white;\n"
+                },
+                {
+                    "date": 1698012911727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n         /* border-radius: 1rem;\n         border: 2px solid white; */\n         min-height: 54vh;\n       }\n-.gallerie_expositions img{\n+.gallerie_expositions img, video{\n     object-fit: cover;\n   height: 350px;\n     border-radius: 1rem;\n     /* border: 1px solid white;\n"
+                },
+                {
+                    "date": 1698013046636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n //     height: 76vh;\n //     object-fit: cover;\n //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n-}\n+\n .child {\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n"
+                },
+                {
+                    "date": 1698013059685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,8 @@\n \n \n-.exposition {\n \n-        background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n-\n-        }\n-\n // .gallerie_expositions {\n //     position: fixed;\n    \n   \n"
+                },
+                {
+                    "date": 1698013068010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,13 @@\n \n \n+.exposition {\n \n+        background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n+\n+        }\n+\n // .gallerie_expositions {\n //     position: fixed;\n    \n   \n"
+                },
+                {
+                    "date": 1698013076041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,8 @@\n \n \n-.exposition {\n \n-        background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n-\n-        }\n-\n // .gallerie_expositions {\n //     position: fixed;\n    \n   \n"
+                },
+                {
+                    "date": 1698013267063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n \n \n \n \n-// .gallerie_expositions {\n-//     position: fixed;\n+.gallerie_expositions {\n+    position: fixed;\n    \n   \n-//     width: 100%;\n-//     height: 76vh;\n-//     object-fit: cover;\n-//     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n+    width: 100%;\n+    height: 76vh;\n+    object-fit: cover;\n+    z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n \n .child {\n     display: flex;\n"
+                },
+                {
+                    "date": 1698013290294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n-\n+}\n .child {\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n"
+                },
+                {
+                    "date": 1698013299249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n-}\n+\n .child {\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n"
+                },
+                {
+                    "date": 1698013321710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n //         opacity: 1;\n //         transform: translateY(0);\n //     }\n // }\n-\n+}\n #expositions{\n     margin: 20px;\n   } \n \n"
+                },
+                {
+                    "date": 1698013336978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n //         opacity: 1;\n //         transform: translateY(0);\n //     }\n // }\n-}\n+\n #expositions{\n     margin: 20px;\n   } \n \n"
+                },
+                {
+                    "date": 1698013347501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     height: 76vh;\n     object-fit: cover;\n     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n-\n+}\n .child {\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n"
+                },
+                {
+                    "date": 1698013354310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n \n \n \n \n-.gallerie_expositions {\n-    position: fixed;\n+// .gallerie_expositions {\n+//     position: fixed;\n    \n   \n-    width: 100%;\n-    height: 76vh;\n-    object-fit: cover;\n-    z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n+//     width: 100%;\n+//     height: 76vh;\n+//     object-fit: cover;\n+//     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n-}\n+\n .child {\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n"
+                },
+                {
+                    "date": 1698013366287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n+.expo\n \n-\n // .gallerie_expositions {\n //     position: fixed;\n    \n   \n"
+                },
+                {
+                    "date": 1698013371751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-.expo\n+.expositions\n \n // .gallerie_expositions {\n //     position: fixed;\n    \n"
+                },
+                {
+                    "date": 1698013376994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n \n \n-.expositions\n+.expositions{\n+    ba\n+}\n \n // .gallerie_expositions {\n //     position: fixed;\n    \n"
+                },
+                {
+                    "date": 1698013382608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n .expositions{\n-    ba\n+    background-color: gre;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013391681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n .expositions{\n-    background-color: gre;\n+    background-color: ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013410805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n-.expositions{\n-    background-color: ;\n+body .expositions{\n+    background-color: green;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013418417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-body .expositions{\n+.expositions{\n     background-color: green;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013429139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-.expositions{\n+.expositions, body{\n     background-color: green;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013437932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-.expositions, body{\n+.expositions  body{\n     background-color: green;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013445298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-.expositions  body{\n+.ex body{\n     background-color: green;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013454149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-.ex body{\n+body .expositions{\n     background-color: green;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013472304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-body .expositions{\n+body >.expositions{\n     background-color: green;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013491040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-body >.expositions{\n+.expositions{\n     background-color: green;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013497783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n .expositions{\n-    background-color: green;\n+    background-ima;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013511817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n-.expositions{\n-    background-ima;\n+.expositions{body \n+    background-image: none;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013525566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n-.expositions{body \n-    background-image: none;\n+body.expositions{\n+    background-image: ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013531324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-body.expositions{\n+body .expositions{\n     background-image: ;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013538227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n body .expositions{\n-    background-image: ;\n+    background-image: none;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013549013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-body .expositions{\n+body, .expositions{\n     background-image: none;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013630624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-body, .expositions{\n+main, .expositions{\n     background-image: none;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013640899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-main, .expositions{\n+main .expositions{\n     background-image: none;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013648880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n-main .expositions{\n+main, .expositions{\n     background-image: none;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698013668970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: none;\n+    background-image: ur;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013677569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: ur;\n+    background-image: url(/);\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013682817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/);\n+    background-image: url(/public/);\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013692778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/);\n+    background-image: url(/public/videos/);\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013710696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/videos/);\n+    background-image: url(/public/videos/Expositions\\ 2022-2023\\ Eric\\ Bidart.mp4);\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013722156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/videos/Expositions\\ 2022-2023\\ Eric\\ Bidart.mp4);\n+    background-image: url(/public/videos/Expositions\\ 2022-2023\\ Eric\\ Bidar);\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013728345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/videos/Expositions\\ 2022-2023\\ Eric\\ Bidar);\n+    background-image: url(/public/videos/Expositions\\ 2022-2023\\ Eric\\ Bidart\\ \\(1\\).mp4);\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013736798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/videos/Expositions\\ 2022-2023\\ Eric\\ Bidart\\ \\(1\\).mp4);\n+    background-image: url(/public/;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013742964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/;\n+    background-image: url(/public/images;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013749289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images;\n+    background-image: url(/public/images  ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013756161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images  ;\n+    background-image: url( ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013761656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url( ;\n+    background-image: url() ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013767301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url() ;\n+    background-image: url(/public/) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013777759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/) ;\n+    background-image: url(/public/images/275928977_343286561149991_1233296693697315773_n.webp) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013790304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images/275928977_343286561149991_1233296693697315773_n.webp) ;\n+    background-image: url(/public/images) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013797545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images) ;\n+    background-image: url(/public/images/AdobeStock_437935932_Preview.jpeg) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013803532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images/AdobeStock_437935932_Preview.jpeg) ;\n+    background-image: url(/public/images) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013818789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images) ;\n+    background-image: url(/public/images/istockphoto-881421800-2048x2048.webp) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013827368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images/istockphoto-881421800-2048x2048.webp) ;\n+    background-image: url(/public/images) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013833143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images) ;\n+    background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698013841711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg) ;\n+    background-image: url(/public/images) ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698014001549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images) ;\n+    background-image: url(/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n+    b\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698014012782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \n \n main, .expositions{\n     background-image: url(/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n-    b\n+    background-repeat: ;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698014029486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n \n \n main, .expositions{\n     background-image: url(/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n-    background-repeat: ;\n+    background-repeat: no-repeat;\n+    overflow: hidden;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698014073051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n main, .expositions{\n     background-image: url(/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n+    \n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698014078452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n main, .expositions{\n     background-image: url(/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n-    \n+    grid\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698014094268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n main, .expositions{\n     background-image: url(/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n-    grid\n+    // grid-area: main;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698014118341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n //     }\n // }\n \n #expositions{\n-    margin: 20px;\n+    margin: 0px;\n   } \n \n .gallerie_expositions{\n         display: grid;\n"
+                },
+                {
+                    "date": 1698014147609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,11 +89,11 @@\n //         transform: translateY(0);\n //     }\n // }\n \n-#expositions{\n-    margin: 0px;\n-  } \n+// #expositions{\n+//     margin: 0px;\n+//   } \n \n .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n"
+                },
+                {
+                    "date": 1698014833274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n-    padding: 15px;\n+    padding: 10px;\n \t}\n .child:hover .details {\n     max-height: none;\n     overflow: visible;\n"
+                },
+                {
+                    "date": 1698014857565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n-    padding: 10px;\n+    padding-top: 10px;\n \t}\n .child:hover .details {\n     max-height: none;\n     overflow: visible;\n"
+                },
+                {
+                    "date": 1698014867709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n-    padding-top: 10px;\n+    padding-top: 100px;\n \t}\n .child:hover .details {\n     max-height: none;\n     overflow: visible;\n"
+                },
+                {
+                    "date": 1698014884050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n-    padding-top: 100px;\n+    padding-top: 10px;\n \t}\n .child:hover .details {\n     max-height: none;\n     overflow: visible;\n"
+                },
+                {
+                    "date": 1698014900106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n-    padding-top: 10px;\n+    padding-top: 0px;\n \t}\n .child:hover .details {\n     max-height: none;\n     overflow: visible;\n"
+                },
+                {
+                    "date": 1698014925589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n-    padding-top: 0px;\n+    padding-top: 30px;\n \t}\n .child:hover .details {\n     max-height: none;\n     overflow: visible;\n"
+                }
+            ],
+            "date": 1698000686430,
+            "name": "Commit-0",
+            "content": "\n.gallerie_expositions {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 76vh;\n    object-fit: cover;\n    z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n    grid-area: main;\n}\n.child {\n    display: flex;\n    flex-direction: column;\n    background: transparent;\n    padding: 1.5rem;\n    border-radius: 1rem;\n    /* border: 2px solid white;  */\n    height: 60vh;\n    opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n    transform: translateY(600px); /* Décalez les cartes vers le bas */\n}\n.child:hover {\n    transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n    background-color: #333; /* Change la couleur de fond lors du survol */\n}\n.details {\n\tmax-height: 0;\n    padding: 0;\n    overflow: hidden;\n    visibility: hidden;\n    transform: rotatex(-180deg);\n    transform-origin: top center ;\n    backface-visibility: hidden;\n    transition: 0.3s ease ;\n    padding: 15px;\n\t}\n.child:hover .details {\n    max-height: none;\n    overflow: visible;\n    visibility: visible;\n    transform: rotatex(0deg);\n}\n\n/* Animation pour la première carte */\n.child:nth-child(1)  {\n    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n}\n\n/* Animation pour la deuxième carte */\n.child:nth-child(2) {\n    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n}\n\n/* Animation pour la troisième carte */\n.child:nth-child(3)  {\n    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n}\n.child:nth-child(4)  {\n    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n}\n\n/* Animation pour la deuxième carte */\n.child:nth-child(5) {\n    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n}\n\n/* Animation pour la troisième carte */\n.child:nth-child(6)  {\n    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n}\n.child:nth-child(7)  {\n    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n}\n\n\n/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n@keyframes fadeInUp {\n    to {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\n#expositions{\n    margin: 20px;\n  } \n\n.gallerie_expositions{\n        display: grid;\n        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n        grid-gap: 1rem;\n        padding: 1rem;\n        border-radius: 1rem;\n      }\n.gallerie_expositions > child {\n        /* border-radius: 1rem;\n        border: 2px solid white; */\n        min-height: 54vh;\n      }\n.gallerie_expositions img, video{\n    object-fit: cover;\n  height: 350px;\n    border-radius: 1rem;\n    /* border: 1px solid white;\n} */\n}\n.gallerie_expositions img, video:hover{\n   transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n    background-color: #333; /* Change la couleur de fond lors du survol */\n}\n  \n   \n\n@keyframes flipper{\n    from{\n       transform: scale(0.0); \n    }\n    to{\n       transform: scale(1); \n    }\n}\n\n\n\n@media (max-width: 600px) {\n   /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n   .logo img {\n      width: 30%; /* Réduisez la taille du logo */\n   }\n   h1{\n    text-align: center;\n   }\n\n  }\n  \n"
+        }
+    ]
+}

@@ -1,0 +1,914 @@
+{
+    "sourceFile": "scss/pages/_creations.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 224,
+            "patches": [
+                {
+                    "date": 1697992102499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697992118122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,50 +1,5 @@\n- <style>\n-     *{\n-  margin: 0;\n-  padding: 0;\n-  font-family: Arial, Helvetica, sans-serif;\n-  color: white;\n-} \n-       \n-       header { \n-  height: 10vh;\n-  display: flex;\n-  justify-content: space-between;\n-  align-items: center;\n-  grid-area: header;\n-}\n-.logo_img img{\n-  border-radius: 50%;\n-    width: 50%;\n-    padding: 0px;\n-    position: relative;\n-    top: 3vh;\n-    left: 50px;\n-    box-shadow: 0px 0.5px 5px black;  \n-}\n-li, a, a:visited {\n-  padding: 5px;\n-  text-decoration: none;\n-  list-style: none;\n-}\n-a:hover {\n-  color: red;\n-}\n \n-/**** NAVBAR ****/\n-nav {\n-  display: flex;\n-  padding: 20px;\n-}\n-nav ul {\n-  display: flex;\n-  justify-content: space-between;\n-}\n-#icons {\n-  cursor: pointer;\n-  display: none;\n-}\n           .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n"
+                },
+                {
+                    "date": 1697992127510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n-\n-          .gallery {\n+.gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n"
+                },
+                {
+                    "date": 1697992138710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-        height: 73vh;\n+    height: 73vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697992156871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .gallery {\n-            --n: 1; /* Nombre de lignes */\n-            --m: 5; /* Nombre de colonnes */\n-            --g: 20px; /* Espace entre les images */\n-            --f: 2; /* Facteur d'agrandissement au survol */\n+        --n: 1; /* Nombre de lignes */\n+        --m: 5; /* Nombre de colonnes */\n+        --g: 20px; /* Espace entre les images */\n+        --f: 2; /* Facteur d'agrandissement au survol */\n     height: 73vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697992165648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n .gallery {\n-        --n: 1; /* Nombre de lignes */\n-        --m: 5; /* Nombre de colonnes */\n-        --g: 20px; /* Espace entre les images */\n-        --f: 2; /* Facteur d'agrandissement au survol */\n+    --n: 1; /* Nombre de lignes */\n+    --m: 5; /* Nombre de colonnes */\n+    --g: 20px; /* Espace entre les images */\n+    --f: 2; /* Facteur d'agrandissement au survol */\n     height: 73vh;\n-           display: grid;\n+    display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n"
+                },
+                {
+                    "date": 1697992176711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,9 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-}\n-        \n-\n-        .card_creation {\n+.card_creation {\n             position: relative;\n             overflow: hidden;\n            \n         }\n"
+                },
+                {
+                    "date": 1697992193849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,22 +8,13 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-.card_creation {\n+    .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n-        }\n-\n-        /* .creation_img {\n-            display: block;\n-            position: relative;\n-            \n-           \n-        } */\n-\n-        .creation_img img {\n+    img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n"
+                },
+                {
+                    "date": 1697992239665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,20 +54,8 @@\n \n \n         }\n \n-        footer{ \n-    padding : 20px;\n-    background:  black ;\n-    text-align: center;\n-}\n-footer img{\n-  width: 30px;\n-  height: 30px;\n-  border-radius: 5px;\n-\n-  \n-}\n         @media (max-width: 768px) {\n     .gallery {\n         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n     }\n"
+                },
+                {
+                    "date": 1697992251640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,4 @@\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n     }\n }\n \n-\n-\n-    </style>\n-    </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697992257836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,4 +67,5 @@\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n     }\n }\n \n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697992266083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,5 +67,5 @@\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n     }\n }\n \n-    }\n\\ No newline at end of file\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697992273585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,10 @@\n     .gallery {\n         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n     }\n }\n-\n+    }\n+    \n /* Styles pour les écrans de taille moyenne */\n @media (min-width: 769px) and (max-width: 1024px) {\n     .gallery {\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n"
+                },
+                {
+                    "date": 1697992292337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,22 +47,17 @@\n             opacity: 1;\n             transform: translateY(0);\n         }\n \n-        body {\n-            margin: 0;\n-            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+       \n \n-\n-        }\n-\n         @media (max-width: 768px) {\n     .gallery {\n         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n     }\n }\n     }\n-    \n+}\n /* Styles pour les écrans de taille moyenne */\n @media (min-width: 769px) and (max-width: 1024px) {\n     .gallery {\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n"
+                },
+                {
+                    "date": 1697992306783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\n .gallery {\n     --n: 1; /* Nombre de lignes */\n     --m: 5; /* Nombre de colonnes */\n     --g: 20px; /* Espace entre les images */\n"
+                },
+                {
+                    "date": 1697992321439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,10 @@\n+ body {\n+            margin: 0;\n+           \n \n+\n+        }\n .gallery {\n     --n: 1; /* Nombre de lignes */\n     --m: 5; /* Nombre de colonnes */\n     --g: 20px; /* Espace entre les images */\n"
+                },
+                {
+                    "date": 1697992337473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n \n \n         }\n .gallery {\n+    \n     --n: 1; /* Nombre de lignes */\n     --m: 5; /* Nombre de colonnes */\n     --g: 20px; /* Espace entre les images */\n     --f: 2; /* Facteur d'agrandissement au survol */\n"
+                },
+                {
+                    "date": 1697992343865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n- body {\n-            margin: 0;\n-           \n+//  body {\n+//             margin: 0;\n+//             background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n-        }\n+//         }\n .gallery {\n-    \n     --n: 1; /* Nombre de lignes */\n     --m: 5; /* Nombre de colonnes */\n     --g: 20px; /* Espace entre les images */\n     --f: 2; /* Facteur d'agrandissement au survol */\n"
+                },
+                {
+                    "date": 1697992371656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n \n-        .creation_img h3 {\n+        h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n             left: 0;\n"
+                },
+                {
+                    "date": 1697992390535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-//  body {\n-//             margin: 0;\n-//             background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+ body {\n+            margin: 0;\n+            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n-//         }\n+        }\n .gallery {\n     --n: 1; /* Nombre de lignes */\n     --m: 5; /* Nombre de colonnes */\n     --g: 20px; /* Espace entre les images */\n@@ -26,9 +26,9 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n \n-        h3 {\n+        .creation_img h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n             left: 0;\n"
+                },
+                {
+                    "date": 1697992400053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,4 @@\n- body {\n-            margin: 0;\n-            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n-\n-\n-        }\n .gallery {\n     --n: 1; /* Nombre de lignes */\n     --m: 5; /* Nombre de colonnes */\n     --g: 20px; /* Espace entre les images */\n@@ -53,17 +47,22 @@\n             opacity: 1;\n             transform: translateY(0);\n         }\n \n-       \n+        body {\n+            margin: 0;\n+            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n+\n+        }\n+\n         @media (max-width: 768px) {\n     .gallery {\n         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n     }\n }\n     }\n-}\n+    \n /* Styles pour les écrans de taille moyenne */\n @media (min-width: 769px) and (max-width: 1024px) {\n     .gallery {\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n"
+                },
+                {
+                    "date": 1697992406722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,14 +59,13 @@\n     .gallery {\n         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n     }\n }\n-    }\n-    \n+\n /* Styles pour les écrans de taille moyenne */\n @media (min-width: 769px) and (max-width: 1024px) {\n     .gallery {\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n     }\n }\n \n\\ No newline at end of file\n-  \n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697992413855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,5 +67,8 @@\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n     }\n }\n \n-    }\n\\ No newline at end of file\n+\n+\n+    </style>\n+    </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697992421038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,18 @@\n     .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n-    img {\n+        }\n+\n+        /* .creation_img {\n+            display: block;\n+            position: relative;\n+            \n+           \n+        } */\n+\n+        .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n@@ -54,8 +63,20 @@\n \n \n         }\n \n+        footer{ \n+    padding : 20px;\n+    background:  black ;\n+    text-align: center;\n+}\n+footer img{\n+  width: 30px;\n+  height: 30px;\n+  border-radius: 5px;\n+\n+  \n+}\n         @media (max-width: 768px) {\n     .gallery {\n         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n     }\n"
+                },
+                {
+                    "date": 1697992426563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-    .card_creation {\n+}\n+.card_creation {\n             position: relative;\n             overflow: hidden;\n            \n         }\n"
+                },
+                {
+                    "date": 1697992432072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,17 @@\n     --m: 5; /* Nombre de colonnes */\n     --g: 20px; /* Espace entre les images */\n     --f: 2; /* Facteur d'agrandissement au survol */\n     height: 73vh;\n-    display: grid;\n+           display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n-.card_creation {\n+        \n+\n+        .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n         }\n"
+                },
+                {
+                    "date": 1697992437624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n+\n .gallery {\n-    --n: 1; /* Nombre de lignes */\n-    --m: 5; /* Nombre de colonnes */\n-    --g: 20px; /* Espace entre les images */\n-    --f: 2; /* Facteur d'agrandissement au survol */\n-    height: 73vh;\n+            --n: 1; /* Nombre de lignes */\n+            --m: 5; /* Nombre de colonnes */\n+            --g: 20px; /* Espace entre les images */\n+            --f: 2; /* Facteur d'agrandissement au survol */\n+        height: 73vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697992442857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,99 +0,0 @@\n-\n-.gallery {\n-            --n: 1; /* Nombre de lignes */\n-            --m: 5; /* Nombre de colonnes */\n-            --g: 20px; /* Espace entre les images */\n-            --f: 2; /* Facteur d'agrandissement au survol */\n-        height: 73vh;\n-           display: grid;\n-    grid-template-columns: repeat(var(--m), auto);\n-    gap: var(--g);\n-    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-}\n-        \n-\n-        .card_creation {\n-            position: relative;\n-            overflow: hidden;\n-           \n-        }\n-\n-        /* .creation_img {\n-            display: block;\n-            position: relative;\n-            \n-           \n-        } */\n-\n-        .creation_img img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            transform: scale(1);\n-            transition: transform 0.3s ease;\n-        }\n-\n-        .creation_img h3 {\n-            position: absolute;\n-            height: 4vh;\n-            bottom: 0;\n-            left: 0;\n-            width: 100%;\n-            background: rgba(0, 0, 0, 0.7);\n-            color: white;\n-            padding: 5px;\n-            margin: 0;\n-            opacity: 0;\n-            transform: translateY(-100%);\n-            transition: opacity 0.3s ease, transform 0.3s ease;\n-            text-align: center;\n-            font-size: 1em;\n-            padding: 10px;\n-        }\n-\n-        .creation_img:hover img {\n-            transform: scale(var(--f));\n-        }\n-\n-        .creation_img:hover h3 {\n-            opacity: 1;\n-            transform: translateY(0);\n-        }\n-\n-        body {\n-            margin: 0;\n-            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n-\n-\n-        }\n-\n-        footer{ \n-    padding : 20px;\n-    background:  black ;\n-    text-align: center;\n-}\n-footer img{\n-  width: 30px;\n-  height: 30px;\n-  border-radius: 5px;\n-\n-  \n-}\n-        @media (max-width: 768px) {\n-    .gallery {\n-        --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n-    }\n-}\n-\n-/* Styles pour les écrans de taille moyenne */\n-@media (min-width: 769px) and (max-width: 1024px) {\n-    .gallery {\n-        --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n-    }\n-}\n-\n-\n-\n-    </style>\n-    </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697992449445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,139 @@\n+ <style>\n+     *{\n+  margin: 0;\n+  padding: 0;\n+  font-family: Arial, Helvetica, sans-serif;\n+  color: white;\n+} \n+       \n+       header { \n+  height: 10vh;\n+  display: flex;\n+  justify-content: space-between;\n+  align-items: center;\n+  grid-area: header;\n+}\n+.logo_img img{\n+  border-radius: 50%;\n+    width: 50%;\n+    padding: 0px;\n+    position: relative;\n+    top: 3vh;\n+    left: 50px;\n+    box-shadow: 0px 0.5px 5px black;  \n+}\n+li, a, a:visited {\n+  padding: 5px;\n+  text-decoration: none;\n+  list-style: none;\n+}\n+a:hover {\n+  color: red;\n+}\n+\n+/**** NAVBAR ****/\n+nav {\n+  display: flex;\n+  padding: 20px;\n+}\n+nav ul {\n+  display: flex;\n+  justify-content: space-between;\n+}\n+#icons {\n+  cursor: pointer;\n+  display: none;\n+}\n+          .gallery {\n+            --n: 1; /* Nombre de lignes */\n+            --m: 5; /* Nombre de colonnes */\n+            --g: 20px; /* Espace entre les images */\n+            --f: 2; /* Facteur d'agrandissement au survol */\n+        height: 73vh;\n+           display: grid;\n+    grid-template-columns: repeat(var(--m), auto);\n+    gap: var(--g);\n+    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n+    margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+}\n+        \n+\n+        .card_creation {\n+            position: relative;\n+            overflow: hidden;\n+           \n+        }\n+\n+        /* .creation_img {\n+            display: block;\n+            position: relative;\n+            \n+           \n+        } */\n+\n+        .creation_img img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            transform: scale(1);\n+            transition: transform 0.3s ease;\n+        }\n+\n+        .creation_img h3 {\n+            position: absolute;\n+            height: 4vh;\n+            bottom: 0;\n+            left: 0;\n+            width: 100%;\n+            background: rgba(0, 0, 0, 0.7);\n+            color: white;\n+            padding: 5px;\n+            margin: 0;\n+            opacity: 0;\n+            transform: translateY(-100%);\n+            transition: opacity 0.3s ease, transform 0.3s ease;\n+            text-align: center;\n+            font-size: 1em;\n+            padding: 10px;\n+        }\n+\n+        .creation_img:hover img {\n+            transform: scale(var(--f));\n+        }\n+\n+        .creation_img:hover h3 {\n+            opacity: 1;\n+            transform: translateY(0);\n+        }\n+\n+        body {\n+            margin: 0;\n+            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+\n+\n+        }\n+\n+        footer{ \n+    padding : 20px;\n+    background:  black ;\n+    text-align: center;\n+}\n+footer img{\n+  width: 30px;\n+  height: 30px;\n+  border-radius: 5px;\n+\n+  \n+}\n+        @media (max-width: 768px) {\n+    .gallery {\n+        --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n+    }\n+}\n+\n+/* Styles pour les écrans de taille moyenne */\n+@media (min-width: 769px) and (max-width: 1024px) {\n+    .gallery {\n+        --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n+    }\n+}\n"
+                },
+                {
+                    "date": 1697992467250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,50 +1,5 @@\n- <style>\n-     *{\n-  margin: 0;\n-  padding: 0;\n-  font-family: Arial, Helvetica, sans-serif;\n-  color: white;\n-} \n-       \n-       header { \n-  height: 10vh;\n-  display: flex;\n-  justify-content: space-between;\n-  align-items: center;\n-  grid-area: header;\n-}\n-.logo_img img{\n-  border-radius: 50%;\n-    width: 50%;\n-    padding: 0px;\n-    position: relative;\n-    top: 3vh;\n-    left: 50px;\n-    box-shadow: 0px 0.5px 5px black;  \n-}\n-li, a, a:visited {\n-  padding: 5px;\n-  text-decoration: none;\n-  list-style: none;\n-}\n-a:hover {\n-  color: red;\n-}\n \n-/**** NAVBAR ****/\n-nav {\n-  display: flex;\n-  padding: 20px;\n-}\n-nav ul {\n-  display: flex;\n-  justify-content: space-between;\n-}\n-#icons {\n-  cursor: pointer;\n-  display: none;\n-}\n           .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n"
+                },
+                {
+                    "date": 1697992475200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,20 +67,8 @@\n \n \n         }\n \n-        footer{ \n-    padding : 20px;\n-    background:  black ;\n-    text-align: center;\n-}\n-footer img{\n-  width: 30px;\n-  height: 30px;\n-  border-radius: 5px;\n-\n-  \n-}\n         @media (max-width: 768px) {\n     .gallery {\n         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n     }\n"
+                },
+                {
+                    "date": 1697992492927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             overflow: hidden;\n            \n         }\n \n-        /* .creation_img {\n+        .creation_img {\n             display: block;\n             position: relative;\n             \n            \n"
+                },
+                {
+                    "date": 1697992728704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,43 @@\n+  \n+       header { \n+  height: 10vh;\n+  display: flex;\n+  justify-content: space-between;\n+  align-items: center;\n+  grid-area: header;\n+}\n+.logo_img img{\n+  border-radius: 50%;\n+    width: 50%;\n+    padding: 0px;\n+    position: relative;\n+    top: 3vh;\n+    left: 50px;\n+    box-shadow: 0px 0.5px 5px black;  \n+}\n+li, a, a:visited {\n+  padding: 5px;\n+  text-decoration: none;\n+  list-style: none;\n+}\n+a:hover {\n+  color: red;\n+}\n \n+/**** NAVBAR ****/\n+nav {\n+  display: flex;\n+  padding: 20px;\n+}\n+nav ul {\n+  display: flex;\n+  justify-content: space-between;\n+}\n+#icons {\n+  cursor: pointer;\n+  display: none;\n+}\n           .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n@@ -18,9 +56,9 @@\n             overflow: hidden;\n            \n         }\n \n-        .creation_img {\n+        /* .creation_img {\n             display: block;\n             position: relative;\n             \n            \n@@ -67,8 +105,20 @@\n \n \n         }\n \n+        footer{ \n+    padding : 20px;\n+    background:  black ;\n+    text-align: center;\n+}\n+footer img{\n+  width: 30px;\n+  height: 30px;\n+  border-radius: 5px;\n+\n+  \n+}\n         @media (max-width: 768px) {\n     .gallery {\n         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n     }\n@@ -79,4 +129,5 @@\n     .gallery {\n         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n     }\n }\n+\n"
+                },
+                {
+                    "date": 1697992734581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,44 +1,5 @@\n-  \n-       header { \n-  height: 10vh;\n-  display: flex;\n-  justify-content: space-between;\n-  align-items: center;\n-  grid-area: header;\n-}\n-.logo_img img{\n-  border-radius: 50%;\n-    width: 50%;\n-    padding: 0px;\n-    position: relative;\n-    top: 3vh;\n-    left: 50px;\n-    box-shadow: 0px 0.5px 5px black;  \n-}\n-li, a, a:visited {\n-  padding: 5px;\n-  text-decoration: none;\n-  list-style: none;\n-}\n-a:hover {\n-  color: red;\n-}\n-\n-/**** NAVBAR ****/\n-nav {\n-  display: flex;\n-  padding: 20px;\n-}\n-nav ul {\n-  display: flex;\n-  justify-content: space-between;\n-}\n-#icons {\n-  cursor: pointer;\n-  display: none;\n-}\n-          .gallery {\n+      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n"
+                },
+                {
+                    "date": 1697992752810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,14 +17,8 @@\n             overflow: hidden;\n            \n         }\n \n-        /* .creation_img {\n-            display: block;\n-            position: relative;\n-            \n-           \n-        } */\n \n         .creation_img img {\n             width: 100%;\n             height: 100%;\n"
+                },
+                {
+                    "date": 1697992772773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,17 +60,9 @@\n \n \n         }\n \n-        footer{ \n-    padding : 20px;\n-    background:  black ;\n-    text-align: center;\n-}\n-footer img{\n-  width: 30px;\n-  height: 30px;\n-  border-radius: 5px;\n+      \n \n   \n }\n         @media (max-width: 768px) {\n"
+                },
+                {
+                    "date": 1697992781186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,18 +63,18 @@\n \n       \n \n   \n-}\n-        @media (max-width: 768px) {\n-    .gallery {\n-        --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n-    }\n-}\n \n-/* Styles pour les écrans de taille moyenne */\n-@media (min-width: 769px) and (max-width: 1024px) {\n-    .gallery {\n-        --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n-    }\n-}\n+//         @media (max-width: 768px) {\n+//     .gallery {\n+//         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n+//     }\n+// }\n \n+// /* Styles pour les écrans de taille moyenne */\n+// @media (min-width: 769px) and (max-width: 1024px) {\n+//     .gallery {\n+//         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n+//     }\n+// }\n+\n"
+                },
+                {
+                    "date": 1697992799971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-        height: 73vh;\n+        // height: 73vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697992869710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-        // height: 73vh;\n+        height: 73vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697992879238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    margin: 2vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n         \n \n         .card_creation {\n"
+                },
+                {
+                    "date": 1697992885760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 2vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    margin: 1vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n         \n \n         .card_creation {\n"
+                },
+                {
+                    "date": 1697992897741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-        height: 73vh;\n+        height: 7vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697992916218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,14 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-        height: 7vh;\n+        height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 1vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    margin: 2vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n         \n \n         .card_creation {\n"
+                },
+                {
+                    "date": 1697992936453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 2vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n         \n \n         .card_creation {\n@@ -22,9 +22,9 @@\n         .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n-            transform: scale(1);\n+            transform: scale();\n             transition: transform 0.3s ease;\n         }\n \n         .creation_img h3 {\n"
+                },
+                {
+                    "date": 1697992946921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n-            transform: scale();\n+            transform: scale(.);\n             transition: transform 0.3s ease;\n         }\n \n         .creation_img h3 {\n"
+                },
+                {
+                    "date": 1697992967898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n-            --f: 2; /* Facteur d'agrandissement au survol */\n+            --f: ; /* Facteur d'agrandissement au survol */\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n@@ -22,9 +22,9 @@\n         .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n-            transform: scale(.);\n+            transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n \n         .creation_img h3 {\n"
+                },
+                {
+                    "date": 1697992989195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n-            --f: ; /* Facteur d'agrandissement au survol */\n+            --f: 1.5; /* Facteur d'agrandissement au survol */\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697993038702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 1.5; /* Facteur d'agrandissement au survol */\n+                        background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697993049069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 1.5; /* Facteur d'agrandissement au survol */\n-                        background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n"
+                },
+                {
+                    "date": 1697993115253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n-            --f: 1.5; /* Facteur d'agrandissement au survol */\n+            --f: 0.5; /* Facteur d'agrandissement au survol */\n background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n         height: 70vh;\n            display: grid;\n"
+                },
+                {
+                    "date": 1697993121722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n-            --f: 0.5; /* Facteur d'agrandissement au survol */\n+            --f: 0.; /* Facteur d'agrandissement au survol */\n background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n         height: 70vh;\n            display: grid;\n"
+                },
+                {
+                    "date": 1697993151272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n-            --g: 20px; /* Espace entre les images */\n-            --f: 0.; /* Facteur d'agrandissement au survol */\n+            --g: 2px; /* Espace entre les images */\n+            --f: 0.9; /* Facteur d'agrandissement au survol */\n background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n         height: 70vh;\n            display: grid;\n"
+                },
+                {
+                    "date": 1697993189607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n-            --m: 5; /* Nombre de colonnes */\n+            --m: 4; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 0.9; /* Facteur d'agrandissement au survol */\n background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697993199981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n-            --m: 4; /* Nombre de colonnes */\n+            --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 0.9; /* Facteur d'agrandissement au survol */\n background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697993219917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,9 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-}\n-        \n-\n-        .card_creation {\n+ .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n         }\n"
+                },
+                {
+                    "date": 1697993233833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,9 @@\n  .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n-        }\n-\n-\n-        .creation_img img {\n+        img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n"
+                },
+                {
+                    "date": 1697993246659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,9 @@\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n-\n-        .creation_img h3 {\n+ h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n             left: 0;\n"
+                },
+                {
+                    "date": 1697993292678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             font-size: 1em;\n             padding: 10px;\n         }\n \n-        .creation_img:hover img {\n+      &hover img {\n             transform: scale(var(--f));\n         }\n \n         .creation_img:hover h3 {\n"
+                },
+                {
+                    "date": 1697993305451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n       &hover img {\n             transform: scale(var(--f));\n         }\n \n-        .creation_img:hover h3 {\n+       &:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n \n"
+                },
+                {
+                    "date": 1697993338605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,14 +48,14 @@\n             opacity: 1;\n             transform: translateY(0);\n         }\n \n-        body {\n-            margin: 0;\n-            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+        // body {\n+        //     margin: 0;\n+        //     background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n-        }\n+        // }\n \n       \n \n   \n"
+                },
+                {
+                    "date": 1697993428999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,12 +43,9 @@\n       &hover img {\n             transform: scale(var(--f));\n         }\n \n-       &:hover h3 {\n-            opacity: 1;\n-            transform: translateY(0);\n-        }\n+       \n \n         // body {\n         //     margin: 0;\n         //     background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n"
+                },
+                {
+                    "date": 1697993435707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,13 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        }\n+        \n+        &:hover h3 {\n+            opacity: 1;\n+            transform: translateY(0);\n+        }}\n \n       &hover img {\n             transform: scale(var(--f));\n         }\n"
+                },
+                {
+                    "date": 1697993442686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n         \n-        &:hover h3 {\n+        &:hover {\n             opacity: 1;\n             transform: translateY(0);\n         }}\n \n"
+                },
+                {
+                    "date": 1697993473643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,17 +38,14 @@\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n         \n-        &:hover {\n+        &:hover{\n             opacity: 1;\n             transform: translateY(0);\n         }}\n \n-      &hover img {\n-            transform: scale(var(--f));\n-        }\n-\n+     \n        \n \n         // body {\n         //     margin: 0;\n"
+                },
+                {
+                    "date": 1697993481471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,12 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n+         &hover img {\n+            transform: scale(var(--f));\n         }\n+}\n  h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n"
+                },
+                {
+                    "date": 1697993487036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n-         &hover img {\n+         &hover{\n             transform: scale(var(--f));\n         }\n }\n  h3 {\n"
+                },
+                {
+                    "date": 1697993503266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,30 +23,30 @@\n             transition: transform 0.3s ease;\n          &hover{\n             transform: scale(var(--f));\n         }\n-}\n- h3 {\n-            position: absolute;\n-            height: 4vh;\n-            bottom: 0;\n-            left: 0;\n-            width: 100%;\n-            background: rgba(0, 0, 0, 0.7);\n-            color: white;\n-            padding: 5px;\n-            margin: 0;\n-            opacity: 0;\n-            transform: translateY(-100%);\n-            transition: opacity 0.3s ease, transform 0.3s ease;\n-            text-align: center;\n-            font-size: 1em;\n-            padding: 10px;\n-        \n-        &:hover{\n-            opacity: 1;\n-            transform: translateY(0);\n-        }}\n+    }\n+    h3 {\n+                position: absolute;\n+                height: 4vh;\n+                bottom: 0;\n+                left: 0;\n+                width: 100%;\n+                background: rgba(0, 0, 0, 0.7);\n+                color: white;\n+                padding: 5px;\n+                margin: 0;\n+                opacity: 0;\n+                transform: translateY(-100%);\n+                transition: opacity 0.3s ease, transform 0.3s ease;\n+                text-align: center;\n+                font-size: 1em;\n+                padding: 10px;\n+            \n+            &:hover{\n+                opacity: 1;\n+                transform: translateY(0);\n+            }}\n \n      \n        \n \n"
+                },
+                {
+                    "date": 1697993515824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n          &hover{\n             transform: scale(var(--f));\n         }\n     }\n-    h3 {\n+         h3 {\n                 position: absolute;\n                 height: 4vh;\n                 bottom: 0;\n                 left: 0;\n"
+                },
+                {
+                    "date": 1697993531332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,26 +23,26 @@\n             transition: transform 0.3s ease;\n          &hover{\n             transform: scale(var(--f));\n         }\n-    }\n+         }\n          h3 {\n-                position: absolute;\n-                height: 4vh;\n-                bottom: 0;\n-                left: 0;\n-                width: 100%;\n-                background: rgba(0, 0, 0, 0.7);\n-                color: white;\n-                padding: 5px;\n-                margin: 0;\n-                opacity: 0;\n-                transform: translateY(-100%);\n-                transition: opacity 0.3s ease, transform 0.3s ease;\n-                text-align: center;\n-                font-size: 1em;\n-                padding: 10px;\n-            \n+            position: absolute;\n+            height: 4vh;\n+            bottom: 0;\n+            left: 0;\n+            width: 100%;\n+            background: rgba(0, 0, 0, 0.7);\n+            color: white;\n+            padding: 5px;\n+            margin: 0;\n+            opacity: 0;\n+            transform: translateY(-100%);\n+            transition: opacity 0.3s ease, transform 0.3s ease;\n+            text-align: center;\n+            font-size: 1em;\n+            padding: 10px;\n+        \n             &:hover{\n                 opacity: 1;\n                 transform: translateY(0);\n             }}\n"
+                },
+                {
+                    "date": 1697993536554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,9 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        \n-            &:hover{\n+        &:hover{\n                 opacity: 1;\n                 transform: translateY(0);\n             }}\n \n"
+                },
+                {
+                    "date": 1697993541982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,11 +40,11 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        &:hover{\n-                opacity: 1;\n-                transform: translateY(0);\n+         &:hover{\n+            opacity: 1;\n+            transform: translateY(0);\n             }}\n \n      \n        \n"
+                },
+                {
+                    "date": 1697993552805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n          &:hover{\n             opacity: 1;\n             transform: translateY(0);\n             }}\n-\n+        }\n      \n        \n \n         // body {\n"
+                },
+                {
+                    "date": 1697993595738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             transform: translateY(-100%);\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n-            padding: 10px;\n+            padding: 1em;\n          &:hover{\n             opacity: 1;\n             transform: translateY(0);\n             }}\n"
+                },
+                {
+                    "date": 1697993638659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             position: relative;\n             overflow: hidden;\n            \n         img {\n-            width: 100%;\n+            width: 10%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n"
+                },
+                {
+                    "date": 1697993655903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n             position: relative;\n             overflow: hidden;\n            \n         img {\n-            width: 10%;\n-            height: 100%;\n+            width: 105%;\n+            height: 10%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n          &hover{\n"
+                },
+                {
+                    "date": 1697993667811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             overflow: hidden;\n            \n         img {\n             width: 105%;\n-            height: 10%;\n+            height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n          &hover{\n"
+                },
+                {
+                    "date": 1697993692212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n             opacity: 1;\n             transform: translateY(0);\n             }}\n         }\n+        \n      \n        \n \n         // body {\n"
+                },
+                {
+                    "date": 1697993703776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n             opacity: 1;\n             transform: translateY(0);\n             }}\n         }\n-        \n+    \n      \n        \n \n         // body {\n"
+                },
+                {
+                    "date": 1697993719740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    \n  .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n"
+                },
+                {
+                    "date": 1697993728073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-    \n+      }\n  .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n"
+                },
+                {
+                    "date": 1697993739175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-      }\n+    \n  .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n"
+                },
+                {
+                    "date": 1697993746096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-    \n  .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n@@ -46,9 +45,9 @@\n             opacity: 1;\n             transform: translateY(0);\n             }}\n         }\n-    \n+    }\n      \n        \n \n         // body {\n"
+                },
+                {
+                    "date": 1697993754544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             position: relative;\n             overflow: hidden;\n            \n         img {\n-            width: 105%;\n+            width: 10%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n@@ -45,9 +45,8 @@\n             opacity: 1;\n             transform: translateY(0);\n             }}\n         }\n-    }\n      \n        \n \n         // body {\n"
+                },
+                {
+                    "date": 1697993762366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             position: relative;\n             overflow: hidden;\n            \n         img {\n-            width: 10%;\n+            width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n@@ -39,9 +39,9 @@\n             transform: translateY(-100%);\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n-            padding: 1em;\n+            padding: 1;\n          &:hover{\n             opacity: 1;\n             transform: translateY(0);\n             }}\n"
+                },
+                {
+                    "date": 1697993769418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             transform: translateY(-100%);\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n-            padding: 1;\n+            padding: 10px;\n          &:hover{\n             opacity: 1;\n             transform: translateY(0);\n             }}\n"
+                },
+                {
+                    "date": 1697993786831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n             transform: translateY(0);\n             }}\n         }\n      \n-       \n+    }\n \n         // body {\n         //     margin: 0;\n         //     background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n"
+                },
+                {
+                    "date": 1697993816915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,10 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 0.9; /* Facteur d'agrandissement au survol */\n-background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n+\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697993824781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+      \n+      \n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n"
+                },
+                {
+                    "date": 1697993832868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n+body      f\n       \n-      \n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n"
+                },
+                {
+                    "date": 1697993839802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n-body      f\n+body {\n+    \n+}\n       \n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n"
+                },
+                {
+                    "date": 1697993846428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n body {\n-    \n+    background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n }\n       \n       .gallery {\n             --n: 1; /* Nombre de lignes */\n"
+                },
+                {
+                    "date": 1697993868717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,9 @@\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n-    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+  \n  .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n"
+                },
+                {
+                    "date": 1697993888156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: 0.9; /* Facteur d'agrandissement au survol */\n+            --f: ; /* Facteur d'agrandissement au survol */\n \n \n         height: 70vh;\n            display: grid;\n"
+                },
+                {
+                    "date": 1697993906477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,16 +5,17 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: ; /* Facteur d'agrandissement au survol */\n+            --f: 0.9; /* Facteur d'agrandissement au survol */\n \n \n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n-  \n+    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n+    margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n  .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n"
+                },
+                {
+                    "date": 1697993917123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n-    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n+    max-width: 1500px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n  .card_creation {\n             position: relative;\n             overflow: hidden;\n"
+                },
+                {
+                    "date": 1697993934288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1500px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    \n  .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n"
+                },
+                {
+                    "date": 1697993947951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,13 +14,13 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1500px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-    \n+      }\n  .card_creation {\n             position: relative;\n             overflow: hidden;\n-           \n+ }      \n         img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n"
+                },
+                {
+                    "date": 1697993972604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n-         &hover{\n+         &:hover{\n             transform: scale(var(--f));\n         }\n          }\n          h3 {\n"
+                },
+                {
+                    "date": 1697993984053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n-         &:hover{\n+         :hover{\n             transform: scale(var(--f));\n         }\n          }\n          h3 {\n"
+                },
+                {
+                    "date": 1697993995836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             position: relative;\n             overflow: hidden;\n  }      \n         img {\n-            width: 100%;\n+            width: 0%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n"
+                },
+                {
+                    "date": 1697994013945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n  }      \n         img {\n             width: 0%;\n             height: 100%;\n-            object-fit: cover;\n+            object-fit: fill;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n          :hover{\n             transform: scale(var(--f));\n"
+                },
+                {
+                    "date": 1697994021609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n  }      \n         img {\n             width: 0%;\n             height: 100%;\n-            object-fit: fill;\n+            object-fit: contain;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n          :hover{\n             transform: scale(var(--f));\n"
+                },
+                {
+                    "date": 1697994027360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n  }      \n         img {\n             width: 0%;\n             height: 100%;\n-            object-fit: contain;\n+            object-fit: fill;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n          :hover{\n             transform: scale(var(--f));\n"
+                },
+                {
+                    "date": 1697994034614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n  }      \n         img {\n             width: 0%;\n             height: 100%;\n-            object-fit: fill;\n-            transform: scale(1);\n+            object-fit: cover;\n+            transform: scale(2);\n             transition: transform 0.3s ease;\n          :hover{\n             transform: scale(var(--f));\n         }\n"
+                },
+                {
+                    "date": 1697994044591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n             transform: translateY(0);\n             }}\n         }\n      \n-    }\n+    \n \n         // body {\n         //     margin: 0;\n         //     background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n"
+                },
+                {
+                    "date": 1697994218651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,4 @@\n-body {\n-    background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n-}\n       \n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n@@ -12,22 +9,21 @@\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n-    max-width: 1500px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n+    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-      }\n  .card_creation {\n             position: relative;\n             overflow: hidden;\n- }      \n+           \n         img {\n-            width: 0%;\n+            width: 100%;\n             height: 100%;\n             object-fit: cover;\n-            transform: scale(2);\n+            transform: scale(1);\n             transition: transform 0.3s ease;\n-         :hover{\n+         &hover{\n             transform: scale(var(--f));\n         }\n          }\n          h3 {\n@@ -51,9 +47,9 @@\n             transform: translateY(0);\n             }}\n         }\n      \n-    \n+    }\n \n         // body {\n         //     margin: 0;\n         //     background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n"
+                },
+                {
+                    "date": 1697994237650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n-      \n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 0.9; /* Facteur d'agrandissement au survol */\n+background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n-\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n@@ -21,13 +20,10 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n-         &hover{\n-            transform: scale(var(--f));\n         }\n-         }\n-         h3 {\n+ h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n             left: 0;\n@@ -41,16 +37,20 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-         &:hover{\n+        \n+        &:hover {\n             opacity: 1;\n             transform: translateY(0);\n-            }}\n+        }}\n+\n+      &hover img {\n+            transform: scale(var(--f));\n         }\n-     \n-    }\n \n+       \n+\n         // body {\n         //     margin: 0;\n         //     background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697994252541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n-            --g: 2px; /* Espace entre les images */\n+            --g: 25px; /* Espace entre les images */\n             --f: 0.9; /* Facteur d'agrandissement au survol */\n background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n         height: 70vh;\n@@ -10,20 +10,27 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n- .card_creation {\n+}\n+        \n+\n+        .card_creation {\n             position: relative;\n             overflow: hidden;\n            \n-        img {\n+        }\n+\n+\n+        .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n- h3 {\n+\n+        .creation_img h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n             left: 0;\n@@ -37,26 +44,25 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        \n-        &:hover {\n-            opacity: 1;\n-            transform: translateY(0);\n-        }}\n+        }\n \n-      &hover img {\n+        .creation_img:hover img {\n             transform: scale(var(--f));\n         }\n \n-       \n+        .creation_img:hover h3 {\n+            opacity: 1;\n+            transform: translateY(0);\n+        }\n \n-        // body {\n-        //     margin: 0;\n-        //     background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+        body {\n+            margin: 0;\n+            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n-        // }\n+        }\n \n       \n \n   \n"
+                },
+                {
+                    "date": 1697994267533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n-            --g: 25px; /* Espace entre les images */\n-            --f: 0.9; /* Facteur d'agrandissement au survol */\n-background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n-\n+            --g: 20px; /* Espace entre les images */\n+            --f: 2; /* Facteur d'agrandissement au survol */\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697994299059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n-    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n+    // max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n         \n \n"
+                },
+                {
+                    "date": 1697994317337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n-    // max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n+    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n         \n \n"
+                },
+                {
+                    "date": 1697994324355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n-    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n+    max-width: 100px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n         \n \n"
+                },
+                {
+                    "date": 1697994360579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,18 @@\n         height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n-    max-width: 100px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n+    max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n         \n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n+               transform: scale(1);\n+            transition: transform 0.3s ease;\n            \n         }\n \n \n"
+                },
+                {
+                    "date": 1697994395597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,13 @@\n         }\n \n \n         .creation_img img {\n+             width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            transform: scale(1);\n+            transition: transform 0.3s ease;\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n"
+                },
+                {
+                    "date": 1697994403209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,18 +16,19 @@\n             position: relative;\n             overflow: hidden;\n                transform: scale(1);\n             transition: transform 0.3s ease;\n+             width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            transform: scale(1);\n+            transition: transform 0.3s ease;\n            \n         }\n \n \n         .creation_img img {\n-             width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            transform: scale(1);\n-            transition: transform 0.3s ease;\n+            \n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n"
+                },
+                {
+                    "date": 1697994413638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,10 @@\n             transition: transform 0.3s ease;\n              width: 100%;\n             height: 100%;\n             object-fit: cover;\n-            transform: scale(1);\n-            transition: transform 0.3s ease;\n            \n+           \n         }\n \n \n         .creation_img img {\n"
+                },
+                {
+                    "date": 1697994432386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,10 @@\n \n \n         .creation_img img {\n             \n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n+           \n+            object-fit: contain;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n \n"
+                },
+                {
+                    "date": 1697994446967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,9 @@\n         .creation_img img {\n             \n            \n             object-fit: contain;\n-            transform: scale(1);\n-            transition: transform 0.3s ease;\n+          \n         }\n \n         .creation_img h3 {\n             position: absolute;\n"
+                },
+                {
+                    "date": 1697994464198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,9 @@\n             position: relative;\n             overflow: hidden;\n                transform: scale(1);\n             transition: transform 0.3s ease;\n-             width: 100%;\n-            height: 100%;\n+             \n             object-fit: cover;\n            \n            \n         }\n"
+                },
+                {
+                    "date": 1697994481405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n             position: relative;\n             overflow: hidden;\n                transform: scale(1);\n             transition: transform 0.3s ease;\n-             \n+             width: 100%;\n+            height: 100%;\n             object-fit: cover;\n            \n            \n         }\n@@ -27,9 +28,10 @@\n         .creation_img img {\n             \n            \n             object-fit: contain;\n-          \n+            transform: scale(1);\n+            transition: transform 0.3s ease;\n         }\n \n         .creation_img h3 {\n             position: absolute;\n"
+                },
+                {
+                    "date": 1697994501495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,17 +19,19 @@\n             transition: transform 0.3s ease;\n              width: 100%;\n             height: 100%;\n             object-fit: cover;\n+            transform: scale(1);\n+            transition: transform 0.3s ease;\n            \n-           \n         }\n \n \n         .creation_img img {\n             \n-           \n-            object-fit: contain;\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n \n"
+                },
+                {
+                    "date": 1697994507725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,21 +14,14 @@\n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n-               transform: scale(1);\n-            transition: transform 0.3s ease;\n-             width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            transform: scale(1);\n-            transition: transform 0.3s ease;\n+            \n            \n         }\n \n \n         .creation_img img {\n-            \n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n"
+                },
+                {
+                    "date": 1697994539440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-        height: 70vh;\n+        height: 7vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697994574953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 20px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-        height: 7vh;\n+        height: 73vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n@@ -56,9 +56,9 @@\n         }\n \n         body {\n             margin: 0;\n-            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(publicimages/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1697994604311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         }\n \n         body {\n             margin: 0;\n-            background-image: url(publicimages/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(pimages/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1697994613029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         }\n \n         body {\n             margin: 0;\n-            background-image: url(pimages/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(pu  images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1697994624146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,10 @@\n         }\n \n         body {\n             margin: 0;\n-            background-image: url(pu  images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(public/\n+              images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1697994629566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         }\n \n         body {\n             margin: 0;\n-            background-image: url(public/\n+            background-image: url(public\n               images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n"
+                },
+                {
+                    "date": 1697994635364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         }\n \n         body {\n             margin: 0;\n-            background-image: url(public\n+            background-image: url(public/im\n               images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n"
+                },
+                {
+                    "date": 1697994649975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,9 @@\n         }\n \n         body {\n             margin: 0;\n-            background-image: url(public/im\n-              images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1697994722280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n-            \n            \n         }\n \n \n"
+                },
+                {
+                    "date": 1697994727640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,14 +9,12 @@\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n }\n-        \n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n-           \n         }\n \n \n         .creation_img img {\n"
+                },
+                {
+                    "date": 1697994735007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-}\n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n"
+                },
+                {
+                    "date": 1697994751373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n       .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n-            --g: 20px; /* Espace entre les images */\n+            --g: 2px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n         height: 73vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n@@ -14,9 +14,9 @@\n             position: relative;\n             overflow: hidden;\n         }\n \n-\n+    }\n         .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n"
+                },
+                {
+                    "date": 1697994764010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 0vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    margin: vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n"
+                },
+                {
+                    "date": 1697994770859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    margin: 20vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n"
+                },
+                {
+                    "date": 1697994777342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 20vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n"
+                },
+                {
+                    "date": 1697994785940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n-    margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n+    margin: auto auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n \n         .card_creation {\n             position: relative;\n             overflow: hidden;\n"
+                },
+                {
+                    "date": 1697994801111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-        height: 73vh;\n+       \n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697995423142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n-      .gallery {\n+     \n+     \n+     .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n"
+                },
+                {
+                    "date": 1697995429165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n      \n-     \n+     main{\n+        \n+     }\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n"
+                },
+                {
+                    "date": 1697995439110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n      \n      main{\n-        \n+        height: 100;\n      }\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n"
+                },
+                {
+                    "date": 1697995447709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n      \n      main{\n-        height: 100;\n+        height: ;\n      }\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n"
+                },
+                {
+                    "date": 1697995472555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n      \n      main{\n-        height: ;\n+        height: 76vh;\n      }\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n"
+                },
+                {
+                    "date": 1697995482431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n      \n      main{\n         height: 76vh;\n-     }\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n"
+                },
+                {
+                    "date": 1697995492775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n             overflow: hidden;\n         }\n \n     }\n+    \n         .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n"
+                },
+                {
+                    "date": 1697995520020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n      \n-     main{\n-        height: 76vh;\n+     \n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n@@ -18,9 +17,8 @@\n             overflow: hidden;\n         }\n \n     }\n-    \n         .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n"
+                },
+                {
+                    "date": 1697995552665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-       \n+       hi\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697995567192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-       hi\n+       height: \n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697995576562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-       height: \n+       height: 70vh\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n@@ -16,9 +16,9 @@\n             position: relative;\n             overflow: hidden;\n         }\n \n-    }\n+    \n         .creation_img img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n"
+                },
+                {
+                    "date": 1697995588359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n     margin: auto auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n-\n+     }\n         .card_creation {\n             position: relative;\n             overflow: hidden;\n         }\n"
+                },
+                {
+                    "date": 1697995596423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 2; /* Facteur d'agrandissement au survol */\n-       height: 70vh\n+       height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697995625374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,9 @@\n      }\n         .card_creation {\n             position: relative;\n             overflow: hidden;\n-        }\n-\n-    \n-        .creation_img img {\n+       img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n"
+                },
+                {
+                    "date": 1697995631280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n-\n+    }\n         .creation_img h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n"
+                },
+                {
+                    "date": 1697995654675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,9 @@\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n         }\n-    }\n-        .creation_img h3 {\n+    h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n             left: 0;\n"
+                },
+                {
+                    "date": 1697995676734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,11 +39,9 @@\n             font-size: 1em;\n             padding: 10px;\n         }\n \n-        .creation_img:hover img {\n-            transform: scale(var(--f));\n-        }\n+        \n \n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n"
+                },
+                {
+                    "date": 1697995684549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n+        \n         }\n     h3 {\n             position: absolute;\n             height: 4vh;\n"
+                },
+                {
+                    "date": 1697995701358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,12 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n-        \n+        .creation_img:hover img {\n+            transform: scale(var(--f));\n         }\n+        }\n     h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n@@ -46,9 +48,9 @@\n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n-\n+    }\n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697995713380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n-    }\n+\n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697995733054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             font-size: 1em;\n             padding: 10px;\n         }\n \n-        \n+    }\n \n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n"
+                },
+                {
+                    "date": 1697995748400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,12 +20,11 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n-        .creation_img:hover img {\n-            transform: scale(var(--f));\n+        \n         }\n-        }\n+        \n     h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n@@ -42,9 +41,9 @@\n             font-size: 1em;\n             padding: 10px;\n         }\n \n-    }\n+        \n \n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n"
+                },
+                {
+                    "date": 1697995762335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,13 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n-        \n+        .creation_img:hover img {\n+            transform: scale(var(--f));\n         }\n-        \n+        }\n+    }\n     h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n"
+                },
+                {
+                    "date": 1697995769768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n-        .creation_img:hover img {\n+ :hover img {\n             transform: scale(var(--f));\n         }\n         }\n     }\n"
+                },
+                {
+                    "date": 1697995779083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n- :hover img {\n+ &:hover {\n             transform: scale(var(--f));\n         }\n         }\n     }\n"
+                },
+                {
+                    "date": 1697995787805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             height: 100%;\n             object-fit: cover;\n             transform: scale(1);\n             transition: transform 0.3s ease;\n- &:hover {\n+            &:hover {\n             transform: scale(var(--f));\n         }\n         }\n     }\n"
+                },
+                {
+                    "date": 1697995804170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,11 +22,11 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n+            }\n         }\n-        }\n-    }\n+    \n     h3 {\n             position: absolute;\n             height: 4vh;\n             bottom: 0;\n"
+                },
+                {
+                    "date": 1697995811140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n-\n+    }\n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697995826884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,13 +41,9 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        }\n-\n-        \n-\n-        .creation_img:hover h3 {\n+        hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n     }\n"
+                },
+                {
+                    "date": 1697995832056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        hover h3 {\n+        &:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n     }\n"
+                },
+                {
+                    "date": 1697995855157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,13 +41,14 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        &:hover h3 {\n+        &:hover  {\n             opacity: 1;\n             transform: translateY(0);\n         }\n     }\n+    \n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697995921307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,14 +41,14 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        &:hover  {\n+        &:hover  h3{\n             opacity: 1;\n             transform: translateY(0);\n         }\n     }\n-    \n+}\n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697995933072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        &:hover  h3{\n+        &:hover {\n             opacity: 1;\n             transform: translateY(0);\n         }\n     }\n"
+                },
+                {
+                    "date": 1697995953241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,14 +41,13 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        &:hover {\n+        &:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n     }\n-}\n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697995958998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,13 @@\n             transition: opacity 0.3s ease, transform 0.3s ease;\n             text-align: center;\n             font-size: 1em;\n             padding: 10px;\n-        &:hover h3 {\n+        }\n+\n+        \n+\n+        .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n     }\n"
+                },
+                {
+                    "date": 1697996007407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n-    }\n+\n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697996035912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n-\n+    }\n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697996059442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: 2; /* Facteur d'agrandissement au survol */\n+            --f: ; /* Facteur d'agrandissement au survol */\n        height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697996066190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: ; /* Facteur d'agrandissement au survol */\n+            --f: 1.2; /* Facteur d'agrandissement au survol */\n        height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697996080806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: 1.2; /* Facteur d'agrandissement au survol */\n+            --f: 1.1; /* Facteur d'agrandissement au survol */\n        height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697996127870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n        img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n+            filt\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n"
+                },
+                {
+                    "date": 1697996136729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n        img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n-            filt\n+            filter: grayscale();\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n"
+                },
+                {
+                    "date": 1697996153538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,13 +18,15 @@\n        img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n-            filter: grayscale();\n+            filter: grayscale(80%);\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n+                        filter: grayscale(80%);\n+\n             }\n         }\n     \n     h3 {\n"
+                },
+                {
+                    "date": 1697996161949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n                         filter: grayscale(80%);\n-\n             }\n         }\n     \n     h3 {\n"
+                },
+                {
+                    "date": 1697996167781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n-                        filter: grayscale(80%);\n+            \n             }\n         }\n     \n     h3 {\n"
+                },
+                {
+                    "date": 1697996174155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n             \n+            \n             }\n         }\n     \n     h3 {\n"
+                },
+                {
+                    "date": 1697996186204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,13 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n+                        filter: grayscale(80%);\n+\n+            }\n+\n             \n-            \n             }\n         }\n     \n     h3 {\n"
+                },
+                {
+                    "date": 1697996194647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n-                        filter: grayscale(80%);\n+            filter: grayscale(0%);\n \n             }\n \n             \n"
+                },
+                {
+                    "date": 1697996219558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n        img {\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n-            filter: grayscale(80%);\n+            filter: grayscale(100%);\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n"
+                },
+                {
+                    "date": 1697996258660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n-            filter: grayscale(0%);\n+            filter: grayscale();\n \n             }\n \n             \n"
+                },
+                {
+                    "date": 1697996280143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: 1.1; /* Facteur d'agrandissement au survol */\n+            --f: 2; /* Facteur d'agrandissement au survol */\n        height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n@@ -23,9 +23,9 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n-            filter: grayscale();\n+            filter: grayscale(none);\n \n             }\n \n             \n"
+                },
+                {
+                    "date": 1697996287172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: 2; /* Facteur d'agrandissement au survol */\n+            --f: 1.1; /* Facteur d'agrandissement au survol */\n        height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697996297012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n         .creation_img:hover h3 {\n             opacity: 1;\n             transform: translateY(0);\n         }\n-    }\n+    \n         body {\n             margin: 0;\n             background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n"
+                },
+                {
+                    "date": 1697996314790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: 1.1; /* Facteur d'agrandissement au survol */\n+            --f: 2; /* Facteur d'agrandissement au survol */\n        height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n"
+                },
+                {
+                    "date": 1697996328083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n             filter: grayscale(none);\n-\n             }\n \n             \n             }\n"
+                },
+                {
+                    "date": 1697996341655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: 2; /* Facteur d'agrandissement au survol */\n+            --f: ; /* Facteur d'agrandissement au survol */\n        height: 70vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n@@ -23,9 +23,9 @@\n             transform: scale(1);\n             transition: transform 0.3s ease;\n             &:hover {\n             transform: scale(var(--f));\n-            filter: grayscale(none);\n+            filter: grayscale(0%);\n             }\n \n             \n             }\n"
+                },
+                {
+                    "date": 1697996363427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n-            --f: ; /* Facteur d'agrandissement au survol */\n-       height: 70vh;\n+            --f: 1.1; /* Facteur d'agrandissement au survol */\n+       height: 76vh;\n            display: grid;\n     grid-template-columns: repeat(var(--m), auto);\n     gap: var(--g);\n     max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n"
+                },
+                {
+                    "date": 1697996606527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,17 +66,17 @@\n       \n \n   \n \n-//         @media (max-width: 768px) {\n-//     .gallery {\n-//         --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n-//     }\n-// }\n+        @media (max-width: 768px) {\n+    .gallery {\n+        --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n+    }\n+}\n \n-// /* Styles pour les écrans de taille moyenne */\n-// @media (min-width: 769px) and (max-width: 1024px) {\n-//     .gallery {\n-//         --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n-//     }\n-// }\n+/* Styles pour les écrans de taille moyenne */\n+@media (min-width: 769px) and (max-width: 1024px) {\n+    .gallery {\n+        --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n+    }\n+}\n \n"
+                },
+                {
+                    "date": 1698002527508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url();\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002549526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url();\n+            background-image: url(/public/);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002583398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(/public/);\n+            background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002592571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002607180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url( dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002613399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url( dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(/p dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002619414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(/p dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(p   dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002624671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(p   dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(./   dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002630554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(./   dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(.   dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002637129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(.   dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(   dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002651758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(   dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(  );\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002657540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(  );\n+            background-image: url(.);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002670333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(.);\n+            background-image: url(.../);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002675802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(.../);\n+            background-image: url);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002682044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url);\n+            background-image: url(./);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002687752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(./);\n+            background-image: url(../);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002695490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(../);\n+            background-image: url(../.);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002707635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(../.);\n+            background-image: url(./);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002713636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(./);\n+            background-image: url(.);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002725283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(.);\n+            background-image: url();\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002732022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url();\n+            background-image: url(/public/);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002737322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(/public/);\n+            background-image: url(/public/images/ dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698002743980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         }\n     \n         body {\n             margin: 0;\n-            background-image: url(/public/images/ dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+            background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n \n"
+                },
+                {
+                    "date": 1698003573442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,15 +55,11 @@\n             opacity: 1;\n             transform: translateY(0);\n         }\n     \n-        body {\n-            margin: 0;\n-            background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+       \n+        \n \n-\n-        }\n-\n       \n \n   \n \n"
+                },
+                {
+                    "date": 1698003583341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,15 @@\n             opacity: 1;\n             transform: translateY(0);\n         }\n     \n-       \n-        \n+        body {\n+            margin: 0;\n+            background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n+\n+        }\n+\n       \n \n   \n \n"
+                },
+                {
+                    "date": 1698003606261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,11 @@\n+      body {\n+            margin: 0;\n+            background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+\n+\n+        }\n      \n-     \n      .gallery {\n             --n: 1; /* Nombre de lignes */\n             --m: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n@@ -55,15 +60,10 @@\n             opacity: 1;\n             transform: translateY(0);\n         }\n     \n-        body {\n-            margin: 0;\n-            background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+       \n \n-\n-        }\n-\n       \n \n   \n \n"
+                },
+                {
+                    "date": 1698003612629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n       body {\n-            margin: 0;\n-            background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n+        background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n+\n         }\n      \n      .gallery {\n             --n: 1; /* Nombre de lignes */\n"
+                },
+                {
+                    "date": 1698005393474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-      body {\n+      .creations {\n \n         background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n"
+                }
+            ],
+            "date": 1697992102499,
+            "name": "Commit-0",
+            "content": " <style>\n     *{\n  margin: 0;\n  padding: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  color: white;\n} \n       \n       header { \n  height: 10vh;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  grid-area: header;\n}\n.logo_img img{\n  border-radius: 50%;\n    width: 50%;\n    padding: 0px;\n    position: relative;\n    top: 3vh;\n    left: 50px;\n    box-shadow: 0px 0.5px 5px black;  \n}\nli, a, a:visited {\n  padding: 5px;\n  text-decoration: none;\n  list-style: none;\n}\na:hover {\n  color: red;\n}\n\n/**** NAVBAR ****/\nnav {\n  display: flex;\n  padding: 20px;\n}\nnav ul {\n  display: flex;\n  justify-content: space-between;\n}\n#icons {\n  cursor: pointer;\n  display: none;\n}\n          .gallery {\n            --n: 1; /* Nombre de lignes */\n            --m: 5; /* Nombre de colonnes */\n            --g: 20px; /* Espace entre les images */\n            --f: 2; /* Facteur d'agrandissement au survol */\n        height: 73vh;\n           display: grid;\n    grid-template-columns: repeat(var(--m), auto);\n    gap: var(--g);\n    max-width: 1200px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */\n    margin: 5vh auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */\n}\n        \n\n        .card_creation {\n            position: relative;\n            overflow: hidden;\n           \n        }\n\n        /* .creation_img {\n            display: block;\n            position: relative;\n            \n           \n        } */\n\n        .creation_img img {\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n            transform: scale(1);\n            transition: transform 0.3s ease;\n        }\n\n        .creation_img h3 {\n            position: absolute;\n            height: 4vh;\n            bottom: 0;\n            left: 0;\n            width: 100%;\n            background: rgba(0, 0, 0, 0.7);\n            color: white;\n            padding: 5px;\n            margin: 0;\n            opacity: 0;\n            transform: translateY(-100%);\n            transition: opacity 0.3s ease, transform 0.3s ease;\n            text-align: center;\n            font-size: 1em;\n            padding: 10px;\n        }\n\n        .creation_img:hover img {\n            transform: scale(var(--f));\n        }\n\n        .creation_img:hover h3 {\n            opacity: 1;\n            transform: translateY(0);\n        }\n\n        body {\n            margin: 0;\n            background-image: url(images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n\n\n        }\n\n        footer{ \n    padding : 20px;\n    background:  black ;\n    text-align: center;\n}\nfooter img{\n  width: 30px;\n  height: 30px;\n  border-radius: 5px;\n\n  \n}\n        @media (max-width: 768px) {\n    .gallery {\n        --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */\n    }\n}\n\n/* Styles pour les écrans de taille moyenne */\n@media (min-width: 769px) and (max-width: 1024px) {\n    .gallery {\n        --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */\n    }\n}\n\n\n\n    </style>\n    </style>"
+        }
+    ]
+}

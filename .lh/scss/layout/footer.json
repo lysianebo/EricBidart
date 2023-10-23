@@ -1,0 +1,42 @@
+{
+    "sourceFile": "scss/layout/footer",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1697985124619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697985140174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,17 +9,4 @@\n   width: 30px;\n   height: 30px;\n   border-radius: 5px;\n }\n-\n-footer {\n-  padding: 20px;\n-  background: black;\n-  text-align: center;\n-  grid-area: footer;\n-}\n-\n-footer img {\n-  width: 30px;\n-  height: 30px;\n-  border-radius: 5px;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697985231937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n footer {\n   padding: 20px;\n-  background: black;\n+  background: rgb(195, 104, 104);\n   text-align: center;\n   grid-area: footer;\n }\n \n"
+                },
+                {
+                    "date": 1697985240849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n footer {\n   padding: 20px;\n-  background: rgb(195, 104, 104);\n+  background: black;\n   text-align: center;\n   grid-area: footer;\n }\n \n"
+                },
+                {
+                    "date": 1697985246076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n footer {\n   padding: 20px;\n-  background: black;\n+  background: rgb(195, 104, 104);\n   text-align: center;\n   grid-area: footer;\n }\n \n"
+                },
+                {
+                    "date": 1697985255727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n footer {\n   padding: 20px;\n-  background: rgb(195, 104, 104);\n+  background: black;\n   text-align: center;\n   grid-area: footer;\n }\n \n@@ -9,4 +9,17 @@\n   width: 30px;\n   height: 30px;\n   border-radius: 5px;\n }\n+\n+footer {\n+  padding: 20px;\n+  background: black;\n+  text-align: center;\n+  grid-area: footer;\n+}\n+\n+footer img {\n+  width: 30px;\n+  height: 30px;\n+  border-radius: 5px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697985261212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,17 +9,4 @@\n   width: 30px;\n   height: 30px;\n   border-radius: 5px;\n }\n-\n-footer {\n-  padding: 20px;\n-  background: black;\n-  text-align: center;\n-  grid-area: footer;\n-}\n-\n-footer img {\n-  width: 30px;\n-  height: 30px;\n-  border-radius: 5px;\n-}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1697985124619,
+            "name": "Commit-0",
+            "content": "footer {\n  padding: 20px;\n  background: black;\n  text-align: center;\n  grid-area: footer;\n}\n\nfooter img {\n  width: 30px;\n  height: 30px;\n  border-radius: 5px;\n}\n\nfooter {\n  padding: 20px;\n  background: black;\n  text-align: center;\n  grid-area: footer;\n}\n\nfooter img {\n  width: 30px;\n  height: 30px;\n  border-radius: 5px;\n}"
+        }
+    ]
+}

@@ -1,0 +1,398 @@
+{
+    "sourceFile": "scss/base/_base.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 95,
+            "patches": [
+                {
+                    "date": 1697988474241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698004404262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+*{\n+  margin: 0;\n+  padding: 0;\n+  font-family: Arial, Helvetica, sans-serif;\n+  color: white;\n+} \n"
+                },
+                {
+                    "date": 1698004419332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,14 @@\n   padding: 0;\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n-*{\n-  margin: 0;\n-  padding: 0;\n-  font-family: Arial, Helvetica, sans-serif;\n-  color: white;\n-} \n\\ No newline at end of file\n+body{\n+    // background-color: yellow;\n+    width: 100vw;\n+    display: grid;\n+    grid-template-rows: 10vh 81vh 9vh;\n+   grid-template-areas: \"header\"\n+                         \"main\"\n+                         \"footer\" ;\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004454746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n } \n body{\n     // background-color: yellow;\n     width: 100vw;\n+    height: ;\n     display: grid;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698004485374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n } \n body{\n     // background-color: yellow;\n     width: 100vw;\n-    height: ;\n+    height: 100vh;\n     display: grid;\n-    grid-template-rows: 10vh 81vh 9vh;\n+    grid-template-rows: 10vh 80vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698004497689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n-    grid-template-rows: 10vh 80vh 9vh;\n+    grid-template-rows: 10vh 8vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698004507555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n-    grid-template-rows: 10vh 8vh 9vh;\n+    grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698004848062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1698004859720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,4 +14,7 @@\n                          \"main\"\n                          \"footer\" ;\n \n }\n+main{\n+    grid-area: main;\n+}\n"
+                },
+                {
+                    "date": 1698004867227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,8 @@\n                          \"main\"\n                          \"footer\" ;\n \n }\n+\n main{\n     grid-area: main;\n }\n"
+                },
+                {
+                    "date": 1698004872583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n                          \"main\"\n                          \"footer\" ;\n \n }\n-\n+header\n main{\n     grid-area: main;\n }\n"
+                },
+                {
+                    "date": 1698004877904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n                          \"main\"\n                          \"footer\" ;\n \n }\n-header\n+header[\n+  gi\n+]\n main{\n     grid-area: main;\n }\n"
+                },
+                {
+                    "date": 1698004883848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+*{\n+  margin: 0;\n+  padding: 0;\n+  font-family: Arial, Helvetica, sans-serif;\n+  color: white;\n+} \n+body{\n+    // background-color: yellow;\n+    width: 100vw;\n+    height: 100vh;\n+    display: grid;\n+    grid-template-rows: 10vh 81vh 9vh;\n+   grid-template-areas: \"header\"\n+                         \"main\"\n+                         \"footer\" ;\n+\n+}\n+header[\n+  grid-are\n+]\n+main{\n+    grid-area: main;\n+}\n"
+                },
+                {
+                    "date": 1698004889666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,32 +15,9 @@\n                          \"footer\" ;\n \n }\n header[\n-  grid-are\n+  grid-area: f\n ]\n main{\n     grid-area: main;\n }\n-*{\n-  margin: 0;\n-  padding: 0;\n-  font-family: Arial, Helvetica, sans-serif;\n-  color: white;\n-} \n-body{\n-    // background-color: yellow;\n-    width: 100vw;\n-    height: 100vh;\n-    display: grid;\n-    grid-template-rows: 10vh 81vh 9vh;\n-   grid-template-areas: \"header\"\n-                         \"main\"\n-                         \"footer\" ;\n-\n-}\n-header[\n-  gi\n-]\n-main{\n-    grid-area: main;\n-}\n"
+                },
+                {
+                    "date": 1698004895033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n                          \"footer\" ;\n \n }\n header[\n-  grid-area: f\n+  grid-area: header\n ]\n main{\n     grid-area: main;\n }\n"
+                },
+                {
+                    "date": 1698004907415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n                          \"main\"\n                          \"footer\" ;\n \n }\n-header[\n-  grid-area: header\n+header\n+  grid-area: header ;\n ]\n main{\n     grid-area: main;\n }\n"
+                },
+                {
+                    "date": 1698004914149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                          \"main\"\n                          \"footer\" ;\n \n }\n-header\n+header{}\n   grid-area: header ;\n ]\n main{\n     grid-area: main;\n"
+                },
+                {
+                    "date": 1698004921562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n                          \"main\"\n                          \"footer\" ;\n \n }\n-header{}\n+header{\n   grid-area: header ;\n-]\n+}\n main{\n     grid-area: main;\n }\n"
+                },
+                {
+                    "date": 1698004934504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,4 +20,7 @@\n }\n main{\n     grid-area: main;\n }\n+main{\n+    grid-area: main;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004945489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,7 @@\n }\n main{\n     grid-area: main;\n }\n-main{\n-    grid-area: main;\n+footer{\n+    grid-area: footer;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698004968890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,9 @@\n   color: white;\n } \n body{\n     // background-color: yellow;\n-    width: 100vw;\n-    height: 100vh;\n+  \n     display: grid;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005023144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n   color: white;\n } \n body{\n     // background-color: yellow;\n-  \n+    width: 100vw;\n+    height: 100vh;\n     display: grid;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005035812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     // background-color: yellow;\n-    width: 100vw;\n+    width: 100;\n     height: 100vh;\n     display: grid;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n"
+                },
+                {
+                    "date": 1698005044926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n   color: white;\n } \n body{\n     // background-color: yellow;\n-    width: 100;\n-    height: 100vh;\n+    width: 100%;\n+    height: 100;\n     display: grid;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005125981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n } \n body{\n     // background-color: yellow;\n     width: 100%;\n-    height: 100;\n+    height: 100%;\n     display: grid;\n+    \n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n"
+                },
+                {
+                    "date": 1698005144105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    \n+    background-size: c;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n"
+                },
+                {
+                    "date": 1698005153633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    background-size: c;\n+    back\n+    background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n"
+                },
+                {
+                    "date": 1698005178584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    back\n+    background-image: f;\n     background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005185540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    background-image: f;\n+    background-image: url();\n     background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005193988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    background-image: url();\n+    background-image: url(public/);\n     background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005200528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    background-image: url(public/);\n+    background-image: url(/public/  );\n     background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005206774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    background-image: url(/public/  );\n+    background-image: url(/public/images/  );\n     background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005241871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    background-image: url(/public/images/  );\n+    background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n     background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005277127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     width: 100%;\n     height: 100%;\n     display: grid;\n     background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n-    background-size: cover;\n+    background-size: fill;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n"
+                },
+                {
+                    "date": 1698005416102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     width: 100%;\n     height: 100%;\n     display: grid;\n     background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n-    background-size: fill;\n+    background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n"
+                },
+                {
+                    "date": 1698005458404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     // background-color: yellow;\n     width: 100%;\n     height: 100%;\n     display: grid;\n-    background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n+   \n     background-size: cover;\n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n"
+                },
+                {
+                    "date": 1698005592959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     width: 100%;\n     height: 100%;\n     display: grid;\n    \n-    background-size: cover;\n+   \n     grid-template-rows: 10vh 81vh 9vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n"
+                },
+                {
+                    "date": 1698015146420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     // background-color: yellow;\n-    width: 100%;\n+    width: 100;\n     height: 100%;\n     display: grid;\n    \n    \n"
+                },
+                {
+                    "date": 1698015157792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     // background-color: yellow;\n-    width: 100;\n+    width: 100vw;\n     height: 100%;\n     display: grid;\n    \n    \n"
+                },
+                {
+                    "date": 1698015166885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n } \n body{\n     // background-color: yellow;\n     width: 100vw;\n-    height: 100%;\n+    height: 100;\n     display: grid;\n    \n    \n     grid-template-rows: 10vh 81vh 9vh;\n"
+                },
+                {
+                    "date": 1698015183238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,13 @@\n } \n body{\n     // background-color: yellow;\n     width: 100vw;\n-    height: 100;\n+    height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 81vh 9vh;\n+    grid-template-rows: 10vh 81vh vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015239959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 81vh vh;\n+    grid-template-rows: 10vh vh 12vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015254293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh vh 12vh;\n+    grid-template-rows: 10vh 79vh 10vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015260143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 79vh 10vh;\n+    grid-template-rows: 10vh 79vh 1vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015270829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 79vh 1vh;\n+    grid-template-rows: 10vh 7vh 11vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015276875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 7vh 11vh;\n+    grid-template-rows: 10vh 80vh 11vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015339169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n+  \n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015357647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,12 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n-  \n+    --a: 1; /* Nombre de lignes */\n+            --m: 5; /* Nombre de colonnes */\n+            --g: 2px; /* Espace entre les images */\n+            --f: 1.1; /* Facteur d'agrandissement au survol */\n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015363295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --a: 1; /* Nombre de lignes */\n-            --m: 5; /* Nombre de colonnes */\n+            --b: 5; /* Nombre de colonnes */\n             --g: 2px; /* Espace entre les images */\n             --f: 1.1; /* Facteur d'agrandissement au survol */\n     // background-color: yellow;\n     width: 100vw;\n"
+                },
+                {
+                    "date": 1698015369137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n } \n body{\n     --a: 1; /* Nombre de lignes */\n             --b: 5; /* Nombre de colonnes */\n-            --g: 2px; /* Espace entre les images */\n+            --c: 2px; /* Espace entre les images */\n             --f: 1.1; /* Facteur d'agrandissement au survol */\n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n"
+                },
+                {
+                    "date": 1698015382115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n-    --a: 1; /* Nombre de lignes */\n+    --hea: 1; /* Nombre de lignes */\n             --b: 5; /* Nombre de colonnes */\n             --c: 2px; /* Espace entre les images */\n             --f: 1.1; /* Facteur d'agrandissement au survol */\n     // background-color: yellow;\n"
+                },
+                {
+                    "date": 1698015390386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n-    --hea: 1; /* Nombre de lignes */\n-            --b: 5; /* Nombre de colonnes */\n+    --header: 1; /* Nombre de lignes */\n+            --: 5; /* Nombre de colonnes */\n             --c: 2px; /* Espace entre les images */\n             --f: 1.1; /* Facteur d'agrandissement au survol */\n     // background-color: yellow;\n     width: 100vw;\n"
+                },
+                {
+                    "date": 1698015400169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n   color: white;\n } \n body{\n     --header: 1; /* Nombre de lignes */\n-            --: 5; /* Nombre de colonnes */\n-            --c: 2px; /* Espace entre les images */\n+            --main: 5; /* Nombre de colonnes */\n+            --footer: 2px; /* Espace entre les images */\n             --f: 1.1; /* Facteur d'agrandissement au survol */\n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n"
+                },
+                {
+                    "date": 1698015405428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n body{\n     --header: 1; /* Nombre de lignes */\n             --main: 5; /* Nombre de colonnes */\n             --footer: 2px; /* Espace entre les images */\n-            --f: 1.1; /* Facteur d'agrandissement au survol */\n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015420440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n-    --header: 1; /* Nombre de lignes */\n+    --header: 1; /* hauteur du header*/\n             --main: 5; /* Nombre de colonnes */\n             --footer: 2px; /* Espace entre les images */\n     // background-color: yellow;\n     width: 100vw;\n"
+                },
+                {
+                    "date": 1698015430575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 1; /* hauteur du header*/\n-            --main: 5; /* Nombre de colonnes */\n+            --main: 5; /* hauteur du main*/\n             --footer: 2px; /* Espace entre les images */\n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n"
+                },
+                {
+                    "date": 1698015437824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n } \n body{\n     --header: 1; /* hauteur du header*/\n             --main: 5; /* hauteur du main*/\n-            --footer: 2px; /* Espace entre les images */\n+            --footer: 2px; /*hauteur du  */\n     // background-color: yellow;\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015444149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n } \n body{\n     --header: 1; /* hauteur du header*/\n             --main: 5; /* hauteur du main*/\n-            --footer: 2px; /*hauteur du  */\n-    // background-color: yellow;\n+            --footer: 2px; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015460543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n-    --header: 1; /* hauteur du header*/\n+    --header: 15; /* hauteur du header*/\n             --main: 5; /* hauteur du main*/\n             --footer: 2px; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n"
+                },
+                {
+                    "date": 1698015482115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,17 +4,17 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n-    --header: 15; /* hauteur du header*/\n+    --header: 15vh; /* hauteur du header*/\n             --main: 5; /* hauteur du main*/\n             --footer: 2px; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 80vh 11vh;\n+    grid-template-rows: 10vh 80vh 10vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015497175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 80vh 10vh;\n+    grid-template-rows: 10vh 80vh 1vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015510975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,15 @@\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n             --main: 5; /* hauteur du main*/\n-            --footer: 2px; /*hauteur du footer */\n+            --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 80vh 1vh;\n+    grid-template-rows: 10vh 80vh 11vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015518123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: 5; /* hauteur du main*/\n+            --main: cal(); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015526006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(); /* hauteur du main*/\n+            --main: cal(1006); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015534618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(1006); /* hauteur du main*/\n+            --main: cal(100% -var); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015572181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(100% -var); /* hauteur du main*/\n+            --main: cal(100% -var(--)); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015587970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(100% -var(--)); /* hauteur du main*/\n+            --main: cal(100% -var(--header)-var); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015593548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(100% -var(--header)-var); /* hauteur du main*/\n+            --main: cal(100% -var(--header)-var(--footer)); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015611623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: 10vh 80vh 11vh;\n+    grid-template-rows: var 80vh 11vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015618304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: var 80vh 11vh;\n+    grid-template-rows: var(--header) 80vh 11vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015623630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: var(--header) 80vh 11vh;\n+    grid-template-rows: var(--header) var() 11vh;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015630735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: var(--header) var() 11vh;\n+    grid-template-rows: var(--header) var(--main) v;\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015638134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: var(--header) var(--main) v;\n+    grid-template-rows: var(--header) var(--main) var(--);\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015652345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,16 +5,16 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(100% -var(--header)-var(--footer)); /* hauteur du main*/\n+            --main: cal(100% -(var(--header)-var(--footer)); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n    \n    \n-    grid-template-rows: var(--header) var(--main) var(--);\n+    grid-template-rows: var(--header) var(--main) var(--footer);\n    grid-template-areas: \"header\"\n                          \"main\"\n                          \"footer\" ;\n \n"
+                },
+                {
+                    "date": 1698015664296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(100% -(var(--header)-var(--footer)); /* hauteur du main*/\n+            --main: cal(100% -(var(--header)-var(--footer))); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015683523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(100% -(var(--header)-var(--footer))); /* hauteur du main*/\n+            --main: cal(100 -(var(--header)-var(--footer))); /* hauteur du main*/\n             --footer: 11vh; /*hauteur du footer */\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015756081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,9 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n-            --main: cal(100 -(var(--header)-var(--footer))); /* hauteur du main*/\n-            --footer: 11vh; /*hauteur du footer */\n+            --main: cal(100vh -(var(--header)-var(--footer))); /* hauteur du main*/\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015770606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n   color: white;\n } \n body{\n     --header: 15vh; /* hauteur du header*/\n+    --footer: 11vh; /*hauteur du footer */\n+\n             --main: cal(100vh -(var(--header)-var(--footer))); /* hauteur du main*/\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n"
+                },
+                {
+                    "date": 1698015781493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n-    --header: 15vh; /* hauteur du header*/\n-    --footer: 11vh; /*hauteur du footer */\n+    --header: 1vh; /* hauteur du header*/\n+    --footer: 1vh; /*hauteur du footer */\n \n             --main: cal(100vh -(var(--header)-var(--footer))); /* hauteur du main*/\n     width: 100vw;\n     height: 100vh;\n"
+                },
+                {
+                    "date": 1698015790936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: cal(100vh -(var(--header)-var(--footer))); /* hauteur du main*/\n+            --main: calc(100vh -(var(--header)-var(--footer))); /* hauteur du main*/\n     width: 100vw;\n     height: 100vh;\n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015812110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     --footer: 1vh; /*hauteur du footer */\n \n             --main: calc(100vh -(var(--header)-var(--footer))); /* hauteur du main*/\n     width: 100vw;\n-    height: 100vh;\n+   \n     display: grid;\n    \n    \n     grid-template-rows: var(--header) var(--main) var(--footer);\n"
+                },
+                {
+                    "date": 1698015836953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: calc(100vh -(var(--header)-var(--footer))); /* hauteur du main*/\n+            --main: calc(100vh -calc(var(--header)-var(--footer))); /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015848612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: calc(100vh -calc(var(--header)-var(--footer))); /* hauteur du main*/\n+            --main: calc(100vh -calc((var(--header)-var(--footer)))); /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015872983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: calc(100vh -calc((var(--header)-var(--footer)))); /* hauteur du main*/\n+            --main: calc(100vh -calc(var(--header)-var(--footer)))); /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015886733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: calc(100vh -calc(var(--header)-var(--footer)))); /* hauteur du main*/\n+            --main: calc(100vh -calc(var(--header)-var(--footer))); /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015923423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: calc(100vh -calc(var(--header)-var(--footer))); /* hauteur du main*/\n+            --main: calc(100 -calc(var(--header)-var(--footer))); /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015963479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: calc(100 -calc(var(--header)-var(--footer))); /* hauteur du main*/\n+            --main: 100%; /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015970559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: 100%; /* hauteur du main*/\n+            --main: 100vh; /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015978741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: 100vh; /* hauteur du main*/\n+            --main: 1vh; /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015984161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body{\n     --header: 1vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: 1vh; /* hauteur du main*/\n+            --main: 80vhvh; /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015993200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n   font-family: Arial, Helvetica, sans-serif;\n   color: white;\n } \n body{\n-    --header: 1vh; /* hauteur du header*/\n+    --header: 10vh; /* hauteur du header*/\n     --footer: 1vh; /*hauteur du footer */\n \n-            --main: 80vhvh; /* hauteur du main*/\n+            --main: 80vh; /* hauteur du main*/\n     width: 100vw;\n    \n     display: grid;\n    \n"
+                },
+                {
+                    "date": 1698015998826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 10vh; /* hauteur du header*/\n-    --footer: 1vh; /*hauteur du footer */\n+    --footer: 10vh; /*hauteur du footer */\n \n             --main: 80vh; /* hauteur du main*/\n     width: 100vw;\n    \n"
+                },
+                {
+                    "date": 1698016013533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   color: white;\n } \n body{\n     --header: 10vh; /* hauteur du header*/\n-    --footer: 10vh; /*hauteur du footer */\n+    --footer: 15vh; /*hauteur du footer */\n \n             --main: 80vh; /* hauteur du main*/\n     width: 100vw;\n    \n"
+                },
+                {
+                    "date": 1698016037201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     --footer: 15vh; /*hauteur du footer */\n \n             --main: 80vh; /* hauteur du main*/\n     width: 100vw;\n+    \n    \n     display: grid;\n    \n    \n"
+                },
+                {
+                    "date": 1698016055360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,12 +6,11 @@\n } \n body{\n     --header: 10vh; /* hauteur du header*/\n     --footer: 15vh; /*hauteur du footer */\n-\n             --main: 80vh; /* hauteur du main*/\n     width: 100vw;\n-    \n+    overflow: hidden;\n    \n     display: grid;\n    \n    \n"
+                },
+                {
+                    "date": 1698016133819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n } \n body{\n     --header: 10vh; /* hauteur du header*/\n     --footer: 15vh; /*hauteur du footer */\n-            --main: 80vh; /* hauteur du main*/\n+    --main: 80vh; /* hauteur du main*/\n     width: 100vw;\n     overflow: hidden;\n    \n     display: grid;\n"
+                }
+            ],
+            "date": 1697988474241,
+            "name": "Commit-0",
+            "content": "*{\n  margin: 0;\n  padding: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  color: white;\n} "
+        }
+    ]
+}

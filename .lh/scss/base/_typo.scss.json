@@ -1,0 +1,134 @@
+{
+    "sourceFile": "scss/base/_typo.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 29,
+            "patches": [
+                {
+                    "date": 1697981509474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697981855016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n\\ No newline at end of file\n+    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697981866215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n-    \n\\ No newline at end of file\n+    body\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697981874729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n-    body\n\\ No newline at end of file\n+    body{\n+        background-color: red;\n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697982197815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n     body{\n-        background-color: red;\n+        background-color: green;\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697982429643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n-    body{\n+    {\n         background-color: green;\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697982500111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,1 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n-\n-    {\n-        background-color: green;\n-    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697999640187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+    \n"
+                },
+                {
+                    "date": 1697999651118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n-    \n+       @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+\n"
+                },
+                {
+                    "date": 1698010542687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,9 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n+h1{\n+    margin: 50px;\n+        font-size: 60px;\n+        animation: flipper 1s ; \n+       \n+      } \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698010558438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,5 @@\n h1{\n     margin: 50px;\n         font-size: 60px;\n         animation: flipper 1s ; \n-       \n       } \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698010732789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n h1{\n     margin: 50px;\n         font-size: 60px;\n         animation: flipper 1s ; \n-      } \n\\ No newline at end of file\n+      } \n+      \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698010754690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,18 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n+\n h1{\n-    margin: 50px;\n-        font-size: 60px;\n-        animation: flipper 1s ; \n-      } \n\\ No newline at end of file\n-      \n+    font-size: calc(110% + 4.390625vw);\n+    animation: flipper 1s ; \n+    }\n+    h2{\n+  font-size: calc(100% + 2vw);\n+\n+    margin: 1em 1em;\n+    animation: flipper 8s ; \n+    }\n+    h3{\n+    font-size: calc(40% + 2vw);\n+    animation: flipper 3s ; \n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698010766275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n     animation: flipper 1s ; \n     }\n     h2{\n   font-size: calc(100% + 2vw);\n-\n     margin: 1em 1em;\n     animation: flipper 8s ; \n     }\n     h3{\n"
+                },
+                {
+                    "date": 1698010772771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ; \n     }\n-    h2{\n+h2{\n   font-size: calc(100% + 2vw);\n     margin: 1em 1em;\n     animation: flipper 8s ; \n     }\n"
+                },
+                {
+                    "date": 1698010777890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n   font-size: calc(100% + 2vw);\n     margin: 1em 1em;\n     animation: flipper 8s ; \n     }\n-    h3{\n+h3{\n     font-size: calc(40% + 2vw);\n     animation: flipper 3s ; \n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698011791748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,6 @@\n     }\n h3{\n     font-size: calc(40% + 2vw);\n     animation: flipper 3s ; \n-    }\n\\ No newline at end of file\n+    }\n+\n"
+                },
+                {
+                    "date": 1698012120204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,4 +15,32 @@\n     font-size: calc(40% + 2vw);\n     animation: flipper 3s ; \n     }\n \n+ p{\n+            font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\n+            font-size: 20px;\n+            padding: 20px 100px;\n+        }\n+\n+\n+\n+        .content-container {\n+          height: 100%;\n+            display: flex;\n+            justify-content: space-around;\n+            align-items: center;\n+        \n+        }\n+       \n+        \n+        .close-button{\n+            position: absolute;\n+            top: 10px;\n+            right: 50px;\n+            margin: 10px 30px;\n+            display: flex;\n+            justify-content: flex-end;\n+            color: black;\n+            background-color: white;\n+         \n+        }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698012125523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,13 @@\n             padding: 20px 100px;\n         }\n \n \n-\n+li, a, a:visited {\n+  padding: 5px;\n+  text-decoration: none;\n+  list-style: none;\n+}\n         .content-container {\n           height: 100%;\n             display: flex;\n             justify-content: space-around;\n"
+                },
+                {
+                    "date": 1698012206891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,14 +21,17 @@\n             font-size: 20px;\n             padding: 20px 100px;\n         }\n \n-\n li, a, a:visited {\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n+\n+a:hover {\n+  color: red;\n }\n+}\n         .content-container {\n           height: 100%;\n             display: flex;\n             justify-content: space-around;\n"
+                },
+                {
+                    "date": 1698012252527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n     }\n \n  p{\n             font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\n+            font\n             font-size: 20px;\n             padding: 20px 100px;\n         }\n \n"
+                },
+                {
+                    "date": 1698012258002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     }\n \n  p{\n             font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\n-            font\n+            font-weight: 600;\n             font-size: 20px;\n             padding: 20px 100px;\n         }\n \n"
+                },
+                {
+                    "date": 1698014224180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n     animation: flipper 1s ; \n     }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 1em 1em;\n     animation: flipper 8s ; \n     }\n h3{\n     font-size: calc(40% + 2vw);\n"
+                },
+                {
+                    "date": 1698014237307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     animation: flipper 1s ; \n     }\n h2{\n   font-size: calc(100% + 2vw);\n+    margin: 1em 1em;\n     animation: flipper 8s ; \n     }\n h3{\n     font-size: calc(40% + 2vw);\n"
+                },
+                {
+                    "date": 1698014245988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     animation: flipper 1s ; \n     }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 1em 1em;\n+    margin: em 1em;\n     animation: flipper 8s ; \n     }\n h3{\n     font-size: calc(40% + 2vw);\n"
+                },
+                {
+                    "date": 1698014288045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,18 +7,17 @@\n     animation: flipper 1s ; \n     }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: em 1em;\n+    margin: 0.5em 1em;\n     animation: flipper 8s ; \n     }\n h3{\n     font-size: calc(40% + 2vw);\n     animation: flipper 3s ; \n     }\n \n  p{\n-            font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\n             font-weight: 600;\n             font-size: 20px;\n             padding: 20px 100px;\n         }\n"
+                },
+                {
+                    "date": 1698014308926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n     animation: flipper 3s ; \n     }\n \n  p{\n-            font-weight: 600;\n             font-size: 20px;\n             padding: 20px 100px;\n         }\n \n"
+                },
+                {
+                    "date": 1698014318208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n     animation: flipper 3s ; \n     }\n \n  p{\n-            font-size: 20px;\n             padding: 20px 100px;\n         }\n \n li, a, a:visited {\n"
+                },
+                {
+                    "date": 1698014637507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     animation: flipper 3s ; \n     }\n \n  p{\n-            padding: 20px 100px;\n+            padding: 20px;\n         }\n \n li, a, a:visited {\n   padding: 5px;\n"
+                },
+                {
+                    "date": 1698014752292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     animation: flipper 3s ; \n     }\n \n  p{\n-            padding: 20px;\n+    padding: 20px;\n         }\n \n li, a, a:visited {\n   padding: 5px;\n"
+                }
+            ],
+            "date": 1697981509474,
+            "name": "Commit-0",
+            "content": "    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');"
+        }
+    ]
+}

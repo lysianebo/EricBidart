@@ -1,0 +1,181 @@
+ @keyframes bounce2 {
+          0%, 20%, 50%, 80%, 100% {
+            opacity: 0;transform: translateY(-500);
+          }
+          40% {opacity: 1; transform: tranlateY(1000px);
+          }
+          60% {opacity: 1;transform: translateY(1500px);
+          }
+        }
+       
+        .grow {
+            animation: grow 2s ease infinite;
+          }
+          @keyframes grow {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+          }
+          
+          .fade-in {
+            animation: fade-in 2s linear infinite;
+          }
+          @keyframes fade-in {
+            from { opacity: 1; 
+            scale: 0%;}
+            to { opacity: 1; 
+            scale: 1;}
+          }
+      
+        .bounce-in {
+            animation: bounce-in 2s ease 1s ;
+          }
+          @keyframes bounce-in {
+            0% {
+              opacity: 0;
+              transform: scale(.3);
+            }
+            50% {
+              opacity: 1;
+              transform: scale(1.05);
+            }
+            70% { transform: scale(.9); }
+            100% { transform: scale(1); }
+          }
+          
+          .bounce-in-right {
+            animation: bounce-in-right 2s ease 1s;
+          }
+          @keyframes bounce-in-right {
+            0% {
+              opacity: 0;
+              transform: translateX(2000px);
+            }
+            60% {
+              opacity: 1;
+              transform: translateX(-30px);
+            }
+            80% { transform: translateX(10px); }
+            100% { transform: translateX(0);
+                transform: translateY(100px);  }
+          }
+          
+          .bounce-out {
+            animation: bounce-out 2s ease 1s;
+          }
+          @keyframes bounce-out {
+            0% { transform: scale(1); }
+            25% { transform: scale(.95); }
+            50% {
+              opacity: 1;
+              transform: scale(1.1);
+            }
+            100% {
+              opacity: 0;
+              transform: scale(.3);
+            } 
+          }
+          
+          .bounce-out-down {
+            animation: bounce-out-down 2s ease 2s;
+          }
+          @keyframes bounce-out-down {
+            0% { transform: translateY(0); }
+            20% {
+              opacity: 1;
+              transform: translateY(-200px);
+            }
+            100% {
+              opacity: 0;
+              transform: translateY(200px);
+            }
+          }
+          @keyframes flipper{
+            from{
+               transform: scale(0.0); 
+            }
+            to{
+               transform: scale(1); 
+            }
+        }
+    
+
+        
+    
+    .bounce-in {
+        animation: bounce-in 2s ease 1s ;
+      }
+      @keyframes bounce-in {
+        0% {
+          opacity: 0;
+          transform: scale(.3);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+        70% { transform: scale(.9); }
+        100% { transform: scale(1); }
+      }
+      
+      .bounce-in-right {
+        animation: bounce-in-right 2s ease 3s;
+      }
+      @keyframes bounce-in-right {
+        0% {
+          opacity: 0;
+          transform: translateX(2000px);
+        }
+        60% {
+          opacity: 1;
+          transform: translateX(-30px);
+        }
+        80% { transform: translateX(10px); }
+        100% { transform: translateX(0);
+            transform: translateY(100px);  }
+      }
+      
+      .bounce-out {
+        animation: bounce-out 2s ease 4s;
+      }
+      @keyframes bounce-out {
+        0% { transform: scale(1); }
+        25% { transform: scale(.95); }
+        50% {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(.3);
+        } 
+      }
+      
+      .bounce-out-down {
+        animation: bounce-out-down 2s ease;
+      }
+      @keyframes bounce-out-down {
+        0% { transform: translateY(0); }
+        20% {
+          opacity: 1;
+          transform: translateY(-200px);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(200px);
+        }
+      }
+      @keyframes flipper{
+        from{
+           transform: scale(0.0); 
+        }
+        to{
+           transform: scale(1); 
+        }
+    }
+
+    @keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,51 @@
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');
+
+
+h1{
+    font-size: calc(110% + 4.390625vw);
+    animation: flipper 1s ; 
+    }
+h2{
+  font-size: calc(100% + 2vw);
+    margin: 0.5em 1em;
+    animation: flipper 8s ; 
+    }
+h3{
+    font-size: calc(40% + 2vw);
+    animation: flipper 3s ; 
+    }
+
+ p{
+    padding: 20px;
+        }
+
+li, a, a:visited {
+  padding: 5px;
+  text-decoration: none;
+  list-style: none;
+
+a:hover {
+  color: red;
+}
+}
+        .content-container {
+          height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+        }
+       
+        
+        .close-button{
+            position: absolute;
+            top: 10px;
+            right: 50px;
+            margin: 10px 30px;
+            display: flex;
+            justify-content: flex-end;
+            color: black;
+            background-color: white;
+         
+        }

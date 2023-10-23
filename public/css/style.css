@@ -1,0 +1,577 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+h1 {
+  font-size: calc(110% + 4.390625vw);
+  animation: flipper 1s;
+}
+
+h2 {
+  font-size: calc(100% + 2vw);
+  margin: 0.5em 1em;
+  animation: flipper 8s;
+}
+
+h3 {
+  font-size: calc(40% + 2vw);
+  animation: flipper 3s;
+}
+
+p {
+  padding: 20px;
+}
+
+li, a, a:visited {
+  padding: 5px;
+  text-decoration: none;
+  list-style: none;
+}
+li a:hover, a a:hover, a:visited a:hover {
+  color: red;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  margin: 10px 30px;
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  --header: 10vh; /* hauteur du header*/
+  --footer: 15vh; /*hauteur du footer */
+  --main: 80vh; /* hauteur du main*/
+  width: 100vw;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: var(--header) var(--main) var(--footer);
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+main, .accueil {
+  background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sculpteur {
+  width: 60%;
+  margin: 10vh;
+  text-align: center;
+}
+
+.creations {
+  background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);
+}
+
+.gallery {
+  --n: 1; /* Nombre de lignes */
+  --m: 5; /* Nombre de colonnes */
+  --g: 2px; /* Espace entre les images */
+  --f: 1.1; /* Facteur d'agrandissement au survol */
+  height: 76vh;
+  display: grid;
+  grid-template-columns: repeat(var(--m), auto);
+  gap: var(--g);
+  max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */
+  margin: auto auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */
+}
+
+.card_creation {
+  position: relative;
+  overflow: hidden;
+}
+.card_creation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.card_creation img:hover {
+  transform: scale(var(--f));
+  filter: grayscale(0%);
+}
+
+h3 {
+  position: absolute;
+  height: 4vh;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.creation_img:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */
+  }
+}
+/* Styles pour les écrans de taille moyenne */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery {
+    --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */
+  }
+}
+main, .expositions {
+  background-image: url(/public/images/image-from-rawpixel-id-12419401-jpeg.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  /* border: 2px solid white;  */
+  height: 60vh;
+  opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */
+  transform: translateY(600px); /* Décalez les cartes vers le bas */
+}
+
+.child:hover {
+  transform: scale(2.5); /* Augmente légèrement la taille lors du survol */
+  background-color: #333; /* Change la couleur de fond lors du survol */
+}
+
+.details {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotatex(-180deg);
+  transform-origin: top center;
+  backface-visibility: hidden;
+  transition: 0.3s ease;
+  padding-top: 30px;
+}
+
+.child:hover .details {
+  max-height: none;
+  overflow: visible;
+  visibility: visible;
+  transform: rotatex(0deg);
+}
+
+/* Animation pour la première carte */
+.child:nth-child(1) {
+  animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */
+}
+
+/* Animation pour la deuxième carte */
+.child:nth-child(2) {
+  animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */
+}
+
+/* Animation pour la troisième carte */
+.child:nth-child(3) {
+  animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */
+}
+
+.child:nth-child(4) {
+  animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */
+}
+
+/* Animation pour la deuxième carte */
+.child:nth-child(5) {
+  animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */
+}
+
+/* Animation pour la troisième carte */
+.child:nth-child(6) {
+  animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */
+}
+
+.child:nth-child(7) {
+  animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */
+}
+
+/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */
+.gallerie_expositions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.gallerie_expositions > child {
+  /* border-radius: 1rem;
+  border: 2px solid white; */
+  min-height: 54vh;
+}
+
+.gallerie_expositions img, video {
+  object-fit: cover;
+  height: 350px;
+  border-radius: 1rem;
+  /* border: 1px solid white;
+  } */
+}
+
+.gallerie_expositions img, video:hover {
+  transform: scale(1.05); /* Augmente légèrement la taille lors du survol */
+  background-color: #333; /* Change la couleur de fond lors du survol */
+}
+
+@media (max-width: 600px) {
+  /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */
+  .logo img {
+    width: 30%; /* Réduisez la taille du logo */
+  }
+  h1 {
+    text-align: center;
+  }
+}
+.presentation {
+  background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.circle {
+  position: absolute;
+  top: 250px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.circle:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1.5);
+}
+
+/* Styles pour les contenus cachés */
+.hidden {
+  display: none;
+  padding: 80px 30px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translatex(-100%, 100%);
+  z-index: 1000;
+  background-color: rgb(26, 117, 206);
+  box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
+  max-width: 100%;
+}
+
+header {
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /**** NAVBAR ****/
+}
+header img {
+  border-radius: 50%;
+  width: 40%;
+  padding-left: 1vw;
+  box-shadow: 0px 0.5px 5px black;
+}
+header nav {
+  display: flex;
+  padding: 20px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  padding: 20px;
+  background: black;
+  text-align: center;
+  grid-area: footer;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+footer p {
+  text-align: right;
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    opacity: 0;
+    transform: translateY(-500);
+  }
+  40% {
+    opacity: 1;
+    transform: tranlateY(1000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(1500px);
+  }
+}
+.grow {
+  animation: grow 2s ease infinite;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.fade-in {
+  animation: fade-in 2s linear infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 1;
+    scale: 0%;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.bounce-in {
+  animation: bounce-in 2s ease 1s;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bounce-in-right {
+  animation: bounce-in-right 2s ease 1s;
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(100px);
+  }
+}
+.bounce-out {
+  animation: bounce-out 2s ease 1s;
+}
+
+@keyframes bounce-out {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+.bounce-out-down {
+  animation: bounce-out-down 2s ease 2s;
+}
+
+@keyframes bounce-out-down {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+}
+@keyframes flipper {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.bounce-in {
+  animation: bounce-in 2s ease 1s;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bounce-in-right {
+  animation: bounce-in-right 2s ease 3s;
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(100px);
+  }
+}
+.bounce-out {
+  animation: bounce-out 2s ease 4s;
+}
+
+@keyframes bounce-out {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+.bounce-out-down {
+  animation: bounce-out-down 2s ease;
+}
+
+@keyframes bounce-out-down {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+}
+@keyframes flipper {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */
