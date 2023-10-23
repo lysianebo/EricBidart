@@ -342,6 +342,43 @@ header nav ul {
   justify-content: space-between;
 }
 
+#icons {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header {
+    margin-bottom: 50px;
+  }
+  #icons {
+    display: block;
+  }
+  #icons:before {
+    content: "☰";
+  }
+  .active #icons:before {
+    content: "✕";
+  }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 5%;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+  }
+  nav li {
+    padding: 3px 0;
+  }
+  a:hover {
+    color: lightblue;
+  }
+  nav.active ul {
+    left: 0;
+  }
+}
 footer {
   padding: 20px;
   background: black;
