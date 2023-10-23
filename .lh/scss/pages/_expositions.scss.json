@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 93,
+            "activePatchIndex": 95,
             "patches": [
                 {
                     "date": 1698000686430,
@@ -380,6 +380,14 @@
                 {
                     "date": 1698014925589,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n-    padding-top: 0px;\n+    padding-top: 30px;\n \t}\n .child:hover .details {\n     max-height: none;\n     overflow: visible;\n"
+                },
+                {
+                    "date": 1698058908967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n+    background-image: url(https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n     // grid-area: main;\n }\n"
+                },
+                {
+                    "date": 1698058914330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n     // grid-area: main;\n }\n"
                 }
             ],
             "date": 1698000686430,

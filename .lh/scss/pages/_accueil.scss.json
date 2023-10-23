@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 122,
+            "activePatchIndex": 123,
             "patches": [
                 {
                     "date": 1697987309928,
@@ -496,6 +496,10 @@
                 {
                     "date": 1698015114955,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-main .accueil{\n+main, .accueil{\n      background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n"
+                },
+                {
+                    "date": 1698058660758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart-fotor-bg-remover-202310050519.png');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
                 }
             ],
             "date": 1697987309928,

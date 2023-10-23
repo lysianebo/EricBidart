@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 47,
+            "activePatchIndex": 50,
             "patches": [
                 {
                     "date": 1698000730894,
@@ -196,6 +196,18 @@
                 {
                     "date": 1698017419735,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n             z-index: 1000;\n             background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n-             animation: bounce-in-right 2s ease 1s; \n+            //  animation: bounce-in-right 2s ease 1s; \n           \n         }\n             \n           \n"
+                },
+                {
+                    "date": 1698058940412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url(https://fonts.googleapis.com/css?family=Poiret+One);\n \n  .presentation{\n-     background-image: url(/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n+     background-image: url(https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n"
+                },
+                {
+                    "date": 1698058946288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url(https://fonts.googleapis.com/css?family=Poiret+One);\n \n  .presentation{\n-     background-image: url(https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n"
+                },
+                {
+                    "date": 1698058952299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url(https://fonts.googleapis.com/css?family=Poiret+One);\n \n  .presentation{\n-     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n"
                 }
             ],
             "date": 1698000730894,

@@ -92,7 +92,7 @@ main, .accueil {
 }
 
 .creations {
-  background-image: url(public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);
+  background-image: url("https://lysianebo.github.io/EricBidart/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg");
 }
 
 .gallery {
@@ -160,7 +160,7 @@ h3 {
   }
 }
 main, .expositions {
-  background-image: url(public/images/image-from-rawpixel-id-12419401-jpeg.jpg);
+  background-image: url("https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg");
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -272,7 +272,7 @@ main, .expositions {
   }
 }
 .presentation {
-  background-image: url(public/images/image-from-rawpixel-id-12419376-jpeg.jpg);
+  background-image: url("https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;

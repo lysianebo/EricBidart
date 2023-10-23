@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 224,
+            "activePatchIndex": 227,
             "patches": [
                 {
                     "date": 1697992102499,
@@ -904,6 +904,18 @@
                 {
                     "date": 1698005393474,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-      body {\n+      .creations {\n \n         background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n"
+                },
+                {
+                    "date": 1698058859328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n       .creations {\n \n-        background-image: url(/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+        background-image: url(https://lysianebo.github.io/EricBidart/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n      \n"
+                },
+                {
+                    "date": 1698058871894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n       .creations {\n \n-        background-image: url(https://lysianebo.github.io/EricBidart/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+        background-image: url('https://lysianebo.github.io/EricBidart/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n \n \n         }\n      \n"
+                },
+                {
+                    "date": 1698058879391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n       .creations {\n \n-        background-image: url('https://lysianebo.github.io/EricBidart/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg);\n+        background-image: url('https://lysianebo.github.io/EricBidart/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg');\n \n \n         }\n      \n"
                 }
             ],
             "date": 1697992102499,
