@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+body #presentation_more {
+    display: unset;
+    margin: 0% auto;
+    background-color: black;
+}
+.container {
+    padding: 0px 30px;
+    height: 100vh;
+    box-shadow: inset 0px 0px 30px 3px #527FD8;
+.content{
+ display: flex;
+ flex-direction: row;
+ 
+   h4{
+        width: 150px;
+    }
+    .card{
+        transform: translateX(-00px);
+    }
+
+}
+}
+
+input[type=checkbox] {
+    display: none;
+}
+.toggle_button{
+    border: none;
+    cursor: pointer;
+}
+.card::before{
+    display: none;
+    height: 0;
+  
+}
+ input[type=checkbox]:checked ~ #origine{
+    max-height: 200px;
+    transition: max-height 0.4s;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 1rem;
+    transform: translateY(0px);
+   
+ }
+ input[type=checkbox]:checked ~ #passions{
+    max-height: 200px;
+    transition: max-height 0.4s;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(0px);
+   
+ }

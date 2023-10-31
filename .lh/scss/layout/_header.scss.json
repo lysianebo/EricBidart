@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 32,
+            "activePatchIndex": 281,
             "patches": [
                 {
                     "date": 1697981671190,
@@ -136,6 +136,1002 @@
                 {
                     "date": 1698012187442,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,15 +17,7 @@\n  ul {\n   display: flex;\n   justify-content: space-between;\n  }\n-li, a, a:visited {\n-  padding: 5px;\n-  text-decoration: none;\n-  list-style: none;\n \n-a:hover {\n-  color: red;\n }\n-}\n-}\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698187337111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n header { \n   background-color: black;\n-  height: 10vh;\n+  // height: 10vh;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n@@ -19,5 +19,42 @@\n   justify-content: space-between;\n  }\n \n }\n+}\n+#icons {\n+  cursor: pointer;\n+  display: none;\n+}\n+@media (max-width: 800px) {\n+    header{\n+        margin-bottom: 50px;\n+    }\n+  #icons {\n+    display: block;\n+  }\n+  #icons:before {\n+    content: \"\\2630\";\n+  }\n+  .active #icons:before {\n+    content: \"\\2715\";\n+  }\n+  nav ul {\n+    position: fixed;\n+    left: -100%;\n+    top: 5%;\n+    flex-direction: column;\n+    width: 100%;\n+    text-align: center;\n+    transition: 0.25s;\n+  }\n+  nav li {\n+    padding: 3px 0;\n+  \n+  }\n+   a:hover {\n+    color: lightblue;\n+  }\n+  nav.active ul {\n+    left: 0;\n+  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698187366718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   justify-content: space-between;\n   align-items: center;\n img{\n   border-radius: 50%;\n-    width: 40%;\n+    width: %;\n     padding-left: 1vw;\n     box-shadow: 0px 0.5px 5px black;  \n }\n /**** NAVBAR ****/\n"
+                },
+                {
+                    "date": 1698187374577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   justify-content: space-between;\n   align-items: center;\n img{\n   border-radius: 50%;\n-    width: %;\n+    width: 30%;\n     padding-left: 1vw;\n     box-shadow: 0px 0.5px 5px black;  \n }\n /**** NAVBAR ****/\n"
+                },
+                {
+                    "date": 1698187410141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   justify-content: space-between;\n  }\n \n }\n-}\n+\n #icons {\n   cursor: pointer;\n   display: none;\n }\n"
+                },
+                {
+                    "date": 1698187438054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n #icons {\n   cursor: pointer;\n   display: none;\n }\n+\n @media (max-width: 800px) {\n     header{\n         margin-bottom: 50px;\n     }\n"
+                },
+                {
+                    "date": 1698187446689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,16 +17,15 @@\n  ul {\n   display: flex;\n   justify-content: space-between;\n  }\n-\n }\n \n #icons {\n   cursor: pointer;\n   display: none;\n }\n-\n+}\n @media (max-width: 800px) {\n     header{\n         margin-bottom: 50px;\n     }\n"
+                },
+                {
+                    "date": 1698194565277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n header { \n-  background-color: black;\n+  // background-color: black;\n   // height: 10vh;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n"
+                },
+                {
+                    "date": 1698194577227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n   // height: 10vh;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n+  col\n img{\n   border-radius: 50%;\n     width: 30%;\n     padding-left: 1vw;\n"
+                },
+                {
+                    "date": 1698194583231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   // height: 10vh;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n-  col\n+  color: black;\n img{\n   border-radius: 50%;\n     width: 30%;\n     padding-left: 1vw;\n"
+                },
+                {
+                    "date": 1698194601292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n   // height: 10vh;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n-  color: black;\n img{\n   border-radius: 50%;\n     width: 30%;\n     padding-left: 1vw;\n"
+                },
+                {
+                    "date": 1698194608952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n /**** NAVBAR ****/\n nav {\n   display: flex;\n   padding: 20px;\n+  \n  ul {\n   display: flex;\n   justify-content: space-between;\n  }\n"
+                },
+                {
+                    "date": 1698194621272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n   \n  ul {\n   display: flex;\n   justify-content: space-between;\n+  \n  }\n }\n \n #icons {\n"
+                },
+                {
+                    "date": 1698194641481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   \n  ul {\n   display: flex;\n   justify-content: space-between;\n-  \n+\n  }\n }\n \n #icons {\n"
+                },
+                {
+                    "date": 1698197462097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n header { \n-  // background-color: black;\n+   background-color: black;\n   // height: 10vh;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n"
+                },
+                {
+                    "date": 1698197483210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n \n #icons {\n   cursor: pointer;\n   display: none;\n+  col\n }\n }\n @media (max-width: 800px) {\n     header{\n"
+                },
+                {
+                    "date": 1698197514358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n \n #icons {\n   cursor: pointer;\n   display: none;\n-  col\n }\n }\n @media (max-width: 800px) {\n     header{\n"
+                },
+                {
+                    "date": 1698197727568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n }\n }\n @media (max-width: 800px) {\n     header{\n-        margin-bottom: 50px;\n+        margin-bottom: 5px;\n     }\n   #icons {\n     display: block;\n   }\n"
+                },
+                {
+                    "date": 1698197760946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n         margin-bottom: 5px;\n     }\n   #icons {\n     display: block;\n+    text-align: center;\n   }\n   #icons:before {\n     content: \"\\2630\";\n   }\n"
+                },
+                {
+                    "date": 1698198013072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     content: \"\\2715\";\n   }\n   nav ul {\n     position: fixed;\n-    left: -100%;\n+    left: -0%;\n     top: 5%;\n     flex-direction: column;\n     width: 100%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698198096696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     content: \"\\2715\";\n   }\n   nav ul {\n     position: fixed;\n-    left: -0%;\n+    rig: -50%;\n     top: 5%;\n     flex-direction: column;\n     width: 100%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698198108140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     content: \"\\2715\";\n   }\n   nav ul {\n     position: fixed;\n-    rig: -50%;\n+    right: -0%;\n     top: 5%;\n     flex-direction: column;\n     width: 100%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698198140611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     content: \"\\2715\";\n   }\n   nav ul {\n     position: fixed;\n-    right: -0%;\n+    right: -50%;\n     top: 5%;\n     flex-direction: column;\n     width: 100%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698198147726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     content: \"\\2715\";\n   }\n   nav ul {\n     position: fixed;\n-    right: -50%;\n+    right: 50%;\n     top: 5%;\n     flex-direction: column;\n     width: 100%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698198636557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n header { \n-   background-color: black;\n+  //  background-color: black;\n   // height: 10vh;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n"
+                },
+                {
+                    "date": 1698199045727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n+  \n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199067348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-  \n+  fill: none;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199073397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-  fill: none;\n+  fil;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199080853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-  fil;\n+  fill-opacity: ;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199086561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-  fill-opacity: ;\n+  fill-opacity: 50%;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199093360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-  fill-opacity: 50%;\n-  display: flex;\n+f  display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n   border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698199099880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-f  display: flex;\n+filter: blur();  display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n   border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698199116275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter: blur();  display: flex;\n+filter;  display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n   border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698199122669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter;  display: flex;\n+filter;\n+  display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n   border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698199145902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter;\n+filter: grayscale();\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199159585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter: grayscale();\n+filter: grayscale(50);\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199165684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter: grayscale(50);\n+filter: grayscale(1);\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199208561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter: grayscale(1);\n+filter: grayscale(100);\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199221788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter: grayscale(100);\n+filter: (100%);\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199233424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter: (100%);\n+filter;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199263597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-filter;\n+  fill-opacity: 50%;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n img{\n"
+                },
+                {
+                    "date": 1698199347027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-  fill-opacity: 50%;\n   display: flex;\n-  justify-content: space-between;\n-  align-items: center;\n+\n img{\n   border-radius: 50%;\n     width: 30%;\n     padding-left: 1vw;\n"
+                },
+                {
+                    "date": 1698199367370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n /**** NAVBAR ****/\n nav {\n   display: flex;\n   padding: 20px;\n+  b\n   \n  ul {\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698199376151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n /**** NAVBAR ****/\n nav {\n   display: flex;\n   padding: 20px;\n-  b\n+  background-color: black;\n   \n  ul {\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698200051577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n /**** NAVBAR ****/\n nav {\n   display: flex;\n   padding: 20px;\n-  background-color: black;\n+  background-color: ;\n   \n  ul {\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698200059416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n   display: flex;\n-\n+  justify-content: space-between;\n+  align-items: center;\n img{\n   border-radius: 50%;\n     width: 30%;\n     padding-left: 1vw;\n@@ -12,9 +13,8 @@\n /**** NAVBAR ****/\n nav {\n   display: flex;\n   padding: 20px;\n-  background-color: ;\n   \n  ul {\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698202515639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   //  background-color: black;\n   // height: 10vh;\n   display: flex;\n   justify-content: space-between;\n-  align-items: center;\n+  align-items: right;\n img{\n   border-radius: 50%;\n     width: 30%;\n     padding-left: 1vw;\n"
+                },
+                {
+                    "date": 1698202525084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n header { \n   //  background-color: black;\n   // height: 10vh;\n-  display: flex;\n-  justify-content: space-between;\n+  // display: flex;\n+  // justify-content: space-between;\n   align-items: right;\n img{\n   border-radius: 50%;\n     width: 30%;\n"
+                },
+                {
+                    "date": 1698202545666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n }\n /**** NAVBAR ****/\n nav {\n   display: flex;\n+  \n   padding: 20px;\n   \n  ul {\n   display: flex;\n"
+                },
+                {
+                    "date": 1698202550908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n /**** NAVBAR ****/\n nav {\n   display: flex;\n-  \n+  align-items: r;\n   padding: 20px;\n   \n  ul {\n   display: flex;\n"
+                },
+                {
+                    "date": 1698202563165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n /**** NAVBAR ****/\n nav {\n   display: flex;\n-  align-items: r;\n+  ;\n   padding: 20px;\n   \n  ul {\n   display: flex;\n"
+                },
+                {
+                    "date": 1698202571018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n /**** NAVBAR ****/\n nav {\n   display: flex;\n-  ;\n+  justify-content: flex-end;\n   padding: 20px;\n   \n  ul {\n   display: flex;\n"
+                },
+                {
+                    "date": 1698400346389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n \n #icons {\n   cursor: pointer;\n   display: none;\n+  col\n }\n }\n @media (max-width: 800px) {\n     header{\n"
+                },
+                {
+                    "date": 1698400353258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n #icons {\n   cursor: pointer;\n   display: none;\n-  col\n+  color: white;\n }\n }\n @media (max-width: 800px) {\n     header{\n"
+                },
+                {
+                    "date": 1698400396855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     content: \"\\2715\";\n   }\n   nav ul {\n     position: fixed;\n-    right: 50%;\n+    right: 0%;\n     top: 5%;\n     flex-direction: column;\n     width: 100%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698400403395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     content: \"\\2715\";\n   }\n   nav ul {\n     position: fixed;\n-    right: 0%;\n+    right: 0;\n     top: 5%;\n     flex-direction: column;\n     width: 100%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698400427604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n     right: 0;\n     top: 5%;\n     flex-direction: column;\n     width: 100%;\n-    text-align: center;\n+    // text-align: center;\n     transition: 0.25s;\n   }\n   nav li {\n     padding: 3px 0;\n"
+                },
+                {
+                    "date": 1698400524822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n   display: none;\n   color: white;\n }\n }\n-@media (max-width: 800px) {\n+@media (max-width: 00px) {\n     header{\n         margin-bottom: 5px;\n     }\n   #icons {\n"
+                },
+                {
+                    "date": 1698400947468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,65 @@\n+header { \n+  //  background-color: black;\n+  // height: 10vh;\n+  // display: flex;\n+  // justify-content: space-between;\n+  align-items: right;\n+img{\n+  border-radius: 50%;\n+    width: 30%;\n+    padding-left: 1vw;\n+    box-shadow: 0px 0.5px 5px black;  \n+}\n+/**** NAVBAR ****/\n+nav {\n+  display: flex;\n+  justify-content: flex-end;\n+  padding: 20px;\n+  \n+ ul {\n+  display: flex;\n+  justify-content: space-between;\n+\n+ }\n+}\n+\n+#icons {\n+  cursor: pointer;\n+  display: none;\n+  color: white;\n+}\n+}\n+@media (max-width: 768) {\n+    header{\n+        margin-bottom: 5px;\n+    }\n+  #icons {\n+    display: block;\n+    text-align: center;\n+  }\n+  #icons:before {\n+    content: \"\\2630\";\n+  }\n+  .active #icons:before {\n+    content: \"\\2715\";\n+  }\n+  nav ul {\n+    position: fixed;\n+    right: 0;\n+    top: 5%;\n+    flex-direction: column;\n+    width: 100%;\n+    // text-align: center;\n+    transition: 0.25s;\n+  }\n+  nav li {\n+    padding: 3px 0;\n+  \n+  }\n+   a:hover {\n+    color: lightblue;\n+  }\n+  nav.active ul {\n+    left: 0;\n+  }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698401056120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n   display: none;\n   color: white;\n }\n }\n-@media (max-width: 768) {\n+@media (max-width: 768px) {\n     header{\n         margin-bottom: 5px;\n     }\n   #icons {\n@@ -61,70 +61,5 @@\n   }\n   nav.active ul {\n     left: 0;\n   }\n-}\n-header { \n-  //  background-color: black;\n-  // height: 10vh;\n-  // display: flex;\n-  // justify-content: space-between;\n-  align-items: right;\n-img{\n-  border-radius: 50%;\n-    width: 30%;\n-    padding-left: 1vw;\n-    box-shadow: 0px 0.5px 5px black;  \n-}\n-/**** NAVBAR ****/\n-nav {\n-  display: flex;\n-  justify-content: flex-end;\n-  padding: 20px;\n-  \n- ul {\n-  display: flex;\n-  justify-content: space-between;\n-\n- }\n-}\n-\n-#icons {\n-  cursor: pointer;\n-  display: none;\n-  color: white;\n-}\n-}\n-@media (max-width: 00px) {\n-    header{\n-        margin-bottom: 5px;\n-    }\n-  #icons {\n-    display: block;\n-    text-align: center;\n-  }\n-  #icons:before {\n-    content: \"\\2630\";\n-  }\n-  .active #icons:before {\n-    content: \"\\2715\";\n-  }\n-  nav ul {\n-    position: fixed;\n-    right: 0;\n-    top: 5%;\n-    flex-direction: column;\n-    width: 100%;\n-    // text-align: center;\n-    transition: 0.25s;\n-  }\n-  nav li {\n-    padding: 3px 0;\n-  \n-  }\n-   a:hover {\n-    color: lightblue;\n-  }\n-  nav.active ul {\n-    left: 0;\n-  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698401240158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n #icons {\n   cursor: pointer;\n-  display: none;\n+  display: block;\n   color: white;\n }\n }\n @media (max-width: 768px) {\n"
+                },
+                {
+                    "date": 1698401255349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n #icons {\n   cursor: pointer;\n   display: block;\n-  color: white;\n+  color: whiredte;\n }\n }\n @media (max-width: 768px) {\n     header{\n"
+                },
+                {
+                    "date": 1698401261705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n #icons {\n   cursor: pointer;\n   display: block;\n-  color: whiredte;\n+  color: red;\n }\n }\n @media (max-width: 768px) {\n     header{\n"
+                },
+                {
+                    "date": 1698401275964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n     }\n   #icons {\n     display: block;\n     text-align: center;\n+    color\n   }\n   #icons:before {\n     content: \"\\2630\";\n   }\n"
+                },
+                {
+                    "date": 1698401309567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,10 +34,10 @@\n         margin-bottom: 5px;\n     }\n   #icons {\n     display: block;\n-    text-align: center;\n-    color\n+  \n+    color: white;\n   }\n   #icons:before {\n     content: \"\\2630\";\n   }\n"
+                },
+                {
+                    "date": 1698401352388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n #icons {\n   cursor: pointer;\n-  display: block;\n+  display: none;\n   color: red;\n }\n }\n @media (max-width: 768px) {\n"
+                },
+                {
+                    "date": 1698401397894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     }\n   #icons {\n     display: block;\n   \n-    color: white;\n+   \n   }\n   #icons:before {\n     content: \"\\2630\";\n   }\n"
+                },
+                {
+                    "date": 1698401412131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n #icons {\n   cursor: pointer;\n-  display: none;\n+  display: blcok;\n   color: red;\n }\n }\n @media (max-width: 768px) {\n@@ -39,8 +39,9 @@\n    \n   }\n   #icons:before {\n     content: \"\\2630\";\n+     color: white;\n   }\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n"
+                },
+                {
+                    "date": 1698401423471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n #icons {\n   cursor: pointer;\n-  display: blcok;\n+  display: blok;\n   color: red;\n }\n }\n @media (max-width: 768px) {\n"
+                },
+                {
+                    "date": 1698401573295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,16 +24,17 @@\n }\n \n #icons {\n   cursor: pointer;\n-  display: blok;\n+  display: block;\n   color: red;\n }\n }\n @media (max-width: 768px) {\n     header{\n         margin-bottom: 5px;\n     }\n+    \n   #icons {\n     display: block;\n   \n    \n"
+                },
+                {
+                    "date": 1698401578868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n @media (max-width: 768px) {\n     header{\n         margin-bottom: 5px;\n     }\n-    \n+    ul\n   #icons {\n     display: block;\n   \n    \n"
+                },
+                {
+                    "date": 1698401587516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,11 @@\n @media (max-width: 768px) {\n     header{\n         margin-bottom: 5px;\n     }\n-    ul\n+    ul{\n+      display: none;\n+    }\n   #icons {\n     display: block;\n   \n    \n"
+                },
+                {
+                    "date": 1698401638063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,11 +32,9 @@\n @media (max-width: 768px) {\n     header{\n         margin-bottom: 5px;\n     }\n-    ul{\n-      display: none;\n-    }\n+    \n   #icons {\n     display: block;\n   \n    \n"
+                },
+                {
+                    "date": 1698401646169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n   nav ul {\n+    \n     position: fixed;\n     right: 0;\n     top: 5%;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698401652858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n   nav ul {\n-    \n+    display: ;\n     position: fixed;\n     right: 0;\n     top: 5%;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698401691326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,8 @@\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n   nav ul {\n-    display: ;\n     position: fixed;\n     right: 0;\n     top: 5%;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698401729907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,8 @@\n \n #icons {\n   cursor: pointer;\n   display: block;\n-  color: red;\n }\n }\n @media (max-width: 768px) {\n     header{\n@@ -55,8 +54,10 @@\n     // text-align: center;\n     transition: 0.25s;\n   }\n   nav li {\n+        display: none;\n+\n     padding: 3px 0;\n   \n   }\n    a:hover {\n"
+                },
+                {
+                    "date": 1698401755406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,18 +24,18 @@\n }\n \n #icons {\n   cursor: pointer;\n-  display: block;\n+  display: none;\n }\n }\n @media (max-width: 768px) {\n     header{\n         margin-bottom: 5px;\n     }\n     \n   #icons {\n-    display: block;\n+    \n   \n    \n   }\n   #icons:before {\n"
+                },
+                {
+                    "date": 1698401763731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,14 +33,15 @@\n         margin-bottom: 5px;\n     }\n     \n   #icons {\n-    \n+    display: block;\n   \n    \n   }\n   #icons:before {\n     content: \"\\2630\";\n+    display: block;\n      color: white;\n   }\n   .active #icons:before {\n     content: \"\\2715\";\n"
+                },
+                {
+                    "date": 1698401792239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n \n #icons {\n   cursor: pointer;\n   display: none;\n+  \n }\n }\n @media (max-width: 768px) {\n     header{\n"
+                },
+                {
+                    "date": 1698401813200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n \n #icons {\n   cursor: pointer;\n   display: none;\n-  \n+   display: block;\n+   v\n }\n }\n @media (max-width: 768px) {\n     header{\n"
+                },
+                {
+                    "date": 1698401831347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n #icons {\n   cursor: pointer;\n   display: none;\n    display: block;\n-   v\n+   visibility: hidden;\n }\n }\n @media (max-width: 768px) {\n     header{\n@@ -36,8 +36,9 @@\n     }\n     \n   #icons {\n     display: block;\n+    \n   \n    \n   }\n   #icons:before {\n"
+                },
+                {
+                    "date": 1698401837282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,10 @@\n     }\n     \n   #icons {\n     display: block;\n-    \n+       visibility: visi;\n+\n   \n    \n   }\n   #icons:before {\n"
+                },
+                {
+                    "date": 1698401862872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,16 +36,18 @@\n     }\n     \n   #icons {\n     display: block;\n-       visibility: visi;\n+       visibility: visible;\n \n   \n    \n   }\n   #icons:before {\n     content: \"\\2630\";\n     display: block;\n+           visibility: visible;\n+\n      color: white;\n   }\n   .active #icons:before {\n     content: \"\\2715\";\n"
+                },
+                {
+                    "date": 1698401895195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n #icons {\n   cursor: pointer;\n   display: none;\n-   display: block;\n+   display: none;\n    visibility: hidden;\n }\n }\n @media (max-width: 768px) {\n"
+                },
+                {
+                    "date": 1698401901791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n #icons {\n   cursor: pointer;\n   display: none;\n-   display: none;\n+   display: block;\n    visibility: hidden;\n }\n }\n @media (max-width: 768px) {\n"
+                },
+                {
+                    "date": 1698401906931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,8 @@\n         margin-bottom: 5px;\n     }\n     \n   #icons {\n-    display: block;\n        visibility: visible;\n \n   \n    \n"
+                },
+                {
+                    "date": 1698401912660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,8 @@\n    \n   }\n   #icons:before {\n     content: \"\\2630\";\n-    display: block;\n            visibility: visible;\n \n      color: white;\n   }\n"
+                },
+                {
+                    "date": 1698401922972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,14 +34,9 @@\n     header{\n         margin-bottom: 5px;\n     }\n     \n-  #icons {\n-       visibility: visible;\n-\n-  \n-   \n-  }\n+ \n   #icons:before {\n     content: \"\\2630\";\n            visibility: visible;\n \n"
+                },
+                {
+                    "date": 1698401948255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,8 @@\n     // text-align: center;\n     transition: 0.25s;\n   }\n   nav li {\n-        display: none;\n \n     padding: 3px 0;\n   \n   }\n"
+                },
+                {
+                    "date": 1698402259824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n         margin-bottom: 5px;\n     }\n     \n  \n-  #icons:before {\n+  :before {\n     content: \"\\2630\";\n            visibility: visible;\n \n      color: white;\n"
+                },
+                {
+                    "date": 1698402268327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n         margin-bottom: 5px;\n     }\n     \n  \n-  :before {\n+  label:before {\n     content: \"\\2630\";\n            visibility: visible;\n \n      color: white;\n"
+                },
+                {
+                    "date": 1698402349231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n         margin-bottom: 5px;\n     }\n     \n  \n-  label:before {\n+  :before {\n     content: \"\\2630\";\n            visibility: visible;\n \n      color: white;\n"
+                },
+                {
+                    "date": 1698402654677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n nav {\n   display: flex;\n   justify-content: flex-end;\n   padding: 20px;\n+\n   \n  ul {\n   display: flex;\n   justify-content: space-between;\n@@ -35,9 +36,9 @@\n         margin-bottom: 5px;\n     }\n     \n  \n-  :before {\n+  burger:before {\n     content: \"\\2630\";\n            visibility: visible;\n \n      color: white;\n"
+                },
+                {
+                    "date": 1698402818952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,12 @@\n   display: flex;\n   justify-content: flex-end;\n   padding: 20px;\n \n-  \n+  input[type=checkbox] {\n+    display: none;\n+}\n+\n  ul {\n   display: flex;\n   justify-content: space-between;\n \n"
+                },
+                {
+                    "date": 1698402887852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n \n   input[type=checkbox] {\n     display: none;\n }\n-\n+.burger {\n+    display: none;\n+}\n  ul {\n   display: flex;\n   justify-content: space-between;\n \n@@ -34,10 +36,10 @@\n    visibility: hidden;\n }\n }\n @media (max-width: 768px) {\n-    header{\n-        margin-bottom: 5px;\n+    .nav-links {\n+        display: none;\n     }\n     \n  \n   burger:before {\n"
+                },
+                {
+                    "date": 1698402907057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         display: none;\n     }\n     \n  \n-  burger:before {\n+  .burger:before {\n     content: \"\\2630\";\n            visibility: visible;\n \n      color: white;\n"
+                },
+                {
+                    "date": 1698402912819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,12 @@\n @media (max-width: 768px) {\n     .nav-links {\n         display: none;\n     }\n-    \n+    .burger {\n+        display: block;\n+        cursor: pointer;\n+    }\n  \n   .burger:before {\n     content: \"\\2630\";\n            visibility: visible;\n"
+                },
+                {
+                    "date": 1698402929734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n     }\n     .burger {\n         display: block;\n         cursor: pointer;\n+        \n     }\n  \n   .burger:before {\n     content: \"\\2630\";\n"
+                },
+                {
+                    "date": 1698402940773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,14 +42,14 @@\n     }\n     .burger {\n         display: block;\n         cursor: pointer;\n-        \n+        content: \"\\2630\";\n     }\n  \n-  .burger:before {\n-    content: \"\\2630\";\n-           visibility: visible;\n+  // .burger:before {\n+  //   content: \"\\2630\";\n+  //          visibility: visible;\n \n      color: white;\n   }\n   .active #icons:before {\n"
+                },
+                {
+                    "date": 1698402946511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   // .burger:before {\n   //   content: \"\\2630\";\n   //          visibility: visible;\n \n-     color: white;\n+    //  color: white;\n   }\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n"
+                },
+                {
+                    "date": 1698403006421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,9 @@\n   // height: 10vh;\n   // display: flex;\n   // justify-content: space-between;\n   align-items: right;\n-img{\n-  border-radius: 50%;\n-    width: 30%;\n-    padding-left: 1vw;\n-    box-shadow: 0px 0.5px 5px black;  \n-}\n+\n /**** NAVBAR ****/\n nav {\n   display: flex;\n   justify-content: flex-end;\n"
+                },
+                {
+                    "date": 1698403069130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n    visibility: hidden;\n }\n }\n @media (max-width: 768px) {\n-    .nav-links {\n+    {\n         display: none;\n     }\n     .burger {\n         display: block;\n"
+                },
+                {
+                    "date": 1698403086158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n    visibility: hidden;\n }\n }\n @media (max-width: 768px) {\n-    {\n+    ul{\n         display: none;\n     }\n     .burger {\n         display: block;\n@@ -49,9 +49,9 @@\n   }\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n-  nav ul {\n+  nav {\n     position: fixed;\n     right: 0;\n     top: 5%;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698403092705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   }\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n-  nav {\n+  nav-link {\n     position: fixed;\n     right: 0;\n     top: 5%;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698403097883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   }\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n-  nav-link {\n+  .nav-link {\n     position: fixed;\n     right: 0;\n     top: 5%;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698403109064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   }\n   .active #icons:before {\n     content: \"\\2715\";\n   }\n-  .nav-link {\n+  .nav-links {\n     position: fixed;\n     right: 0;\n     top: 5%;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698403137920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n   //          visibility: visible;\n \n     //  color: white;\n   }\n-  .active #icons:before {\n+  .active #la:before {\n     content: \"\\2715\";\n   }\n   .nav-links {\n     position: fixed;\n"
+                },
+                {
+                    "date": 1698403144303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n   //          visibility: visible;\n \n     //  color: white;\n   }\n-  .active #la:before {\n+  .active label:before {\n     content: \"\\2715\";\n   }\n   .nav-links {\n     position: fixed;\n"
+                },
+                {
+                    "date": 1698403175659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n @media (max-width: 768px) {\n     ul{\n         display: none;\n     }\n-    .burger {\n+    .burger: {\n         display: block;\n         cursor: pointer;\n         content: \"\\2630\";\n     }\n"
+                },
+                {
+                    "date": 1698403182210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n @media (max-width: 768px) {\n     ul{\n         display: none;\n     }\n-    .burger: {\n+    .burger::before {\n         display: block;\n         cursor: pointer;\n         content: \"\\2630\";\n     }\n"
+                },
+                {
+                    "date": 1698403907667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,15 +23,15 @@\n \n  }\n }\n \n-#icons {\n-  cursor: pointer;\n-  display: none;\n-   display: block;\n-   visibility: hidden;\n+// #icons {\n+//   cursor: pointer;\n+//   display: none;\n+//    display: block;\n+//    visibility: hidden;\n+// }\n }\n-}\n @media (max-width: 768px) {\n     ul{\n         display: none;\n     }\n"
+                },
+                {
+                    "date": 1698404000454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n   //          visibility: visible;\n \n     //  color: white;\n   }\n-  .active label:before {\n+  label:before {\n     content: \"\\2715\";\n   }\n   .nav-links {\n     position: fixed;\n"
+                },
+                {
+                    "date": 1698404008996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n   //          visibility: visible;\n \n     //  color: white;\n   }\n-  label:before {\n+  label {\n     content: \"\\2715\";\n   }\n   .nav-links {\n     position: fixed;\n"
+                },
+                {
+                    "date": 1698404014092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n   //          visibility: visible;\n \n     //  color: white;\n   }\n-  label {\n+  label:: {\n     content: \"\\2715\";\n   }\n   .nav-links {\n     position: fixed;\n"
+                },
+                {
+                    "date": 1698404023049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,10 +46,10 @@\n   //          visibility: visible;\n \n     //  color: white;\n   }\n-  label:: {\n-    content: \"\\2715\";\n+  label::after {\n+    content: \"\\2\";\n   }\n   .nav-links {\n     position: fixed;\n     right: 0;\n"
+                },
+                {
+                    "date": 1698404090445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   // justify-content: space-between;\n   align-items: right;\n \n /**** NAVBAR ****/\n-nav {\n+nav- {\n   display: flex;\n   justify-content: flex-end;\n   padding: 20px;\n \n@@ -47,9 +47,9 @@\n \n     //  color: white;\n   }\n   label::after {\n-    content: \"\\2\";\n+    content: \"\\2630\";\n   }\n   .nav-links {\n     position: fixed;\n     right: 0;\n"
+                },
+                {
+                    "date": 1698404098436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   // justify-content: space-between;\n   align-items: right;\n \n /**** NAVBAR ****/\n-nav- {\n+.nav-links {\n   display: flex;\n   justify-content: flex-end;\n   padding: 20px;\n \n"
+                },
+                {
+                    "date": 1698404142739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n   align-items: right;\n \n /**** NAVBAR ****/\n .nav-links {\n-  display: flex;\n-  justify-content: flex-end;\n-  padding: 20px;\n+  // display: flex;\n+  // justify-content: flex-end;\n+  // padding: 20px;\n \n   input[type=checkbox] {\n     display: none;\n }\n"
+                },
+                {
+                    "date": 1698404148083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,11 @@\n .nav-links {\n   // display: flex;\n   // justify-content: flex-end;\n   // padding: 20px;\n+   display: flex;\n+    justify-content: space-around;\n+    width: 50%;\n \n   input[type=checkbox] {\n     display: none;\n }\n"
+                },
+                {
+                    "date": 1698404199975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,19 @@\n   // padding: 20px;\n    display: flex;\n     justify-content: space-around;\n     width: 50%;\n+}\n \n   input[type=checkbox] {\n     display: none;\n }\n .burger {\n-    display: none;\n+     width: 25px;\n+    height: 3px;\n+    background-color: white;\n+    margin: 5px;\n+    border-radius: 3px;\n }\n  ul {\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698404300710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   // height: 10vh;\n   // display: flex;\n   // justify-content: space-between;\n   align-items: right;\n-\n+}\n /**** NAVBAR ****/\n .nav-links {\n   // display: flex;\n   // justify-content: flex-end;\n"
+                },
+                {
+                    "date": 1698404309137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,10 @@\n   display: flex;\n   justify-content: space-between;\n \n  }\n-}\n \n+\n // #icons {\n //   cursor: pointer;\n //   display: none;\n //    display: block;\n"
+                },
+                {
+                    "date": 1698404327699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n //   display: none;\n //    display: block;\n //    visibility: hidden;\n // }\n-}\n+\n @media (max-width: 768px) {\n     ul{\n         display: none;\n     }\n"
+                },
+                {
+                    "date": 1698404350998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n @media (max-width: 768px) {\n     ul{\n         display: none;\n     }\n-    .burger::before {\n+    .label::before {\n         display: block;\n         cursor: pointer;\n         content: \"\\2630\";\n     }\n"
+                },
+                {
+                    "date": 1698404439572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   // display: flex;\n   // justify-content: space-between;\n   align-items: right;\n }\n+\n /**** NAVBAR ****/\n .nav-links {\n   // display: flex;\n   // justify-content: flex-end;\n"
+                },
+                {
+                    "date": 1698404458541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,17 @@\n   align-items: right;\n }\n \n /**** NAVBAR ****/\n+nav {\n+    display: flex;\n+    justify-content: space-around;\n+    align-items: center;\n+    min-height: 8vh;\n+    background-color: #333;\n+    font-family: 'Poppins', sans-serif;\n+}\n+\n .nav-links {\n   // display: flex;\n   // justify-content: flex-end;\n   // padding: 20px;\n@@ -15,11 +24,8 @@\n     justify-content: space-around;\n     width: 50%;\n }\n \n-  input[type=checkbox] {\n-    display: none;\n-}\n .burger {\n      width: 25px;\n     height: 3px;\n     background-color: white;\n"
+                },
+                {
+                    "date": 1698404464844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,12 @@\n     background-color: #333;\n     font-family: 'Poppins', sans-serif;\n }\n \n+  input[type=checkbox] {\n+    display: none;\n+}\n+\n .nav-links {\n   // display: flex;\n   // justify-content: flex-end;\n   // padding: 20px;\n"
+                },
+                {
+                    "date": 1698404568197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     justify-content: space-around;\n     width: 50%;\n }\n \n-.burger {\n+.burger div{\n      width: 25px;\n     height: 3px;\n     background-color: white;\n     margin: 5px;\n"
+                },
+                {
+                    "date": 1698404597090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n .burger div{\n      width: 25px;\n     height: 3px;\n-    background-color: white;\n+    // background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n }\n  ul {\n"
+                },
+                {
+                    "date": 1698404612944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     width: 50%;\n }\n \n .burger div{\n-     width: 25px;\n+     width: 5px;\n     height: 3px;\n     // background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n"
+                },
+                {
+                    "date": 1698404620112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     width: 50%;\n }\n \n .burger div{\n-     width: 5px;\n+     width: 500px;\n     height: 3px;\n     // background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n"
+                },
+                {
+                    "date": 1698404633105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n }\n \n .burger div{\n      width: 500px;\n-    height: 3px;\n+    height: 63px;\n     // background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n }\n"
+                },
+                {
+                    "date": 1698404796952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n //    visibility: hidden;\n // }\n \n @media (max-width: 768px) {\n-    ul{\n+    {\n         display: none;\n     }\n     .label::before {\n         display: block;\n"
+                },
+                {
+                    "date": 1698404828635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n //    visibility: hidden;\n // }\n \n @media (max-width: 768px) {\n-    {\n+    .nav-links {\n         display: none;\n     }\n     .label::before {\n         display: block;\n"
+                },
+                {
+                    "date": 1698404843337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,12 @@\n @media (max-width: 768px) {\n     .nav-links {\n         display: none;\n     }\n+    .burger {\n+        display: block;\n+        cursor: pointer;\n+    }\n     .label::before {\n         display: block;\n         cursor: pointer;\n         content: \"\\2630\";\n"
+                },
+                {
+                    "date": 1698404947580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n     }\n     .burger {\n         display: block;\n         cursor: pointer;\n+        \n     }\n     .label::before {\n         display: block;\n         cursor: pointer;\n"
+                },
+                {
+                    "date": 1698405050556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,15 +56,15 @@\n     }\n     .burger {\n         display: block;\n         cursor: pointer;\n-        \n+            content: \"\\2630\";\n     }\n-    .label::before {\n-        display: block;\n-        cursor: pointer;\n-        content: \"\\2630\";\n-    }\n+    // .label::before {\n+    //     display: block;\n+    //     cursor: pointer;\n+    //     content: \"\\2630\";\n+    // }\n  \n   // .burger:before {\n   //   content: \"\\2630\";\n   //          visibility: visible;\n"
+                },
+                {
+                    "date": 1698405064657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,12 +69,12 @@\n   //   content: \"\\2630\";\n   //          visibility: visible;\n \n     //  color: white;\n-  }\n-  label::after {\n-    content: \"\\2630\";\n-  }\n+  // }\n+  // label::after {\n+  //   content: \"\\2630\";\n+  // }\n   .nav-links {\n     position: fixed;\n     right: 0;\n     top: 5%;\n"
+                },
+                {
+                    "date": 1698405117715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,25 +73,25 @@\n   // }\n   // label::after {\n   //   content: \"\\2630\";\n   // }\n-  .nav-links {\n-    position: fixed;\n-    right: 0;\n-    top: 5%;\n-    flex-direction: column;\n-    width: 100%;\n-    // text-align: center;\n-    transition: 0.25s;\n-  }\n-  nav li {\n+  // .nav-links {\n+  //   position: fixed;\n+  //   right: 0;\n+  //   top: 5%;\n+  //   flex-direction: column;\n+  //   width: 100%;\n+  //   // text-align: center;\n+  //   transition: 0.25s;\n+  // }\n+  // nav li {\n \n-    padding: 3px 0;\n+  //   padding: 3px 0;\n   \n-  }\n-   a:hover {\n-    color: lightblue;\n-  }\n-  nav.active ul {\n-    left: 0;\n-  }\n+  // }\n+  //  a:hover {\n+  //   color: lightblue;\n+  // }\n+  // nav.active ul {\n+  //   left: 0;\n+  // }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698405133391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n+    \n     // .label::before {\n     //     display: block;\n     //     cursor: pointer;\n     //     content: \"\\2630\";\n"
+                },
+                {
+                    "date": 1698405229047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,19 @@\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    \n+    input[type=checkbox]:checked ~ .nav-links {\n+        display: flex;\n+        flex-direction: column;\n+        align-items: center;\n+        position: absolute;\n+        top: 8vh;\n+        right: 0;\n+        background-color: #333;\n+        width: 50%;\n+        height: 92vh;\n+    }\n     // .label::before {\n     //     display: block;\n     //     cursor: pointer;\n     //     content: \"\\2630\";\n"
+                },
+                {
+                    "date": 1698405268856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n @media (max-width: 768px) {\n     .nav-links {\n         display: none;\n     }\n-    .burger {\n+    .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n@@ -63,9 +63,8 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n-        top: 8vh;\n         right: 0;\n         background-color: #333;\n         width: 50%;\n         height: 92vh;\n"
+                },
+                {
+                    "date": 1698405277385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,8 @@\n         position: absolute;\n         right: 0;\n         background-color: #333;\n         width: 50%;\n-        height: 92vh;\n     }\n     // .label::before {\n     //     display: block;\n     //     cursor: pointer;\n"
+                },
+                {
+                    "date": 1698405325449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,11 @@\n .nav-links {\n   // display: flex;\n   // justify-content: flex-end;\n   // padding: 20px;\n-   display: flex;\n-    justify-content: space-around;\n-    width: 50%;\n+  //  display: flex;\n+  //   justify-content: space-around;\n+  //   width: 50%;\n }\n \n .burger div{\n      width: 500px;\n"
+                },
+                {
+                    "date": 1698405331446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,11 @@\n     display: none;\n }\n \n .nav-links {\n-  // display: flex;\n-  // justify-content: flex-end;\n-  // padding: 20px;\n+  display: flex;\n+  justify-content: flex-end;\n+  padding: 20px;\n   //  display: flex;\n   //   justify-content: space-around;\n   //   width: 50%;\n }\n"
+                },
+                {
+                    "date": 1698405364411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,8 @@\n     justify-content: space-around;\n     align-items: center;\n     min-height: 8vh;\n     background-color: #333;\n-    font-family: 'Poppins', sans-serif;\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698405375209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n /**** NAVBAR ****/\n nav {\n     display: flex;\n     justify-content: space-around;\n-    align-items: center;\n-    min-height: 8vh;\n+    align-items: rig;\n     background-color: #333;\n }\n \n   input[type=checkbox] {\n"
+                },
+                {
+                    "date": 1698405385824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: space-around;\n-    align-items: rig;\n+    justify-content: space-s;\n+    align-items: '\\f038';\n     background-color: #333;\n }\n \n   input[type=checkbox] {\n"
+                },
+                {
+                    "date": 1698405425474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: space-s;\n+    justify-content: space-between;\n     align-items: '\\f038';\n     background-color: #333;\n }\n \n@@ -18,9 +18,8 @@\n     display: none;\n }\n \n .nav-links {\n-  display: flex;\n   justify-content: flex-end;\n   padding: 20px;\n   //  display: flex;\n   //   justify-content: space-around;\n"
+                },
+                {
+                    "date": 1698405432859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,8 @@\n     display: none;\n }\n \n .nav-links {\n-  justify-content: flex-end;\n-  padding: 20px;\n   //  display: flex;\n   //   justify-content: space-around;\n   //   width: 50%;\n }\n"
+                },
+                {
+                    "date": 1698405438837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n     display: none;\n }\n \n .nav-links {\n+  justify-content: flex-end;\n+  padding: 20px;\n   //  display: flex;\n   //   justify-content: space-around;\n   //   width: 50%;\n }\n"
+                },
+                {
+                    "date": 1698405454974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: space-between;\n     align-items: '\\f038';\n     background-color: #333;\n }\n \n"
+                },
+                {
+                    "date": 1698405460349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n+    justify-content: space-between;\n     align-items: '\\f038';\n     background-color: #333;\n }\n \n"
+                },
+                {
+                    "date": 1698405470623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: space-between;\n+    justify-content: flex-end;\n     align-items: '\\f038';\n     background-color: #333;\n }\n \n"
+                },
+                {
+                    "date": 1698405486128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: flex-end;\n     align-items: '\\f038';\n     background-color: #333;\n }\n \n"
+                },
+                {
+                    "date": 1698405494637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n+    justify-content: flex-end;\n     align-items: '\\f038';\n-    background-color: #333;\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698405501824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n /**** NAVBAR ****/\n nav {\n     display: flex;\n     justify-content: flex-end;\n-    align-items: '\\f038';\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698405643620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,8 @@\n   //   width: 50%;\n }\n \n .burger div{\n-     width: 500px;\n-    height: 63px;\n     // background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n }\n"
+                },
+                {
+                    "date": 1698405662112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: flex-end;\n+    justify-content: ce;\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698405675316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: ce;\n+    justify-content: center;\n }\n \n   input[type=checkbox] {\n     display: none;\n@@ -23,9 +23,9 @@\n   //   justify-content: space-around;\n   //   width: 50%;\n }\n \n-.burger div{\n+.burger{\n     // background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n }\n"
+                },
+                {
+                    "date": 1698405723178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: center;\n+    justify-content: cenrigter;\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698405728787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: cenrigter;\n+    justify-content: right;\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698405803073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: right;\n+    justify-content: fle;\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698405880356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n /**** NAVBAR ****/\n nav {\n     display: flex;\n-    justify-content: fle;\n+    justify-content: flex-end;\n }\n \n   input[type=checkbox] {\n     display: none;\n@@ -25,9 +25,9 @@\n }\n \n .burger{\n     // background-color: white;\n-    margin: 5px;\n+    margin: 25px;\n     border-radius: 3px;\n }\n  ul {\n   display: flex;\n"
+                },
+                {
+                    "date": 1698405924379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,40 +60,6 @@\n         right: 0;\n         background-color: #333;\n         width: 50%;\n     }\n-    // .label::before {\n-    //     display: block;\n-    //     cursor: pointer;\n-    //     content: \"\\2630\";\n-    // }\n- \n-  // .burger:before {\n-  //   content: \"\\2630\";\n-  //          visibility: visible;\n-\n-    //  color: white;\n-  // }\n-  // label::after {\n-  //   content: \"\\2630\";\n-  // }\n-  // .nav-links {\n-  //   position: fixed;\n-  //   right: 0;\n-  //   top: 5%;\n-  //   flex-direction: column;\n-  //   width: 100%;\n-  //   // text-align: center;\n-  //   transition: 0.25s;\n-  // }\n-  // nav li {\n-\n-  //   padding: 3px 0;\n-  \n-  // }\n-  //  a:hover {\n-  //   color: lightblue;\n-  // }\n-  // nav.active ul {\n-  //   left: 0;\n-  // }\n+   \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698406080758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,8 @@\n         align-items: center;\n         position: absolute;\n         right: 0;\n         background-color: #333;\n-        width: 50%;\n+        width: 50%100;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698406086035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,8 @@\n         align-items: center;\n         position: absolute;\n         right: 0;\n         background-color: #333;\n-        width: 50%100;\n+        width: 100px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698406103494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,8 @@\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n         right: 0;\n-        background-color: #333;\n         width: 100px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698406133872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,16 +34,8 @@\n   justify-content: space-between;\n \n  }\n \n-\n-// #icons {\n-//   cursor: pointer;\n-//   display: none;\n-//    display: block;\n-//    visibility: hidden;\n-// }\n-\n @media (max-width: 768px) {\n     .nav-links {\n         display: none;\n     }\n@@ -56,9 +48,8 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n-        right: 0;\n         width: 100px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698406311723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n-        width: 100px;\n+        width: 200px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698406527206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n @media (max-width: 768px) {\n     .nav-links {\n         display: none;\n     }\n-    .burger::after {\n+    .burger {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n"
+                },
+                {
+                    "date": 1698406540242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n @media (max-width: 768px) {\n     .nav-links {\n         display: none;\n     }\n-    .burger {\n+    .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n"
+                },
+                {
+                    "date": 1698406727870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n /**** NAVBAR ****/\n nav {\n     display: flex;\n     justify-content: flex-end;\n+    align-items: center;\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698406779257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n     display: none;\n }\n \n .nav-links {\n-  justify-content: flex-end;\n-  padding: 20px;\n+  // justify-content: flex-end;\n+  // padding: 20px;\n   //  display: flex;\n   //   justify-content: space-around;\n   //   width: 50%;\n }\n"
+                },
+                {
+                    "date": 1698406791623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,11 @@\n \n .nav-links {\n   // justify-content: flex-end;\n   // padding: 20px;\n-  //  display: flex;\n-  //   justify-content: space-around;\n-  //   width: 50%;\n+   display: flex;\n+    justify-content: space-around;\n+    width: 50%;\n }\n \n .burger{\n     // background-color: white;\n"
+                },
+                {
+                    "date": 1698406806397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,8 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n-        width: 200px;\n+        width: 20px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698406843315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .nav-links {\n+    .nav-links::befor {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n"
+                },
+                {
+                    "date": 1698406850617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .nav-links::befor {\n+    .nav-links {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n"
+                },
+                {
+                    "date": 1698406917903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     justify-content: space-around;\n     width: 50%;\n }\n \n-.burger{\n+.burger div{\n     // background-color: white;\n     margin: 25px;\n     border-radius: 3px;\n }\n"
+                },
+                {
+                    "date": 1698406951704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,12 @@\n }\n \n .burger div{\n     // background-color: white;\n-    margin: 25px;\n+    width: 25px;\n+    height: 3px;\n+    background-color: white;\n+    margin: 5px;\n     border-radius: 3px;\n }\n  ul {\n   display: flex;\n"
+                },
+                {
+                    "date": 1698407157030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n     background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n }\n+\n  ul {\n   display: flex;\n   justify-content: space-between;\n \n"
+                },
+                {
+                    "date": 1698407262777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,11 @@\n     background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n }\n-\n+.burger:: {\n+    display: none;\n+}\n  ul {\n   display: flex;\n   justify-content: space-between;\n \n"
+                },
+                {
+                    "date": 1698407286780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n }\n-.burger:: {\n+.burger::before {\n     display: none;\n }\n  ul {\n   display: flex;\n@@ -45,9 +45,9 @@\n @media (max-width: 768px) {\n     .nav-links {\n         display: none;\n     }\n-    .burger::after {\n+    .burger {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n"
+                },
+                {
+                    "date": 1698407308333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,12 +42,12 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .nav-links {\n+    .nav-links:: {\n         display: none;\n     }\n-    .burger {\n+    .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n"
+                },
+                {
+                    "date": 1698407320818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,17 +42,17 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .nav-links:: {\n+    .nav-links::before {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    input[type=checkbox]:checked ~ .nav-links {\n+    input[type=checkbox]:checked ~ .nav-links:: {\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n"
+                },
+                {
+                    "date": 1698407345898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n     display: none;\n }\n  ul {\n   display: flex;\n+  \n   justify-content: space-between;\n \n  }\n \n@@ -50,9 +51,9 @@\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    input[type=checkbox]:checked ~ .nav-links:: {\n+    input[type=checkbox]:checked ~ .nav-links::after {\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n"
+                },
+                {
+                    "date": 1698407351698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     display: none;\n }\n  ul {\n   display: flex;\n-  \n+  flex-direction: ;\n   justify-content: space-between;\n \n  }\n \n"
+                },
+                {
+                    "date": 1698407436844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     display: none;\n }\n  ul {\n   display: flex;\n-  flex-direction: ;\n+  flex-direction: column;\n   justify-content: space-between;\n \n  }\n \n@@ -56,8 +56,7 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n-        width: 20px;\n-    }\n+ width: 50%;    }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407447045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,8 @@\n     display: none;\n }\n  ul {\n   display: flex;\n-  flex-direction: column;\n   justify-content: space-between;\n \n  }\n \n"
+                },
+                {
+                    "date": 1698407469226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    input[type=checkbox]:checked ~ .nav-links::after {\n+    input[type=checkbox]:checked ~ ::after {\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n"
+                },
+                {
+                    "date": 1698407489538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,17 +42,17 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .nav-links::before {\n+    .::before {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    input[type=checkbox]:checked ~ ::after {\n+    input[type=checkbox]:checked ~ ul::after {\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n"
+                },
+                {
+                    "date": 1698407519288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .::before {\n+    .ul::before {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n@@ -55,7 +55,7 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n- width: 50%;    }\n+   }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407577262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .ul::before {\n+    .::before {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n@@ -55,7 +55,7 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n-   }\n+ width: 50%;    }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407599166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,18 +42,17 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .::before {\n+    .nav-links::before {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n     input[type=checkbox]:checked ~ ul::after {\n-        display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n  width: 50%;    }\n"
+                },
+                {
+                    "date": 1698407614050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n }\n  ul {\n   display: flex;\n   justify-content: space-between;\n+  flex\n \n  }\n \n @media (max-width: 768px) {\n"
+                },
+                {
+                    "date": 1698407619288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n }\n  ul {\n   display: flex;\n   justify-content: space-between;\n-  flex\n+  flex-direction: row;\n \n  }\n \n @media (max-width: 768px) {\n"
+                },
+                {
+                    "date": 1698407640470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,9 @@\n   flex-direction: row;\n \n  }\n \n-@media (max-width: 768px) {\n-    .nav-links::before {\n+@media (max-width: 768px) {    .nav-links::before {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n"
+                },
+                {
+                    "date": 1698407645541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,10 @@\n   flex-direction: row;\n \n  }\n \n-@media (max-width: 768px) {    .nav-links::before {\n+@media (max-width: 768px) {\n+  ::before {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n"
+                },
+                {
+                    "date": 1698407685563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,22 +38,22 @@\n }\n  ul {\n   display: flex;\n   justify-content: space-between;\n-  flex-direction: row;\n \n  }\n \n @media (max-width: 768px) {\n-  ::before {\n+    .nav-links::before {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    input[type=checkbox]:checked ~ ul::after {\n+    input[type=checkbox]:checked ~ ::after {\n+        display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n  width: 50%;    }\n"
+                },
+                {
+                    "date": 1698407705062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n     display: none;\n }\n  ul {\n   display: flex;\n+  flex-direction: column;\n   justify-content: space-between;\n \n  }\n \n@@ -50,12 +51,13 @@\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    input[type=checkbox]:checked ~ ::after {\n+    input[type=checkbox]:checked ~ .nav-links::after {\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n- width: 50%;    }\n+        width: 20px;\n+    }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407712076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     display: none;\n }\n  ul {\n   display: flex;\n-  flex-direction: column;\n+  \n   justify-content: space-between;\n \n  }\n \n"
+                },
+                {
+                    "date": 1698407717189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,8 @@\n     display: none;\n }\n  ul {\n   display: flex;\n-  \n   justify-content: space-between;\n \n  }\n \n@@ -51,9 +50,9 @@\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    input[type=checkbox]:checked ~ .nav-links::after {\n+    input[type=checkbox]:checked ~ .nav-links:: {\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n"
+                },
+                {
+                    "date": 1698407725759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,17 +42,17 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .nav-links::before {\n+    .nav-links:: {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n     }\n-    input[type=checkbox]:checked ~ .nav-links:: {\n+    input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n"
+                },
+                {
+                    "date": 1698407750985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \n  }\n \n @media (max-width: 768px) {\n-    .nav-links:: {\n+    .nav-links {\n         display: none;\n     }\n     .burger::after {\n         display: block;\n@@ -55,8 +55,8 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n-        width: 20px;\n+        width: 200px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407758311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n+        \n         width: 200px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407764461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n         display: flex;\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n-        \n+        top: 0;\n         width: 200px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407787007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n         top: 0;\n+        \n         width: 200px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407793503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         flex-direction: column;\n         align-items: center;\n         position: absolute;\n         top: 0;\n-        \n+        right: 0;\n         width: 200px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407806092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     }\n     input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n         flex-direction: column;\n-        align-items: center;\n+        align-items: rig;\n         position: absolute;\n         top: 0;\n         right: 0;\n         width: 200px;\n"
+                },
+                {
+                    "date": 1698407814557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,10 @@\n     }\n     input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n         flex-direction: column;\n-        align-items: rig;\n+        align-items: right\n+        ;\n         position: absolute;\n         top: 0;\n         right: 0;\n         width: 200px;\n"
+                },
+                {
+                    "date": 1698407862458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,8 @@\n         ;\n         position: absolute;\n         top: 0;\n         right: 0;\n-        width: 200px;\n+        width: 100px;\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407890893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,7 +59,8 @@\n         position: absolute;\n         top: 0;\n         right: 0;\n         width: 100px;\n+        bu\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407897289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,10 @@\n         position: absolute;\n         top: 0;\n         right: 0;\n         width: 100px;\n-        bu\n+        .burger{\n+          \n+        }\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407903213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n         top: 0;\n         right: 0;\n         width: 100px;\n         .burger{\n-          \n+          display: none;\n         }\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407917038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n         position: absolute;\n         top: 0;\n         right: 0;\n         width: 100px;\n-        .burger{\n+        &.burger{\n           display: none;\n         }\n     }\n    \n"
+                },
+                {
+                    "date": 1698407927972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n         right: 0;\n         width: 100px;\n         &.burger{\n           display: none;\n+          visibility: ;\n         }\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407970693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n     height: 3px;\n     background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n+    \n }\n .burger::before {\n     display: none;\n }\n@@ -61,9 +62,9 @@\n         right: 0;\n         width: 100px;\n         &.burger{\n           display: none;\n-          visibility: ;\n+          visibility: hidden;\n         }\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698407976768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,10 @@\n     height: 3px;\n     background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n-    \n+      display: none;\n+\n }\n .burger::before {\n     display: none;\n }\n"
+                },
+                {
+                    "date": 1698407994593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     justify-content: space-around;\n     width: 50%;\n }\n \n-.burger div{\n+.burger::before{\n     // background-color: white;\n     width: 25px;\n     height: 3px;\n     background-color: white;\n"
+                },
+                {
+                    "date": 1698408000383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,11 +34,9 @@\n     border-radius: 3px;\n       display: none;\n \n }\n-.burger::before {\n-    display: none;\n-}\n+\n  ul {\n   display: flex;\n   justify-content: space-between;\n \n"
+                },
+                {
+                    "date": 1698408052651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n         width: 100px;\n         &.burger{\n           display: none;\n           visibility: hidden;\n+          \n         }\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408060124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n         width: 100px;\n         &.burger{\n           display: none;\n           visibility: hidden;\n-          \n+          ri\n         }\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408065482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n         width: 100px;\n         &.burger{\n           display: none;\n           visibility: hidden;\n-          ri\n+          right: -;\n         }\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408075786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n         width: 100px;\n         &.burger{\n           display: none;\n           visibility: hidden;\n-          right: -;\n+          right: -500px;\n         }\n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408088549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n         top: 0;\n         right: 0;\n         width: 100px;\n         &.burger{\n+          co\n           display: none;\n           visibility: hidden;\n           right: -500px;\n         }\n"
+                },
+                {
+                    "date": 1698408096720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n         top: 0;\n         right: 0;\n         width: 100px;\n         &.burger{\n-          co\n+          color: blueviolet;\n           display: none;\n           visibility: hidden;\n           right: -500px;\n         }\n"
+                },
+                {
+                    "date": 1698408117585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,13 +59,8 @@\n         position: absolute;\n         top: 0;\n         right: 0;\n         width: 100px;\n-        &.burger{\n-          color: blueviolet;\n-          display: none;\n-          visibility: hidden;\n-          right: -500px;\n-        }\n+       \n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408126923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,6 +61,11 @@\n         right: 0;\n         width: 100px;\n        \n     }\n-   \n+    .burger{\n+          color: blueviolet;\n+          display: none;\n+          visibility: hidden;\n+          right: -500px;\n+        }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408139318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,11 +61,6 @@\n         right: 0;\n         width: 100px;\n        \n     }\n-    .burger{\n-          color: blueviolet;\n-          display: none;\n-          visibility: hidden;\n-          right: -500px;\n-        }\n+   \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408165665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         flex-direction: column;\n         align-items: right\n         ;\n         position: absolute;\n-        top: 0;\n+        top: 10;\n         right: 0;\n         width: 100px;\n        \n     }\n"
+                },
+                {
+                    "date": 1698408173898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,9 @@\n         display: flex;\n         flex-direction: column;\n         align-items: right\n         ;\n-        position: absolute;\n-        top: 10;\n-        right: 0;\n+        mar\n         width: 100px;\n        \n     }\n    \n"
+                },
+                {
+                    "date": 1698408199487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n         display: flex;\n         flex-direction: column;\n         align-items: right\n         ;\n-        mar\n+        margin: 50;\n         width: 100px;\n        \n     }\n    \n"
+                },
+                {
+                    "date": 1698408215053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,11 @@\n         display: flex;\n         flex-direction: column;\n         align-items: right\n         ;\n-        margin: 50;\n+        position: absolute;\n+        top: 0;\n+        right: 0;\n         width: 100px;\n        \n     }\n    \n"
+                },
+                {
+                    "date": 1698408253057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,8 @@\n \n .burger::before{\n     // background-color: white;\n     width: 25px;\n-    height: 3px;\n     background-color: white;\n     margin: 5px;\n     border-radius: 3px;\n       display: none;\n"
+                },
+                {
+                    "date": 1698408265212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,10 @@\n }\n \n .burger::before{\n     // background-color: white;\n-    width: 25px;\n     background-color: white;\n-    margin: 5px;\n+    margin: 25px;\n     border-radius: 3px;\n       display: none;\n \n }\n"
+                },
+                {
+                    "date": 1698408273559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,8 @@\n .burger::before{\n     // background-color: white;\n     background-color: white;\n     margin: 25px;\n-    border-radius: 3px;\n       display: none;\n \n }\n \n"
+                },
+                {
+                    "date": 1698408292718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,8 @@\n }\n \n .burger::before{\n     // background-color: white;\n-    background-color: white;\n     margin: 25px;\n       display: none;\n \n }\n"
+                },
+                {
+                    "date": 1698408309198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n }\n \n .burger::before{\n     // background-color: white;\n-    margin: 25px;\n+    margin: 5px;\n       display: none;\n \n }\n \n"
+                },
+                {
+                    "date": 1698408315047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n }\n \n .burger::before{\n     // background-color: white;\n-    margin: 5px;\n+    margin: px;\n       display: none;\n \n }\n \n"
+                },
+                {
+                    "date": 1698408336103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,8 @@\n }\n \n .burger::before{\n     // background-color: white;\n-    margin: px;\n       display: none;\n \n }\n \n"
+                },
+                {
+                    "date": 1698408346523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n+            \n     }\n     input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n         flex-direction: column;\n"
+                },
+                {
+                    "date": 1698408355613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,10 @@\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n-            \n+                margin: px;\n+\n     }\n     input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n         flex-direction: column;\n"
+                },
+                {
+                    "date": 1698408366718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n-                margin: px;\n+                margin: 0px;\n \n     }\n     input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n"
+                },
+                {
+                    "date": 1698408406948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     .burger::after {\n         display: block;\n         cursor: pointer;\n             content: \"\\2630\";\n-                margin: 0px;\n+                margin: 20px;\n \n     }\n     input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n@@ -56,8 +56,9 @@\n         position: absolute;\n         top: 0;\n         right: 0;\n         width: 100px;\n+        b\n        \n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408424122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,11 +54,11 @@\n         align-items: right\n         ;\n         position: absolute;\n         top: 0;\n-        right: 0;\n+        right: 10;\n         width: 100px;\n-        b\n+        background-color: black;\n        \n     }\n    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698408444608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,13 +50,13 @@\n     }\n     input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n         flex-direction: column;\n-        align-items: right\n+        align-items: center\n         ;\n         position: absolute;\n         top: 0;\n-        right: 10;\n+        right: 10px;\n         width: 100px;\n         background-color: black;\n        \n     }\n"
+                },
+                {
+                    "date": 1698408453136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,9 @@\n     }\n     input[type=checkbox]:checked ~ .nav-links {\n         display: flex;\n         flex-direction: column;\n+        \n         align-items: center\n         ;\n         position: absolute;\n         top: 0;\n"
+                },
+                {
+                    "date": 1698408470874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n nav {\n     display: flex;\n     justify-content: flex-end;\n     align-items: center;\n-    width: 100;\n+    width: 100%;\n }\n \n   input[type=checkbox] {\n     display: none;\n"
+                },
+                {
+                    "date": 1698417258521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n header { \n    background-color: black;\n   height: 10vh;\n  display: flex;\n-  justify-content: fle;\n+  justify-content: flex-end;\n   align-items: left;\n }\n \n /**** NAVBAR ****/\n"
                 }
             ],
             "date": 1697981671190,

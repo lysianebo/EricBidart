@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 95,
+            "activePatchIndex": 359,
             "patches": [
                 {
                     "date": 1698000686430,
@@ -388,6 +388,1062 @@
                 {
                     "date": 1698058914330,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n main, .expositions{\n-    background-image: url(https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n     // grid-area: main;\n }\n"
+                },
+                {
+                    "date": 1698195173252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,144 @@\n+\n+\n+ .expositions{\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n+    background-repeat: no-repeat;\n+    overflow: hidden;\n+    // grid-area: main;\n+}\n+\n+// .gallerie_expositions {\n+//     position: fixed;\n+   \n+  \n+//     width: 100%;\n+//     height: 76vh;\n+//     object-fit: cover;\n+//     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n+ \n+\n+.child {\n+    display: flex;\n+    flex-direction: column;\n+    background: transparent;\n+    padding: 1.5rem;\n+    border-radius: 1rem;\n+    /* border: 2px solid white;  */\n+    height: 60vh;\n+    opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n+    transform: translateY(600px); /* Décalez les cartes vers le bas */\n+}\n+.child:hover {\n+    transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n+    background-color: #333; /* Change la couleur de fond lors du survol */\n+}\n+.details {\n+\tmax-height: 0;\n+    padding: 0;\n+    overflow: hidden;\n+    visibility: hidden;\n+    transform: rotatex(-180deg);\n+    transform-origin: top center ;\n+    backface-visibility: hidden;\n+    transition: 0.3s ease ;\n+    padding-top: 30px;\n+\t}\n+.child:hover .details {\n+    max-height: none;\n+    overflow: visible;\n+    visibility: visible;\n+    transform: rotatex(0deg);\n+}\n+\n+/* Animation pour la première carte */\n+.child:nth-child(1)  {\n+    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n+}\n+\n+/* Animation pour la deuxième carte */\n+.child:nth-child(2) {\n+    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n+}\n+\n+/* Animation pour la troisième carte */\n+.child:nth-child(3)  {\n+    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n+}\n+.child:nth-child(4)  {\n+    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n+}\n+\n+/* Animation pour la deuxième carte */\n+.child:nth-child(5) {\n+    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n+}\n+\n+/* Animation pour la troisième carte */\n+.child:nth-child(6)  {\n+    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n+}\n+.child:nth-child(7)  {\n+    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n+}\n+\n+\n+/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n+// @keyframes fadeInUp {\n+//     to {\n+//         opacity: 1;\n+//         transform: translateY(0);\n+//     }\n+// }\n+\n+// #expositions{\n+//     margin: 0px;\n+//   } \n+\n+.gallerie_expositions{\n+        display: grid;\n+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n+        grid-gap: 1rem;\n+        padding: 1rem;\n+        border-radius: 1rem;\n+      }\n+.gallerie_expositions > child {\n+        /* border-radius: 1rem;\n+        border: 2px solid white; */\n+        min-height: 54vh;\n+      }\n+.gallerie_expositions img, video{\n+    object-fit: cover;\n+  height: 350px;\n+    border-radius: 1rem;\n+    /* border: 1px solid white;\n+} */\n+}\n+.gallerie_expositions img, video:hover{\n+   transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n+    background-color: #333; /* Change la couleur de fond lors du survol */\n+}\n+  \n+   \n+\n+// @keyframes flipper{\n+//     from{\n+//        transform: scale(0.0); \n+//     }\n+//     to{\n+//        transform: scale(1); \n+//     }\n+// }\n+\n+\n+\n+@media (max-width: 600px) {\n+   /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n+   .logo img {\n+      width: 30%; /* Réduisez la taille du logo */\n+   }\n+   h1{\n+    text-align: center;\n+   }\n+\n+  }\n+  \n"
+                },
+                {
+                    "date": 1698200801491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n- .expositions{\n+ expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n     // grid-area: main;\n@@ -141,148 +141,4 @@\n    }\n \n   }\n   \n-\n-\n-main, .expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg) ;\n-    background-repeat: no-repeat;\n-    overflow: hidden;\n-    // grid-area: main;\n-}\n-\n-// .gallerie_expositions {\n-//     position: fixed;\n-   \n-  \n-//     width: 100%;\n-//     height: 76vh;\n-//     object-fit: cover;\n-//     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n- \n-\n-.child {\n-    display: flex;\n-    flex-direction: column;\n-    background: transparent;\n-    padding: 1.5rem;\n-    border-radius: 1rem;\n-    /* border: 2px solid white;  */\n-    height: 60vh;\n-    opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n-    transform: translateY(600px); /* Décalez les cartes vers le bas */\n-}\n-.child:hover {\n-    transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n-    background-color: #333; /* Change la couleur de fond lors du survol */\n-}\n-.details {\n-\tmax-height: 0;\n-    padding: 0;\n-    overflow: hidden;\n-    visibility: hidden;\n-    transform: rotatex(-180deg);\n-    transform-origin: top center ;\n-    backface-visibility: hidden;\n-    transition: 0.3s ease ;\n-    padding-top: 30px;\n-\t}\n-.child:hover .details {\n-    max-height: none;\n-    overflow: visible;\n-    visibility: visible;\n-    transform: rotatex(0deg);\n-}\n-\n-/* Animation pour la première carte */\n-.child:nth-child(1)  {\n-    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n-}\n-\n-/* Animation pour la deuxième carte */\n-.child:nth-child(2) {\n-    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n-}\n-\n-/* Animation pour la troisième carte */\n-.child:nth-child(3)  {\n-    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n-}\n-.child:nth-child(4)  {\n-    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n-}\n-\n-/* Animation pour la deuxième carte */\n-.child:nth-child(5) {\n-    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n-}\n-\n-/* Animation pour la troisième carte */\n-.child:nth-child(6)  {\n-    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n-}\n-.child:nth-child(7)  {\n-    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n-}\n-\n-\n-/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n-// @keyframes fadeInUp {\n-//     to {\n-//         opacity: 1;\n-//         transform: translateY(0);\n-//     }\n-// }\n-\n-// #expositions{\n-//     margin: 0px;\n-//   } \n-\n-.gallerie_expositions{\n-        display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n-        grid-gap: 1rem;\n-        padding: 1rem;\n-        border-radius: 1rem;\n-      }\n-.gallerie_expositions > child {\n-        /* border-radius: 1rem;\n-        border: 2px solid white; */\n-        min-height: 54vh;\n-      }\n-.gallerie_expositions img, video{\n-    object-fit: cover;\n-  height: 350px;\n-    border-radius: 1rem;\n-    /* border: 1px solid white;\n-} */\n-}\n-.gallerie_expositions img, video:hover{\n-   transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n-    background-color: #333; /* Change la couleur de fond lors du survol */\n-}\n-  \n-   \n-\n-// @keyframes flipper{\n-//     from{\n-//        transform: scale(0.0); \n-//     }\n-//     to{\n-//        transform: scale(1); \n-//     }\n-// }\n-\n-\n-\n-@media (max-width: 600px) {\n-   /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n-   .logo img {\n-      width: 30%; /* Réduisez la taille du logo */\n-   }\n-   h1{\n-    text-align: center;\n-   }\n-\n-  }\n-  \n"
+                },
+                {
+                    "date": 1698200822587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n \n \n- expositions{\n+ #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n+    \n     // grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698200827673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n-    \n+    ba\n     // grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698200833338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n-    ba\n+    background-size: ;\n     // grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698200849812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n-    background-size: ;\n+    background-size: cover;\n     // grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698223280108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     overflow: hidden;\n     background-size: cover;\n-    // grid-area: main;\n+    grid-area: main;\n }\n \n // .gallerie_expositions {\n //     position: fixed;\n"
+                },
+                {
+                    "date": 1698223305154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n-    overflow: hidden;\n     background-size: cover;\n     grid-area: main;\n }\n \n"
+                },
+                {
+                    "date": 1698223311488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n+    overflow: hidden;\n     background-size: cover;\n     grid-area: main;\n }\n \n"
+                },
+                {
+                    "date": 1698223323222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,10 @@\n \n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n-    overflow: hidden;\n-    background-size: cover;\n+    // overflow: hidden;\n+    // background-size: cover;\n     grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698223328474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n-    // background-size: cover;\n+    background-size: cover;\n     grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698223336706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n-    background-size: cover;\n+    background-size: 100v;\n     grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698223381819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n-    background-size: 100v;\n+    background-size: contain;\n     grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698223387739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n-    background-size: contain;\n+    background-size: cover;\n     grid-area: main;\n }\n \n // .gallerie_expositions {\n"
+                },
+                {
+                    "date": 1698223400353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     background-size: cover;\n     grid-area: main;\n }\n \n-// .gallerie_expositions {\n+ .gallerie_expositions {\n //     position: fixed;\n    \n   \n //     width: 100%;\n"
+                },
+                {
+                    "date": 1698223406409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,9 @@\n     background-size: cover;\n     grid-area: main;\n }\n \n- .gallerie_expositions {\n-//     position: fixed;\n+ .gallerie_expositions {  position: fixed;\n    \n   \n //     width: 100%;\n //     height: 76vh;\n"
+                },
+                {
+                    "date": 1698223414669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n     background-size: cover;\n     grid-area: main;\n }\n \n- .gallerie_expositions {  position: fixed;\n+ .gallerie_expositions {\n+      position: fixed;\n    \n-  \n-//     width: 100%;\n+       width: 100%;\n //     height: 76vh;\n //     object-fit: cover;\n //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n"
+                },
+                {
+                    "date": 1698223423065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n  .gallerie_expositions {\n       position: fixed;\n    \n        width: 100%;\n-//     height: 76vh;\n-//     object-fit: cover;\n+  height: 76vh;\n+ object-fit: cover;\n //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  \n \n .child {\n"
+                },
+                {
+                    "date": 1698223443444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n        width: 100%;\n   height: 76vh;\n  object-fit: cover;\n //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n- \n+ }\n \n .child {\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698223460192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     background: transparent;\n     padding: 1.5rem;\n     border-radius: 1rem;\n     /* border: 2px solid white;  */\n-    height: 60vh;\n+    height: 50vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n }\n .child:hover {\n"
+                },
+                {
+                    "date": 1698225197707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     background-size: cover;\n     grid-area: main;\n }\n \n- .gallerie_expositions {\n+ .gallerie {\n       position: fixed;\n    \n        width: 100%;\n   height: 76vh;\n"
+                },
+                {
+                    "date": 1698225258372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,32 +93,9 @@\n // #expositions{\n //     margin: 0px;\n //   } \n \n-.gallerie_expositions{\n-        display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n-        grid-gap: 1rem;\n-        padding: 1rem;\n-        border-radius: 1rem;\n-      }\n-.gallerie_expositions > child {\n-        /* border-radius: 1rem;\n-        border: 2px solid white; */\n-        min-height: 54vh;\n-      }\n-.gallerie_expositions img, video{\n-    object-fit: cover;\n-  height: 350px;\n-    border-radius: 1rem;\n-    /* border: 1px solid white;\n-} */\n-}\n-.gallerie_expositions img, video:hover{\n-   transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n-    background-color: #333; /* Change la couleur de fond lors du survol */\n-}\n-  \n+\n    \n \n // @keyframes flipper{\n //     from{\n"
+                },
+                {
+                    "date": 1698225273040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n   height: 76vh;\n  object-fit: cover;\n //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n  }\n+ \n \n .child {\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698225684165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,17 +7,40 @@\n     background-size: cover;\n     grid-area: main;\n }\n \n- .gallerie {\n-      position: fixed;\n+//  .gallerie {\n+//       position: fixed;\n    \n-       width: 100%;\n-  height: 76vh;\n- object-fit: cover;\n-//     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n- }\n- \n+//        width: 100%;\n+//   height: 76vh;\n+//  object-fit: cover;\n+// //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n+//  }\n+ .gallerie_expositions{\n+        display: grid;\n+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n+        grid-gap: 1rem;\n+        padding: 1rem;\n+        border-radius: 1rem;\n+      }\n+.gallerie_expositions > child {\n+        /* border-radius: 1rem;\n+        border: 2px solid white; */\n+        min-height: 54vh;\n+      }\n+.gallerie_expositions img, video{\n+    object-fit: cover;\n+  height: 350px;\n+    border-radius: 1rem;\n+    /* border: 1px solid white;\n+} */\n+}\n+.gallerie_expositions img, video:hover{\n+   transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n+    background-color: #333; /* Change la couleur de fond lors du survol */\n+}\n+  \n \n .child {\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1698226000492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n-    grid-area: main;\n }\n \n //  .gallerie {\n //       position: fixed;\n"
+                },
+                {
+                    "date": 1698226081302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n         grid-gap: 1rem;\n         padding: 1rem;\n         border-radius: 1rem;\n       }\n"
+                },
+                {
+                    "date": 1698226099295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n         grid-gap: 1rem;\n-        padding: 1rem;\n         border-radius: 1rem;\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226115211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n //  }\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n-        grid-gap: 1rem;\n+        grid-gap: 0.5rem;\n         border-radius: 1rem;\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226140774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,8 @@\n         min-height: 54vh;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n-  height: 350px;\n     border-radius: 1rem;\n     /* border: 1px solid white;\n } */\n }\n"
+                },
+                {
+                    "date": 1698226147593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n         min-height: 54vh;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n+  height: 350px;\n     border-radius: 1rem;\n     /* border: 1px solid white;\n } */\n }\n"
+                },
+                {
+                    "date": 1698226241993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n         border: 2px solid white; */\n-        min-height: 54vh;\n+        min-height: 350p;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n   height: 350px;\n"
+                },
+                {
+                    "date": 1698226262753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,13 +23,12 @@\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n         border: 2px solid white; */\n-        min-height: 350p;\n+        min-height: 350px;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n-  height: 350px;\n     border-radius: 1rem;\n     /* border: 1px solid white;\n } */\n }\n"
+                },
+                {
+                    "date": 1698226269546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n         min-height: 350px;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n+  height: 350px;\n     border-radius: 1rem;\n     /* border: 1px solid white;\n } */\n }\n"
+                },
+                {
+                    "date": 1698226281394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n         border: 2px solid white; */\n-        min-height: 350px;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n   height: 350px;\n"
+                },
+                {
+                    "date": 1698226289614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n         border: 2px solid white; */\n+        min-height: 350px;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n   height: 350px;\n"
+                },
+                {
+                    "date": 1698226301784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n         border: 2px solid white; */\n-        min-height: 350px;\n+        height: 350px;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n   height: 350px;\n"
+                },
+                {
+                    "date": 1698226343110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n //  }\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n-        grid-gap: 0.5rem;\n         border-radius: 1rem;\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226396021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n //  }\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n+        grid-gap: 0.5rem;\n         border-radius: 1rem;\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226405558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,8 @@\n .child {\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n-    padding: 1.5rem;\n     border-radius: 1rem;\n     /* border: 2px solid white;  */\n     height: 50vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n"
+                },
+                {
+                    "date": 1698226426867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n .child {\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n+    padding: 1.5rem;\n     border-radius: 1rem;\n     /* border: 2px solid white;  */\n     height: 50vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n"
+                },
+                {
+                    "date": 1698226440916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n       }\n .gallerie_expositions > child {\n         /* border-radius: 1rem;\n         border: 2px solid white; */\n-        height: 350px;\n       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n   height: 350px;\n"
+                },
+                {
+                    "date": 1698226493047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,12 +20,12 @@\n         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n         grid-gap: 0.5rem;\n         border-radius: 1rem;\n       }\n-.gallerie_expositions > child {\n-        /* border-radius: 1rem;\n-        border: 2px solid white; */\n-      }\n+// .gallerie_expositions > child {\n+//         /* border-radius: 1rem;\n+//         border: 2px solid white; */\n+//       }\n .gallerie_expositions img, video{\n     object-fit: cover;\n   height: 350px;\n     border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226560560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,8 @@\n .child {\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n-    padding: 1.5rem;\n     border-radius: 1rem;\n     /* border: 2px solid white;  */\n     height: 50vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n"
+                },
+                {
+                    "date": 1698226571081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n //  }\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n-        grid-gap: 0.5rem;\n+        grid-gap: rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226591727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n-        grid-gap: rem;\n+        grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));\n+        grid-gap: 1rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226602765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));\n         grid-gap: 1rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n"
+                },
+                {
+                    "date": 1698226612995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n         grid-gap: 1rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n"
+                },
+                {
+                    "date": 1698226624859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));\n         grid-gap: 1rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n"
+                },
+                {
+                    "date": 1698226642024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));\n-        grid-gap: 1rem;\n+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n+        grid-gap: 2rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226706322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n //  }\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n-        grid-gap: 2rem;\n+        grid-gap: 1.5rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698226844973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n+    dis\n }\n \n //  .gallerie {\n //       position: fixed;\n"
+                },
+                {
+                    "date": 1698226856801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n-    dis\n }\n \n //  .gallerie {\n //       position: fixed;\n"
+                },
+                {
+                    "date": 1698227282069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n //  }\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n-        grid-gap: 1.5rem;\n+        grid-gap: 1.rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698227307986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,12 @@\n //  object-fit: cover;\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n+    al\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n-        grid-gap: 1.rem;\n+        grid-gap: 1.2rem;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698227319875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n //  object-fit: cover;\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n-    al\n+    \n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698227327880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n     \n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n+        gri\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698227341848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     \n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n-        gri\n+        po\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698227406460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n //  object-fit: cover;\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n-    \n+    ma\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         po\n"
+                },
+                {
+                    "date": 1698227412230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n //  object-fit: cover;\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n-    ma\n+    margin: auto;\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         po\n"
+                },
+                {
+                    "date": 1698227428822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n //  object-fit: cover;\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n-    margin: auto;\n+    margin: ;\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         po\n"
+                },
+                {
+                    "date": 1698227442388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n //  object-fit: cover;\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n-    margin: ;\n+    margin: 10vw;\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         po\n"
+                },
+                {
+                    "date": 1698227451646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n //  object-fit: cover;\n // //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n //  }\n  .gallerie_expositions{\n-    margin: 10vw;\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         po\n"
+                },
+                {
+                    "date": 1698227497124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n-        po\n+        pa\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698227503949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n-        pa\n+        padding: \n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698227510915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n-        padding: \n+        padding: 20px;\n         border-radius: 1rem;\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698227772338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,19 +25,19 @@\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n //         border: 2px solid white; */\n //       }\n-.gallerie_expositions img, video{\n-    object-fit: cover;\n-  height: 350px;\n-    border-radius: 1rem;\n-    /* border: 1px solid white;\n-} */\n-}\n-.gallerie_expositions img, video:hover{\n-   transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n-    background-color: #333; /* Change la couleur de fond lors du survol */\n-}\n+// .gallerie_expositions img, video{\n+//     object-fit: cover;\n+//   height: 350px;\n+//     border-radius: 1rem;\n+//     /* border: 1px solid white;\n+// } */\n+// }\n+// .gallerie_expositions img, video:hover{\n+//    transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n+//     background-color: #333; /* Change la couleur de fond lors du survol */\n+// }\n   \n \n .child {\n     display: flex;\n"
+                },
+                {
+                    "date": 1698236807895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,112 @@\n+\n+\n+ #expositions{\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n+    background-repeat: no-repeat;\n+    // overflow: hidden;\n+    background-size: cover;\n+}\n+\n+//  .gallerie {\n+//       position: fixed;\n+   \n+//        width: 100%;\n+//   height: 76vh;\n+//  object-fit: cover;\n+// //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n+//  }\n+ .gallerie_expositions{\n+        display: grid;\n+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n+        grid-gap: 1.2rem;\n+        padding: 20px;\n+        border-radius: 1rem;\n+      }\n+// .gallerie_expositions > child {\n+//         /* border-radius: 1rem;\n+//         border: 2px solid white; */\n+//       }\n+// .gallerie_expositions img, video{\n+//     object-fit: cover;\n+//   height: 350px;\n+//     border-radius: 1rem;\n+//     /* border: 1px solid white;\n+// } */\n+// }\n+// .gallerie_expositions img, video:hover{\n+//    transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n+//     background-color: #333; /* Change la couleur de fond lors du survol */\n+// }\n+  \n+\n+\n+\n+/* Animation pour la première carte */\n+.child:nth-child(1)  {\n+    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n+}\n+\n+/* Animation pour la deuxième carte */\n+.child:nth-child(2) {\n+    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n+}\n+\n+/* Animation pour la troisième carte */\n+.child:nth-child(3)  {\n+    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n+}\n+.child:nth-child(4)  {\n+    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n+}\n+\n+/* Animation pour la deuxième carte */\n+.child:nth-child(5) {\n+    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n+}\n+\n+/* Animation pour la troisième carte */\n+.child:nth-child(6)  {\n+    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n+}\n+.child:nth-child(7)  {\n+    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n+}\n+\n+\n+/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n+// @keyframes fadeInUp {\n+//     to {\n+//         opacity: 1;\n+//         transform: translateY(0);\n+//     }\n+// }\n+\n+// #expositions{\n+//     margin: 0px;\n+//   } \n+\n+\n+   \n+\n+// @keyframes flipper{\n+//     from{\n+//        transform: scale(0.0); \n+//     }\n+//     to{\n+//        transform: scale(1); \n+//     }\n+// }\n+\n+\n+\n+@media (max-width: 600px) {\n+   /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n+   .logo img {\n+      width: 30%; /* Réduisez la taille du logo */\n+   }\n+   h1{\n+    text-align: center;\n+   }\n+\n+  }\n+  \n"
+                },
+                {
+                    "date": 1698236815108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         padding: 20px;\n         border-radius: 1rem;\n+        \n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n //         border: 2px solid white; */\n@@ -109,146 +110,4 @@\n    }\n \n   }\n   \n-\n-\n- #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n-    background-repeat: no-repeat;\n-    // overflow: hidden;\n-    background-size: cover;\n-}\n-\n-//  .gallerie {\n-//       position: fixed;\n-   \n-//        width: 100%;\n-//   height: 76vh;\n-//  object-fit: cover;\n-// //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n-//  }\n- .gallerie_expositions{\n-        display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n-        grid-gap: 1.2rem;\n-        padding: 20px;\n-        border-radius: 1rem;\n-      }\n-// .gallerie_expositions > child {\n-//         /* border-radius: 1rem;\n-//         border: 2px solid white; */\n-//       }\n-// .gallerie_expositions img, video{\n-//     object-fit: cover;\n-//   height: 350px;\n-//     border-radius: 1rem;\n-//     /* border: 1px solid white;\n-// } */\n-// }\n-// .gallerie_expositions img, video:hover{\n-//    transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n-//     background-color: #333; /* Change la couleur de fond lors du survol */\n-// }\n-  \n-\n-.child {\n-    display: flex;\n-    flex-direction: column;\n-    background: transparent;\n-    border-radius: 1rem;\n-    /* border: 2px solid white;  */\n-    height: 50vh;\n-    opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n-    transform: translateY(600px); /* Décalez les cartes vers le bas */\n-}\n-.child:hover {\n-    transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n-    background-color: #333; /* Change la couleur de fond lors du survol */\n-}\n-.details {\n-\tmax-height: 0;\n-    padding: 0;\n-    overflow: hidden;\n-    visibility: hidden;\n-    transform: rotatex(-180deg);\n-    transform-origin: top center ;\n-    backface-visibility: hidden;\n-    transition: 0.3s ease ;\n-    padding-top: 30px;\n-\t}\n-.child:hover .details {\n-    max-height: none;\n-    overflow: visible;\n-    visibility: visible;\n-    transform: rotatex(0deg);\n-}\n-\n-/* Animation pour la première carte */\n-.child:nth-child(1)  {\n-    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n-}\n-\n-/* Animation pour la deuxième carte */\n-.child:nth-child(2) {\n-    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n-}\n-\n-/* Animation pour la troisième carte */\n-.child:nth-child(3)  {\n-    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n-}\n-.child:nth-child(4)  {\n-    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n-}\n-\n-/* Animation pour la deuxième carte */\n-.child:nth-child(5) {\n-    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n-}\n-\n-/* Animation pour la troisième carte */\n-.child:nth-child(6)  {\n-    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n-}\n-.child:nth-child(7)  {\n-    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n-}\n-\n-\n-/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n-// @keyframes fadeInUp {\n-//     to {\n-//         opacity: 1;\n-//         transform: translateY(0);\n-//     }\n-// }\n-\n-// #expositions{\n-//     margin: 0px;\n-//   } \n-\n-\n-   \n-\n-// @keyframes flipper{\n-//     from{\n-//        transform: scale(0.0); \n-//     }\n-//     to{\n-//        transform: scale(1); \n-//     }\n-// }\n-\n-\n-\n-@media (max-width: 600px) {\n-   /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n-   .logo img {\n-      width: 30%; /* Réduisez la taille du logo */\n-   }\n-   h1{\n-    text-align: center;\n-   }\n-\n-  }\n-  \n"
+                },
+                {
+                    "date": 1698236842464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,39 @@\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         padding: 20px;\n         border-radius: 1rem;\n-        \n+        >.child {\n+    display: flex;\n+    flex-direction: column;\n+    background: transparent;\n+    border-radius: 1rem;\n+    /* border: 2px solid white;  */\n+    height: 50vh;\n+    opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n+    transform: translateY(600px); /* Décalez les cartes vers le bas */\n+}\n+.child:hover {\n+    transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n+    background-color: #333; /* Change la couleur de fond lors du survol */\n+}\n+.details {\n+\tmax-height: 0;\n+    padding: 0;\n+    overflow: hidden;\n+    visibility: hidden;\n+    transform: rotatex(-180deg);\n+    transform-origin: top center ;\n+    backface-visibility: hidden;\n+    transition: 0.3s ease ;\n+    padding-top: 30px;\n+\t}\n+.child:hover .details {\n+    max-height: none;\n+    overflow: visible;\n+    visibility: visible;\n+    transform: rotatex(0deg);\n+}\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n //         border: 2px solid white; */\n"
+                },
+                {
+                    "date": 1698236867974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     flex-direction: column;\n     background: transparent;\n     border-radius: 1rem;\n     /* border: 2px solid white;  */\n-    height: 50vh;\n+    min-height: 50vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n }\n .child:hover {\n"
+                },
+                {
+                    "date": 1698236879542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     flex-direction: column;\n     background: transparent;\n     border-radius: 1rem;\n     /* border: 2px solid white;  */\n-    min-height: 50vh;\n+    min-height: 60vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n }\n .child:hover {\n"
+                },
+                {
+                    "date": 1698236907782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,9 @@\n     /* border: 2px solid white;  */\n     min-height: 60vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n-}\n-.child:hover {\n+:hover {\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n     background-color: #333; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698236931841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n     border-radius: 1rem;\n-    /* border: 2px solid white;  */\n+    // /* border: 2px solid white;  */\n     min-height: 60vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n :hover {\n"
+                },
+                {
+                    "date": 1698236941483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n     border-radius: 1rem;\n-    // /* border: 2px solid white;  */\n+    border: 2px solid white;  */\n     min-height: 60vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n :hover {\n"
+                },
+                {
+                    "date": 1698236954336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,8 @@\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n     border-radius: 1rem;\n-    border: 2px solid white;  */\n     min-height: 60vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n :hover {\n"
+                },
+                {
+                    "date": 1698236960053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n     border-radius: 1rem;\n-    min-height: 60vh;\n+    max-height: 60vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n :hover {\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n"
+                },
+                {
+                    "date": 1698236996173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     border-radius: 1rem;\n     max-height: 60vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n-:hover {\n+&:hover {\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n     background-color: #333; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698237014819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,12 +25,14 @@\n     display: flex;\n     flex-direction: column;\n     background: transparent;\n     border-radius: 1rem;\n-    max-height: 60vh;\n+    /* border: 2px solid white;  */\n+    min-height: 60vh;\n     opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n-&:hover {\n+}\n+.child:hover {\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n     background-color: #333; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698237038842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n }\n .child:hover {\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n-    background-color: #333; /* Change la couleur de fond lors du survol */\n+    background-color: #d03131; /* Change la couleur de fond lors du survol */\n }\n .details {\n \tmax-height: 0;\n     padding: 0;\n"
+                },
+                {
+                    "date": 1698237069637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n     background-color: #d03131; /* Change la couleur de fond lors du survol */\n }\n .details {\n+    \n \tmax-height: 0;\n     padding: 0;\n     overflow: hidden;\n     visibility: hidden;\n"
+                },
+                {
+                    "date": 1698237125914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n     background-color: #d03131; /* Change la couleur de fond lors du survol */\n }\n .details {\n-    \n+    font\n \tmax-height: 0;\n     padding: 0;\n     overflow: hidden;\n     visibility: hidden;\n"
+                },
+                {
+                    "date": 1698237132617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n     background-color: #d03131; /* Change la couleur de fond lors du survol */\n }\n .details {\n-    font\n+    font-family: roto;\n \tmax-height: 0;\n     padding: 0;\n     overflow: hidden;\n     visibility: hidden;\n"
+                },
+                {
+                    "date": 1698237142630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n     background-color: #d03131; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-family: roto;\n+    font\n \tmax-height: 0;\n     padding: 0;\n     overflow: hidden;\n     visibility: hidden;\n"
+                },
+                {
+                    "date": 1698237147811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     background-color: #d03131; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-family: roto;\n-    font\n+    font-size: 16px;\n \tmax-height: 0;\n     padding: 0;\n     overflow: hidden;\n     visibility: hidden;\n"
+                },
+                {
+                    "date": 1698237154475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,8 @@\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n     background-color: #d03131; /* Change la couleur de fond lors du survol */\n }\n .details {\n-    font-family: roto;\n     font-size: 16px;\n \tmax-height: 0;\n     padding: 0;\n     overflow: hidden;\n"
+                },
+                {
+                    "date": 1698237163439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n     background-color: #d03131; /* Change la couleur de fond lors du survol */\n }\n .details {\n-    font-size: 16px;\n+    font-size: 14px;\n \tmax-height: 0;\n     padding: 0;\n     overflow: hidden;\n     visibility: hidden;\n"
+                },
+                {
+                    "date": 1698237184274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n }\n .child:hover {\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n-    background-color: #d03131; /* Change la couleur de fond lors du survol */\n+    background-color: #766a6a; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n"
+                },
+                {
+                    "date": 1698237199894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     transform: translateY(600px); /* Décalez les cartes vers le bas */\n }\n .child:hover {\n     transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n-    background-color: #766a6a; /* Change la couleur de fond lors du survol */\n+    background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n"
+                },
+                {
+                    "date": 1698237225995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n }\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n-    padding: 0;\n+    padding: 5p;\n     overflow: hidden;\n     visibility: hidden;\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n"
+                },
+                {
+                    "date": 1698237246046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n }\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n-    padding: 5p;\n+    padding: 0px 5px;\n     overflow: hidden;\n     visibility: hidden;\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n"
+                },
+                {
+                    "date": 1698237270701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n }\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n-    padding: 0px 5px;\n+    padding: 0px 15px;\n     overflow: hidden;\n     visibility: hidden;\n     transform: rotatex(-180deg);\n     transform-origin: top center ;\n@@ -47,9 +47,8 @@\n     transition: 0.3s ease ;\n     padding-top: 30px;\n \t}\n .child:hover .details {\n-    max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n }\n"
+                },
+                {
+                    "date": 1698237292421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n     transition: 0.3s ease ;\n     padding-top: 30px;\n \t}\n .child:hover .details {\n+    max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n }\n"
+                },
+                {
+                    "date": 1698237325453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-\n-\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n@@ -47,9 +45,9 @@\n     transition: 0.3s ease ;\n     padding-top: 30px;\n \t}\n .child:hover .details {\n-    max-height: none;\n+    // max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n }\n"
+                },
+                {
+                    "date": 1698237333401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,17 +3,8 @@\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n-\n-//  .gallerie {\n-//       position: fixed;\n-   \n-//        width: 100%;\n-//   height: 76vh;\n-//  object-fit: cover;\n-// //     z-index: -1; /* La vidéo sera en arrière-plan du contenu */\n-//  }\n  .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n"
+                },
+                {
+                    "date": 1698237358692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,28 +3,28 @@\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n- .gallerie_expositions{\n+.gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1.2rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n-    display: flex;\n-    flex-direction: column;\n-    background: transparent;\n-    border-radius: 1rem;\n-    /* border: 2px solid white;  */\n-    min-height: 60vh;\n-    opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n-    transform: translateY(600px); /* Décalez les cartes vers le bas */\n+        display: flex;\n+        flex-direction: column;\n+        background: transparent;\n+        border-radius: 1rem;\n+        /* border: 2px solid white;  */\n+        min-height: 60vh;\n+        opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n+        transform: translateY(600px); /* Décalez les cartes vers le bas */\n+    }\n+    .child:hover {\n+        transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n+        background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n-.child:hover {\n-    transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n-    background-color: #4d4747; /* Change la couleur de fond lors du survol */\n-}\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698237370813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,17 +10,17 @@\n         grid-gap: 1.2rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n-        display: flex;\n-        flex-direction: column;\n-        background: transparent;\n-        border-radius: 1rem;\n-        /* border: 2px solid white;  */\n-        min-height: 60vh;\n-        opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n-        transform: translateY(600px); /* Décalez les cartes vers le bas */\n-    }\n+            display: flex;\n+            flex-direction: column;\n+            background: transparent;\n+            border-radius: 1rem;\n+            /* border: 2px solid white;  */\n+            min-height: 60vh;\n+            opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n+            transform: translateY(600px); /* Décalez les cartes vers le bas */\n+        }\n     .child:hover {\n         transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n"
+                },
+                {
+                    "date": 1698237389329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n     .child:hover {\n-        transform: scale(2.5); /* Augmente légèrement la taille lors du survol */\n+        transform: scale(0.5); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n"
+                },
+                {
+                    "date": 1698237403511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n-    .child:hover {\n+    .child:hover  {\n         transform: scale(0.5); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698237409563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n-    .child:hover  {\n+    .child:hover img {\n         transform: scale(0.5); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698237423339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n     .child:hover img {\n-        transform: scale(0.5); /* Augmente légèrement la taille lors du survol */\n+        transform: scale(1.5); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n"
+                },
+                {
+                    "date": 1698237455004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n     .child:hover img {\n-        transform: scale(1.5); /* Augmente légèrement la taille lors du survol */\n+        transform: scale(1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n"
+                },
+                {
+                    "date": 1698237462104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n     .child:hover img {\n-        transform: scale(1); /* Augmente légèrement la taille lors du survol */\n+        transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n"
+                },
+                {
+                    "date": 1698237486676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n-    .child:hover img {\n+    .child:hover img, vi {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698237533729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n-    .child:hover img, vi {\n+    :hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698237886039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n@@ -19,9 +19,9 @@\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         }\n-    :hover img, video {\n+    >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698237891949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/ex') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237900021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/ex') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/\n+     ') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237905344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/\n-     ') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/ ') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237915897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/ ') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/ ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237925968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/ ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/  ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237931597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/  ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/ ) ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237950081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/ ) ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/\n+     ') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237958618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/\n-     ') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/e') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237964047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/e') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/image') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698237982932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/image') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698238002964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #expositions{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images') ;\n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n     // overflow: hidden;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1698238216360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,12 +62,10 @@\n \n \n \n /* Animation pour la première carte */\n-.child:nth-child(1)  {\n-    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n-}\n \n+\n /* Animation pour la deuxième carte */\n .child:nth-child(2) {\n     animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n }\n"
+                },
+                {
+                    "date": 1698238232151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n             /* border: 2px solid white;  */\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n+        \n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n"
+                },
+                {
+                    "date": 1698238246216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n             /* border: 2px solid white;  */\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-        \n+        :nth-child(1)  {\n+    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n+}\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n"
+                },
+                {
+                    "date": 1698238276676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             /* border: 2px solid white;  */\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-        :nth-child(1)  {\n+        &:nth-child(1)  {\n     animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n }\n         }\n     >:hover img, video {\n@@ -68,34 +68,11 @@\n /* Animation pour la première carte */\n \n \n /* Animation pour la deuxième carte */\n-.child:nth-child(2) {\n-    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n-}\n+.\n \n-/* Animation pour la troisième carte */\n-.child:nth-child(3)  {\n-    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n-}\n-.child:nth-child(4)  {\n-    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n-}\n \n-/* Animation pour la deuxième carte */\n-.child:nth-child(5) {\n-    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n-}\n-\n-/* Animation pour la troisième carte */\n-.child:nth-child(6)  {\n-    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n-}\n-.child:nth-child(7)  {\n-    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n-}\n-\n-\n /* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n // @keyframes fadeInUp {\n //     to {\n //         opacity: 1;\n"
+                },
+                {
+                    "date": 1698238289199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n     animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n }\n+\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n"
+                },
+                {
+                    "date": 1698238305239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,32 @@\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n     animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n }\n+:nth-child(2) {\n+    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n+}\n \n+/* Animation pour la troisième carte */\n+.child:nth-child(3)  {\n+    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n+}\n+.child:nth-child(4)  {\n+    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n+}\n+\n+/* Animation pour la deuxième carte */\n+.child:nth-child(5) {\n+    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n+}\n+\n+/* Animation pour la troisième carte */\n+.child:nth-child(6)  {\n+    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n+}\n+.child:nth-child(7)  {\n+    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n+}\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n"
+                },
+                {
+                    "date": 1698238313485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,14 +21,14 @@\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n     animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n }\n-:nth-child(2) {\n+&:nth-child(2) {\n     animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n }\n \n /* Animation pour la troisième carte */\n-.child:nth-child(3)  {\n+&:nth-child(3)  {\n     animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n }\n .child:nth-child(4)  {\n     animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698238318946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n /* Animation pour la troisième carte */\n &:nth-child(3)  {\n     animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n }\n-.child:nth-child(4)  {\n+&:nth-child(4)  {\n     animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n }\n \n /* Animation pour la deuxième carte */\n"
+                },
+                {
+                    "date": 1698238333108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n }\n \n /* Animation pour la deuxième carte */\n-.child:nth-child(5) {\n+&:nth-child(5) {\n     animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n }\n \n /* Animation pour la troisième carte */\n"
+                },
+                {
+                    "date": 1698238340776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,12 +39,12 @@\n     animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n }\n \n /* Animation pour la troisième carte */\n-.child:nth-child(6)  {\n+&:nth-child(6)  {\n     animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n }\n-.child:nth-child(7)  {\n+&:nth-child(7)  {\n     animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n }\n         }\n     >:hover img, video {\n"
+                },
+                {
+                    "date": 1698238359140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,33 +20,33 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n     animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n-}\n-&:nth-child(2) {\n-    animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n-}\n+    }\n+    &:nth-child(2) {\n+        animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n+    }\n \n-/* Animation pour la troisième carte */\n-&:nth-child(3)  {\n-    animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n-}\n-&:nth-child(4)  {\n-    animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n-}\n+    /* Animation pour la troisième carte */\n+    &:nth-child(3)  {\n+        animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n+    }\n+    &:nth-child(4)  {\n+        animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n+    }\n \n-/* Animation pour la deuxième carte */\n-&:nth-child(5) {\n-    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n-}\n+    /* Animation pour la deuxième carte */\n+    &:nth-child(5) {\n+        animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n+    }\n \n-/* Animation pour la troisième carte */\n-&:nth-child(6)  {\n-    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n-}\n-&:nth-child(7)  {\n-    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n-}\n+    /* Animation pour la troisième carte */\n+    &:nth-child(6)  {\n+        animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n+    }\n+    &:nth-child(7)  {\n+        animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n+    }\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n"
+                },
+                {
+                    "date": 1698238367607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,35 +19,35 @@\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n-    animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n-    }\n-    &:nth-child(2) {\n-        animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n-    }\n+        animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n+        }\n+        &:nth-child(2) {\n+            animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n+        }\n \n-    /* Animation pour la troisième carte */\n-    &:nth-child(3)  {\n-        animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n-    }\n-    &:nth-child(4)  {\n-        animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n-    }\n+        /* Animation pour la troisième carte */\n+        &:nth-child(3)  {\n+            animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */\n+        }\n+        &:nth-child(4)  {\n+            animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */\n+        }\n \n-    /* Animation pour la deuxième carte */\n-    &:nth-child(5) {\n-        animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n-    }\n+        /* Animation pour la deuxième carte */\n+        &:nth-child(5) {\n+            animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */\n+        }\n \n-    /* Animation pour la troisième carte */\n-    &:nth-child(6)  {\n-        animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n-    }\n-    &:nth-child(7)  {\n-        animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n-    }\n+        /* Animation pour la troisième carte */\n+        &:nth-child(6)  {\n+            animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */\n         }\n+        &:nth-child(7)  {\n+            animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n+        }\n+        }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #4d4747; /* Change la couleur de fond lors du survol */\n }\n"
+                },
+                {
+                    "date": 1698238384153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n-        animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n+            animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n         &:nth-child(2) {\n             animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698238473008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,14 +62,9 @@\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n \t}\n-.child:hover .details {\n-    // max-height: none;\n-    overflow: visible;\n-    visibility: visible;\n-    transform: rotatex(0deg);\n-}\n+\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n //         border: 2px solid white; */\n"
+                },
+                {
+                    "date": 1698238478329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,14 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n+    .child:hover .details {\n+    // max-height: none;\n+    overflow: visible;\n+    visibility: visible;\n+    transform: rotatex(0deg);\n+}\n \t}\n \n       }\n // .gallerie_expositions > child {\n"
+                },
+                {
+                    "date": 1698238495179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n-    .child:hover .details {\n+    .child:hover {\n     // max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n"
+                },
+                {
+                    "date": 1698238521061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,13 +61,14 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n-    .child:hover {\n+    &.child:hover {\n     // max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n+    b\n }\n \t}\n \n       }\n"
+                },
+                {
+                    "date": 1698238528603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n     // max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n-    b\n+    background-color: red;\n }\n \t}\n \n       }\n"
+                },
+                {
+                    "date": 1698238542582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,8 @@\n     // max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n-    background-color: red;\n }\n \t}\n \n       }\n"
+                },
+                {
+                    "date": 1698238561549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         }\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n-        background-color: #4d4747; /* Change la couleur de fond lors du survol */\n+        background-color: #bb0e0e; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n@@ -61,8 +61,10 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n+        background-color: red;\n+\n     &.child:hover {\n     // max-height: none;\n     overflow: visible;\n     visibility: visible;\n"
+                },
+                {
+                    "date": 1698238583853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     transition: 0.3s ease ;\n     padding-top: 30px;\n         background-color: red;\n \n-    &.child:hover {\n+    &:hover {\n     // max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n"
+                },
+                {
+                    "date": 1698238598088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,8 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n-        background-color: red;\n \n     &:hover {\n     // max-height: none;\n     overflow: visible;\n"
+                },
+                {
+                    "date": 1698238607010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,8 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n-\n     &:hover {\n     // max-height: none;\n     overflow: visible;\n     visibility: visible;\n"
+                },
+                {
+                    "date": 1698238616103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,8 @@\n     visibility: visible;\n     transform: rotatex(0deg);\n }\n \t}\n-\n       }\n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n //         border: 2px solid white; */\n"
+                },
+                {
+                    "date": 1698238652987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         }\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n-        background-color: #bb0e0e; /* Change la couleur de fond lors du survol */\n+        color: #bb0e0e; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n"
+                },
+                {
+                    "date": 1698238661613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         }\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n-        color: #bb0e0e; /* Change la couleur de fond lors du survol */\n+        background-color: #bb0e0e; /* Change la couleur de fond lors du survol */\n }\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n"
+                },
+                {
+                    "date": 1698238685622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n             border-radius: 1rem;\n-            /* border: 2px solid white;  */\n+            border: 2px solid white;  */\n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698238694260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n             border-radius: 1rem;\n-            border: 2px solid white;  */\n+            border: px solid white; \n             min-height: 60vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698238735526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n             border-radius: 1rem;\n-            border: px solid white; \n-            min-height: 60vh;\n+            border: 4px solid white; \n+            min-height: 0vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698238743942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             flex-direction: column;\n             background: transparent;\n             border-radius: 1rem;\n             border: 4px solid white; \n-            min-height: 0vh;\n+            m-height: 30vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698238755483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             flex-direction: column;\n             background: transparent;\n             border-radius: 1rem;\n             border: 4px solid white; \n-            m-height: 30vh;\n+            max-height: 0vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698238769640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             flex-direction: column;\n             background: transparent;\n             border-radius: 1rem;\n             border: 4px solid white; \n-            max-height: 0vh;\n+            // max-height: 20vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698238785384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n             flex-direction: column;\n-            background: transparent;\n+            background: red;\n             border-radius: 1rem;\n             border: 4px solid white; \n             // max-height: 20vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n"
+                },
+                {
+                    "date": 1698238802864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n             flex-direction: column;\n-            background: red;\n+            background: transparent;\n             border-radius: 1rem;\n             border: 4px solid white; \n             // max-height: 20vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n"
+                },
+                {
+                    "date": 1698238814079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n             flex-direction: column;\n-            background: transparent;\n+            // background: transparent;\n             border-radius: 1rem;\n             border: 4px solid white; \n             // max-height: 20vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n"
+                },
+                {
+                    "date": 1698238861286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             display: flex;\n             flex-direction: column;\n             // background: transparent;\n             border-radius: 1rem;\n-            border: 4px solid white; \n+            border: 14px solid white; \n             // max-height: 20vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698238905933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     background-size: cover;\n }\n .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));\n         grid-gap: 1.2rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n"
+                },
+                {
+                    "date": 1698238923643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));\n-        grid-gap: 1.2rem;\n+        grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n"
+                },
+                {
+                    "date": 1698239059753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,11 +118,11 @@\n //     to{\n //        transform: scale(1); \n //     }\n // }\n+}\n \n \n-\n @media (max-width: 600px) {\n    /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n    .logo img {\n       width: 30%; /* Réduisez la taille du logo */\n"
+                },
+                {
+                    "date": 1698239100724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,14 +118,14 @@\n //     to{\n //        transform: scale(1); \n //     }\n // }\n-}\n \n \n+\n @media (max-width: 600px) {\n    /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n-   .logo img {\n+   .logoimg {\n       width: 30%; /* Réduisez la taille du logo */\n    }\n    h1{\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698239137130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,17 +119,5 @@\n //        transform: scale(1); \n //     }\n // }\n \n-\n-\n-@media (max-width: 600px) {\n-   /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */\n-   .logoimg {\n-      width: 30%; /* Réduisez la taille du logo */\n-   }\n-   h1{\n-    text-align: center;\n-   }\n-\n-  }\n   \n"
+                },
+                {
+                    "date": 1698239170942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,9 @@\n     transform: rotatex(0deg);\n }\n \t}\n       }\n+      \n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n //         border: 2px solid white; */\n //       }\n"
+                },
+                {
+                    "date": 1698239176887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     transform: rotatex(0deg);\n }\n \t}\n       }\n-      \n+    \n // .gallerie_expositions > child {\n //         /* border-radius: 1rem;\n //         border: 2px solid white; */\n //       }\n"
+                },
+                {
+                    "date": 1698239200687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,4 +121,5 @@\n //     }\n // }\n \n   \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698239205770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,6 +120,5 @@\n //        transform: scale(1); \n //     }\n // }\n \n-  \n-}\n\\ No newline at end of file\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698239221167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,37 +88,4 @@\n // }\n   \n \n \n-\n-/* Animation pour la première carte */\n-\n-\n-/* Animation pour la deuxième carte */\n-.\n-\n-\n-/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */\n-// @keyframes fadeInUp {\n-//     to {\n-//         opacity: 1;\n-//         transform: translateY(0);\n-//     }\n-// }\n-\n-// #expositions{\n-//     margin: 0px;\n-//   } \n-\n-\n-   \n-\n-// @keyframes flipper{\n-//     from{\n-//        transform: scale(0.0); \n-//     }\n-//     to{\n-//        transform: scale(1); \n-//     }\n-// }\n-\n-  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698239253876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-    >:hover img, video {\n+    :hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #bb0e0e; /* Change la couleur de fond lors du survol */\n }\n .details {\n@@ -86,6 +86,4 @@\n //    transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n //     background-color: #333; /* Change la couleur de fond lors du survol */\n // }\n   \n-\n-\n"
+                },
+                {
+                    "date": 1698239456624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             flex-direction: column;\n             // background: transparent;\n             border-radius: 1rem;\n             border: 14px solid white; \n-            // max-height: 20vh;\n+            max-height: 20vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n@@ -46,9 +46,9 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-    :hover img, video {\n+    &:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #bb0e0e; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698239465561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             flex-direction: column;\n             // background: transparent;\n             border-radius: 1rem;\n             border: 14px solid white; \n-            max-height: 20vh;\n+            m-height: 20vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698239486974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             flex-direction: column;\n             // background: transparent;\n             border-radius: 1rem;\n             border: 14px solid white; \n-            m-height: 20vh;\n+            height: 20vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698239498979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             flex-direction: column;\n             // background: transparent;\n             border-radius: 1rem;\n             border: 14px solid white; \n-            height: 20vh;\n+            height: 0vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698239512337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n             flex-direction: column;\n             // background: transparent;\n             border-radius: 1rem;\n             border: 14px solid white; \n-            height: 0vh;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698239521243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             display: flex;\n             flex-direction: column;\n             // background: transparent;\n             border-radius: 1rem;\n-            border: 14px solid white; \n+            border: 4px solid white; \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698239591252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n             border-radius: 1rem;\n             border: 4px solid white; \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n+            \n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n         &:nth-child(2) {\n"
+                },
+                {
+                    "date": 1698239598385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,11 @@\n             border-radius: 1rem;\n             border: 4px solid white; \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            \n+            &img{\n+                \n+            }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n         &:nth-child(2) {\n"
+                },
+                {
+                    "date": 1698239604327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             border: 4px solid white; \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img{\n-                \n+                height: 60vh;\n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698239623580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             border-radius: 1rem;\n             border: 4px solid white; \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            &img{\n+            &img, vid{\n                 height: 60vh;\n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
+                },
+                {
+                    "date": 1698239647967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n             border-radius: 1rem;\n             border: 4px solid white; \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            &img, vid{\n-                height: 60vh;\n+            &img, video{\n+                maheight: 60vh;\n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698239660449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n             border: 4px solid white; \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img, video{\n-                maheight: 60vh;\n+                max-height: 60vh;\n+                \n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698239666796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img, video{\n                 max-height: 60vh;\n-                \n+                width: 100%;\n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698239687927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img, video{\n                 max-height: 60vh;\n                 width: 100%;\n+                ob\n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698239710028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img, video{\n                 max-height: 60vh;\n                 width: 100%;\n-                ob\n+                object-fit: cover;\n+                bo\n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698239715431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             &img, video{\n                 max-height: 60vh;\n                 width: 100%;\n                 object-fit: cover;\n-                bo\n+                border-radius: 1rem;\n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698239725470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             border-radius: 1rem;\n             border: 4px solid white; \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            &img, video{\n+            &img video{\n                 max-height: 60vh;\n                 width: 100%;\n                 object-fit: cover;\n                 border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698239758457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,9 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             // background: transparent;\n-            border-radius: 1rem;\n-            border: 4px solid white; \n+          \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img video{\n                 max-height: 60vh;\n"
+                },
+                {
+                    "date": 1698239766280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n             &img video{\n                 max-height: 60vh;\n                 width: 100%;\n                 object-fit: cover;\n-                border-radius: 1rem;\n+                 border-radius: 1rem;\n+            border: 4px solid white; \n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698239788672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img video{\n-                max-height: 60vh;\n+                max-height: 0vh;\n                 width: 100%;\n                 object-fit: cover;\n                  border-radius: 1rem;\n             border: 4px solid white; \n"
+                },
+                {
+                    "date": 1698239803015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img video{\n-                max-height: 0vh;\n-                width: 100%;\n+                max-height: 80vh;\n+                width: 100;\n                 object-fit: cover;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n"
+                },
+                {
+                    "date": 1698239820917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     background-size: cover;\n }\n .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n@@ -18,9 +18,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img video{\n                 max-height: 80vh;\n-                width: 100;\n+                width: 100vw;\n                 object-fit: cover;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n"
+                },
+                {
+                    "date": 1698239830360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     background-size: cover;\n }\n .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n"
+                },
+                {
+                    "date": 1698239862484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img video{\n                 max-height: 80vh;\n-                width: 100vw;\n+                width: 100px;\n                 object-fit: cover;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n"
+                },
+                {
+                    "date": 1698239874078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             // background: transparent;\n           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            &img video{\n+            &img, video{\n                 max-height: 80vh;\n                 width: 100px;\n                 object-fit: cover;\n                  border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698239887750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img, video{\n                 max-height: 80vh;\n                 width: 100px;\n-                object-fit: cover;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698239984080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img, video{\n                 max-height: 80vh;\n-                width: 100px;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698240005113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img, video{\n-                max-height: 80vh;\n+                m-height: 80vh;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698240028802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             &img, video{\n-                m-height: 80vh;\n+                height: 80vh;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698240069185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             // background: transparent;\n           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            &img, video{\n+            img, video{\n                 height: 80vh;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n"
+                },
+                {
+                    "date": 1698240089917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n-                height: 80vh;\n                  border-radius: 1rem;\n             border: 4px solid white; \n             }\n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698240172970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n-            border: 4px solid white; \n+            border: 1px solid white; \n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698240217903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-    &:hover img, video {\n+    :hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #bb0e0e; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698240245670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     background-size: cover;\n }\n .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n@@ -48,9 +48,9 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-    :hover img, video {\n+    >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         background-color: #bb0e0e; /* Change la couleur de fond lors du survol */\n }\n .details {\n"
+                },
+                {
+                    "date": 1698240295577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,16 +5,16 @@\n     background-size: cover;\n }\n .gallerie_expositions{\n         display: grid;\n-        grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));\n+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n             flex-direction: column;\n-            // background: transparent;\n+            background: transparent;\n           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n"
+                },
+                {
+                    "date": 1698240310262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n-            border: 1px solid white; \n+                border: 1px solid white; \n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698240317114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,14 +13,13 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-          \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n-                border: 1px solid white; \n+                 border: 1px solid white; \n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698240377130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n     &:hover {\n-    // max-height: none;\n+    max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n }\n"
+                },
+                {
+                    "date": 1698240396169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n+            \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698240402826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-            \n+            max-height: ;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698240435215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-            max-height: ;\n+            min-height: 50px;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698240444306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-            min-height: 50px;\n+            min-height: 150px;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698240825543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n }\n .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n+        \n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n"
+                },
+                {
+                    "date": 1698240831926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n-        \n+        grid-template-rows: 1fr;\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n"
+                },
+                {
+                    "date": 1698240853630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n-        grid-template-rows: 1fr;\n+        grid-template-rows: 1;\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n"
+                },
+                {
+                    "date": 1698240908776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,17 @@\n }\n .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n-        grid-template-rows: 1;\n+        grid-template-rows: 100px;\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-            min-height: 150px;\n+            height: 150px;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698240925458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-            height: 150px;\n+            pos\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698240930839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-            pos\n+            position: relative;\n+            top\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1698241033768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n             position: relative;\n-            top\n+            top: 0;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n@@ -87,7 +87,7 @@\n // } */\n // }\n // .gallerie_expositions img, video:hover{\n //    transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n-//     background-color: #333; /* Change la couleur de fond lors du survol */\n+//   \n // }\n   \n"
+                },
+                {
+                    "date": 1698241059409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n                  border: 1px solid white; \n+                 \n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698241091879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,10 +53,9 @@\n         }\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n-        background-color: #bb0e0e; /* Change la couleur de fond lors du survol */\n-}\n+  background-color: #333; /* Change la couleur de fond lors du survol */}\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241101619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n         }\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n-  background-color: #333; /* Change la couleur de fond lors du survol */}\n+         background-color: #333; /* Change la couleur de fond lors du survol */}\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241117984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,8 @@\n         }\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n-         background-color: #333; /* Change la couleur de fond lors du survol */}\n .details {\n     font-size: 14px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241123494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,10 @@\n     max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n+             background-color: #333; /* Change la couleur de fond lors du survol */}\n+\n }\n \t}\n       }\n     \n"
+                },
+                {
+                    "date": 1698241144801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n-             background-color: #333; /* Change la couleur de fond lors du survol */}\n+    background-color: #333; /* Change la couleur de fond lors du survol */}\n \n }\n \t}\n       }\n"
+                },
+                {
+                    "date": 1698241164750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,8 @@\n     max-height: none;\n     overflow: visible;\n     visibility: visible;\n     transform: rotatex(0deg);\n-    background-color: #333; /* Change la couleur de fond lors du survol */}\n \n }\n \t}\n       }\n"
+                },
+                {
+                    "date": 1698241170348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,10 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n+        background-color: #333; /* Change la couleur de fond lors du survol */}\n+\n     &:hover {\n     max-height: none;\n     overflow: visible;\n     visibility: visible;\n"
+                },
+                {
+                    "date": 1698241201901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,13 +18,9 @@\n             position: relative;\n             top: 0;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            img, video{\n-                 border-radius: 1rem;\n-                 border: 1px solid white; \n-                 \n-            }\n+           \n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n         &:nth-child(2) {\n"
+                },
+                {
+                    "date": 1698241207990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,13 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n+         img, video{\n+                 border-radius: 1rem;\n+                 border: 1px solid white; \n+                 \n+            }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n .details {\n     font-size: 14px;\n"
+                },
+                {
+                    "date": 1698241242553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n          img, video{\n                  border-radius: 1rem;\n                  border: 1px solid white; \n                  \n-            }\n+            \n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n .details {\n     font-size: 14px;\n"
+                },
+                {
+                    "date": 1698241248587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,9 @@\n                  \n             \n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n+        \n .details {\n     font-size: 14px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241259237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,16 +47,11 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-         img, video{\n-                 border-radius: 1rem;\n-                 border: 1px solid white; \n-                 \n-            \n+        \n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n-        \n .details {\n     font-size: 14px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241268237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,13 @@\n             position: relative;\n             top: 0;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-           \n+            img, video{\n+                 border-radius: 1rem;\n+                 border: 1px solid white; \n+                 \n+            }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n         &:nth-child(2) {\n@@ -47,9 +51,8 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-        \n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n .details {\n     font-size: 14px;\n"
+                },
+                {
+                    "date": 1698241274675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,10 +64,9 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n-        background-color: #333; /* Change la couleur de fond lors du survol */}\n-\n+    \n     &:hover {\n     max-height: none;\n     overflow: visible;\n     visibility: visible;\n"
+                },
+                {
+                    "date": 1698241304754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n             img, video{\n                  border-radius: 1rem;\n                  border: 1px solid white; \n                  \n+                 \n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n@@ -64,9 +65,8 @@\n     transform-origin: top center ;\n     backface-visibility: hidden;\n     transition: 0.3s ease ;\n     padding-top: 30px;\n-    \n     &:hover {\n     max-height: none;\n     overflow: visible;\n     visibility: visible;\n"
+                },
+                {
+                    "date": 1698241309874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n             img, video{\n                  border-radius: 1rem;\n                  border: 1px solid white; \n+                 height: 350px;\n                  \n-                 \n             }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698241328381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,4 +91,5 @@\n //    transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n //   \n // }\n   \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698241346120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,22 +74,6 @@\n \n }\n \t}\n       }\n-    \n-// .gallerie_expositions > child {\n-//         /* border-radius: 1rem;\n-//         border: 2px solid white; */\n-//       }\n-// .gallerie_expositions img, video{\n-//     object-fit: cover;\n-//   height: 350px;\n-//     border-radius: 1rem;\n-//     /* border: 1px solid white;\n-// } */\n-// }\n-// .gallerie_expositions img, video:hover{\n-//    transform: scale(1.05); /* Augmente légèrement la taille lors du survol */\n-//   \n-// }\n-  \n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698241450894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n-        grid-template-rows: 100px;\n+        grid-template-rows: 1fr;\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n"
+                },
+                {
+                    "date": 1698241480757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n }\n .gallerie_expositions{\n         display: grid;\n         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));\n-        grid-template-rows: 1fr;\n         grid-gap: 1rem;\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n"
+                },
+                {
+                    "date": 1698241541858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n .details {\n-    font-size: 14px;\n+    font-size: 10px;\n \tmax-height: 0;\n     padding: 0px 15px;\n     overflow: hidden;\n     visibility: hidden;\n"
+                },
+                {
+                    "date": 1698241559391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n     >:hover img, video {\n+        \n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n .details {\n     font-size: 10px;\n \tmax-height: 0;\n"
+                },
+                {
+                    "date": 1698241566075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n     >:hover img, video {\n+        transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n         \n-        transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n .details {\n     font-size: 10px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241591339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,14 +17,9 @@\n             position: relative;\n             top: 0;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            img, video{\n-                 border-radius: 1rem;\n-                 border: 1px solid white; \n-                 height: 350px;\n-                 \n-            }\n+           \n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n         &:nth-child(2) {\n@@ -53,9 +48,9 @@\n         }\n         }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n-        \n+    }\n .details {\n     font-size: 10px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241600063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n+        \n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n .details {\n"
+                },
+                {
+                    "date": 1698241614952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,14 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-        \n+         img, video{\n+                 border-radius: 1rem;\n+                 border: 1px solid white; \n+                 height: 350px;\n+                 \n+            \n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n .details {\n"
+                },
+                {
+                    "date": 1698241626019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    >:hover img, video {\n+    :hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n .details {\n     font-size: 10px;\n"
+                },
+                {
+                    "date": 1698241638872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,11 +52,12 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    :hover img, video {\n+    &:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n+    \n .details {\n     font-size: 10px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241656398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,12 +52,12 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    &:hover img, video {\n+    &>:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n-    \n+}\n .details {\n     font-size: 10px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241675091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    &>:hover img, video {\n+    &>:hover{\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n }\n .details {\n"
+                },
+                {
+                    "date": 1698241683559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    &>:hover{\n+    &:hover{\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n }\n .details {\n"
+                },
+                {
+                    "date": 1698241689959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    &:hover{\n+    &>:hover{\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n }\n .details {\n"
+                },
+                {
+                    "date": 1698241716691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    &>:hover{\n+    :hover{\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n }\n .details {\n"
+                },
+                {
+                    "date": 1698241744030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    :hover{\n+    :hover {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n }\n .details {\n"
+                },
+                {
+                    "date": 1698241761066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             \n-    :hover {\n+    &>:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n }\n .details {\n"
+                },
+                {
+                    "date": 1698241770587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,18 +46,12 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-         img, video{\n-                 border-radius: 1rem;\n-                 border: 1px solid white; \n-                 height: 350px;\n-                 \n-            \n-    &>:hover img, video {\n+        \n+    >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n-}\n .details {\n     font-size: 10px;\n \tmax-height: 0;\n     padding: 0px 15px;\n"
+                },
+                {
+                    "date": 1698241783771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,8 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-        \n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n .details {\n"
+                },
+                {
+                    "date": 1698241790412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,14 @@\n             position: relative;\n             top: 0;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n-           \n+            img, video{\n+                 border-radius: 1rem;\n+                 border: 1px solid white; \n+                 height: 350px;\n+                 \n+            }\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n         &:nth-child(2) {\n"
+                },
+                {
+                    "date": 1698241819919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,15 +16,15 @@\n             background: transparent;\n             position: relative;\n             top: 0;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n-            transform: translateY(600px); /* Décalez les cartes vers le bas */\n-            img, video{\n+          img, video{\n                  border-radius: 1rem;\n                  border: 1px solid white; \n                  height: 350px;\n                  \n-            }\n+            }   transform: translateY(600px); /* Décalez les cartes vers le bas */\n+           \n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n         &:nth-child(2) {\n"
+                },
+                {
+                    "date": 1698241825325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,14 +16,9 @@\n             background: transparent;\n             position: relative;\n             top: 0;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n-          img, video{\n-                 border-radius: 1rem;\n-                 border: 1px solid white; \n-                 height: 350px;\n-                 \n-            }   transform: translateY(600px); /* Décalez les cartes vers le bas */\n+            transform: translateY(600px); /* Décalez les cartes vers le bas */\n            \n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n         }\n"
+                },
+                {
+                    "date": 1698241831730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,14 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n+         img, video{\n+                 border-radius: 1rem;\n+                 border: 1px solid white; \n+                 height: 350px;\n+                 \n+            }\n     >:hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n .details {\n"
+                },
+                {
+                    "date": 1698241841753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                  border: 1px solid white; \n                  height: 350px;\n                  \n             }\n-    >:hover img, video {\n+    :hover img, video {\n         transform: scale(1.1); /* Augmente légèrement la taille lors du survol */\n     }\n .details {\n     font-size: 10px;\n"
+                },
+                {
+                    "date": 1698242013433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-            position: relative;\n-            top: 0;\n+            // position: relative;\n+            // top: 0;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n            \n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698242117279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,5 +76,4 @@\n }\n \t}\n       }\n \n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698242138274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,6 +74,6 @@\n     transform: rotatex(0deg);\n \n }\n \t}\n-      }\n+      \n \n"
+                },
+                {
+                    "date": 1698242152116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n+        \n          img, video{\n                  border-radius: 1rem;\n                  border: 1px solid white; \n                  height: 350px;\n"
+                },
+                {
+                    "date": 1698242281535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,9 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-            // position: relative;\n-            // top: 0;\n+           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n            \n         &:nth-child(1)  {\n@@ -46,9 +45,9 @@\n         &:nth-child(7)  {\n             animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */\n         }\n         }\n-        \n+    }\n          img, video{\n                  border-radius: 1rem;\n                  border: 1px solid white; \n                  height: 350px;\n"
+                },
+                {
+                    "date": 1698242290548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n  #expositions{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;\n     background-repeat: no-repeat;\n-    // overflow: hidden;\n     background-size: cover;\n }\n .gallerie_expositions{\n         display: grid;\n@@ -13,9 +12,8 @@\n         >.child {\n             display: flex;\n             flex-direction: column;\n             background: transparent;\n-           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n            \n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698242324764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n             flex-direction: column;\n-            background: transparent;\n+            background: pur;\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n            \n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698242521805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,9 @@\n         padding: 20px;\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n-            flex-direction: column;\n-            background: purple;\n+           \n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n            \n         &:nth-child(1)  {\n"
+                },
+                {
+                    "date": 1698242887723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,12 @@\n         border-radius: 1rem;\n         >.child {\n             display: flex;\n             flex-direction: column;\n+              height: 60vh;\n              background: transparent;\n     border-radius: 1rem;\n-    \n+\n             opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */\n             transform: translateY(600px); /* Décalez les cartes vers le bas */\n         &:nth-child(1)  {\n             animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */\n"
                 }
             ],
             "date": 1698000686430,

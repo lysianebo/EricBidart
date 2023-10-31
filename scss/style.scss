@@ -1,11 +1,15 @@
 @import './base/typo' ;
+@import './utils/mixins' ;
 @import './base/base' ;
+@import './components/sculptures';
+@import './components/presentation_more';
+@import './layout/header' ;
 @import './pages/accueil' ;
 @import './pages/creations' ;
-// @import './components/sculptures' ;
 @import './pages/expositions.scss' ;
 @import './pages/presentation' ;
-@import './layout/header' ;
 @import './layout/footer' ;
 @import './utils/keyframes' ;
+
+
 

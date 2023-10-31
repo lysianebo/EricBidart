@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 123,
+            "activePatchIndex": 271,
             "patches": [
                 {
                     "date": 1697987309928,
@@ -500,6 +500,598 @@
                 {
                     "date": 1698058660758,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png  );\n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart-fotor-bg-remover-202310050519.png');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175572031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart-fotor-bg-remover-202310050519.png');\n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175599202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url('https://lysianebo.github.io/EricBidart/public/images');\n+     background-image: url(');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175609043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url(');\n+     background-image: url('public');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175615049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url('public');\n+     background-image: url('public/ ');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175622622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url('public/ ');\n+     background-image: url(public ');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175628857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url(public ');\n+     background-image: url( ');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175640674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url( ');\n+     background-image: url(.. ');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175650422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url(.. ');\n+     background-image: url(. ');\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175656447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url(. ');\n+     background-image: url();\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175662641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url();\n+     background-image: url(.);\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175670667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url(.);\n+     background-image: url();\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175676039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url();\n+     background-image: url(/public/);\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698175683790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n main, .accueil{\n-     background-image: url(/public/);\n+     background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size: cover ;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698176336599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size: cover ;\n+    background-size: 10 ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176347430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size: 10 ;\n+    background-size: contain ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176356347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size: contain ;\n+    background-size: 100 ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176374904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size: 100 ;\n+    background-size: 100vw  ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176389739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size: 100vw  ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176395411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n+    background-size: 100vw  100vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176419539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size: 100vw  100vh;\n+    background-size:  100vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176428446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100vh;\n+    background-size:  100v;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176441404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100v;\n+    background-size:  100vw;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176456904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  100vw;\n+    \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176464730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  100vw;\n-    \n+    hei\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176471603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  100vw;\n-    hei\n+    height: 50vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176481100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  100vw;\n-    height: 50vh;\n+    height: 100vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176487577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  100vw;\n-    height: 100vh;\n+    height: 110vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176500863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100vw;\n+    background-size:  cover;\n     height: 110vh;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698176509609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  cover;\n+    background-size:  100vhcover;\n     height: 110vh;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698176518691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100vhcover;\n+    background-size:  100vw fill;\n     height: 110vh;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698176524448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100vw fill;\n+    background-size:  100vw contain;\n     height: 110vh;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698176530240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  100vw contain;\n-    height: 110vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698176550252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n main, .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100vw contain;\n+    background-size:  100vw, cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698187186976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-main, .accueil{\n+.accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  100vw, cover;\n }\n"
+                },
+                {
+                    "date": 1698187221651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n     background-size:  100vw, cover;\n }\n #sculpteur{\n     width: 60%;\n-    margin: 10vh;\n+    // margin: 10vh;\n     // background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698187233278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n     background-size:  100vw, cover;\n }\n #sculpteur{\n     width: 60%;\n-    // margin: 10vh;\n+    margin: 10vh;\n     // background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698187969439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100vw, cover;\n+    background-size:  100vw;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698187980792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100vw;\n+    // background-size:  100vw;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188021494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    // background-size:  100vw;\n+    background-size:  100vw;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188027263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  100vw;\n+    background-size:  1;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188034782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1;\n+    background-size:  1920pw ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188041697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1920pw ;\n+    background-size:  1920pw 1020;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188048238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1920pw 1020;\n+    background-size:  1920pw 1020px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188055550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1920pw 1020px;\n+    background-size:  1920px, 1020px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188062372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1920px, 1020px;\n+    background-size:  px, 1020px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188082595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  px, 1020px;\n+    background-size:  19px, 1020px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188096133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  19px, 1020px;\n+    background-size:  1920px, 120px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188102298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1920px, 120px;\n+    background-size:  1920px 120px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188115949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1920px 120px;\n+    background-size:  1920px px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188125763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1920px px;\n+    background-size:  1920px 500px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188134433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1920px 500px;\n+    background-size:  120px 500px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188149765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  120px 500px;\n+    background-size:  1520px 500px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188161570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1520px 500px;\n+    background-size:  1520px 50px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188169196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1520px 50px;\n+    background-size:  1520px 505px c;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188179132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1520px 505px c;\n+    background-size:  1520px 505px contain;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188209904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1520px 505px contain;\n+    background-size:  1520px 505px;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188519183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n+    \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188563418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n-    \n+    aspe\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188569034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n-    aspe\n+    aspect-ratio: 1;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188574630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n-    aspect-ratio: 1;\n+    aspect-ratio: 16;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188587301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n-    aspect-ratio: 16;\n+    aspect-ratio: 177.777778%; /* 16/9 */\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188596342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n-    aspect-ratio: 177.777778%; /* 16/9 */\n+    aspect-ratio: 177.777778%; \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188625727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n-    aspect-ratio: 177.777778%; \n+    aspect-ratio: 177.777778%16 /; \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188631434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n-    aspect-ratio: 177.777778%16 /; \n+    aspect-ratio: 16/; \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188652667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-    background-size:  1520px 505px;\n-    aspect-ratio: 16/; \n+    aspect-ratio: 16/9; \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188660224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n+    background-size:  1520px 505px;\n     aspect-ratio: 16/9; \n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698188823633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur.webp);\n+     background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n     background-size:  1520px 505px;\n     aspect-ratio: 16/9; \n }\n"
+                },
+                {
+                    "date": 1698188852982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-    background-size:  1520px 505px;\n-    aspect-ratio: 16/9; \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188862127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n+    aspect-ratio: 16/9; \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188871838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-    aspect-ratio: 16/9; \n+    aspect-ratio: /9; \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188892457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-    aspect-ratio: /9; \n+    aspect-ratio: 2/1; \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188901076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-    aspect-ratio: 2/1; \n+    aspect-ratio: 200%; /* 2/1 */\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698188907445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-    aspect-ratio: 200%; /* 2/1 */\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189038921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n+     \n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189112002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     \n+     backg\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189140217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     backg\n+     background-size: ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189155334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: ;\n+     background-size: 100cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189162265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 100cover;\n+     background-size: 100% ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189168687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 100% ;\n+     background-size: 100vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189174614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vh;\n+     background-size: 100vw;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189181187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw;\n+     background-size: 100vw ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189193048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw ;\n+     background-size: 100vw 80vh cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189199809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw 80vh cover;\n+     background-size: 100vw 80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189207079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw 80vh;\n+     background-size:  80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189212979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size:  80vh;\n+     background-size: 100 80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189223200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 100 80vh;\n+     background-size: vw 80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189229182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: vw 80vh;\n+     background-size: 9vw 80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189236655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: 9vw 80vh;\n+     background-size: vw 80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189257025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur2.webp);\n+     background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: vw 80vh;\n+     background-size: 100vw 80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189338355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw 80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189348900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n+     background-size: 100vw 80vh;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189357530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw 80vh;\n+     background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189363398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: cover;\n+     background-size: contain;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189481468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur.webp);\n+     background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698189497112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: contain;\n+     background-size: contacoverin;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189503600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: contacoverin;\n+     background-size: conv;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189515174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: conv;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189521271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n+     background-size: cover;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189531948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: cover;\n+     background-size: 100v;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189659791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur2.webp);\n+     background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: 100v;\n+     background-size: 100vw;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189689099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n      background-size: 100vw;\n+     ass\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189696056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n      background-size: 100vw;\n-     ass\n+     aspect-ratio: 16 / ;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189718273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw;\n-     aspect-ratio: 16 / ;\n+     background-size: 100vw ;\n+     aspect-ratio: 16 / 9;\n }\n #sculpteur{\n     width: 60%;\n     margin: 10vh;\n"
+                },
+                {
+                    "date": 1698189723408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw ;\n+     background-size: 100vw 520px;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698195233273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-.accueil{\n+accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n      background-size: 100vw 520px;\n      aspect-ratio: 16 / 9;\n"
+                },
+                {
+                    "date": 1698195262598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n-accueil{\n+#accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw 520px;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698195268467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n+     background-size: 100vw 520px;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698195280407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur.webp);\n+     background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n      background-size: 100vw 520px;\n      aspect-ratio: 16 / 9;\n }\n"
+                },
+                {
+                    "date": 1698195319456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur2.webp);\n+     background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n      background-size: 100vw 520px;\n      aspect-ratio: 16 / 9;\n }\n"
+                },
+                {
+                    "date": 1698195331866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: 100vw 520px;\n+     background-size: cover;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698195341388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n-     background-size: cover;\n+     background-size: co;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698195367411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur.webp);\n+     background-image: url(/public/images/ericbidart_sculpteur2.webp);\n      background-repeat: no-repeat;\n-     background-size: co;\n+     background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n     width: 60%;\n"
+                },
+                {
+                    "date": 1698195385769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur2.webp);\n+     background-image: url(/public/images/ericbidar);\n      background-repeat: no-repeat;\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n"
+                },
+                {
+                    "date": 1698195397413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidar);\n+     background-image: url(/public/images/ericbidart.webp~);\n      background-repeat: no-repeat;\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n"
+                },
+                {
+                    "date": 1698195405767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart.webp~);\n+     background-image: url(/public/images/ericbidar);\n      background-repeat: no-repeat;\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n"
+                },
+                {
+                    "date": 1698195417450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidar);\n+     background-image: url(/public/images/ericbidart.jpg);\n      background-repeat: no-repeat;\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n"
+                },
+                {
+                    "date": 1698198542222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart.jpg);\n+     background-image: url(/public/images/ericbidart);\n      background-repeat: no-repeat;\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n"
+                },
+                {
+                    "date": 1698199919054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart);\n+     background-image: url(/public/images/ericbidart_sculpteur.webp);\n      background-repeat: no-repeat;\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n"
+                },
+                {
+                    "date": 1698199957887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur.webp);\n+     background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      background-repeat: no-repeat;\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n     width: 60%;\n-    margin: 10vh;\n     // background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698199964435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,7 @@\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n-    width: 60%;\n     // background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200113149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,6 @@\n      background-size: contain;\n      aspect-ratio: 16 / 9;\n }\n #sculpteur{\n-    // background-color: blue;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200131914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      background-repeat: no-repeat;\n      background-size: contain;\n-     aspect-ratio: 16 / 9;\n }\n #sculpteur{\n+    \n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200148441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    \n+    margin-left: 50%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200154871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin-left: 50%;\n+    margin-left: 20%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200168231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin-left: 20%;\n+    margin-left: 25%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200185216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin-left: 25%;\n+    margin-left: 2%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200231671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin-left: 2%;\n+    margin-left: 527%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200237515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin-left: 527%;\n+    margin-left: 5v27%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200256389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin-left: 5v27%;\n+    margin: 5vw 27%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200262397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 5vw 27%;\n+    margin: vw 27%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200284923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: vw 27%;\n+    margin: 2 27%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200297097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2 27%;\n+    margin: 2% ,27%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200303037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2% ,27%;\n+    margin: 2%27%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200311574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2%27%;\n+    margin: 2% %;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200563179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2% %;\n+    margin: 2% 40% 0;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200571166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2% 40% 0;\n+    margin: 2% 040% 0;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200582529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2% 040% 0;\n+    margin: 2% 0 0% 0;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200588610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2% 0 0% 0;\n+    margin: 2% 0 0% 40;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698200598429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2% 0 0% 40;\n+    margin: 2% 0 0% 0%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698201113460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 2% 0 0% 0%;\n+    margin: % 0 0% 30%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698201121206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: % 0 0% 30%;\n+    margin: 5% 0 0% 30%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698201128831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n      background-repeat: no-repeat;\n      background-size: contain;\n }\n #sculpteur{\n-    margin: 5% 0 0% 30%;\n+    margin: % 0 0% 30%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698659767049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+#accueil{\n+     background-image: url(/public/images/ericbidart_sculpteur3.webp);\n+    //  background-repeat: no-repeat;\n+    //  background-size: contain;\n+}\n+#sculpteur{\n+    margin: 6% 0 0% 30%;\n+    text-align: center;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698659779320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,9 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n     //  background-repeat: no-repeat;\n-    //  background-size: contain;\n+      background-size: contain;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n-}\n-#accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur3.webp);\n-     background-repeat: no-repeat;\n-     background-size: contain;\n-}\n-#sculpteur{\n-    margin: % 0 0% 30%;\n-    text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698659785607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n     //  background-repeat: no-repeat;\n-      background-size: contain;\n+    //  background-size: contain;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698659794944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n-    //  background-repeat: no-repeat;\n-    //  background-size: contain;\n+     background-size: contain;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698660295985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n-     background-size: contain;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698685104550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n-    text-align: center;\n+    text-align: centder;\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1697987309928,

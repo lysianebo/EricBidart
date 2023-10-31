@@ -1,0 +1,22 @@
+{
+    "sourceFile": "scss/components/_presentation_more.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1698564202331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698564212181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-/* Styles pour les contenus cachés */\n .hidden {\n display: none;\n padding: 80px 30px;\n position: absolute;\n"
+                }
+            ],
+            "date": 1698564202331,
+            "name": "Commit-0",
+            "content": "/* Styles pour les contenus cachés */\n.hidden {\ndisplay: none;\npadding: 80px 30px;\nposition: absolute;\ntop: 60%;\nleft: 50%;\nwidth: 100%;\nheight: 100%;\ntransform: translatex(-100%, 100%);\nz-index: 1000;\nbackground: none;\nbox-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\nmax-width: 100%;\n// animation: bounce-in-right 2s ease 1s;\n\n}\n\n\n\n\n// animation: bounce2 2s ease ;"
+        }
+    ]
+}

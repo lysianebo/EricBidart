@@ -1,12 +1,29 @@
+ @keyframes bounce{
+     from {top: 100%;}
+     50%  {top: 50%;}
+     to   {top: 100%;}
+}
  @keyframes bounce2 {
           0%, 20%, 50%, 80%, 100% {
-            opacity: 0;transform: translateY(-500);
+            opacity: 0;transform: translateY(0);
           }
-          40% {opacity: 1; transform: tranlateY(1000px);
+          40% {opacity: 1; transform: tranlateY(20px);
           }
-          60% {opacity: 1;transform: translateY(1500px);
+          60% {opacity: 1;transform: translateY(50px);
           }
         }
+ @keyframes bounce3 { 
+            0% { 
+                transform: translate3d(20px, 50px, 80px); 
+            } 
+            50% { 
+                transform: translate3d(0px, 100px, 0px); 
+            }
+           100%{transform: translate3d(0px, 0px, 200px)
+            }}
+          
+ 
+        
        
         .grow {
             animation: grow 2s ease infinite;
@@ -48,17 +65,35 @@
           @keyframes bounce-in-right {
             0% {
               opacity: 0;
-              transform: translateX(2000px);
+              transform: translateX(1000px);
             }
             60% {
               opacity: 1;
               transform: translateX(-30px);
             }
-            80% { transform: translateX(10px); }
-            100% { transform: translateX(0);
-                transform: translateY(100px);  }
+            100% { transform: translateX(100px); }
+            // 100% { transform: translateX(0);
+            //     transform: translateY(100px);  }
           }
           
+@keyframes bounceInRight {
+            0% {
+               opacity: 0;
+               transform: translateX(2000px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateX(-30px);
+            }
+            80% {
+               transform: translateX(10px);
+            }
+            100% {
+               transform: translateX(0);
+            }
+         }
+
+
           .bounce-out {
             animation: bounce-out 2s ease 1s;
           }

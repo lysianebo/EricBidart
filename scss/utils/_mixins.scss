@@ -1,0 +1,135 @@
+$breakpoints: (
+        mobile: 480px,
+        tablet: 767px,
+        desktop: 992px,
+        large: 1200px,
+);
+
+%center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@mixin media_large{
+  @media screen and (max-width: map-get($breakpoints, large)) {
+    @content; 
+  }
+}
+
+@mixin media_desktop{
+  @media screen and (max-width: map-get($breakpoints, desktop)) {
+    @content; 
+  }
+}
+
+
+@mixin media_tablet{
+    @media screen and (max-width:map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+
+@mixin media_mobile{
+    @media screen and (max-width:map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+%background_none {
+@include media_mobile{
+  background-image: none!important;
+background-color: purple;
+margin-bottom: 1rem;
+}
+}
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// 11
+// 12
+// 13
+// 14
+	
+// /* For extremely small screen devices (595px and below) */
+// // @media only screen and (max-width: 595px) {...}
+ 
+// // /* Small screen devices (600px and above) */
+// // @media only screen and (min-width: 600px) {...}
+ 
+// // /* Medium screen devices (768px and above) */
+// // @media only screen and (min-width: 768px) {...}
+ 
+// // /* Big screen devices (889px and above) */
+// // @media only screen and (min-width: 889px) {...}
+ 
+// // /* Extra big screen devices (1200px and above) */
+// // @media only screen and (min-width: 1200px) {...}
+
+// // $breakpoints2: (
+// //   "phone-down": 500px,
+// //   "tablet-up": 768px,
+// //   "tablet-down": 900px,
+// //   "desktop-up": 1024px,
+// //   "desktop-down": 1280px,
+// //   "widescreen-up": 1440px
+// // );
+
+// // $media-desktop: "only screen and (max-width : 1024px)";
+// // $media-tablet: "only screen and (max-width : 768px)";
+// // $media-mobile: "only screen and (max-width : 600px)";
+// // $media-mobile-sm: "only screen and (max-width : 480px)";
+
+
+// // @media #{$media-desktop} {
+// //  @content;
+// // }
+
+// // @media #{$media-tablet} {
+// //   @content;
+// // }
+
+// // @media #{$media-mobile} {
+// //   @content;
+// // }
+// // @media #{$media-mobile-sm} {
+// //    @content;
+// // }
+
+
+// // @mixin for-size($size) {
+// //   @if $size == phone-only {
+// //     @media (max-width: 599px) { @content; }
+// //   } @else if $size == tablet-portrait-up {
+// //     @media (min-width: 600px) { @content; }
+// //   } @else if $size == tablet-landscape-up {
+// //     @media (min-width: 900px) { @content; }
+// //   } @else if $size == desktop-up {
+// //     @media (min-width: 1200px) { @content; }
+// //   } @else if $size == big-desktop-up {
+// //     @media (min-width: 1800px) { @content; }
+// //   }
+// // }
+
+// // @mixin for-phone-only {
+// //   @media (max-width: 599px) { @content; }
+// // }
+// // @mixin for-tablet-portrait-up {
+// //   @media (min-width: 600px) { @content; }
+// // }
+// // @mixin for-tablet-landscape-up {
+// //   @media (min-width: 900px) { @content; }
+// // }
+// // @mixin for-desktop-up {
+// //   @media (min-width: 1200px) { @content; }
+// // }
+// // @mixin for-big-desktop-up {
+// //   @media (min-width: 1800px) { @content; }
+// // }

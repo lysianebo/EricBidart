@@ -1,16 +1,31 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Playpen+Sans:wght@100;500;700;800&family=Rubik:wght@400;500;700&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+* {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: calc(14px + 2.92 * (100vw - 300px) / 1300);
+}
+
 h1 {
   font-size: calc(110% + 4.390625vw);
   animation: flipper 1s;
+  text-shadow: 1px 2px 10px black;
+}
+
+span {
+  font-size: calc(110% + 4.390625vw);
+  font-weight: 900;
+  text-shadow: 1px 2px 10px black;
+}
+span.thin {
+  font-weight: 400;
 }
 
 h2 {
   font-size: calc(100% + 2vw);
-  margin: 0.5em 1em;
-  animation: flipper 8s;
+  margin: 0.4em 1em;
+  animation: bounceInRight 2s ease 1s;
 }
 
 h3 {
@@ -18,14 +33,20 @@ h3 {
   animation: flipper 3s;
 }
 
+h4 {
+  font-size: 20px;
+  animation: flipper 3s;
+}
+
 p {
-  padding: 20px;
+  padding: 0px;
 }
 
 li, a, a:visited {
   padding: 5px;
   text-decoration: none;
   list-style: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 li a:hover, a a:hover, a:visited a:hover {
   color: red;
@@ -49,26 +70,56 @@ li a:hover, a a:hover, a:visited a:hover {
   background-color: white;
 }
 
+.back-button {
+  position: fixed;
+  top: 2vh;
+  right: 2vh;
+  background-color: blue;
+  border-radius: 15px;
+}
+
+.gallerie_creations, #sculptures * .card_sculpture_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+  #sculptures * #source, #sculptures * #joie, #sculptures * #envolee, #sculptures * #denouement, #sculptures * #cocon, #sculptures * #coeur, #sculptures * #paix, #sculptures * #epitres, #sculptures * #fleur, #sculptures * #oceane {
+    background-image: none !important;
+    background-color: purple;
+    margin-bottom: 1rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  box-sizing: border-box;
 }
 
 body {
-  --header: 10vh; /* hauteur du header*/
-  --footer: 15vh; /*hauteur du footer */
-  --main: 80vh; /* hauteur du main*/
-  width: 100vw;
-  overflow: hidden;
+  --header: 5vh; /* hauteur du header*/
+  --footer: 10vh; /*hauteur du footer */
+  --main: 85vh; /* hauteur du main*/
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
   display: grid;
   grid-template-rows: var(--header) var(--main) var(--footer);
   grid-template-areas: "header" "main" "footer";
 }
+@media screen and (max-width: 480px) {
+  body {
+    --header: 12vh;
+  }
+  body header {
+    height: 11vh;
+  }
+}
 
 header {
   grid-area: header;
+  margin-top: 1rem;
 }
 
 main {
@@ -79,333 +130,420 @@ footer {
   grid-area: footer;
 }
 
-main, .accueil {
-  background-image: url("https://lysianebo.github.io/EricBidart/public/images/ericbidart-fotor-bg-remover-202310050519.png");
+@media screen and (max-width: 480px) {
+  h2 {
+    text-align: center;
+    margin-top: 3vh;
+  }
+}
+#sculptures * {
+  font-family: "Cormorant Upright", serif;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw;
+}
+#sculptures * .sculpture {
+  height: 100vh;
+}
+#sculptures * #oceane {
+  background-image: url(/public/images/creations/oceane/oceane_background.jpg);
+  background-color: rgb(34, 34, 124);
+}
+#sculptures * #fleur {
+  background-image: url(/public/images/creations/fleur/fleur_background.webp);
+}
+#sculptures * #epitres {
+  background-image: url(/public/images/creations/epitres/epitres_background.webp);
+}
+#sculptures * #paix {
+  background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);
+}
+#sculptures * #coeur {
+  background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);
+}
+#sculptures * #cocon {
+  background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);
+}
+#sculptures * #denouement {
+  background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);
+}
+#sculptures * #envolee {
+  background-image: url(/public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);
+}
+#sculptures * #joie {
+  background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);
+}
+#sculptures * #source {
+  background-image: url(/public/images/creations/source/source_2.webp);
+}
+#sculptures * h3 {
+  font-size: calc(56px + 1.390625vw);
+  margin-bottom: 1rem;
+  font-weight: 900;
+  text-align: center;
+}
+#sculptures * .card_sculpture_img {
+  display: flex;
+  flex-flow: wrap;
+  width: fit-content;
+}
+#sculptures * .card_sculpture_img img {
+  max-width: 28vw;
+  max-height: 62vh;
+  margin-right: 1rem;
+  border-radius: 15px;
+  border: 1px solid white;
+  box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#sculptures * .description p {
+  font-size: 1.5rem;
+  margin: 1rem 25rem;
+  text-align: center;
+  width: 65%;
+  margin: 20px auto;
+}
+
+body #presentation_more {
+  display: unset;
+  margin: 0% auto;
+  background-color: black;
+}
+
+.container {
+  padding: 0px 30px;
+  height: 100vh;
+  box-shadow: inset 0px 0px 30px 3px #527FD8;
+}
+.container .content {
+  display: flex;
+  flex-direction: row;
+}
+.container .content h4 {
+  width: 150px;
+}
+.container .content .card {
+  transform: translateX(0px);
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.toggle_button {
+  border: none;
+  cursor: pointer;
+}
+
+.card::before {
+  display: none;
+  height: 0;
+}
+
+input[type=checkbox]:checked ~ #origine {
+  max-height: 200px;
+  transition: max-height 0.4s;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 1rem;
+  transform: translateY(0px);
+}
+
+input[type=checkbox]:checked ~ #passions {
+  max-height: 200px;
+  transition: max-height 0.4s;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+header nav, header ul {
+  display: flex;
+  justify-content: right;
+}
+header input[type=checkbox] {
+  display: none;
+}
+header label {
+  width: 20%;
+}
+header .burger::before {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+    display: none;
+    border-bottom: 1px solid white;
+  }
+  li, a, a:visited {
+    padding: 0px;
+    width: 40%;
+  }
+  .burger::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    content: "☰";
+    background-color: orange;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    z-index: 1;
+    right: 5vh;
+    animation: bounce3 0.5s;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    animation-iteration-count: 2;
+  }
+  input[type=checkbox]:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    font-size: 12px;
+  }
+}
+#accueil {
+  background-image: url(/public/images/ericbidart_sculpteur3.webp);
+  object-fit: fill;
 }
 
 #sculpteur {
-  width: 60%;
-  margin: 10vh;
+  margin: 6% 0 0% 30%;
   text-align: center;
 }
 
-.creations {
+#creations {
   background-image: url("https://lysianebo.github.io/EricBidart/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg");
 }
 
-.gallery {
-  --n: 1; /* Nombre de lignes */
-  --m: 5; /* Nombre de colonnes */
-  --g: 2px; /* Espace entre les images */
-  --f: 1.1; /* Facteur d'agrandissement au survol */
-  height: 76vh;
-  display: grid;
-  grid-template-columns: repeat(var(--m), auto);
-  gap: var(--g);
-  max-width: 1600px; /* Largeur maximale pour éviter que la galerie ne devienne trop large */
-  margin: auto auto; /* Marges automatiques à gauche et à droite pour centrer la galerie */
+.gallerie_creations {
+  columns: 5;
+  row-gap: 30px;
+  width: 90vw;
 }
-
-.card_creation {
+.gallerie_creations .card_creation {
   position: relative;
   overflow: hidden;
+  margin-bottom: 0.5rem;
 }
-.card_creation img {
+.gallerie_creations .card_creation img {
+  display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 32vh;
   object-fit: cover;
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
   filter: grayscale(100%);
-  transform: scale(1);
   transition: transform 0.3s ease;
 }
-.card_creation img:hover {
-  transform: scale(var(--f));
+.gallerie_creations .card_creation img:hover {
+  transform: scale(1.1);
   filter: grayscale(0%);
 }
-
-h3 {
+.gallerie_creations .card_creation h4 {
   position: absolute;
-  height: 4vh;
+  height: 5vh;
   bottom: 0;
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 5px;
-  margin: 0;
   opacity: 0;
-  transform: translateY(-100%);
+  transform: translateY(100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
   text-align: center;
-  font-size: 1em;
   padding: 10px;
 }
-
-.creation_img:hover h3 {
+.gallerie_creations .card_creation .creation_img:hover h4 {
   opacity: 1;
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .gallery {
-    --m: 1; /* Réduire le nombre de colonnes pour les écrans plus petits */
+@media screen and (max-width: 992px) {
+  .gallerie_creations {
+    columns: 3;
   }
 }
-/* Styles pour les écrans de taille moyenne */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .gallery {
-    --m: 2; /* Vous pouvez ajuster le nombre de colonnes en conséquence */
+@media screen and (max-width: 767px) {
+  .gallerie_creations {
+    columns: 2;
   }
 }
-main, .expositions {
+@media screen and (max-width: 480px) {
+  .gallerie_creations {
+    columns: 1;
+  }
+}
+#expositions {
   background-image: url("https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg");
-  background-repeat: no-repeat;
-  overflow: hidden;
 }
 
-.child {
-  display: flex;
-  flex-direction: column;
-  background: transparent;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  /* border: 2px solid white;  */
-  height: 60vh;
-  opacity: 0; /* Définissez l'opacité initiale à 0 pour les cacher */
-  transform: translateY(600px); /* Décalez les cartes vers le bas */
-}
-
-.child:hover {
-  transform: scale(2.5); /* Augmente légèrement la taille lors du survol */
-  background-color: #333; /* Change la couleur de fond lors du survol */
-}
-
-.details {
-  max-height: 0;
-  padding: 0;
-  overflow: hidden;
-  visibility: hidden;
-  transform: rotatex(-180deg);
-  transform-origin: top center;
-  backface-visibility: hidden;
-  transition: 0.3s ease;
-  padding-top: 30px;
-}
-
-.child:hover .details {
-  max-height: none;
-  overflow: visible;
-  visibility: visible;
-  transform: rotatex(0deg);
-}
-
-/* Animation pour la première carte */
-.child:nth-child(1) {
-  animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */
-}
-
-/* Animation pour la deuxième carte */
-.child:nth-child(2) {
-  animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */
-}
-
-/* Animation pour la troisième carte */
-.child:nth-child(3) {
-  animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */
-}
-
-.child:nth-child(4) {
-  animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */
-}
-
-/* Animation pour la deuxième carte */
-.child:nth-child(5) {
-  animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */
-}
-
-/* Animation pour la troisième carte */
-.child:nth-child(6) {
-  animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */
-}
-
-.child:nth-child(7) {
-  animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */
-}
-
-/* Ajoutez d'autres classes d'animation et ajustez les délais en conséquence pour plus de cartes */
 .gallerie_expositions {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 1rem;
-  padding: 1rem;
-  border-radius: 1rem;
+  margin: 1rem 1rem;
 }
-
-.gallerie_expositions > child {
-  /* border-radius: 1rem;
-  border: 2px solid white; */
-  min-height: 54vh;
-}
-
-.gallerie_expositions img, video {
-  object-fit: cover;
-  height: 350px;
-  border-radius: 1rem;
-  /* border: 1px solid white;
-  } */
-}
-
-.gallerie_expositions img, video:hover {
-  transform: scale(1.05); /* Augmente légèrement la taille lors du survol */
-  background-color: #333; /* Change la couleur de fond lors du survol */
-}
-
-@media (max-width: 600px) {
-  /* Ajustez les styles pour les écrans de 600 pixels de largeur ou moins */
-  .logo img {
-    width: 30%; /* Réduisez la taille du logo */
-  }
-  h1 {
-    text-align: center;
-  }
-}
-.presentation {
-  background-image: url("https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+.gallerie_expositions .child {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+  flex-wrap: nowrap;
+  border-radius: 1rem;
+  border-radius: 1rem;
+  border: 2px solid white;
+  overflow: hidden;
+}
+.gallerie_expositions .child :hover {
+  transform: scale(1.2);
+}
+.gallerie_expositions .child:hover .details {
+  opacity: 1;
+  transform: translateY(-80px);
+}
+.gallerie_expositions .child img, .gallerie_expositions .child video {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.gallerie_expositions .child:nth-child(1) {
+  animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */
+}
+.gallerie_expositions .child:nth-child(2) {
+  animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */
+}
+.gallerie_expositions .child:nth-child(3) {
+  animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */
+}
+.gallerie_expositions .child:nth-child(4) {
+  animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */
+}
+.gallerie_expositions .child:nth-child(5) {
+  animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */
+}
+.gallerie_expositions .child:nth-child(6) {
+  animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */
+}
+.gallerie_expositions .child:nth-child(7) {
+  animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */
+}
+
+.details {
+  font-size: 11px;
+  height: 80px;
+  position: absolute;
+  bottom: -80px;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(0px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  padding: 8px 5px 0px 10px;
+}
+
+#presentation {
+  background-image: url("https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg");
+}
+#presentation .content-container {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
 }
 
 .circle {
-  position: absolute;
-  top: 250px;
-  background: none;
+  background: black;
   border: none;
   cursor: pointer;
-  font-size: 16px;
   font-weight: bold;
-  color: white;
   padding: 10px;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 15em;
+  height: 15em;
   box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: transform 0.3s;
 }
-
 .circle:hover {
-  background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1.5);
 }
 
-/* Styles pour les contenus cachés */
-.hidden {
-  display: none;
-  padding: 80px 30px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translatex(-100%, 100%);
-  z-index: 1000;
-  background-color: rgb(26, 117, 206);
-  box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
-  max-width: 100%;
-}
-
-header {
-  background-color: black;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /**** NAVBAR ****/
-}
-header img {
-  border-radius: 50%;
-  width: 40%;
-  padding-left: 1vw;
-  box-shadow: 0px 0.5px 5px black;
-}
-header nav {
-  display: flex;
-  padding: 20px;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-#icons {
-  cursor: pointer;
-  display: none;
-}
-
-@media (max-width: 800px) {
-  header {
-    margin-bottom: 50px;
-  }
-  #icons {
-    display: block;
-  }
-  #icons:before {
-    content: "☰";
-  }
-  .active #icons:before {
-    content: "✕";
-  }
-  nav ul {
-    position: fixed;
-    left: -100%;
-    top: 5%;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transition: 0.25s;
-  }
-  nav li {
-    padding: 3px 0;
-  }
-  a:hover {
-    color: lightblue;
-  }
-  nav.active ul {
-    left: 0;
-  }
-}
 footer {
   padding: 20px;
   background: black;
-  text-align: center;
-  grid-area: footer;
-}
-footer img {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-}
-footer p {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
+.contact, .reseaux_sociaux {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact .logo_img, .contact img {
+  border-radius: 50%;
+  width: 35%;
+  margin-right: 1rem;
+}
+
+.reseaux_sociaux img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    height: 20vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div {
+    margin: 0.2rem;
+  }
+}
+@keyframes bounce {
+  from {
+    top: 100%;
+  }
+  50% {
+    top: 50%;
+  }
+  to {
+    top: 100%;
+  }
+}
 @keyframes bounce2 {
   0%, 20%, 50%, 80%, 100% {
     opacity: 0;
-    transform: translateY(-500);
+    transform: translateY(0);
   }
   40% {
     opacity: 1;
-    transform: tranlateY(1000px);
+    transform: tranlateY(20px);
   }
   60% {
     opacity: 1;
-    transform: translateY(1500px);
+    transform: translateY(50px);
+  }
+}
+@keyframes bounce3 {
+  0% {
+    transform: translate3d(20px, 50px, 80px);
+  }
+  50% {
+    transform: translate3d(0px, 100px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 200px);
   }
 }
 .grow {
@@ -461,6 +599,19 @@ footer p {
 @keyframes bounce-in-right {
   0% {
     opacity: 0;
+    transform: translateX(1000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
     transform: translateX(2000px);
   }
   60% {
@@ -472,7 +623,6 @@ footer p {
   }
   100% {
     transform: translateX(0);
-    transform: translateY(100px);
   }
 }
 .bounce-out {

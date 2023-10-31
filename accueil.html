@@ -17,23 +17,22 @@
    
     <link rel="stylesheet"
         href="public/css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');
-    </style>
+   
 </head>
 
-<body>
+<body id="accueil">
     <header>
-        <div class="logo_img"><img src="public/images/Logo 2021.webp"
-                alt=""></div>
-        <nav id="nav">
-            <ul>
+        <nav>
+            <input type="checkbox"
+                id="menu-toggle">
+            <label for="menu-toggle"
+                class="burger"></label>
+            <ul class="nav-links">
                 <li><a href="accueil.html">Bienvenue</a></li>
                 <li><a href="creations.html">Créations</a></li>
                 <li><a href="expositions.html">Expositions</a></li>
                 <li><a href="presentation.html">A propos</a></li>
             </ul>
-            <div id="icons"></div>
         </nav>
     </header>
 
@@ -41,29 +40,33 @@
 
         <!-- <img class="background" src="public/images/ericbidart.webp" alt="">  -->
         <section id="sculpteur">
-            <h1 class="nom">Eric Bidart</h1>
+            <span class="thin">Eric</span><span>BIDART</span>
             <p class="poesie">" Du papier à la pierre, De la poésie à la lumière..."</p>
             <h2 class="job">Sculpteur de lumineuses</h2>
         </section>
     </main>
     <footer>
+        <div class="contact">
+            <img class="logo_img"
+                src="public/images/Logo_2021.webp"
+                alt="logo Eric Bidart"><a href="#">Contact</a>
+        </div>
         <div class="reseaux_sociaux">
-            <a href="https://www.instagram.com/ericbidartsculpteur/"
-                target="_blank"><img src="public/images/reseaux/Instagram_icon.png.webp"
-                    alt=""></a>
             <a href="https://www.facebook.com/ericbidartsculpteur/"
-                target="_blank"><img src="public/images/reseaux/facebook3.avif"
-                    alt="">
+                target="_blank"><img class="reseaux_sociaux"
+                    src="public/images/reseaux/facebook-logo-transparent-round.webp"
+                    alt="logo de Facebook">
             </a>
+            <a href="https://www.instagram.com/ericbidartsculpteur/"
+                target="_blank"><img class="reseaux_sociaux"
+                    src="public/images/reseaux/instagram-logo-transparent-round.webp"
+                    alt="logo d'Instagram"></a>
             <a href="https://www.linkedin.com/in/eric-bidart-sculpteur--6a9739208/"
-                target="_blank"><img src="public/images/reseaux/linkedin.jpg"
-                    alt=""></a>
+                target="_blank"><img class="reseaux_sociaux"
+                    src="public/images/reseaux/linkedinlogo-transparent-round.webp"
+                    alt="logo de Linkedin"></a>
         </div>
         <p class="creator_site">&copy Lysiane Boisnel</p>
     </footer>
-
-    <script src="/scss/utils/hamburger.js"></script>
 </body>
-
-
 </html>

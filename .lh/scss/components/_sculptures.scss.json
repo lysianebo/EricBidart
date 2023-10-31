@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 27,
+            "activePatchIndex": 100,
             "patches": [
                 {
                     "date": 1697999597398,
@@ -116,6 +116,298 @@
                 {
                     "date": 1698003174991,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n         }\n \n         #fleur {\n-            background-image: url(public/images/creations/fleur/fleur_background.webp);\n+            background-image: urfleur/fleur_backgrl(public/images/creations/ound.webp);\n         }\n \n         #epitres {\n             background-image: url(public/images/creations/epitres/epitres_background.webp);\n"
+                },
+                {
+                    "date": 1698523468171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,83 +1,84 @@\n-\n-     \n-       \n-\n-\n-        #oceane {\n-            background-image: url( );\n-\n+ @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+        *{\n+         font-family: 'Cormorant Upright', serif;\n+    font-size: 30px;\n+    color: white;\n+    background-repeat: no-repeat;\n+    background-size: 100vw ;\n+   \n         }\n-\n-        #fleur {\n-            background-image: urfleur/fleur_backgrl(public/images/creations/ound.webp);\n-        }\n-\n-        #epitres {\n+  \n+         #oceane{\n+            background-image: url(public/images/creations/oceane/oceane_background.jpg);\n+            \n+            \n+         } \n+         #fleur{ \n+            background-image: url(public/images/creations/fleur/fleur_background.webp);\n+         }\n+          #epitres{ \n             background-image: url(public/images/creations/epitres/epitres_background.webp);\n-        }\n-\n-        #paix {\n+         }\n+        \n+          #paix{ \n             background-image: url(public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n-        }\n-\n-        #coeur {\n+         }\n+          #coeur{ \n             background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n-        }\n-\n-        #cocon {\n+         }\n+          #cocon{ \n             background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n-        }\n-\n-        #denouement {\n+         }\n+         #denouement{ \n             background-image: url(public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n-        }\n-\n-        #envolee {\n+         }\n+         #envolee{ \n             background-image: url(public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n-        }\n-\n-        #joie {\n+         }\n+         #joie{ \n             background-image: url(public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n-        }\n-\n-        #source {\n+         }\n+         #source{ \n             background-image: url(public/images/creations/source/source_2.webp);\n-\n-        }\n-\n-        .back-button {\n-            position: fixed;\n-            \n+        \n+         }\n+         .back-button{\n+            position: fixed;;\n             top: 10px;\n             right: 50px;\n             z-index: 1;\n-        }\n-\n-        .card_sculpture_img {\n+         }   \n+        .card_sculpture_img{\n             display: flex;\n             width: fit-content;\n             margin: auto;\n             text-align: center;\n-\n-\n         }\n-\n-        img {\n+        img{\n+            max-height: 66vh;\n+            display: flex;\n+            margin: 10px;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 1px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n         }\n \n-        p {\n-            font-size: calc(16px + 1.390625vw);\n+       .description{\n+            width: 65%;\n+            margin: auto;\n+            padding-bottom: 50px;\n+            line-height: 26px;\n+       }\n+       \n+        p{\n+            font-size: 24px;\n             text-align: center;\n-            width: 70%;\n-            margin: 2vh auto;\n+            width: 65%;\n+            margin: 30px auto;\n         }\n-\n-        h3 {\n-            font-size: calc(56px + 1.390625vw);\n+        h3{\n+           font-size: calc(56px + 1.390625vw);\n             margin: 0;\n             font-weight: 900;\n             text-align: center;\n-        }\n+        }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698523507806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+\n         *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n"
+                },
+                {
+                    "date": 1698523539212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        *{\n+        {\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1698523556378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        {\n+        #{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1698523563741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #{\n+        {\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1698523652065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,5 @@\n \n-        {\n-         font-family: 'Cormorant Upright', serif;\n-    font-size: 30px;\n-    color: white;\n-    background-repeat: no-repeat;\n-    background-size: 100vw ;\n-   \n-        }\n   \n          #oceane{\n             background-image: url(public/images/creations/oceane/oceane_background.jpg);\n             \n"
+                },
+                {
+                    "date": 1698523673902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n   \n          #oceane{\n-            background-image: url(public/images/creations/oceane/oceane_background.jpg);\n+            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             \n             \n          } \n          #fleur{ \n"
+                },
+                {
+                    "date": 1698523705445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n             \n             \n          } \n          #fleur{ \n-            background-image: url(public/images/creations/fleur/fleur_background.webp);\n+            background-image: url(:public/images/creations/fleur/fleur_background.webp);\n          }\n           #epitres{ \n             background-image: url(public/images/creations/epitres/epitres_background.webp);\n          }\n"
+                },
+                {
+                    "date": 1698527398024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n             \n             \n          } \n          #fleur{ \n-            background-image: url(:public/images/creations/fleur/fleur_background.webp);\n+            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n          }\n           #epitres{ \n-            background-image: url(public/images/creations/epitres/epitres_background.webp);\n+            background-image: url(/public/images/creations/epitres/epitres_background.webp);\n          }\n         \n           #paix{ \n             background-image: url(public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n"
+                },
+                {
+                    "date": 1698527407204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             background-image: url(/public/images/creations/epitres/epitres_background.webp);\n          }\n         \n           #paix{ \n-            background-image: url(public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n+            background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n          }\n           #coeur{ \n             background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n"
+                },
+                {
+                    "date": 1698527416430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           #paix{ \n             background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n          }\n           #coeur{ \n-            background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n           #cocon{ \n             background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n"
+                },
+                {
+                    "date": 1698527434731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n           #coeur{ \n             background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n           #cocon{ \n-            background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n          #denouement{ \n             background-image: url(public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n          }\n"
+                },
+                {
+                    "date": 1698527442006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           #cocon{ \n             background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n          #denouement{ \n-            background-image: url(public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n+            background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n          }\n          #envolee{ \n             background-image: url(public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n          }\n"
+                },
+                {
+                    "date": 1698527448182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n          #envolee{ \n             background-image: url(public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n          }\n          #joie{ \n-            background-image: url(public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n+            background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n          }\n          #source{ \n             background-image: url(public/images/creations/source/source_2.webp);\n         \n"
+                },
+                {
+                    "date": 1698527462617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n          #joie{ \n             background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n          }\n          #source{ \n-            background-image: url(public/images/creations/source/source_2.webp);\n+            background-image: url(/public/images/creations/source/source_2.webp);\n         \n          }\n          .back-button{\n             position: fixed;;\n"
+                },
+                {
+                    "date": 1698527715293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,38 +1,46 @@\n-\n+ @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+        *{\n+         font-family: 'Cormorant Upright', serif;\n+    font-size: 30px;\n+    color: white;\n+    background-repeat: no-repeat;\n+    background-size: 100vw ;\n+   \n+        }\n   \n          #oceane{\n-            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n+            background-image: url(public/images/creations/oceane/oceane_background.jpg);\n             \n             \n          } \n          #fleur{ \n-            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n+            background-image: url(public/images/creations/fleur/fleur_background.webp);\n          }\n           #epitres{ \n-            background-image: url(/public/images/creations/epitres/epitres_background.webp);\n+            background-image: url(public/images/creations/epitres/epitres_background.webp);\n          }\n         \n           #paix{ \n-            background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n+            background-image: url(public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n          }\n           #coeur{ \n-            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+            background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n           #cocon{ \n-            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+            background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n          #denouement{ \n-            background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n+            background-image: url(public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n          }\n          #envolee{ \n             background-image: url(public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n          }\n          #joie{ \n-            background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n+            background-image: url(public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n          }\n          #source{ \n-            background-image: url(/public/images/creations/source/source_2.webp);\n+            background-image: url(public/images/creations/source/source_2.webp);\n         \n          }\n          .back-button{\n             position: fixed;;\n"
+                },
+                {
+                    "date": 1698527764193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n    \n         }\n   \n          #oceane{\n-            background-image: url(public/images/creations/oceane/oceane_background.jpg);\n+            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             \n             \n          } \n          #fleur{ \n"
+                },
+                {
+                    "date": 1698527772807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n             \n             \n          } \n          #fleur{ \n-            background-image: url(public/images/creations/fleur/fleur_background.webp);\n+            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n          }\n           #epitres{ \n             background-image: url(public/images/creations/epitres/epitres_background.webp);\n          }\n"
+                },
+                {
+                    "date": 1698527801747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,39 +8,39 @@\n    \n         }\n   \n          #oceane{\n-            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n+            background-image: url(//public/images/creations/oceane/oceane_background.jpg);\n             \n             \n          } \n          #fleur{ \n-            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n+            background-image: url(//public/images/creations/fleur/fleur_background.webp);\n          }\n           #epitres{ \n-            background-image: url(public/images/creations/epitres/epitres_background.webp);\n+            background-image: url(/public/images/creations/epitres/epitres_background.webp);\n          }\n         \n           #paix{ \n-            background-image: url(public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n+            background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n          }\n           #coeur{ \n-            background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n           #cocon{ \n-            background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n          }\n          #denouement{ \n-            background-image: url(public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n+            background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n          }\n          #envolee{ \n-            background-image: url(public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n+            background-image: url(/public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n          }\n          #joie{ \n-            background-image: url(public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n+            background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n          }\n          #source{ \n-            background-image: url(public/images/creations/source/source_2.webp);\n+            background-image: url(/public/images/creations/source/source_2.webp);\n         \n          }\n          .back-button{\n             position: fixed;;\n"
+                },
+                {
+                    "date": 1698527809074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n    \n         }\n   \n          #oceane{\n-            background-image: url(//public/images/creations/oceane/oceane_background.jpg);\n+            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             \n             \n          } \n          #fleur{ \n"
+                },
+                {
+                    "date": 1698527828289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n             \n             \n          } \n          #fleur{ \n-            background-image: url(//public/images/creations/fleur/fleur_background.webp);\n+            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n          }\n           #epitres{ \n             background-image: url(/public/images/creations/epitres/epitres_background.webp);\n          }\n"
+                },
+                {
+                    "date": 1698527927930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n-        *{\n+        {\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1698527933082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n-        {\n+        #creations{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1698527944655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+\n         #creations{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n"
+                },
+                {
+                    "date": 1698528118212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-\n-        #creations{\n+ @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+        {\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1698528246323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n-        {\n+        #sculptures{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1698528265656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+\n         #sculptures{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n"
+                },
+                {
+                    "date": 1698561354610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,84 @@\n+\n+        #sculptures {\n+         font-family: 'Cormorant Upright', serif;\n+    font-size: 30px;\n+    color: white;\n+    background-repeat: no-repeat;\n+    background-size: 100vw ;\n+   \n+        }\n+  \n+         #oceane{\n+            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n+            \n+            \n+         } \n+         #fleur{ \n+            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n+         }\n+          #epitres{ \n+            background-image: url(/public/images/creations/epitres/epitres_background.webp);\n+         }\n+        \n+          #paix{ \n+            background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n+         }\n+          #coeur{ \n+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+         }\n+          #cocon{ \n+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+         }\n+         #denouement{ \n+            background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n+         }\n+         #envolee{ \n+            background-image: url(/public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n+         }\n+         #joie{ \n+            background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n+         }\n+         #source{ \n+            background-image: url(/public/images/creations/source/source_2.webp);\n+        \n+         }\n+         .back-button{\n+            position: fixed;;\n+            top: 10px;\n+            right: 50px;\n+            z-index: 1;\n+         }   \n+        .card_sculpture_img{\n+            display: flex;\n+            width: fit-content;\n+            margin: auto;\n+            text-align: center;\n+        }\n+        img{\n+            max-height: 66vh;\n+            display: flex;\n+            margin: 10px;\n+            border-radius: 15px;\n+            border: 1px solid white;\n+            box-shadow: black 0px 1px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n+        }\n+\n+       .description{\n+            width: 65%;\n+            margin: auto;\n+            padding-bottom: 50px;\n+            line-height: 26px;\n+       }\n+       \n+        p{\n+            font-size: 24px;\n+            text-align: center;\n+            width: 65%;\n+            margin: 30px auto;\n+        }\n+        h3{\n+           font-size: calc(56px + 1.390625vw);\n+            margin: 0;\n+            font-weight: 900;\n+            text-align: center;\n+        }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698561359813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures {\n+        #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n@@ -80,89 +80,5 @@\n            font-size: calc(56px + 1.390625vw);\n             margin: 0;\n             font-weight: 900;\n             text-align: center;\n-        }\n-\n-        #sculptures{\n-         font-family: 'Cormorant Upright', serif;\n-    font-size: 30px;\n-    color: white;\n-    background-repeat: no-repeat;\n-    background-size: 100vw ;\n-   \n-        }\n-  \n-         #oceane{\n-            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n-            \n-            \n-         } \n-         #fleur{ \n-            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n-         }\n-          #epitres{ \n-            background-image: url(/public/images/creations/epitres/epitres_background.webp);\n-         }\n-        \n-          #paix{ \n-            background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n-         }\n-          #coeur{ \n-            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n-         }\n-          #cocon{ \n-            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n-         }\n-         #denouement{ \n-            background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n-         }\n-         #envolee{ \n-            background-image: url(/public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n-         }\n-         #joie{ \n-            background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n-         }\n-         #source{ \n-            background-image: url(/public/images/creations/source/source_2.webp);\n-        \n-         }\n-         .back-button{\n-            position: fixed;;\n-            top: 10px;\n-            right: 50px;\n-            z-index: 1;\n-         }   \n-        .card_sculpture_img{\n-            display: flex;\n-            width: fit-content;\n-            margin: auto;\n-            text-align: center;\n-        }\n-        img{\n-            max-height: 66vh;\n-            display: flex;\n-            margin: 10px;\n-            border-radius: 15px;\n-            border: 1px solid white;\n-            box-shadow: black 0px 1px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n-        }\n-\n-       .description{\n-            width: 65%;\n-            margin: auto;\n-            padding-bottom: 50px;\n-            line-height: 26px;\n-       }\n-       \n-        p{\n-            font-size: 24px;\n-            text-align: center;\n-            width: 65%;\n-            margin: 30px auto;\n-        }\n-        h3{\n-           font-size: calc(56px + 1.390625vw);\n-            margin: 0;\n-            font-weight: 900;\n-            text-align: center;\n         }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698561427412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n \n         #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n-    color: white;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n    \n         }\n"
+                },
+                {
+                    "date": 1698561445086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n         #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n-    background-size: 100vw ;\n    \n         }\n   \n          #oceane{\n"
+                },
+                {
+                    "date": 1698561463586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n         #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n+    background-size: 100vw ;\n    \n         }\n   \n          #oceane{\n"
+                },
+                {
+                    "date": 1698561477794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n         #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n-    background-size: 100vw ;\n+    background-size: 100vw  cover;\n    \n         }\n   \n          #oceane{\n"
+                },
+                {
+                    "date": 1698561493537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n         #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n-    background-size: 100vw  cover;\n+    background-size: 100%  cover;\n    \n         }\n   \n          #oceane{\n"
+                },
+                {
+                    "date": 1698561498847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n \n         #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n+    color: white;\n     background-repeat: no-repeat;\n-    background-size: 100%  cover;\n+    background-size: 100vw ;\n    \n         }\n   \n          #oceane{\n"
+                },
+                {
+                    "date": 1698561504424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures *{\n+        #sculptures {\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     color: white;\n     background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1698561510817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n \n         #sculptures {\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n-    color: white;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n    \n         }\n"
+                },
+                {
+                    "date": 1698561525391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures {\n+        #sculptures div{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n"
+                },
+                {
+                    "date": 1698561539725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures div{\n+        #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n"
+                },
+                {
+                    "date": 1698561575431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,8 @@\n             display: flex;\n             width: fit-content;\n             margin: auto;\n             text-align: center;\n-        }\n         img{\n             max-height: 66vh;\n             display: flex;\n             margin: 10px;\n"
+                },
+                {
+                    "date": 1698561589962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,5 +78,6 @@\n            font-size: calc(56px + 1.390625vw);\n             margin: 0;\n             font-weight: 900;\n             text-align: center;\n-        }\n\\ No newline at end of file\n+        }\n+        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698561627772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,11 +65,9 @@\n             width: 65%;\n             margin: auto;\n             padding-bottom: 50px;\n             line-height: 26px;\n-       }\n-       \n-        p{\n+       }p{\n             font-size: 24px;\n             text-align: center;\n             width: 65%;\n             margin: 30px auto;\n@@ -79,5 +77,5 @@\n             margin: 0;\n             font-weight: 900;\n             text-align: center;\n         }\n-        \n\\ No newline at end of file\n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698561633467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,14 +65,13 @@\n             width: 65%;\n             margin: auto;\n             padding-bottom: 50px;\n             line-height: 26px;\n-       }p{\n+       p{\n             font-size: 24px;\n             text-align: center;\n             width: 65%;\n             margin: 30px auto;\n-        }\n         h3{\n            font-size: calc(56px + 1.390625vw);\n             margin: 0;\n             font-weight: 900;\n"
+                },
+                {
+                    "date": 1698561640144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,5 +76,6 @@\n             margin: 0;\n             font-weight: 900;\n             text-align: center;\n         }\n-    }\n\\ No newline at end of file\n+    }\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698561661769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,5 +77,5 @@\n             font-weight: 900;\n             text-align: center;\n         }\n     }\n-    \n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1698561694078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures *{\n+        #sculptures {\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n@@ -78,4 +78,5 @@\n             text-align: center;\n         }\n     }\n }\n+        }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698561710954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures {\n+        #sculptures >#{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n"
+                },
+                {
+                    "date": 1698561720356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures >#{\n+        #sculptures, >#{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n"
+                },
+                {
+                    "date": 1698561733142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures, >#{\n+        #sculptures >{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n"
+                },
+                {
+                    "date": 1698561739847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures >{\n+        #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n"
+                },
+                {
+                    "date": 1698561764001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n   \n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             \n-            \n          } \n          #fleur{ \n             background-image: url(/public/images/creations/fleur/fleur_background.webp);\n          }\n"
+                },
+                {
+                    "date": 1698561770267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n         }\n   \n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n-            \n          } \n          #fleur{ \n             background-image: url(/public/images/creations/fleur/fleur_background.webp);\n          }\n"
+                },
+                {
+                    "date": 1698561779620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n          }\n           #epitres{ \n             background-image: url(/public/images/creations/epitres/epitres_background.webp);\n          }\n-        \n           #paix{ \n             background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n          }\n           #coeur{ \n@@ -36,9 +35,8 @@\n             background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n          }\n          #source{ \n             background-image: url(/public/images/creations/source/source_2.webp);\n-        \n          }\n          .back-button{\n             position: fixed;;\n             top: 10px;\n"
+                },
+                {
+                    "date": 1698561813021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n         #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n-    font-size: 30px;\n+    // font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n    \n         }\n"
+                },
+                {
+                    "date": 1698561901009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,13 +57,9 @@\n             box-shadow: black 0px 1px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n         }\n \n        .description{\n-            width: 65%;\n-            margin: auto;\n-            padding-bottom: 50px;\n-            line-height: 26px;\n-       p{\n+    \n             font-size: 24px;\n             text-align: center;\n             width: 65%;\n             margin: 30px auto;\n"
+                },
+                {
+                    "date": 1698561906455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n             font-size: 24px;\n             text-align: center;\n             width: 65%;\n             margin: 30px auto;\n+            \n         h3{\n            font-size: calc(56px + 1.390625vw);\n             margin: 0;\n             font-weight: 900;\n"
+                },
+                {
+                    "date": 1698561913087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,14 +62,12 @@\n             font-size: 24px;\n             text-align: center;\n             width: 65%;\n             margin: 30px auto;\n-            \n+       }\n         h3{\n            font-size: calc(56px + 1.390625vw);\n             margin: 0;\n             font-weight: 900;\n             text-align: center;\n         }\n     }\n-}\n\\ No newline at end of file\n-        }\n"
+                },
+                {
+                    "date": 1698561972973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n     // font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n    \n-        }\n   \n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n          } \n"
+                },
+                {
+                    "date": 1698561982700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,4 +69,6 @@\n             font-weight: 900;\n             text-align: center;\n         }\n     }\n+\n+        }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698561994026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures *{\n+        #sculptures {\n          font-family: 'Cormorant Upright', serif;\n     // font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n"
+                },
+                {
+                    "date": 1698562010557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-        #sculptures {\n+        #sculptures *{\n          font-family: 'Cormorant Upright', serif;\n     // font-size: 30px;\n     background-repeat: no-repeat;\n     background-size: 100vw ;\n"
+                },
+                {
+                    "date": 1698562044313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n             display: flex;\n             width: fit-content;\n             margin: auto;\n             text-align: center;\n-        img{\n+        &img{\n             max-height: 66vh;\n             display: flex;\n             margin: 10px;\n             border-radius: 15px;\n"
+                },
+                {
+                    "date": 1698562059282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n             display: flex;\n             width: fit-content;\n             margin: auto;\n             text-align: center;\n-        &img{\n+        img{\n             max-height: 66vh;\n             display: flex;\n             margin: 10px;\n             border-radius: 15px;\n"
+                },
+                {
+                    "date": 1698562134649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n             position: fixed;;\n             top: 10px;\n             right: 50px;\n             z-index: 1;\n+            \n          }   \n         .card_sculpture_img{\n             display: flex;\n             width: fit-content;\n"
+                },
+                {
+                    "date": 1698562147474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             position: fixed;;\n             top: 10px;\n             right: 50px;\n             z-index: 1;\n-            \n+            color: brown;\n          }   \n         .card_sculpture_img{\n             display: flex;\n             width: fit-content;\n"
+                },
+                {
+                    "date": 1698562159299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             position: fixed;;\n             top: 10px;\n             right: 50px;\n             z-index: 1;\n-            color: brown;\n+            colo: brown;\n          }   \n         .card_sculpture_img{\n             display: flex;\n             width: fit-content;\n"
+                },
+                {
+                    "date": 1698562169206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             position: fixed;;\n             top: 10px;\n             right: 50px;\n             z-index: 1;\n-            colo: brown;\n+            background-color: brown;\n          }   \n         .card_sculpture_img{\n             display: flex;\n             width: fit-content;\n"
+                },
+                {
+                    "date": 1698562378899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,8 @@\n          .back-button{\n             position: fixed;;\n             top: 10px;\n             right: 50px;\n-            z-index: 1;\n             background-color: brown;\n          }   \n         .card_sculpture_img{\n             display: flex;\n"
+                },
+                {
+                    "date": 1698562413265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,5 +70,5 @@\n             text-align: center;\n         }\n     }\n \n-        }\n\\ No newline at end of file\n+        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698562422906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n          }\n          #source{ \n             background-image: url(/public/images/creations/source/source_2.webp);\n          }\n+         \n          .back-button{\n             position: fixed;;\n             top: 10px;\n             right: 50px;\n"
+                },
+                {
+                    "date": 1698562585709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,14 +35,15 @@\n          }\n          #source{ \n             background-image: url(/public/images/creations/source/source_2.webp);\n          }\n-         \n+         }\n          .back-button{\n             position: fixed;;\n             top: 10px;\n             right: 50px;\n             background-color: brown;\n+            \n          }   \n         .card_sculpture_img{\n             display: flex;\n             width: fit-content;\n"
+                },
+                {
+                    "date": 1698562594107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n             position: fixed;;\n             top: 10px;\n             right: 50px;\n             background-color: brown;\n-            \n+            border-radius: 15px;\n          }   \n         .card_sculpture_img{\n             display: flex;\n             width: fit-content;\n"
+                },
+                {
+                    "date": 1698562954107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,15 +36,9 @@\n          #source{ \n             background-image: url(/public/images/creations/source/source_2.webp);\n          }\n          }\n-         .back-button{\n-            position: fixed;;\n-            top: 10px;\n-            right: 50px;\n-            background-color: brown;\n-            border-radius: 15px;\n-         }   \n+           \n         .card_sculpture_img{\n             display: flex;\n             width: fit-content;\n             margin: auto;\n"
                 }
             ],
             "date": 1697999597398,

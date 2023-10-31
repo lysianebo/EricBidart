@@ -1,29 +1,61 @@
-    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');
-       @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Playpen+Sans:wght@100;500;700;800&family=Rubik:wght@400;500;700&display=swap');
+  
+// font-family: 'Belanosima', sans-serif;
+// font-family: 'Cormorant Upright', serif;
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Outfit', sans-serif;
+// font-family: 'Playpen Sans', cursive;
+// font-family: 'Rubik', sans-serif;
 
+*{
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  // font-size: calc(9px + 1.1vw)
+   font-size: calc(14px + (17.02 - 14.1) * ((100vw - 300px) / (1600 - 300)));
+}
 h1{
     font-size: calc(110% + 4.390625vw);
-    animation: flipper 1s ; 
+    animation: flipper 1s ;
+    text-shadow: 1px 2px 10px black;
+   
     }
+  span {
+     font-size: calc(110% + 4.390625vw);
+     font-weight: 900;
+    text-shadow: 1px 2px 10px black;
+      &.thin{
+       font-weight: 400 ;
+     }
+  }
 h2{
   font-size: calc(100% + 2vw);
-    margin: 0.5em 1em;
-    animation: flipper 8s ; 
+    margin: 0.4em 1em;
+    animation: bounceInRight 2s ease 1s ; 
+    //  -webkit-text-fill-color: transparent;
+    // // background-image: url(/public//images/GradientBlur.jpg); 
+    // background-clip: text;
+    // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);
     }
 h3{
     font-size: calc(40% + 2vw);
     animation: flipper 3s ; 
     }
-
+h4{
+    font-size: 20px;
+    animation: flipper 3s ; 
+    }
  p{
-    padding: 20px;
+    padding: 0px;
         }
 
 li, a, a:visited {
+  // font-family:  'Cormorant Upright', serif;
   padding: 5px;
   text-decoration: none;
   list-style: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+  
 
 a:hover {
   color: red;
@@ -34,10 +66,7 @@ a:hover {
             display: flex;
             justify-content: space-around;
             align-items: center;
-        
         }
-       
-        
         .close-button{
             position: absolute;
             top: 10px;
@@ -47,5 +76,11 @@ a:hover {
             justify-content: flex-end;
             color: black;
             background-color: white;
-         
         }
+        .back-button{
+            position: fixed;;
+            top: 2vh;
+            right: 2vh;
+            background-color: blue;
+            border-radius: 15px;
+         } 

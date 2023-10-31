@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 29,
+            "activePatchIndex": 41,
             "patches": [
                 {
                     "date": 1697986414780,
@@ -124,6 +124,54 @@
                 {
                     "date": 1698005381962,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n    <link rel=\"stylesheet\" href=\"public/css/style.css\">\n </head>\n-<body cla>\n+<body class=\"creations\">\n     <header>\n         <div class=\"logo_img\"><img src=\"public/images/Logo 2021.webp\"\n                 alt=\"\"></div>\n         <nav id=\"nav\">\n"
+                },
+                {
+                    "date": 1698203661979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n    <link rel=\"stylesheet\" href=\"public/css/style.css\">\n </head>\n <body class=\"creations\">\n     <header>\n-        <div class=\"logo_img\"><img src=\"public/images/Logo 2021.webp\"\n-                alt=\"\"></div>\n+        <!-- <div class=\"logo_img\"><img src=\"public/images/Logo 2021.webp\"\n+                alt=\"\"></div> -->\n         <nav id=\"nav\">\n             <ul>\n                 <li><a href=\"accueil.html\">Bienvenue</a></li>\n                 <li><a href=\"creations.html\">Créations</a></li>\n@@ -110,7 +110,7 @@\n                     alt=\"\"></a>\n         </div>\n         <p class=\"creator_site\">&copy Lysiane Boisnel</p>\n     </footer>\n-<script src=\"index.js\"></script>\n+<script src=\"/scss/utils/hamburger.js\"></script>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698203721005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,18 +96,21 @@\n             </a>\n         </div>\n     </div>\n     <footer>\n+        <div class=\"contact\"><img class=\"logo_img\"\n+                src=\"public/images/Logo 2021.webp\"\n+                alt=\"\"><a href=\"#\">Contact</a></div>\n         <div class=\"reseaux_sociaux\">\n-            <a href=\"https://www.instagram.com/ericbidartsculpteur/\"\n-                target=\"_blank\"><img src=\"public/images/reseaux/Instagram_icon.png.webp\"\n-                    alt=\"\"></a>\n             <a href=\"https://www.facebook.com/ericbidartsculpteur/\"\n-                target=\"_blank\"><img src=\"public/images/reseaux/facebook3.avif\"\n+                target=\"_blank\"><img src=\"public/images/reseaux/facebook-logo-transparent-round.webp\"\n                     alt=\"\">\n             </a>\n+            <a href=\"https://www.instagram.com/ericbidartsculpteur/\"\n+                target=\"_blank\"><img src=\"public/images/reseaux/instagram-logo-transparent-round.webp\"\n+                    alt=\"\"></a>\n             <a href=\"https://www.linkedin.com/in/eric-bidart-sculpteur--6a9739208/\"\n-                target=\"_blank\"><img src=\"public/images/reseaux/linkedin.jpg\"\n+                target=\"_blank\"><img src=\"public/images/reseaux/linkedinlogo-transparent-round.webp\"\n                     alt=\"\"></a>\n         </div>\n         <p class=\"creator_site\">&copy Lysiane Boisnel</p>\n     </footer>\n"
+                },
+                {
+                    "date": 1698203794379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             </ul>\n             <div id=\"icons\"></div>\n         </nav>\n     </header>\n-    \n+    <h2>Expositions</h2>\n     <div class=\"gallery\">\n         <div class=\"card_creation\">\n             <a href=\"sculptures.html#oceane\"\n                 class=\"creation_img\"> <img src=\"public/images/creations/oceane/oceane_3.webp\"\n"
+                },
+                {
+                    "date": 1698203812846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             </ul>\n             <div id=\"icons\"></div>\n         </nav>\n     </header>\n-    <h2>Expositions</h2>\n+    <h2>C</h2>\n     <div class=\"gallery\">\n         <div class=\"card_creation\">\n             <a href=\"sculptures.html#oceane\"\n                 class=\"creation_img\"> <img src=\"public/images/creations/oceane/oceane_3.webp\"\n"
+                },
+                {
+                    "date": 1698203820354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             </ul>\n             <div id=\"icons\"></div>\n         </nav>\n     </header>\n-    <h2>C</h2>\n+    <h2>Cré</h2>\n     <div class=\"gallery\">\n         <div class=\"card_creation\">\n             <a href=\"sculptures.html#oceane\"\n                 class=\"creation_img\"> <img src=\"public/images/creations/oceane/oceane_3.webp\"\n"
+                },
+                {
+                    "date": 1698205146517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n             </ul>\n             <div id=\"icons\"></div>\n         </nav>\n     </header>\n-    <h2>Cré</h2>\n     <div class=\"gallery\">\n         <div class=\"card_creation\">\n             <a href=\"sculptures.html#oceane\"\n                 class=\"creation_img\"> <img src=\"public/images/creations/oceane/oceane_3.webp\"\n"
+                },
+                {
+                    "date": 1698205154939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n             </ul>\n             <div id=\"icons\"></div>\n         </nav>\n     </header>\n+    <h2>Créations</h2>\n     <div class=\"gallery\">\n         <div class=\"card_creation\">\n             <a href=\"sculptures.html#oceane\"\n                 class=\"creation_img\"> <img src=\"public/images/creations/oceane/oceane_3.webp\"\n"
+                },
+                {
+                    "date": 1698223856922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n    <link rel=\"stylesheet\" href=\"public/css/style.css\">\n </head>\n-<body class=\"creations\">\n+<body id=\"creations\">\n     <header>\n         <!-- <div class=\"logo_img\"><img src=\"public/images/Logo 2021.webp\"\n                 alt=\"\"></div> -->\n         <nav id=\"nav\">\n"
+                },
+                {
+                    "date": 1698224309915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             </ul>\n             <div id=\"icons\"></div>\n         </nav>\n     </header>\n-    <h2>Créations</h2>\n+    <!-- <h2>Créations</h2> -->\n     <div class=\"gallery\">\n         <div class=\"card_creation\">\n             <a href=\"sculptures.html#oceane\"\n                 class=\"creation_img\"> <img src=\"public/images/creations/oceane/oceane_3.webp\"\n"
+                },
+                {
+                    "date": 1698224324074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             </ul>\n             <div id=\"icons\"></div>\n         </nav>\n     </header>\n-    <!-- <h2>Créations</h2> -->\n+    <h2>Créations</h2>\n     <div class=\"gallery\">\n         <div class=\"card_creation\">\n             <a href=\"sculptures.html#oceane\"\n                 class=\"creation_img\"> <img src=\"public/images/creations/oceane/oceane_3.webp\"\n"
+                },
+                {
+                    "date": 1698224473797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             <div id=\"icons\"></div>\n         </nav>\n     </header>\n     <h2>Créations</h2>\n-    <di class=\"gallery\">\n+    <d class=\"gallery\">\n         <div class=\"card_creation\">\n             <a href=\"sculptures.html#oceane\"\n                 class=\"creation_img\"> <img src=\"public/images/creations/oceane/oceane_3.webp\"\n                     alt=\"\">\n"
+                },
+                {
+                    "date": 1698224505857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n                     alt=\"\">\n                 <h3>A la source</h3>\n             </a>\n         </div>\n-    </div>\n+    </main>\n     <footer>\n         <div class=\"contact\"><img class=\"logo_img\"\n                 src=\"public/images/Logo 2021.webp\"\n                 alt=\"\"><a href=\"#\">Contact</a></div>\n"
                 }
             ],
             "date": 1697986414780,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 29,
+            "activePatchIndex": 234,
             "patches": [
                 {
                     "date": 1697981509474,
@@ -124,6 +124,826 @@
                 {
                     "date": 1698014752292,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     animation: flipper 3s ; \n     }\n \n  p{\n-            padding: 20px;\n+    padding: 20px;\n         }\n \n li, a, a:visited {\n   padding: 5px;\n"
+                },
+                {
+                    "date": 1698190947689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,52 @@\n+    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+       @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+\n+\n+h1{\n+    font-size: calc(110% + 4.390625vw);\n+    animation: flipper 1s ;\n+    ba \n+    }\n+h2{\n+  font-size: calc(100% + 2vw);\n+    margin: 0.5em 1em;\n+    animation: flipper 8s ; \n+    }\n+h3{\n+    font-size: calc(40% + 2vw);\n+    animation: flipper 3s ; \n+    }\n+\n+ p{\n+    padding: 20px;\n+        }\n+\n+li, a, a:visited {\n+  padding: 5px;\n+  text-decoration: none;\n+  list-style: none;\n+\n+a:hover {\n+  color: red;\n+}\n+}\n+        .content-container {\n+          height: 100%;\n+            display: flex;\n+            justify-content: space-around;\n+            align-items: center;\n+        \n+        }\n+       \n+        \n+        .close-button{\n+            position: absolute;\n+            top: 10px;\n+            right: 50px;\n+            margin: 10px 30px;\n+            display: flex;\n+            justify-content: flex-end;\n+            color: black;\n+            background-color: white;\n+         \n+        }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698190960546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    ba \n+    background-image: ; \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n@@ -48,56 +48,5 @@\n             justify-content: flex-end;\n             color: black;\n             background-color: white;\n          \n-        }\n-    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n-       @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n-\n-\n-h1{\n-    font-size: calc(110% + 4.390625vw);\n-    animation: flipper 1s ; \n-    }\n-h2{\n-  font-size: calc(100% + 2vw);\n-    margin: 0.5em 1em;\n-    animation: flipper 8s ; \n-    }\n-h3{\n-    font-size: calc(40% + 2vw);\n-    animation: flipper 3s ; \n-    }\n-\n- p{\n-    padding: 20px;\n-        }\n-\n-li, a, a:visited {\n-  padding: 5px;\n-  text-decoration: none;\n-  list-style: none;\n-\n-a:hover {\n-  color: red;\n-}\n-}\n-        .content-container {\n-          height: 100%;\n-            display: flex;\n-            justify-content: space-around;\n-            align-items: center;\n-        \n-        }\n-       \n-        \n-        .close-button{\n-            position: absolute;\n-            top: 10px;\n-            right: 50px;\n-            margin: 10px 30px;\n-            display: flex;\n-            justify-content: flex-end;\n-            color: black;\n-            background-color: white;\n-         \n         }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698190978233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: ; \n+    background-image: url; \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191005104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url; \n+    background-image: url(.); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191010993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url(.); \n+    background-image: url(./=); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191022791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url(./=); \n+    background-image: url(.../); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191028665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url(.../); \n+    background-image: url(pu); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191035383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url(pu); \n+    background-image: url(); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191041461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url(); \n+    background-image: url(/public/); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191049431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url(/public/); \n+    background-image: url(/public//images/); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191064688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url(/public//images/); \n+    background-image: url(/public//images/Gradient\\ Blur.jpg); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191189556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    background-image: url(/public//images/Gradient\\ Blur.jpg); \n+    background-image: url(/public//images/GradientBlur.jpg); \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191212344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n     background-image: url(/public//images/GradientBlur.jpg); \n+    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191218972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n     background-image: url(/public//images/GradientBlur.jpg); \n-    \n+    ba\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191233010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n     background-image: url(/public//images/GradientBlur.jpg); \n-    ba\n+    background-clip: text;\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191268236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n+    w\n     background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n     }\n h2{\n"
+                },
+                {
+                    "date": 1698191296569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    w\n+    -webkit-text-fill-color: transparent;\n     background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n     }\n h2{\n"
+                },
+                {
+                    "date": 1698191362353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     animation: flipper 1s ;\n     -webkit-text-fill-color: transparent;\n     background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n+    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191384214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n     -webkit-text-fill-color: transparent;\n-    background-image: url(/public//images/GradientBlur.jpg); \n+    // background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n-    \n+    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191424703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     animation: flipper 1s ;\n     -webkit-text-fill-color: transparent;\n     // background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n-    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);\n+    background-image: linear-gradient(108deg, #bc9dd5 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191447384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     animation: flipper 1s ;\n     -webkit-text-fill-color: transparent;\n     // background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n-    background-image: linear-gradient(108deg, #bc9dd5 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);\n+    background-image: linear-gradient(108deg, #bc9dd5 8%, #ff5e69 40%, #e0b9a8 77%, #ffa84b 91%);\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191470911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     animation: flipper 1s ;\n     -webkit-text-fill-color: transparent;\n     // background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n-    background-image: linear-gradient(108deg, #bc9dd5 8%, #ff5e69 40%, #e0b9a8 77%, #ffa84b 91%);\n+    background-image: linear-gradient(108deg, #bc9dd5 8%, #ff5eec 40%, #e0b9a8 77%, #ffa84b 91%);\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191479739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     animation: flipper 1s ;\n     -webkit-text-fill-color: transparent;\n     // background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n-    background-image: linear-gradient(108deg, #bc9dd5 8%, #ff5eec 40%, #e0b9a8 77%, #ffa84b 91%);\n+    background-image: linear-gradient(108deg, #bc9dd5 8%, #e2a0da 40%, #e0b9a8 77%, #ffa84b 91%);\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191485427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     animation: flipper 1s ;\n     -webkit-text-fill-color: transparent;\n     // background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n-    background-image: linear-gradient(108deg, #bc9dd5 8%, #e2a0da 40%, #e0b9a8 77%, #ffa84b 91%);\n+    background-image: linear-gradient(108deg, #bc9dd5 8%, #c052b3 40%, #e0b9a8 77%, #ffa84b 91%);\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191492232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     animation: flipper 1s ;\n     -webkit-text-fill-color: transparent;\n     // background-image: url(/public//images/GradientBlur.jpg); \n     background-clip: text;\n-    background-image: linear-gradient(108deg, #bc9dd5 8%, #c052b3 40%, #e0b9a8 77%, #ffa84b 91%);\n+    background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191512172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,9 @@\n \n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    -webkit-text-fill-color: transparent;\n-    // background-image: url(/public//images/GradientBlur.jpg); \n-    background-clip: text;\n-    background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n+   \n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698191518117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n     animation: flipper 8s ; \n+    \n     }\n h3{\n     font-size: calc(40% + 2vw);\n     animation: flipper 3s ; \n"
+                },
+                {
+                    "date": 1698191586296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,12 @@\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n     animation: flipper 8s ; \n-    \n+    //  -webkit-text-fill-color: transparent;\n+    // // background-image: url(/public//images/GradientBlur.jpg); \n+    // background-clip: text;\n+    // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n     }\n h3{\n     font-size: calc(40% + 2vw);\n     animation: flipper 3s ; \n"
+                },
+                {
+                    "date": 1698191640890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n-\n+*\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n    \n"
+                },
+                {
+                    "date": 1698191648660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n-*\n+*{\n+  font-family: ;\n+}\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n    \n"
+                },
+                {
+                    "date": 1698191659031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n *{\n-  font-family: ;\n+  font-family: Be;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698191665714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n *{\n-  font-family: Be;\n+  font-family: Belamos;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698191672981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n *{\n-  font-family: Belamos;\n+  font-family: Belanosima;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698191717689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n *{\n-  font-family: Belanosima;\n+  font-family: Belanosima, ;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698191724040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n *{\n-  font-family: Belanosima, ;\n+  font-family: Belanosima, Arial, Helvetica, sans-serif;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698191742871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n *{\n-  font-family: Belanosima, Arial, Helvetica, sans-serif;\n+  font-family: Rubic, Arial, Helvetica, sans-serif;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698191762677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n *{\n-  font-family: Rubic, Arial, Helvetica, sans-serif;\n+  font-family: Rubik, Arial, Helvetica, sans-serif;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n+    tes\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191769471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    tes\n+    text-shadow: 1;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191778212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 1;\n+    text-shadow: 1px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191787515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 1px red;\n+    text-shadow: 5px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191794182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px red;\n+    text-shadow: 5px 5pred;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191799467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px 5pred;\n+    text-shadow: 5px 5px 5px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191810601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px 5px 5px red;\n+    text-shadow: 5px 5px 5px 5pred;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191822895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px 5px 5px 5pred;\n+    text-shadow: 5px 5px 5px 15px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191829244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px 5px 5px 15px red;\n+    text-shadow: 5px 5px 5px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191836656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px 5px 5px red;\n+    text-shadow: 5px 5px px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191845577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px 5px px red;\n+    text-shadow: 5px 5px 1px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191851965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px 5px 1px red;\n+    text-shadow: 5px 5px 10px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191865654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px 5px 10px red;\n+    text-shadow: 5px px 10px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191876419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 5px px 10px red;\n+    text-shadow: px 2px 10px red;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698191890350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: px 2px 10px red;\n+    text-shadow: 1px 2px 10pxb;\n    \n     }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698192373403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n-    text-shadow: 1px 2px 10pxb;\n-   \n+    text-shadow: 1px 2px 10px black;\n+   .\n     }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698192384044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,11 @@\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n     text-shadow: 1px 2px 10px black;\n-   .\n+   \n     }\n+  \n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n     animation: flipper 8s ; \n"
+                },
+                {
+                    "date": 1698192391152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     animation: flipper 1s ;\n     text-shadow: 1px 2px 10px black;\n    \n     }\n-  \n+  .letter_light\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n     animation: flipper 8s ; \n"
+                },
+                {
+                    "date": 1698192398464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n     animation: flipper 1s ;\n     text-shadow: 1px 2px 10px black;\n    \n     }\n-  .letter_light\n+  .letter_light{\n+    font-weight: ;\n+  }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n     animation: flipper 8s ; \n"
+                },
+                {
+                    "date": 1698192615269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     animation: flipper 1s ;\n     text-shadow: 1px 2px 10px black;\n    \n     }\n-  .letter_light{\n+  span .letter_light{\n     font-weight: ;\n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698192620626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     animation: flipper 1s ;\n     text-shadow: 1px 2px 10px black;\n    \n     }\n-  span .letter_light{\n+  span {\n     font-weight: ;\n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698192685280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     text-shadow: 1px 2px 10px black;\n    \n     }\n   span {\n-    font-weight: ;\n+    font-weight: 900 ;\n   }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698192711835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n     text-shadow: 1px 2px 10px black;\n    \n     }\n   span {\n+    \n     font-weight: 900 ;\n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698192983991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n     text-shadow: 1px 2px 10px black;\n    \n     }\n   span {\n-    \n+     font-size: calc(110% + 4.390625vw);\n+     \n     font-weight: 900 ;\n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698192991563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     \n+     .le\n     font-weight: 900 ;\n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698192998067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     .le\n+     .t\n     font-weight: 900 ;\n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698193005106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     .t\n+     .thin{\n+      \n+     }\n     font-weight: 900 ;\n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698193012358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,11 +12,11 @@\n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n      .thin{\n-      \n+\n      }\n-    font-weight: 900 ;\n+   \n   }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 1em;\n"
+                },
+                {
+                    "date": 1698193017593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n      .thin{\n+      \n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193056780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     .thin{\n-      \n+     &.thin{\n+       font-weight: 900 ;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193091363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     &.thin{\n+     .thin{\n        font-weight: 900 ;\n \n      }\n    \n"
+                },
+                {
+                    "date": 1698193098618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     .thin{\n+     .thin spa{\n        font-weight: 900 ;\n \n      }\n    \n"
+                },
+                {
+                    "date": 1698193106723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     .thin spa{\n+     .thin{\n        font-weight: 900 ;\n \n      }\n    \n"
+                },
+                {
+                    "date": 1698193114249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     .thin{\n+     spa.thin{\n        font-weight: 900 ;\n \n      }\n    \n"
+                },
+                {
+                    "date": 1698193137030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     spa.thin{\n-       font-weight: 900 ;\n-\n-     }\n+    \n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698193210526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-    \n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698193248263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,12 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n+     span .thin{\n+       font-weight: 900 ;\n+\n+     }\n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n"
+                },
+                {
+                    "date": 1698193255547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     span .thin{\n+      .thin{\n        font-weight: 900 ;\n \n      }\n    \n"
+                },
+                {
+                    "date": 1698193262267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n       .thin{\n-       font-weight: 900 ;\n+       font-weight: 400 ;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193270367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n+     \n       .thin{\n        font-weight: 400 ;\n \n      }\n"
+                },
+                {
+                    "date": 1698193278915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    \n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n-     \n+     font-weight: 900;\n       .thin{\n        font-weight: 400 ;\n \n      }\n"
+                },
+                {
+                    "date": 1698193291552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n-      .thin{\n+      &.thin{\n        font-weight: 400 ;\n \n      }\n    \n"
+                },
+                {
+                    "date": 1698193380997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n+       \n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193387829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       \n+       letter-spacing: 0.3;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193398085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0.3;\n+       letter-spacing: 0.em;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193411513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0.em;\n+       letter-spacing: 1.em;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193420076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 1.em;\n+       letter-spacing: em;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193426387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: em;\n+       letter-spacing: 0rem;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193431694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0rem;\n+       letter-spacing: 1rem;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193440366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 1rem;\n+       letter-spacing: 0.5rem;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193445619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0.5rem;\n+       letter-spacing: 0.1rem;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193457151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0.1rem;\n+       letter-spacing: 0.1;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193470561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0.1;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193479297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n+       letter-spacing: 0.1rem;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193487421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0.1rem;\n+       letter-spacing: 0.1em;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698193607889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+  \n        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n \n *{\n   font-family: Rubik, Arial, Helvetica, sans-serif;\n"
+                },
+                {
+                    "date": 1698193731722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n-  \n-       @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Rubik:wght@400;500;700&display=swap');\n+      <style>\n+  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Playpen+Sans:wght@100;500;700;800&family=Rubik:wght@400;500;700&display=swap');\n+</style>\n \n *{\n   font-family: Rubik, Arial, Helvetica, sans-serif;\n }\n"
+                },
+                {
+                    "date": 1698193737346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n       <style>\n   @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Playpen+Sans:wght@100;500;700;800&family=Rubik:wght@400;500;700&display=swap');\n-</style>\n \n+\n *{\n   font-family: Rubik, Arial, Helvetica, sans-serif;\n }\n h1{\n"
+                },
+                {
+                    "date": 1698193756903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,13 @@\n-      <style>\n+\n   @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Playpen+Sans:wght@100;500;700;800&family=Rubik:wght@400;500;700&display=swap');\n+font-family: 'Belanosima', sans-serif;\n+font-family: 'Cormorant Upright', serif;\n+font-family: 'Noto Sans', sans-serif;\n+font-family: 'Outfit', sans-serif;\n+font-family: 'Playpen Sans', cursive;\n+font-family: 'Rubik', sans-serif;\n \n-\n *{\n   font-family: Rubik, Arial, Helvetica, sans-serif;\n }\n h1{\n"
+                },
+                {
+                    "date": 1698193766405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n \n   @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Playpen+Sans:wght@100;500;700;800&family=Rubik:wght@400;500;700&display=swap');\n-font-family: 'Belanosima', sans-serif;\n-font-family: 'Cormorant Upright', serif;\n-font-family: 'Noto Sans', sans-serif;\n-font-family: 'Outfit', sans-serif;\n-font-family: 'Playpen Sans', cursive;\n-font-family: 'Rubik', sans-serif;\n+// font-family: 'Belanosima', sans-serif;\n+// font-family: 'Cormorant Upright', serif;\n+// font-family: 'Noto Sans', sans-serif;\n+// font-family: 'Outfit', sans-serif;\n+// font-family: 'Playpen Sans', cursive;\n+// font-family: 'Rubik', sans-serif;\n \n *{\n   font-family: Rubik, Arial, Helvetica, sans-serif;\n }\n"
+                },
+                {
+                    "date": 1698193846738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n // font-family: 'Playpen Sans', cursive;\n // font-family: 'Rubik', sans-serif;\n \n *{\n-  font-family: Rubik, Arial, Helvetica, sans-serif;\n+  font-family: 'Belanosima', sans-serif;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698193926606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n // font-family: 'Rubik', sans-serif;\n \n *{\n   font-family: 'Belanosima', sans-serif;\n+  \n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698193933271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n // font-family: 'Rubik', sans-serif;\n \n *{\n   font-family: 'Belanosima', sans-serif;\n-  \n+  co\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698193939664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n // font-family: 'Rubik', sans-serif;\n \n *{\n   font-family: 'Belanosima', sans-serif;\n-  co\n+  color: w;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698193963142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n // font-family: 'Rubik', sans-serif;\n \n *{\n   font-family: 'Belanosima', sans-serif;\n-  color: w;\n+  color: rgb(255, 255, 255);\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698193969539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n // font-family: 'Rubik', sans-serif;\n \n *{\n   font-family: 'Belanosima', sans-serif;\n-  color: rgb(255, 255, 255);\n+  color: white;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698193998912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n // font-family: 'Playpen Sans', cursive;\n // font-family: 'Rubik', sans-serif;\n \n *{\n-  font-family: 'Belanosima', sans-serif;\n+  font-family: 'Cormorant', sans-serif;\n   color: white;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n"
+                },
+                {
+                    "date": 1698194023604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0.1em;\n+       letter-spacing: 1em;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698194028769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 1em;\n+       letter-spacing: 0em;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698194034563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0em;\n+       letter-spacing: 0.1em;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698194045984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-       letter-spacing: 0.1em;\n \n      }\n    \n   }\n"
+                },
+                {
+                    "date": 1698194110834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n // font-family: 'Playpen Sans', cursive;\n // font-family: 'Rubik', sans-serif;\n \n *{\n-  font-family: 'Cormorant', sans-serif;\n+  font-family: 'Rubick', sans-serif;\n   color: white;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n"
+                },
+                {
+                    "date": 1698194138281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n // font-family: 'Playpen Sans', cursive;\n // font-family: 'Rubik', sans-serif;\n \n *{\n-  font-family: 'Rubick', sans-serif;\n+  font-family: 'Rubik', sans-serif;\n   color: white;\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n"
+                },
+                {
+                    "date": 1698194200608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n       &.thin{\n        font-weight: 400 ;\n-\n      }\n    \n   }\n h2{\n"
+                },
+                {
+                    "date": 1698194281306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,8 @@\n           height: 100%;\n             display: flex;\n             justify-content: space-around;\n             align-items: center;\n-        \n         }\n        \n         \n         .close-button{\n"
+                },
+                {
+                    "date": 1698194291681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,8 @@\n             display: flex;\n             justify-content: space-around;\n             align-items: center;\n         }\n-       \n-        \n         .close-button{\n             position: absolute;\n             top: 10px;\n             right: 50px;\n@@ -68,6 +66,5 @@\n             display: flex;\n             justify-content: flex-end;\n             color: black;\n             background-color: white;\n-         \n         }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698194367256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,11 @@\n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n+         animation: flipper 1s ;\n+    text-shadow: 1px 2px 10px black;\n+\n       &.thin{\n        font-weight: 400 ;\n      }\n    \n"
+                },
+                {
+                    "date": 1698194470041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n     text-shadow: 1px 2px 10px black;\n \n       &.thin{\n        font-weight: 400 ;\n+       \n      }\n    \n   }\n h2{\n"
+                },
+                {
+                    "date": 1698194495147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     text-shadow: 1px 2px 10px black;\n \n       &.thin{\n        font-weight: 400 ;\n-       \n+      \n      }\n    \n   }\n h2{\n"
+                },
+                {
+                    "date": 1698194516341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n     }\n   span {\n      font-size: calc(110% + 4.390625vw);\n      font-weight: 900;\n-         animation: flipper 1s ;\n     text-shadow: 1px 2px 10px black;\n \n       &.thin{\n        font-weight: 400 ;\n"
+                },
+                {
+                    "date": 1698194666840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n li, a, a:visited {\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n+  \n \n a:hover {\n   color: red;\n }\n"
+                },
+                {
+                    "date": 1698199464952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n+  font\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698199471315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font\n+  font-size: 16px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698199479703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-size: 16px;\n+  font-size: 10px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698199485213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-size: 10px;\n+  font-size: 12px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698199495782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-size: 12px;\n+  font-size: px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698199519364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,10 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-size: px;\n+  \n+  font-size: 14px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698199528319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  \n+  font-family: \"noto\";\n   font-size: 14px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n"
+                },
+                {
+                    "date": 1698199541106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,10 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-family: \"noto\";\n-  font-size: 14px;\n+  font-family:   font-size: 14px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698199547456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,10 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-family:   font-size: 14px;\n+  font-family: ar \n+    font-size: 14px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698199563558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-family: ar \n+  font-family: roboto \n     font-size: 14px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n"
+                },
+                {
+                    "date": 1698199648673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-family: roboto \n+  font-family:  'Cormorant Upright', serif\n     font-size: 14px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n"
+                },
+                {
+                    "date": 1698199656448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     padding: 20px;\n         }\n \n li, a, a:visited {\n-  font-family:  'Cormorant Upright', serif\n+  font-family:  'Cormorant Upright', serif;\n     font-size: 14px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n"
+                },
+                {
+                    "date": 1698199669317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         }\n \n li, a, a:visited {\n   font-family:  'Cormorant Upright', serif;\n-    font-size: 14px;\n+    font-size: 1px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698200022428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,8 @@\n         }\n \n li, a, a:visited {\n   font-family:  'Cormorant Upright', serif;\n-    font-size: 1px;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698200357458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     animation: flipper 3s ; \n     }\n \n  p{\n-    padding: 20px;\n+    padding: 10px;\n         }\n \n li, a, a:visited {\n   font-family:  'Cormorant Upright', serif;\n"
+                },
+                {
+                    "date": 1698200368234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     animation: flipper 3s ; \n     }\n \n  p{\n-    padding: 10px;\n+    padding: 0px;\n         }\n \n li, a, a:visited {\n   font-family:  'Cormorant Upright', serif;\n"
+                },
+                {
+                    "date": 1698200402894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 0.5em 1em;\n+    margin: 0.5em em;\n     animation: flipper 8s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n"
+                },
+                {
+                    "date": 1698202479671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 0.5em em;\n+    margin: 0.5em 0em;\n     animation: flipper 8s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n@@ -46,9 +46,9 @@\n     padding: 0px;\n         }\n \n li, a, a:visited {\n-  font-family:  'Cormorant Upright', serif;\n+  // font-family:  'Cormorant Upright', serif;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n"
+                },
+                {
+                    "date": 1698203940609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n   }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0.5em 0em;\n-    animation: flipper 8s ; \n+    animation: flipper s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n     // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n"
+                },
+                {
+                    "date": 1698203969594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,10 @@\n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 0.5em 0em;\n-    animation: flipper s ; \n+    margin: 0.em 0em;\n+    animation: flipper 3s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n     // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n"
+                },
+                {
+                    "date": 1698203981749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 0.em 0em;\n+    margin: 0em em;\n     animation: flipper 3s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n"
+                },
+                {
+                    "date": 1698203989683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 0em em;\n+    margin: 0em 1em;\n     animation: flipper 3s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n"
+                },
+                {
+                    "date": 1698204191882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n   }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0em 1em;\n-    animation: flipper 3s ; \n+    animation: bounce-in-right 2s ease 1s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n     // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n"
+                },
+                {
+                    "date": 1698204662573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n   }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0em 1em;\n-    animation: bounce-in-right 2s ease 1s ; \n+    animation: bounceright 2s ease 1s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n     // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n"
+                },
+                {
+                    "date": 1698204693913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n   }\n h2{\n   font-size: calc(100% + 2vw);\n     margin: 0em 1em;\n-    animation: bounceright 2s ease 1s ; \n+    animation: bounceInRight 2s ease 1s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n     // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n"
+                },
+                {
+                    "date": 1698226908318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,75 @@\n+\n+  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Playpen+Sans:wght@100;500;700;800&family=Rubik:wght@400;500;700&display=swap');\n+// font-family: 'Belanosima', sans-serif;\n+// font-family: 'Cormorant Upright', serif;\n+// font-family: 'Noto Sans', sans-serif;\n+// font-family: 'Outfit', sans-serif;\n+// font-family: 'Playpen Sans', cursive;\n+// font-family: 'Rubik', sans-serif;\n+\n+*{\n+  font-family: 'Rubik', sans-serif;\n+  color: white;\n+}\n+h1{\n+    font-size: calc(110% + 4.390625vw);\n+    animation: flipper 1s ;\n+    text-shadow: 1px 2px 10px black;\n+   \n+    }\n+  span {\n+     font-size: calc(110% + 4.390625vw);\n+     font-weight: 900;\n+    text-shadow: 1px 2px 10px black;\n+\n+      &.thin{\n+       font-weight: 400 ;\n+      \n+     }\n+   \n+  }\n+h2{\n+  font-size: calc(100% + 2vw);\n+    margin: 0.5em 1em;\n+    animation: bounceInRight 2s ease 1s ; \n+    //  -webkit-text-fill-color: transparent;\n+    // // background-image: url(/public//images/GradientBlur.jpg); \n+    // background-clip: text;\n+    // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n+    }\n+h3{\n+    font-size: calc(40% + 2vw);\n+    animation: flipper 3s ; \n+    }\n+\n+ p{\n+    padding: 0px;\n+        }\n+\n+li, a, a:visited {\n+  // font-family:  'Cormorant Upright', serif;\n+  padding: 5px;\n+  text-decoration: none;\n+  list-style: none;\n+  \n+\n+a:hover {\n+  color: red;\n+}\n+}\n+        .content-container {\n+          height: 100%;\n+            display: flex;\n+            justify-content: space-around;\n+            align-items: center;\n+        }\n+        .close-button{\n+            position: absolute;\n+            top: 10px;\n+            right: 50px;\n+            margin: 10px 30px;\n+            display: flex;\n+            justify-content: flex-end;\n+            color: black;\n+            background-color: white;\n+        }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698226959242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,80 +71,5 @@\n             display: flex;\n             justify-content: flex-end;\n             color: black;\n             background-color: white;\n-        }\n-\n-  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Cormorant+Upright:wght@300;400;600;700&family=Noto+Sans&family=Outfit&family=Playpen+Sans:wght@100;500;700;800&family=Rubik:wght@400;500;700&display=swap');\n-// font-family: 'Belanosima', sans-serif;\n-// font-family: 'Cormorant Upright', serif;\n-// font-family: 'Noto Sans', sans-serif;\n-// font-family: 'Outfit', sans-serif;\n-// font-family: 'Playpen Sans', cursive;\n-// font-family: 'Rubik', sans-serif;\n-\n-*{\n-  font-family: 'Rubik', sans-serif;\n-  color: white;\n-}\n-h1{\n-    font-size: calc(110% + 4.390625vw);\n-    animation: flipper 1s ;\n-    text-shadow: 1px 2px 10px black;\n-   \n-    }\n-  span {\n-     font-size: calc(110% + 4.390625vw);\n-     font-weight: 900;\n-    text-shadow: 1px 2px 10px black;\n-\n-      &.thin{\n-       font-weight: 400 ;\n-      \n-     }\n-   \n-  }\n-h2{\n-  font-size: calc(100% + 2vw);\n-    margin: 0em 1em;\n-    animation: bounceInRight 2s ease 1s ; \n-    //  -webkit-text-fill-color: transparent;\n-    // // background-image: url(/public//images/GradientBlur.jpg); \n-    // background-clip: text;\n-    // background-image: linear-gradient(108deg, #bc9dd5 8%, #ec20d4 40%, #e0b9a8 77%, #ffa84b 91%);\n-    }\n-h3{\n-    font-size: calc(40% + 2vw);\n-    animation: flipper 3s ; \n-    }\n-\n- p{\n-    padding: 0px;\n-        }\n-\n-li, a, a:visited {\n-  // font-family:  'Cormorant Upright', serif;\n-  padding: 5px;\n-  text-decoration: none;\n-  list-style: none;\n-  \n-\n-a:hover {\n-  color: red;\n-}\n-}\n-        .content-container {\n-          height: 100%;\n-            display: flex;\n-            justify-content: space-around;\n-            align-items: center;\n-        }\n-        .close-button{\n-            position: absolute;\n-            top: 10px;\n-            right: 50px;\n-            margin: 10px 30px;\n-            display: flex;\n-            justify-content: flex-end;\n-            color: black;\n-            background-color: white;\n         }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698327824690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 0.5em 1em;\n+    margin: 0.em 1em;\n     animation: bounceInRight 2s ease 1s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n"
+                },
+                {
+                    "date": 1698327836730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n    \n   }\n h2{\n   font-size: calc(100% + 2vw);\n-    margin: 0.em 1em;\n+    margin: 0.1em 1em;\n     animation: bounceInRight 2s ease 1s ; \n     //  -webkit-text-fill-color: transparent;\n     // // background-image: url(/public//images/GradientBlur.jpg); \n     // background-clip: text;\n"
+                },
+                {
+                    "date": 1698485737542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n   \n+  \n \n a:hover {\n   color: red;\n }\n"
+                },
+                {
+                    "date": 1698485747142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,10 @@\n   // font-family:  'Cormorant Upright', serif;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n+  text-shadow: 0 1px 0 rgba(255, 255, 255, .4);\n   \n-  \n \n a:hover {\n   color: red;\n }\n"
+                },
+                {
+                    "date": 1698485790763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,8 @@\n   // font-family:  'Cormorant Upright', serif;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n-  text-shadow: 0 1px 0 rgba(255, 255, 255, .4);\n   \n \n a:hover {\n   color: red;\n"
+                },
+                {
+                    "date": 1698485825295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,9 @@\n   // font-family:  'Cormorant Upright', serif;\n   padding: 5px;\n   text-decoration: none;\n   list-style: none;\n+  text-shadow: 0 1px 0 rgba(255, 255, 255, .4);\n   \n \n a:hover {\n   color: red;\n"
+                },
+                {
+                    "date": 1698495137958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n+  font-size: calc(100% + 2vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495149589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(100% + 2vw)\n+  font-size: calc( + 2vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495169630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc( + 2vw)\n+  font-size: calc(1px + 2vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495226838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(1px + 2vw)\n+  font-size: calc(1.5px + 2vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495256123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(1.5px + 2vw)\n+  font-size: calc(1 + 2vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495265051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(1 + 2vw)\n+  font-size: calc(16px  2vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495277149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(16px  2vw)\n+  font-size: calc(16px - vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495303331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(16px - vw)\n+  font-size: calc(16px - 1.5vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495308981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(16px - 1.5vw)\n+  font-size: calc(16px - 1.vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495315762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(16px - 1.vw)\n+  font-size: calc(16px - 1.1vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495338797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(16px - 1.1vw)\n+  font-size: calc(16px  1.1vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495349979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(16px  1.1vw)\n+  font-size: calc(10px + 1.1vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495411233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(10px + 1.1vw)\n+  font-size: calc(px + 1.1vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495532120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n-  font-size: calc(px + 1.1vw)\n+  // font-size: calc(9px + 1.1vw)\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495552088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n+   font-size: calc(14px + ( - 14) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495650148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + ( - 14) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(1px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495657261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(1px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(15px + (16 - 1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495682988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(15px + (16 - 1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(15px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495710955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(15px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(15px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495718417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(15px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(15px + (16 - ) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495736114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(15px + (16 - ) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(1px + (16 - 16) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495741259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(1px + (16 - 16) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (16 - 16) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495747975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (16 - 16) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (1 - 16) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495781178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (1 - 16) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495792180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (1 - 17) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495807873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (1 - 17) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (19 - 1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495817507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (19 - 1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (19 - 16,) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495839075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (19 - 16,) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (19 - 16.7) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495847819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (19 - 16.7) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (1 - 16.7) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495859147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (1 - 16.7) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495865732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 16.) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495880126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 16.) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495888597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - ) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495903689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - ) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18  20) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495918015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18  20) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - ) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495927122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - ) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (1 - 14) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495944135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (1 - 14) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495950976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (1 - 14) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495959516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (1 - 14) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (120 - 14) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495969702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (120 - 14) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + ( - 14) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698495991010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + ( - 14) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 14.5) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496001488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 14.5) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 14.) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496010075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 14.) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496015592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 13.8) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496021197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 13.8) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 13.5) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496027687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 13.5) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 12.5) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496033123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 12.5) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 1.5) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496040967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 1.5) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (18 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496053066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (18 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (1 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496061512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (1 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (17. - 14.1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496067260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (17. - 14.1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (17.1 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496075341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (17.1 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (17.01 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496083290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (17.01 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (17.015 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496091701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (17.015 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (17.01 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
+                },
+                {
+                    "date": 1698496100860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n *{\n   font-family: 'Rubik', sans-serif;\n   color: white;\n   // font-size: calc(9px + 1.1vw)\n-   font-size: calc(14px + (17.016 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n+   font-size: calc(14px + (17.02 - 14.1) * ((100vw - 300px) / (1600 - 300)));\n }\n h1{\n     font-size: calc(110% + 4.390625vw);\n     animation: flipper 1s ;\n"
                 }
             ],
             "date": 1697981509474,

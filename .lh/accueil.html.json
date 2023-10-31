@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 47,
             "patches": [
                 {
                     "date": 1697984734360,
@@ -72,6 +72,130 @@
                 {
                     "date": 1698010905117,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n             <h1 class=\"nom\">Eric Bidart</h1>\n-            < class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</h3>\n+            <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n     <footer>\n"
+                },
+                {
+                    "date": 1698176191711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,23 +47,23 @@\n         </section>\n     </main>\n     <footer>\n         <div class=\"reseaux_sociaux\">\n-            <a href=\"https://www.instagram.com/ericbidartsculpteur/\"\n-                target=\"_blank\"><img src=\"public/images/reseaux/Instagram_icon.png.webp\"\n-                    alt=\"\"></a>\n             <a href=\"https://www.facebook.com/ericbidartsculpteur/\"\n-                target=\"_blank\"><img src=\"public/images/reseaux/facebook3.avif\"\n+                target=\"_blank\"><img src=\"public/images/reseaux/facebook-logo-transparent-round.webp\"\n                     alt=\"\">\n             </a>\n+            <a href=\"https://www.instagram.com/ericbidartsculpteur/\"\n+                target=\"_blank\"><img src=\"public/images/reseaux/instagram-logo-transparent-round.webp\"\n+                    alt=\"\"></a>\n             <a href=\"https://www.linkedin.com/in/eric-bidart-sculpteur--6a9739208/\"\n-                target=\"_blank\"><img src=\"public/images/reseaux/linkedin.jpg\"\n+                target=\"_blank\"><img src=\"public/images/reseaux/linkedinlogo-transparent-round.webp\"\n                     alt=\"\"></a>\n         </div>\n         <p class=\"creator_site\">&copy Lysiane Boisnel</p>\n     </footer>\n \n-    <script src=\"index.js\"></script>\n+    <script src=\"/scss/utils/hamburger.js\"></script>\n </body>\n \n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698192131306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">Eric Bidart</h1>\n+            <h1 class=\"nom\">ERIC</h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192136684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC</h1>\n+            <h1 class=\"nom\">ERICBID</h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192158100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERICBID</h1>\n+            <h1 class=\"nom\">ERIC</h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192240728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC</h1>\n+            <h1 class=\"nom\">ERICSPA</h1>BIDART\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192246567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERICSPA</h1>BIDART\n+            <h1 class=\"nom\">ERIC span</h1>BIDART\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192252061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC span</h1>BIDART\n+            <h1 class=\"nom\">ERIC<span></span></h1>BIDART\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192262014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span></span></h1>BIDART\n+            <h1 class=\"nom\">ERIC<span>BIDE</span></h1>BIDART\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192271606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span>BIDE</span></h1>BIDART\n+            <h1 class=\"nom\">ERIC<span>BIDART</span></h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192286591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span>BIDART</span></h1>\n+            <h1 class=\"nom\">ERIC<span->BIDART</span></h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192292547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span->BIDART</span></h1>\n+            <h1 class=\"nom\">ERIC<span>BIDART</span></h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192303626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span>BIDART</span></h1>\n+            <h1 class=\"nom\">ERIC<span cl>BIDART</span></h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192317196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span cl>BIDART</span></h1>\n+            <h1 class=\"nom\">ERIC<span class=\"letter\">BIDART</span></h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192324866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span class=\"letter\">BIDART</span></h1>\n+            <h1 class=\"nom\">ERIC<span class=\"letter-\">BIDART</span></h1>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192436182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span class=\"letter-\">BIDART</span></h1>\n+            <h1 class=\"nom\">ERIC<span class=\"letter-light\">BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192443610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC<span class=\"letter-light\">BIDART</span>\n+            <h1 class=\"nom\">ERIC</h1><span class=\"letter-light\">BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192646262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC</h1><span class=\"letter-light\">BIDART</span>\n+            <h1 class=\"nom\"></h1><span class=\"letter-light\">BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192658545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\"></h1><span class=\"letter-light\">BIDART</span>\n+            <h1 class=\"nom\">ERIC</h1><span class=\"letter-light\">BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192664118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC</h1><span class=\"letter-light\">BIDART</span>\n+            <h1 class=\"nom\"></h1>ERIC<span class=\"letter-light\">BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192781998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\"></h1>ERIC<span class=\"letter-light\">BIDART</span>\n+            <h1 class=\"nom\"></h1><span class=\"letter-light\">BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192816021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\"></h1><span class=\"letter-light\">BIDART</span>\n+            <h1 class=\"nom\">ERIC</h1>BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192829562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC</h1>BIDART</span>\n+            <span class=\"letter-light\"><h1 class=\"nom\">ERIC</h1>BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192839819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <span class=\"letter-light\"><h1 class=\"nom\">ERIC</h1>BIDART</span>\n+            <h1 class=\"nom\">ERIC</h1>BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192867967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <h1 class=\"nom\">ERIC</h1>BIDART</span>\n+            < class=\"nom\">ERIC</h1>BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192876849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            < class=\"nom\">ERIC</h1>BIDART</span>\n+            <span class=\"nom\">ERIC</h>BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192883399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <span class=\"nom\">ERIC</h>BIDART</span>\n+            <span class=\"nom\">ERIC</span>BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192897969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <span class=\"nom\">ERIC</span>BIDART</span>\n+            <span class=\"nom\">ERIC</span>spBIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192906697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <span class=\"nom\">ERIC</span>spBIDART</span>\n+            <span class=\"nom\">ERIC</span><span></span>BIDART</span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192914103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <span class=\"nom\">ERIC</span><span></span>BIDART</span>\n+            <span class=\"nom\">ERIC</span>BIDART<span></span></span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698192920075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <main class=\"accueil\">\n \n         <!-- <img class=\"background\" src=\"public/images/ericbidart.webp\" alt=\"\">  -->\n         <section id=\"sculpteur\">\n-            <span class=\"nom\">ERIC</span cla>BIDART<span></span></span>\n+            <span class=\"nom\">ERIC</span class>BIDART<span></span></span>\n             <p class=\"poesie\">\" Du papier à la pierre, De la poésie à la lumière...\"</p>\n             <h2 class=\"job\">Sculpteur de lumineuses</h2>\n         </section>\n     </main>\n"
+                },
+                {
+                    "date": 1698484317672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,18 +21,19 @@\n </head>\n \n <body id=\"accueil\">\n     <header>\n-        <!-- <div class=\"logo_img\"><img src=\"public/images/Logo 2021.webp\"\n-                alt=\"\"></div> -->\n-        <nav id=\"nav\">\n-            <ul>\n+        <nav>\n+            <input type=\"checkbox\"\n+                id=\"menu-toggle\">\n+            <label for=\"menu-toggle\"\n+                class=\"burger\"></label>\n+            <ul class=\"nav-links\">\n                 <li><a href=\"accueil.html\">Bienvenue</a></li>\n                 <li><a href=\"creations.html\">Créations</a></li>\n                 <li><a href=\"expositions.html\">Expositions</a></li>\n                 <li><a href=\"presentation.html\">A propos</a></li>\n             </ul>\n-            <div id=\"icons\"></div>\n         </nav>\n     </header>\n \n     <main class=\"accueil\">\n"
                 }
             ],
             "date": 1697984734360,

@@ -1,83 +1,79 @@
 
-     
-       
-
-
-        #oceane {
-            background-image: url( );
-
-        }
-
-        #fleur {
-            background-image: url(public/images/creations/fleur/fleur_background.webp);
-        }
-
-        #epitres {
-            background-image: url(public/images/creations/epitres/epitres_background.webp);
-        }
-
-        #paix {
-            background-image: url(public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);
-        }
-
-        #coeur {
-            background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);
-        }
-
-        #cocon {
-            background-image: url(public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);
-        }
-
-        #denouement {
-            background-image: url(public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);
-        }
-
-        #envolee {
-            background-image: url(public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);
-        }
-
-        #joie {
-            background-image: url(public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);
-        }
-
-        #source {
-            background-image: url(public/images/creations/source/source_2.webp);
-
-        }
-
-        .back-button {
-            position: fixed;
-            
-            top: 10px;
-            right: 50px;
-            z-index: 1;
-        }
-
-        .card_sculpture_img {
-            display: flex;
-            width: fit-content;
-            margin: auto;
-            text-align: center;
-
-
-        }
-
-        img {
-            border-radius: 15px;
-            border: 1px solid white;
-            box-shadow: black 0px 1px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        }
-
-        p {
-            font-size: calc(16px + 1.390625vw);
-            text-align: center;
-            width: 70%;
-            margin: 2vh auto;
-        }
-
-        h3 {
+   #sculptures *{
+      font-family: 'Cormorant Upright', serif;
+      background-repeat: no-repeat;
+      background-size: 100vw ;
+      .sculpture{
+         height: 100vh;
+      }
+         #oceane{
+            background-image: url(/public/images/creations/oceane/oceane_background.jpg);
+            @extend %background_none;
+            background-color: rgb(34, 34, 124);
+         } 
+         #fleur{ 
+            background-image: url(/public/images/creations/fleur/fleur_background.webp);
+            @extend %background_none
+         }
+         #epitres{ 
+            background-image: url(/public/images/creations/epitres/epitres_background.webp);
+             @extend %background_none
+         }
+         #paix{ 
+            background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);
+             @extend %background_none
+         }
+         #coeur{ 
+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);
+             @extend %background_none
+         }
+         #cocon{ 
+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);
+             @extend %background_none
+         }
+         #denouement{ 
+            background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);
+            @extend %background_none
+         }
+         #envolee{ 
+            background-image: url(/public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);
+            @extend %background_none
+         }
+         #joie{ 
+            background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);
+            @extend %background_none
+         }
+         #source{ 
+            background-image: url(/public/images/creations/source/source_2.webp);
+            @extend %background_none
+           
+         }
+         h3{
             font-size: calc(56px + 1.390625vw);
-            margin: 0;
+            margin-bottom: 1rem;
             font-weight: 900;
             text-align: center;
-        }
+         }
+         .card_sculpture_img{
+            display: flex;
+            flex-flow: wrap;
+            width: fit-content;
+            @extend %center;
+         img{
+            max-width: 28vw;
+             max-height: 62vh;
+             margin-right: 1rem;
+            border-radius: 15px;
+            border: 1px solid white;
+            box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+         }
+      }
+         .description p{
+            font-size: 1.5rem;
+            margin: 1rem 25rem;
+            text-align: center;
+            width: 65%;
+            margin: 20px auto;
+      }
+   }
+

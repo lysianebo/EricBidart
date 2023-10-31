@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 12,
+            "activePatchIndex": 76,
             "patches": [
                 {
                     "date": 1697982677335,
@@ -56,6 +56,262 @@
                 {
                     "date": 1698013952301,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n footer {\n   padding: 20px;\n   background: black;\n   text-align: center;\n+  grid-area: footer;\n   img {\n     width: 30px;\n     height: 30px;\n     border-radius: 5px;\n"
+                },
+                {
+                    "date": 1698198890688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,9 @@\n   background: black;\n   text-align: center;\n   grid-area: footer;\n   img {\n-    width: 30px;\n-    height: 30px;\n+    \n     border-radius: 5px;\n   } \n  p{\n   text-align: right;\n"
+                },
+                {
+                    "date": 1698198896188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n   background: black;\n   text-align: center;\n   grid-area: footer;\n   img {\n-    \n+    width: 30px;\n+    height: 30px;\n     border-radius: 5px;\n   } \n  p{\n   text-align: right;\n"
+                },
+                {
+                    "date": 1698198912790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   background: black;\n   text-align: center;\n   grid-area: footer;\n   img {\n-    width: 30px;\n+    width: px;\n     height: 30px;\n     border-radius: 5px;\n   } \n  p{\n"
+                },
+                {
+                    "date": 1698198925990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n   background: black;\n   text-align: center;\n   grid-area: footer;\n   img {\n-    width: px;\n-    height: 30px;\n+    width: 25px;\n+    height: px;\n     border-radius: 5px;\n   } \n  p{\n   text-align: right;\n"
+                },
+                {
+                    "date": 1698201157531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n   text-align: center;\n   grid-area: footer;\n   img {\n     width: 25px;\n-    height: px;\n+    height: 25px;\n     border-radius: 5px;\n   } \n  p{\n-  text-align: right;\n+ \n  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698201171387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     height: 25px;\n     border-radius: 5px;\n   } \n  p{\n- \n+  text-align: right;\n  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698201193341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n footer {\n   padding: 20px;\n   background: black;\n-  text-align: center;\n   grid-area: footer;\n   img {\n     width: 25px;\n     height: 25px;\n"
+                },
+                {
+                    "date": 1698201652803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n   grid-area: footer;\n   img {\n     width: 25px;\n     height: 25px;\n-    border-radius: 5px;\n   } \n  p{\n   text-align: right;\n  }\n"
+                },
+                {
+                    "date": 1698201667128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n footer {\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n-  img {\n+  .img {\n     width: 25px;\n     height: 25px;\n   } \n  p{\n"
+                },
+                {
+                    "date": 1698201673300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n footer {\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n-  .img {\n+  .logoimg {\n     width: 25px;\n     height: 25px;\n   } \n  p{\n"
+                },
+                {
+                    "date": 1698201716845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n footer {\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n-  .logoimg {\n+  .logo_img {\n     width: 25px;\n     height: 25px;\n   } \n+  \n  p{\n   text-align: right;\n  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698201724867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,12 @@\n   .logo_img {\n     width: 25px;\n     height: 25px;\n   } \n-  \n+  img {\n+    width: 25px;\n+    height: 25px;\n+  } \n  p{\n   text-align: right;\n  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698201745701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   grid-area: footer;\n   .logo_img {\n     width: 25px;\n     height: 25px;\n+    \n   } \n   img {\n     width: 25px;\n     height: 25px;\n"
+                },
+                {
+                    "date": 1698201753386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n footer {\n+  display: fle;\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     width: 25px;\n     height: 25px;\n-    \n+\n   } \n   img {\n     width: 25px;\n     height: 25px;\n"
+                },
+                {
+                    "date": 1698201762757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n footer {\n-  display: fle;\n+  display: flex;\n+  justify-content: s;\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n"
+                },
+                {
+                    "date": 1698201792782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n footer {\n   display: flex;\n-  justify-content: s;\n-  padding: 20px;\n+  justify-content: space-between;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     width: 25px;\n"
+                },
+                {
+                    "date": 1698201798482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n footer {\n   display: flex;\n   justify-content: space-between;\n+  padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     width: 25px;\n"
+                },
+                {
+                    "date": 1698201815486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n footer {\n   display: flex;\n   justify-content: space-between;\n-  padding: 20px;\n+  margin: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     width: 25px;\n"
+                },
+                {
+                    "date": 1698201829595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n footer {\n   display: flex;\n   justify-content: space-between;\n-  margin: 20px;\n+  padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     width: 25px;\n"
+                },
+                {
+                    "date": 1698201880976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n footer {\n   display: flex;\n   justify-content: space-between;\n+  align-items: center;\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n"
+                },
+                {
+                    "date": 1698201952964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n footer {\n+  font\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n   padding: 20px;\n"
+                },
+                {
+                    "date": 1698201963154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n footer {\n-  font\n+  font-family: 'Courier New', Courier, monospace;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n   padding: 20px;\n"
+                },
+                {
+                    "date": 1698201985459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n footer {\n-  font-family: 'Courier New', Courier, monospace;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n   padding: 20px;\n"
+                },
+                {
+                    "date": 1698201990837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n footer {\n+  font-family: 'Courier New', Courier, monospace;\n   display: flex;\n   justify-content: space-between;\n   align-items: center;\n   padding: 20px;\n"
+                },
+                {
+                    "date": 1698202101972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,12 @@\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n-    width: 25px;\n-    height: 25px;\n+    border-radius: 50%;\n+    width: 30%;\n+    padding-left: 1vw;\n+    box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n     width: 25px;\n"
+                },
+                {
+                    "date": 1698202114897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     border-radius: 50%;\n-    width: 30%;\n+    width: 20%;\n     padding-left: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n"
+                },
+                {
+                    "date": 1698202124087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     border-radius: 50%;\n-    width: 20%;\n     padding-left: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n"
+                },
+                {
+                    "date": 1698202132979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     border-radius: 50%;\n+    width: 20%;\n     padding-left: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n"
+                },
+                {
+                    "date": 1698202147958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   grid-area: footer;\n   .logo_img {\n     border-radius: 50%;\n     width: 20%;\n-    padding-left: 1vw;\n+    padding-left: 1;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698202158374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   grid-area: footer;\n   .logo_img {\n     border-radius: 50%;\n     width: 20%;\n-    padding-left: 1;\n+    padding-left: 10e;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698202173469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     border-radius: 50%;\n-    width: 20%;\n-    padding-left: 10e;\n+    width: 100%;\n+    padding-left: 10px;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698202232394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n   background: black;\n   grid-area: footer;\n   .logo_img {\n     border-radius: 50%;\n-    width: 100%;\n     padding-left: 10px;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n"
+                },
+                {
+                    "date": 1698202256090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n+    \n     border-radius: 50%;\n-    padding-left: 10px;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698202264175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n-    \n+    margin-left: ;\n     border-radius: 50%;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n"
+                },
+                {
+                    "date": 1698202275450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .logo_img {\n-    margin-left: ;\n+    margin-left: 1em;\n     border-radius: 50%;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n"
+                },
+                {
+                    "date": 1698202308006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   align-items: center;\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n+  \n   .logo_img {\n     margin-left: 1em;\n     border-radius: 50%;\n     box-shadow: 0px 0.5px 5px black; \n"
+                },
+                {
+                    "date": 1698202313142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n   align-items: center;\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n-  \n+  .{\n+    \n+  }\n   .logo_img {\n     margin-left: 1em;\n     border-radius: 50%;\n     box-shadow: 0px 0.5px 5px black; \n"
+                },
+                {
+                    "date": 1698202318781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n   align-items: center;\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n-  .{\n-    \n+  .contact{\n+\n   }\n   .logo_img {\n     margin-left: 1em;\n     border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698202324299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .contact{\n-\n+display: ;\n   }\n   .logo_img {\n     margin-left: 1em;\n     border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698202331293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .contact{\n-display: ;\n+display: flex;\n   }\n   .logo_img {\n     margin-left: 1em;\n     border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698202368934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,6 @@\n     width: 25px;\n     height: 25px;\n   } \n  p{\n-  text-align: right;\n  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698202380028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,7 @@\n     width: 25px;\n     height: 25px;\n   } \n  p{\n+ font\n  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698202389409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n     width: 25px;\n     height: 25px;\n   } \n  p{\n- font\n+ font-weight: ;\n  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698202409516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,6 @@\n   img {\n     width: 25px;\n     height: 25px;\n   } \n- p{\n- font-weight: ;\n- }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698202422774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .contact{\n-display: flex;\n+  display: flex;\n   }\n   .logo_img {\n     margin-left: 1em;\n     border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698202629780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,13 @@\n   padding: 20px;\n   background: black;\n   grid-area: footer;\n   .contact{\n-  display: flex;\n+    display: flex;\n   }\n   .logo_img {\n     margin-left: 1em;\n-    border-radius: 50%;\n+    border-radius: 50;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698202645407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n     display: flex;\n   }\n   .logo_img {\n     margin-left: 1em;\n-    border-radius: 50;\n+    border-radius: 50px;\n+    \n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698202651044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   }\n   .logo_img {\n     margin-left: 1em;\n     border-radius: 50px;\n-    \n+    width: 20;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698202658664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   }\n   .logo_img {\n     margin-left: 1em;\n     border-radius: 50px;\n-    width: 20;\n+    width: ;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698203164984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,11 @@\n     display: flex;\n   }\n   .logo_img {\n     margin-left: 1em;\n-    border-radius: 50px;\n-    width: ;\n+     border-radius: 50%;\n+    width: 30%;\n+    padding-left: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698203177571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   .logo_img {\n     margin-left: 1em;\n      border-radius: 50%;\n     width: 30%;\n-    padding-left: 1vw;\n+    padding: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n"
+                },
+                {
+                    "date": 1698203188143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   background: black;\n   grid-area: footer;\n   .contact{\n     display: flex;\n+    \n   }\n   .logo_img {\n     margin-left: 1em;\n      border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698203194625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   background: black;\n   grid-area: footer;\n   .contact{\n     display: flex;\n-    \n+    align-items: center;\n   }\n   .logo_img {\n     margin-left: 1em;\n      border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698203209332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   }\n   .logo_img {\n     margin-left: 1em;\n      border-radius: 50%;\n-    width: 30%;\n+    width: 35%;\n     padding: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n"
+                },
+                {
+                    "date": 1698203269978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,6 @@\n   img {\n     width: 25px;\n     height: 25px;\n   } \n-\n+p\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698203278122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,8 @@\n   img {\n     width: 25px;\n     height: 25px;\n   } \n-p\n+p{\n+  fon\n+}\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698203288838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,7 @@\n     width: 25px;\n     height: 25px;\n   } \n p{\n-  fon\n+  font-size: 1px;\n }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698203345349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,7 @@\n     width: 25px;\n     height: 25px;\n   } \n p{\n-  font-size: 1px;\n+  font-size: 12px;\n }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698227049897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,9 @@\n     box-shadow: 0px 0.5px 5px black; \n \n   } \n   img {\n-    width: 25px;\n-    height: 25px;\n+   \n   } \n p{\n   font-size: 12px;\n }\n"
+                },
+                {
+                    "date": 1698227056042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n      border-radius: 50%;\n     width: 35%;\n     padding: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n+    \n \n   } \n   img {\n    \n"
+                },
+                {
+                    "date": 1698227079194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,20 +8,20 @@\n   grid-area: footer;\n   .contact{\n     display: flex;\n     align-items: center;\n-  }\n+  \n   .logo_img {\n     margin-left: 1em;\n      border-radius: 50%;\n     width: 35%;\n     padding: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n-    \n \n   } \n   img {\n-   \n+    width: 25px;\n+    height: 25px;\n   } \n p{\n   font-size: 12px;\n }\n"
+                },
+                {
+                    "date": 1698227100466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n      border-radius: 50%;\n     width: 35%;\n     padding: 1vw;\n     box-shadow: 0px 0.5px 5px black; \n-\n+  }\n   } \n   img {\n     width: 25px;\n     height: 25px;\n"
+                },
+                {
+                    "date": 1698227124771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,15 @@\n   .contact{\n     display: flex;\n     align-items: center;\n   \n-  .logo_img {\n-    margin-left: 1em;\n-     border-radius: 50%;\n-    width: 35%;\n-    padding: 1vw;\n-    box-shadow: 0px 0.5px 5px black; \n-  }\n+    .logo_img {\n+      margin-left: 1em;\n+      border-radius: 50%;\n+      width: 35%;\n+      padding: 1vw;\n+      box-shadow: 0px 0.5px 5px black; \n+    }\n   } \n   img {\n     width: 25px;\n     height: 25px;\n"
+                },
+                {
+                    "date": 1698227152755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   grid-area: footer;\n   .contact{\n     display: flex;\n     align-items: center;\n-  \n     .logo_img {\n       margin-left: 1em;\n       border-radius: 50%;\n       width: 35%;\n@@ -21,8 +20,8 @@\n   img {\n     width: 25px;\n     height: 25px;\n   } \n-p{\n-  font-size: 12px;\n-}\n+  p{\n+    font-size: 12px;\n+  }\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1697982677335,

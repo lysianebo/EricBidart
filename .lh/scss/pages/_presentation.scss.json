@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 50,
+            "activePatchIndex": 154,
             "patches": [
                 {
                     "date": 1698000730894,
@@ -208,6 +208,422 @@
                 {
                     "date": 1698058952299,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url(https://fonts.googleapis.com/css?family=Poiret+One);\n \n  .presentation{\n-     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg); \n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n"
+                },
+                {
+                    "date": 1698421486467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,57 @@\n+@import url(https://fonts.googleapis.com/css?family=Poiret+One);\n+\n+ .presentation{\n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n+     background-repeat: no-repeat;\n+     background-size: 100%;\n+     display: flex;\n+     flex-direction: column;\n+     justify-content: space-between;\n+     height: 100vh;\n+}\n+    .circle {\n+      position: absolute;\n+      top: 250px;\n+        background: none;\n+        border: none;\n+        cursor: pointer;\n+        font-size: 16px;\n+        font-weight: bold;\n+        color: white;\n+        padding: 10px;\n+        border-radius: 50%;\n+        width: 200px;\n+        height: 200px;\n+        box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n+        transition: background-color 0.3s, transform 0.3s;\n+    }\n+        .circle:hover {\n+            background-color: rgba(0, 0, 0, 0.2);\n+            transform: scale(1.5);\n+        }\n+        \n+        /* Styles pour les contenus cachés */\n+        .hidden {\n+           display: none;\n+            padding: 80px 30px;\n+            position: absolute;\n+            top: 60%;\n+            left: 50%;\n+            width: 100%;\n+            height: 100%;\n+            transform: translatex(-100%, 100%);\n+            z-index: 1000;\n+            background-color: rgb(26, 117, 206);\n+            box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n+            max-width: 100%;\n+            //  animation: bounce-in-right 2s ease 1s; \n+          \n+        }\n+            \n+          \n+          \n+        \n+          // animation: bounce2 2s ease ;\n+          \n+       \n+    \n"
+                },
+                {
+                    "date": 1698519622556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: rgb(26, 117, 206);\n+            background-color: black;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n@@ -54,64 +54,4 @@\n           // animation: bounce2 2s ease ;\n           \n        \n     \n-@import url(https://fonts.googleapis.com/css?family=Poiret+One);\n-\n- .presentation{\n-     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-     background-repeat: no-repeat;\n-     background-size: 100%;\n-     display: flex;\n-     flex-direction: column;\n-     justify-content: space-between;\n-     height: 100vh;\n-}\n-\n-\n-    .circle {\n-      position: absolute;\n-      top: 250px;\n-        background: none;\n-        border: none;\n-        cursor: pointer;\n-        font-size: 16px;\n-        font-weight: bold;\n-        color: white;\n-        padding: 10px;\n-        border-radius: 50%;\n-        width: 200px;\n-        height: 200px;\n-        box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-        transition: background-color 0.3s, transform 0.3s;\n-    }\n-        \n-        .circle:hover {\n-            background-color: rgba(0, 0, 0, 0.2);\n-            transform: scale(1.5);\n-        }\n-        \n-        /* Styles pour les contenus cachés */\n-        .hidden {\n-           display: none;\n-            padding: 80px 30px;\n-            position: absolute;\n-            top: 60%;\n-            left: 50%;\n-            width: 100%;\n-            height: 100%;\n-            transform: translatex(-100%, 100%);\n-            z-index: 1000;\n-            background-color: rgb(26, 117, 206);\n-            box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-            max-width: 100%;\n-            //  animation: bounce-in-right 2s ease 1s; \n-          \n-        }\n-            \n-          \n-          \n-        \n-          // animation: bounce2 2s ease ;\n-          \n-       \n-    \n"
+                },
+                {
+                    "date": 1698519636864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: black;\n+            background-color: rgb(26, 117, 206);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n"
+                },
+                {
+                    "date": 1698519789855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: rgb(26, 117, 206);\n+            background-color: blue;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n"
+                },
+                {
+                    "date": 1698519797959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: blue;\n+            background-color: red($color: #000000);\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n"
+                },
+                {
+                    "date": 1698519816033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n             background-color: red($color: #000000);\n-            box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n+            // box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n         }\n"
+                },
+                {
+                    "date": 1698519877749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: red($color: #000000);\n+            background-color: red;\n             // box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n"
+                },
+                {
+                    "date": 1698519901388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: red;\n+            background-color: red($color: #000000);\n             // box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n"
+                },
+                {
+                    "date": 1698519907921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,10 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: red($color: #000000);\n-            // box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n+            background-color: red;\n+            box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n         }\n"
+                },
+                {
+                    "date": 1698519952088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n+            overflow: ;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n             background-color: red;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n"
+                },
+                {
+                    "date": 1698519974410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            overflow: ;\n+            overflow: hid;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n             background-color: red;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n"
+                },
+                {
+                    "date": 1698520323285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,13 +38,11 @@\n             top: 60%;\n             left: 50%;\n             width: 100%;\n             height: 100%;\n-            overflow: hid;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n             background-color: red;\n-            box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n         }\n"
+                },
+                {
+                    "date": 1698521001575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n             background-color: red;\n+            box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n         }\n"
+                },
+                {
+                    "date": 1698521024208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,8 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: red;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n"
+                },
+                {
+                    "date": 1698521048085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n+            background-color: red;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n"
+                },
+                {
+                    "date": 1698521084032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             width: 100%;\n             height: 100%;\n             transform: translatex(-100%, 100%);\n             z-index: 1000;\n-            background-color: red;\n+        background: none;\n             box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n             max-width: 100%;\n             //  animation: bounce-in-right 2s ease 1s; \n           \n"
+                },
+                {
+                    "date": 1698564154298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,30 +28,6 @@\n         .circle:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-        \n-        /* Styles pour les contenus cachés */\n-        .hidden {\n-           display: none;\n-            padding: 80px 30px;\n-            position: absolute;\n-            top: 60%;\n-            left: 50%;\n-            width: 100%;\n-            height: 100%;\n-            transform: translatex(-100%, 100%);\n-            z-index: 1000;\n-        background: none;\n-            box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-            max-width: 100%;\n-            //  animation: bounce-in-right 2s ease 1s; \n-          \n-        }\n-            \n-          \n-          \n-        \n-          // animation: bounce2 2s ease ;\n-          \n-       \n+   \n     \n"
+                },
+                {
+                    "date": 1698571647040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-@import url(https://fonts.googleapis.com/css?family=Poiret+One);\n \n+\n  .presentation{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n      background-size: 100%;\n"
+                },
+                {
+                    "date": 1698606219276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n- .presentation{\n+ presentation{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n"
+                },
+                {
+                    "date": 1698606323336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n \n \n- presentation{\n+ #presentation{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n      background-size: 100%;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n-     height: 100vh;\n+\n }\n     .circle {\n       position: absolute;\n       top: 250px;\n"
+                },
+                {
+                    "date": 1698606344989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n  #presentation{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n-     background-size: 100%;\n+     background-size: 100;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n \n"
+                },
+                {
+                    "date": 1698606350464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n  #presentation{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n-     background-size: 100;\n+     background-size: 100vw;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n \n"
+                },
+                {
+                    "date": 1698606355861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n  #presentation{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n-     background-size: 100vw;\n+     background-size: 100v;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n \n"
+                },
+                {
+                    "date": 1698658239745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \n  #presentation{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n-     background-size: 100v;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n \n"
+                },
+                {
+                    "date": 1698658259423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n      background-repeat: no-repeat;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n-\n }\n     .circle {\n       position: absolute;\n       top: 250px;\n"
+                },
+                {
+                    "date": 1698658265230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-\n-\n  #presentation{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n      display: flex;\n"
+                },
+                {
+                    "date": 1698658284031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n+    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n      background-repeat: no-repeat;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698658296919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,26 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-     background-repeat: no-repeat;\n-     display: flex;\n-     flex-direction: column;\n-     justify-content: space-between;\n+    background-repeat: no-repeat;\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: space-between;\n }\n     .circle {\n-      position: absolute;\n-      top: 250px;\n-        background: none;\n-        border: none;\n-        cursor: pointer;\n-        font-size: 16px;\n-        font-weight: bold;\n-        color: white;\n-        padding: 10px;\n-        border-radius: 50%;\n-        width: 200px;\n-        height: 200px;\n-        box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-        transition: background-color 0.3s, transform 0.3s;\n+    position: absolute;\n+    top: 250px;\n+    background: none;\n+    border: none;\n+    cursor: pointer;\n+    font-size: 16px;\n+    font-weight: bold;\n+    color: white;\n+    padding: 10px;\n+    border-radius: 50%;\n+    width: 200px;\n+    height: 200px;\n+    box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n+    transition: background-color 0.3s, transform 0.3s;\n     }\n         .circle:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n"
+                },
+                {
+                    "date": 1698658303501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,22 +5,22 @@\n     flex-direction: column;\n     justify-content: space-between;\n }\n     .circle {\n-    position: absolute;\n-    top: 250px;\n-    background: none;\n-    border: none;\n-    cursor: pointer;\n-    font-size: 16px;\n-    font-weight: bold;\n-    color: white;\n-    padding: 10px;\n-    border-radius: 50%;\n-    width: 200px;\n-    height: 200px;\n-    box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-    transition: background-color 0.3s, transform 0.3s;\n+        position: absolute;\n+        top: 250px;\n+        background: none;\n+        border: none;\n+        cursor: pointer;\n+        font-size: 16px;\n+        font-weight: bold;\n+        color: white;\n+        padding: 10px;\n+        border-radius: 50%;\n+        width: 200px;\n+        height: 200px;\n+        box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n+        transition: background-color 0.3s, transform 0.3s;\n     }\n         .circle:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n"
+                },
+                {
+                    "date": 1698658326797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,9 @@\n         width: 200px;\n         height: 200px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: background-color 0.3s, transform 0.3s;\n-    }\n-        .circle:hover {\n+    :hover {\n             background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n    \n"
+                },
+                {
+                    "date": 1698658331866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         width: 200px;\n         height: 200px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: background-color 0.3s, transform 0.3s;\n-    :hover {\n+    &:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n    \n"
+                },
+                {
+                    "date": 1698658349451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,6 +23,5 @@\n     &:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-   \n-    \n+\n"
+                },
+                {
+                    "date": 1698658355132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,5 @@\n     &:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-\n+    }\n"
+                },
+                {
+                    "date": 1698658363244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,5 @@\n     &:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-    }\n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698658415461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n     background-repeat: no-repeat;\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: space-between;\n }\n     .circle {\n         position: absolute;\n         top: 250px;\n"
+                },
+                {
+                    "date": 1698658721315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n     background-repeat: no-repeat;\n+    \n }\n     .circle {\n         position: absolute;\n         top: 250px;\n"
+                },
+                {
+                    "date": 1698658729716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n     background-repeat: no-repeat;\n-    \n+    background-size: ;\n }\n     .circle {\n         position: absolute;\n         top: 250px;\n"
+                },
+                {
+                    "date": 1698658760749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n     background-repeat: no-repeat;\n-    background-size: ;\n+    background-size: cover;\n }\n     .circle {\n         position: absolute;\n-        top: 250px;\n+        top: 200px;\n         background: none;\n         border: none;\n         cursor: pointer;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1698658772461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n }\n     .circle {\n         position: absolute;\n         top: 200px;\n-        background: none;\n         border: none;\n         cursor: pointer;\n         font-size: 16px;\n         font-weight: bold;\n"
+                },
+                {
+                    "date": 1698658780341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n }\n     .circle {\n         position: absolute;\n         top: 200px;\n+        background: none;\n         border: none;\n         cursor: pointer;\n         font-size: 16px;\n         font-weight: bold;\n"
+                },
+                {
+                    "date": 1698658799868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n     .circle {\n         position: absolute;\n         top: 200px;\n         background: none;\n-        border: none;\n         cursor: pointer;\n         font-size: 16px;\n         font-weight: bold;\n         color: white;\n"
+                },
+                {
+                    "date": 1698658832694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n     .circle {\n         position: absolute;\n         top: 200px;\n         background: none;\n+        border: none;\n         cursor: pointer;\n         font-size: 16px;\n         font-weight: bold;\n         color: white;\n"
+                },
+                {
+                    "date": 1698658839139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n }\n     .circle {\n         position: absolute;\n         top: 200px;\n-        background: none;\n+        background: bla;\n         border: none;\n         cursor: pointer;\n         font-size: 16px;\n         font-weight: bold;\n"
+                },
+                {
+                    "date": 1698658850450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n }\n     .circle {\n         position: absolute;\n         top: 200px;\n-        background: bla;\n+        background: none;\n         border: none;\n         cursor: pointer;\n         font-size: 16px;\n         font-weight: bold;\n"
+                },
+                {
+                    "date": 1698658864683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     background-size: cover;\n }\n     .circle {\n         position: absolute;\n-        top: 200px;\n+        top: 20px;\n         background: none;\n         border: none;\n         cursor: pointer;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1698658872623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n     background-size: cover;\n }\n     .circle {\n         position: absolute;\n-        top: 20px;\n-        background: none;\n+        top: 200px;\n+        background: black;\n         border: none;\n         cursor: pointer;\n         font-size: 16px;\n         font-weight: bold;\n"
+                },
+                {
+                    "date": 1698658979327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-    background-repeat: no-repeat;\n-    background-size: cover;\n+  \n }\n     .circle {\n         position: absolute;\n         top: 200px;\n"
+                },
+                {
+                    "date": 1698659039732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-  \n+  dis\n }\n     .circle {\n         position: absolute;\n         top: 200px;\n"
+                },
+                {
+                    "date": 1698659051303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-  dis\n+  display: flex;\n }\n     .circle {\n-        position: absolute;\n-        top: 200px;\n         background: black;\n         border: none;\n         cursor: pointer;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1698659073424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-  display: flex;\n+  \n+    display: flex;\n }\n     .circle {\n         background: black;\n         border: none;\n"
+                },
+                {
+                    "date": 1698659080735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n   \n-    display: flex;\n+  main{\n+    \n+  }  display: flex;\n }\n     .circle {\n         background: black;\n         border: none;\n"
+                },
+                {
+                    "date": 1698659086971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n   \n   main{\n-    \n-  }  display: flex;\n+\n+  }  \n }\n     .circle {\n         background: black;\n         border: none;\n"
+                },
+                {
+                    "date": 1698659101809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n   \n   main{\n+display: flex;\n \n   }  \n }\n     .circle {\n"
+                },
+                {
+                    "date": 1698659115743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n   \n   main{\n display: flex;\n+justify-content: space-between;\n \n   }  \n }\n     .circle {\n"
+                },
+                {
+                    "date": 1698659122572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \n   main{\n display: flex;\n justify-content: space-between;\n-\n+align-items: center;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659212471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n   \n-  main{\n+  content-container{\n display: flex;\n justify-content: space-between;\n align-items: center;\n   }  \n"
+                },
+                {
+                    "date": 1698659218946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n   \n-  content-container{\n+ .content-container{\n display: flex;\n justify-content: space-between;\n align-items: center;\n   }  \n"
+                },
+                {
+                    "date": 1698659250197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n   \n  .content-container{\n display: flex;\n justify-content: space-between;\n-align-items: center;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659256043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n   \n  .content-container{\n display: flex;\n-justify-content: space-between;\n+justify-content: s-between;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659279483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,16 +2,15 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n   \n  .content-container{\n display: flex;\n-justify-content: s-between;\n+justify-content: space-around;\n   }  \n }\n     .circle {\n         background: black;\n         border: none;\n         cursor: pointer;\n-        font-size: 16px;\n         font-weight: bold;\n         color: white;\n         padding: 10px;\n         border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698659287787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n         background: black;\n         border: none;\n         cursor: pointer;\n         font-weight: bold;\n-        color: white;\n         padding: 10px;\n         border-radius: 50%;\n         width: 200px;\n         height: 200px;\n"
+                },
+                {
+                    "date": 1698659294642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n         background: black;\n         border: none;\n         cursor: pointer;\n         font-weight: bold;\n-        padding: 10px;\n         border-radius: 50%;\n         width: 200px;\n         height: 200px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n"
+                },
+                {
+                    "date": 1698659314173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         background: black;\n         border: none;\n         cursor: pointer;\n         font-weight: bold;\n+        padding: 10px;\n         border-radius: 50%;\n         width: 200px;\n         height: 200px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n"
+                },
+                {
+                    "date": 1698659325025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 200px;\n+        width: 150px;\n         height: 200px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: background-color 0.3s, transform 0.3s;\n     &:hover {\n"
+                },
+                {
+                    "date": 1698659338977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n         width: 150px;\n-        height: 200px;\n+        height: 0px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: background-color 0.3s, transform 0.3s;\n     &:hover {\n             background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698659401011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,12 @@\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n         width: 150px;\n-        height: 0px;\n+        height: 150px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: background-color 0.3s, transform 0.3s;\n     &:hover {\n-            background-color: rgba(0, 0, 0, 0.2);\n+            // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698659413186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         border-radius: 50%;\n         width: 150px;\n         height: 150px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-        transition: background-color 0.3s, transform 0.3s;\n+        transition:, transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n"
+                },
+                {
+                    "date": 1698659461837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n   \n  .content-container{\n display: flex;\n justify-content: space-around;\n+a\n   }  \n }\n     .circle {\n         background: black;\n@@ -15,9 +16,9 @@\n         border-radius: 50%;\n         width: 150px;\n         height: 150px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-        transition:, transform 0.3s;\n+        transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n"
+                },
+                {
+                    "date": 1698659471959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \n  .content-container{\n display: flex;\n justify-content: space-around;\n-a\n+align-items: flex-start;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659481687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \n  .content-container{\n display: flex;\n justify-content: space-around;\n-align-items: flex-start;\n+align-items: cen;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659495834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \n  .content-container{\n display: flex;\n justify-content: space-around;\n-align-items: cen;\n+align-items: ;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659526512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \n  .content-container{\n display: flex;\n justify-content: space-around;\n-align-items: ;\n+align-items: flex-fle;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659536591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n   \n  .content-container{\n display: flex;\n justify-content: space-around;\n-align-items: flex-fle;\n+align-items: flex-start;\n+\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659556322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n  .content-container{\n display: flex;\n justify-content: space-around;\n align-items: flex-start;\n-\n+;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659562182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-  \n+  overflow: hidden;\n  .content-container{\n display: flex;\n justify-content: space-around;\n align-items: flex-start;\n-;\n+\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698659567694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-  overflow: hidden;\n+;\n  .content-container{\n display: flex;\n justify-content: space-around;\n align-items: flex-start;\n"
+                },
+                {
+                    "date": 1698659574160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-;\n+width: ;\n  .content-container{\n display: flex;\n justify-content: space-around;\n align-items: flex-start;\n"
+                },
+                {
+                    "date": 1698659581297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-width: ;\n+;\n  .content-container{\n display: flex;\n justify-content: space-around;\n align-items: flex-start;\n"
+                },
+                {
+                    "date": 1698659586851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-;\n+height: 100v;\n  .content-container{\n display: flex;\n justify-content: space-around;\n align-items: flex-start;\n"
+                },
+                {
+                    "date": 1698659597131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n-height: 100v;\n  .content-container{\n display: flex;\n justify-content: space-around;\n align-items: flex-start;\n"
+                },
+                {
+                    "date": 1698660330149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,9 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n  .content-container{\n display: flex;\n justify-content: space-around;\n-align-items: flex-start;\n-\n+v\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698660335710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n  .content-container{\n display: flex;\n justify-content: space-around;\n-v\n+vertical-align: middle;\n   }  \n }\n     .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698660363301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 150px;\n+        width: 10px;\n         height: 150px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n"
+                },
+                {
+                    "date": 1698660375279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 10px;\n-        height: 150px;\n+        width: 170px;\n+        height: 10px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660389959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 170px;\n-        height: 10px;\n+        width: 10px;\n+        height: 180px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660421022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 10px;\n+        width: 200;\n         height: 180px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n"
+                },
+                {
+                    "date": 1698660429524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 200;\n-        height: 180px;\n+        width: 200px;\n+        height: 200;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660455333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 200px;\n-        height: 200;\n+        width: 00px;\n+        height: 200px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660474364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 00px;\n+        width: 0px;\n         height: 200px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n"
+                },
+                {
+                    "date": 1698660484738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 0px;\n-        height: 200px;\n+        width: 250px;\n+        height: 0px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660558035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,17 +5,17 @@\n justify-content: space-around;\n vertical-align: middle;\n   }  \n }\n-    .circle {\n+.circle {\n         background: black;\n         border: none;\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n         width: 250px;\n-        height: 0px;\n+        height: 250px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660582661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n  #presentation{\n     background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n  .content-container{\n-display: flex;\n-justify-content: space-around;\n-vertical-align: middle;\n-  }  \n+    display: flex;\n+    justify-content: space-around;\n+    vertical-align: middle;\n+    }  \n }\n .circle {\n         background: black;\n         border: none;\n"
+                },
+                {
+                    "date": 1698660649831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 250px;\n+        width: 250;\n         height: 250px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n"
+                },
+                {
+                    "date": 1698660657018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 250;\n+        width: 25vh;\n         height: 250px;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n"
+                },
+                {
+                    "date": 1698660670599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n         width: 25vh;\n-        height: 250px;\n+        height: 250;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660682385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 25vh;\n-        height: 250;\n+        width: 25v;\n+        height: 25h;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660695614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 25v;\n+        width: 25;\n         height: 25h;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n"
+                },
+                {
+                    "date": 1698660703376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 25;\n-        height: 25h;\n+        width: 25%;\n+        height: 25;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660718583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 25%;\n-        height: 25;\n+        width: 5%;\n+        height: 25%;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660735776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 5%;\n-        height: 25%;\n+        width: 35%;\n+        height: 5%;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660749839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 35%;\n-        height: 5%;\n+        width: 35em;\n+        height: 35%;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660760063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n         width: 35em;\n-        height: 35%;\n+        height: 35em;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698660773606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 35em;\n+        width: 5em;\n         height: 35em;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n"
+                },
+                {
+                    "date": 1698660796054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 5em;\n-        height: 35em;\n+        width: 15em;\n+        height: 5em;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
                 }
             ],
             "date": 1698000730894,

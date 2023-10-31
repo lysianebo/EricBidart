@@ -1,11 +1,8 @@
-main, .accueil{
-     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart-fotor-bg-remover-202310050519.png');
-     background-repeat: no-repeat;
-    background-size: cover ;
+#accueil{
+     background-image: url(/public/images/ericbidart_sculpteur3.webp);
+     object-fit: fill;
 }
 #sculpteur{
-    width: 60%;
-    margin: 10vh;
-    // background-color: blue;
+    margin: 6% 0 0% 30%;
     text-align: center;
 }

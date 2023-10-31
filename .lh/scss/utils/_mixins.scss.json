@@ -1,0 +1,418 @@
+{
+    "sourceFile": "scss/utils/_mixins.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 100,
+            "patches": [
+                {
+                    "date": 1698190544930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698419710839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,4 +10,20 @@\n   } @else if $size == big-desktop-up {\n     @media (min-width: 1800px) { @content; }\n   }\n }\n+\n+@mixin for-phone-only {\n+  @media (max-width: 599px) { @content; }\n+}\n+@mixin for-tablet-portrait-up {\n+  @media (min-width: 600px) { @content; }\n+}\n+@mixin for-tablet-landscape-up {\n+  @media (min-width: 900px) { @content; }\n+}\n+@mixin for-desktop-up {\n+  @media (min-width: 1200px) { @content; }\n+}\n+@mixin for-big-desktop-up {\n+  @media (min-width: 1800px) { @content; }\n+}\n"
+                },
+                {
+                    "date": 1698419948324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+\n+\n @mixin for-size($size) {\n   @if $size == phone-only {\n     @media (max-width: 599px) { @content; }\n   } @else if $size == tablet-portrait-up {\n"
+                },
+                {
+                    "date": 1698420013283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,27 @@\n+$media-desktop: \"only screen and (max-width : 1024px)\";\n+$media-tablet: \"only screen and (max-width : 768px)\";\n+$media-mobile: \"only screen and (max-width : 600px)\";\n+$media-mobile-sm: \"only screen and (max-width : 480px)\";\n \n \n+@media #{$media-desktop} {\n+ @content\n+}\n+\n+@media #{$media-tablet} {\n+  background: red;\n+}\n+\n+@media #{$media-mobile} {\n+  background: red;\n+}\n+\n+@media #{$media-mobile-sm} {\n+  background: red;\n+}\n+\n+\n @mixin for-size($size) {\n   @if $size == phone-only {\n     @media (max-width: 599px) { @content; }\n   } @else if $size == tablet-portrait-up {\n"
+                },
+                {
+                    "date": 1698420020877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n  @content\n }\n \n @media #{$media-tablet} {\n-  background: red;\n+  @content\n }\n \n @media #{$media-mobile} {\n   background: red;\n"
+                },
+                {
+                    "date": 1698420027574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,13 +12,12 @@\n   @content\n }\n \n @media #{$media-mobile} {\n-  background: red;\n-}\n+  @content\n \n @media #{$media-mobile-sm} {\n-  background: red;\n+   @content\n }\n \n \n @mixin for-size($size) {\n"
+                },
+                {
+                    "date": 1698420036083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n @media #{$media-mobile} {\n   @content\n \n @media #{$media-mobile-sm} {\n-   @content\n+   @content;\n }\n \n \n @mixin for-size($size) {\n"
+                },
+                {
+                    "date": 1698420052923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,18 +4,18 @@\n $media-mobile-sm: \"only screen and (max-width : 480px)\";\n \n \n @media #{$media-desktop} {\n- @content\n+ @content;\n }\n \n @media #{$media-tablet} {\n-  @content\n+  @content;\n }\n \n @media #{$media-mobile} {\n-  @content\n-\n+  @content;\n+}\n @media #{$media-mobile-sm} {\n    @content;\n }\n \n"
+                },
+                {
+                    "date": 1698420395520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+\n+\n+\n $media-desktop: \"only screen and (max-width : 1024px)\";\n $media-tablet: \"only screen and (max-width : 768px)\";\n $media-mobile: \"only screen and (max-width : 600px)\";\n $media-mobile-sm: \"only screen and (max-width : 480px)\";\n"
+                },
+                {
+                    "date": 1698420779914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,18 @@\n+$breakpoints: (\n+  \"phone-down\": 500px,\n+  \"tablet-up\": 768px,\n+  \"tablet-down\": 900px,\n+  \"desktop-up\": 1024px,\n+  \"desktop-down\": 1280px,\n+  \"widescreen-up\": 1440px\n+);\n \n+@mixin media-($_key) {\n+  @media screen and (min-width: map-get($breakpoints, $_key)) {\n+    &{ @content; }\n+  }\n+}\n \n \n $media-desktop: \"only screen and (max-width : 1024px)\";\n $media-tablet: \"only screen and (max-width : 768px)\";\n"
+                },
+                {
+                    "date": 1698422056096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n   \"desktop-down\": 1280px,\n   \"widescreen-up\": 1440px\n );\n \n-@mixin media-($_key) {\n+\n+@mixin media-max($_key) {\n   @media screen and (min-width: map-get($breakpoints, $_key)) {\n     &{ @content; }\n   }\n }\n"
+                },
+                {
+                    "date": 1698422062456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,14 @@\n   \"desktop-up\": 1024px,\n   \"desktop-down\": 1280px,\n   \"widescreen-up\": 1440px\n );\n+$breakpoints2: (\n+        tablet: 768px,\n+        desktop: 992px,\n+        large: 1200px,\n+)\n \n-\n @mixin media-max($_key) {\n   @media screen and (min-width: map-get($breakpoints, $_key)) {\n     &{ @content; }\n   }\n"
+                },
+                {
+                    "date": 1698422074566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   \"desktop-down\": 1280px,\n   \"widescreen-up\": 1440px\n );\n $breakpoints2: (\n-        tablet: 768px,\n+        \"tablet: 768px,\n         desktop: 992px,\n         large: 1200px,\n )\n \n"
+                },
+                {
+                    "date": 1698422079680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   \"desktop-down\": 1280px,\n   \"widescreen-up\": 1440px\n );\n $breakpoints2: (\n-        \"tablet: 768px,\n-        desktop: 992px,\n+        \"tablet\": 768px,\n+        \"desktop: 992px,\n         large: 1200px,\n )\n \n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698422123814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n   \"widescreen-up\": 1440px\n );\n $breakpoints2: (\n         \"tablet\": 768px,\n-        \"desktop: 992px,\n-        large: 1200px,\n+        \"desktop\": 992px,\n+        \"large\": 1200px,\n )\n-\n+;\n @mixin media-max($_key) {\n   @media screen and (min-width: map-get($breakpoints, $_key)) {\n     &{ @content; }\n   }\n"
+                },
+                {
+                    "date": 1698422159558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,10 @@\n         \"desktop\": 992px,\n         \"large\": 1200px,\n )\n ;\n+\n+\n @mixin media-max($_key) {\n   @media screen and (min-width: map-get($breakpoints, $_key)) {\n     &{ @content; }\n   }\n"
+                },
+                {
+                    "date": 1698422178041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,18 @@\n )\n ;\n \n \n+@mixin media_tablet{\n+    @media screen and (min-width:map-get($breakpoints, tablet)){\n+        @content;\n+    }\n+}\n+@mixin media_desktop{\n+    @media screen and (min-width:map-get($breakpoints, desktop)){\n+        @content;\n+    }\n+}\n @mixin media-max($_key) {\n   @media screen and (min-width: map-get($breakpoints, $_key)) {\n     &{ @content; }\n   }\n"
+                },
+                {
+                    "date": 1698422186588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,5 @@\n-$breakpoints: (\n-  \"phone-down\": 500px,\n-  \"tablet-up\": 768px,\n-  \"tablet-down\": 900px,\n-  \"desktop-up\": 1024px,\n-  \"desktop-down\": 1280px,\n-  \"widescreen-up\": 1440px\n-);\n+\n $breakpoints2: (\n         \"tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n"
+                },
+                {
+                    "date": 1698422194997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,17 @@\n   }\n }\n \n \n+$breakpoints: (\n+  \"phone-down\": 500px,\n+  \"tablet-up\": 768px,\n+  \"tablet-down\": 900px,\n+  \"desktop-up\": 1024px,\n+  \"desktop-down\": 1280px,\n+  \"widescreen-up\": 1440px\n+);\n+\n $media-desktop: \"only screen and (max-width : 1024px)\";\n $media-tablet: \"only screen and (max-width : 768px)\";\n $media-mobile: \"only screen and (max-width : 600px)\";\n $media-mobile-sm: \"only screen and (max-width : 480px)\";\n"
+                },
+                {
+                    "date": 1698422209179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-$breakpoints2: (\n+$breakpoints: (\n         \"tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n )\n@@ -23,9 +23,9 @@\n   }\n }\n \n \n-$breakpoints: (\n+$breakpoints2: (\n   \"phone-down\": 500px,\n   \"tablet-up\": 768px,\n   \"tablet-down\": 900px,\n   \"desktop-up\": 1024px,\n"
+                },
+                {
+                    "date": 1698422261047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-\n $breakpoints: (\n         \"tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n@@ -8,9 +7,9 @@\n \n \n @mixin media_tablet{\n     @media screen and (min-width:map-get($breakpoints, tablet)){\n-        @content;\n+        &@content;\n     }\n }\n @mixin media_desktop{\n     @media screen and (min-width:map-get($breakpoints, desktop)){\n"
+                },
+                {
+                    "date": 1698422274849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n \n @mixin media_tablet{\n     @media screen and (min-width:map-get($breakpoints, tablet)){\n-        &@content;\n+       \n     }\n }\n @mixin media_desktop{\n     @media screen and (min-width:map-get($breakpoints, desktop)){\n"
+                },
+                {
+                    "date": 1698422351025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     }\n }\n @mixin media-max($_key) {\n   @media screen and (min-width: map-get($breakpoints, $_key)) {\n-    &{ @content; }\n+    @content; }\n   }\n }\n \n \n"
+                },
+                {
+                    "date": 1698422382013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n \n @mixin media_tablet{\n     @media screen and (min-width:map-get($breakpoints, tablet)){\n-       \n+        @content;\n     }\n }\n @mixin media_desktop{\n     @media screen and (min-width:map-get($breakpoints, desktop)){\n@@ -17,9 +17,9 @@\n     }\n }\n @mixin media-max($_key) {\n   @media screen and (min-width: map-get($breakpoints, $_key)) {\n-    @content; }\n+    @content; \n   }\n }\n \n \n"
+                },
+                {
+                    "date": 1698422510080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,33 +53,33 @@\n    @content;\n }\n \n \n-@mixin for-size($size) {\n-  @if $size == phone-only {\n-    @media (max-width: 599px) { @content; }\n-  } @else if $size == tablet-portrait-up {\n-    @media (min-width: 600px) { @content; }\n-  } @else if $size == tablet-landscape-up {\n-    @media (min-width: 900px) { @content; }\n-  } @else if $size == desktop-up {\n-    @media (min-width: 1200px) { @content; }\n-  } @else if $size == big-desktop-up {\n-    @media (min-width: 1800px) { @content; }\n-  }\n-}\n+// @mixin for-size($size) {\n+//   @if $size == phone-only {\n+//     @media (max-width: 599px) { @content; }\n+//   } @else if $size == tablet-portrait-up {\n+//     @media (min-width: 600px) { @content; }\n+//   } @else if $size == tablet-landscape-up {\n+//     @media (min-width: 900px) { @content; }\n+//   } @else if $size == desktop-up {\n+//     @media (min-width: 1200px) { @content; }\n+//   } @else if $size == big-desktop-up {\n+//     @media (min-width: 1800px) { @content; }\n+//   }\n+// }\n \n-@mixin for-phone-only {\n-  @media (max-width: 599px) { @content; }\n-}\n-@mixin for-tablet-portrait-up {\n-  @media (min-width: 600px) { @content; }\n-}\n-@mixin for-tablet-landscape-up {\n-  @media (min-width: 900px) { @content; }\n-}\n-@mixin for-desktop-up {\n-  @media (min-width: 1200px) { @content; }\n-}\n-@mixin for-big-desktop-up {\n-  @media (min-width: 1800px) { @content; }\n-}\n+// @mixin for-phone-only {\n+//   @media (max-width: 599px) { @content; }\n+// }\n+// @mixin for-tablet-portrait-up {\n+//   @media (min-width: 600px) { @content; }\n+// }\n+// @mixin for-tablet-landscape-up {\n+//   @media (min-width: 900px) { @content; }\n+// }\n+// @mixin for-desktop-up {\n+//   @media (min-width: 1200px) { @content; }\n+// }\n+// @mixin for-big-desktop-up {\n+//   @media (min-width: 1800px) { @content; }\n+// }\n"
+                },
+                {
+                    "date": 1698422577304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,37 +22,37 @@\n   }\n }\n \n \n-$breakpoints2: (\n-  \"phone-down\": 500px,\n-  \"tablet-up\": 768px,\n-  \"tablet-down\": 900px,\n-  \"desktop-up\": 1024px,\n-  \"desktop-down\": 1280px,\n-  \"widescreen-up\": 1440px\n-);\n+// $breakpoints2: (\n+//   \"phone-down\": 500px,\n+//   \"tablet-up\": 768px,\n+//   \"tablet-down\": 900px,\n+//   \"desktop-up\": 1024px,\n+//   \"desktop-down\": 1280px,\n+//   \"widescreen-up\": 1440px\n+// );\n \n-$media-desktop: \"only screen and (max-width : 1024px)\";\n-$media-tablet: \"only screen and (max-width : 768px)\";\n-$media-mobile: \"only screen and (max-width : 600px)\";\n-$media-mobile-sm: \"only screen and (max-width : 480px)\";\n+// $media-desktop: \"only screen and (max-width : 1024px)\";\n+// $media-tablet: \"only screen and (max-width : 768px)\";\n+// $media-mobile: \"only screen and (max-width : 600px)\";\n+// $media-mobile-sm: \"only screen and (max-width : 480px)\";\n \n \n-@media #{$media-desktop} {\n- @content;\n-}\n+// @media #{$media-desktop} {\n+//  @content;\n+// }\n \n-@media #{$media-tablet} {\n-  @content;\n-}\n+// @media #{$media-tablet} {\n+//   @content;\n+// }\n \n-@media #{$media-mobile} {\n-  @content;\n-}\n-@media #{$media-mobile-sm} {\n-   @content;\n-}\n+// @media #{$media-mobile} {\n+//   @content;\n+// }\n+// @media #{$media-mobile-sm} {\n+//    @content;\n+// }\n \n \n // @mixin for-size($size) {\n //   @if $size == phone-only {\n"
+                },
+                {
+                    "date": 1698422649114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n ;\n \n \n @mixin media_tablet{\n-    @media screen and (min-width:map-get($breakpoints, tablet)){\n+    @media screen and (m-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n @mixin media_desktop{\n"
+                },
+                {
+                    "date": 1698422721395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,20 @@\n $breakpoints: (\n+   \"phone-down\": 500px,\n+//   \"tablet-up\": 768px,\n+//   \"tablet-down\": 900px,\n+//   \"desktop-up\": 1024px,\n+//   \"desktop-down\": 1280px,\n+//   \"widescreen-up\": 1440px\n         \"tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n )\n ;\n \n \n @mixin media_tablet{\n-    @media screen and (m-width:map-get($breakpoints, tablet)){\n+    @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n @mixin media_desktop{\n"
+                },
+                {
+                    "date": 1698422727887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n $breakpoints: (\n    \"phone-down\": 500px,\n-//   \"tablet-up\": 768px,\n-//   \"tablet-down\": 900px,\n+  \"tablet-up\": 768px,  \"tablet-down\": 900px,\n //   \"desktop-up\": 1024px,\n //   \"desktop-down\": 1280px,\n //   \"widescreen-up\": 1440px\n         \"tablet\": 768px,\n"
+                },
+                {
+                    "date": 1698422737612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n $breakpoints: (\n    \"phone-down\": 500px,\n-  \"tablet-up\": 768px,  \"tablet-down\": 900px,\n-//   \"desktop-up\": 1024px,\n-//   \"desktop-down\": 1280px,\n+  \"tablet-up\": 768px,\n+    \"tablet-down\": 900px,\n+   \"desktop-up\": 1024px,\n+   \"desktop-down\": 1280px,\n //   \"widescreen-up\": 1440px\n         \"tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n"
+                },
+                {
+                    "date": 1698422829514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \"tablet-up\": 768px,\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n-//   \"widescreen-up\": 1440px\n+   \"widescreen-up\": 1440px\n         \"tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n )\n@@ -16,8 +16,9 @@\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n+\n @mixin media_desktop{\n     @media screen and (min-width:map-get($breakpoints, desktop)){\n         @content;\n     }\n"
+                },
+                {
+                    "date": 1698422862105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         @content;\n     }\n }\n \n-@mixin media_desktop{\n+@mixin media_mobile{\n     @media screen and (min-width:map-get($breakpoints, desktop)){\n         @content;\n     }\n }\n"
+                },
+                {
+                    "date": 1698422884800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-   \"phone-down\": 500px,\n+   \"mobile-down\": 500px,\n   \"tablet-up\": 768px,\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n"
+                },
+                {
+                    "date": 1698422896672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (min-width:map-get($breakpoints, desktop)){\n+    @media screen and (min-width:map-get($breakpoints, m)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698422905724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (min-width:map-get($breakpoints, m)){\n+    @media screen and (min-width:map-get($breakpoints, mobile-down)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698422951542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (min-width:map-get($breakpoints, mobile-down)){\n+    @media screen and (w-width:map-get($breakpoints, mobile-down)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698422998182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-   \"mobile-down\": 500px,\n+   \"mobile-down\": 00px,\n   \"tablet-up\": 768px,\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (w-width:map-get($breakpoints, mobile-down)){\n+    @media screen and (max-width:map-get($breakpoints, mobile-down)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698423043746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-   \"mobile-down\": 00px,\n+   \"mobile-down\": 600px,\n   \"tablet-up\": 768px,\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (max-width:map-get($breakpoints, mobile-down)){\n+    @media screen and (-width:map-get($breakpoints, mobile-down)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698423068701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (-width:map-get($breakpoints, mobile-down)){\n+    @media screen and (min-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698423113645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-   \"mobile-down\": 600px,\n+   \"mobile\": 600px,\n   \"tablet-up\": 768px,\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n@@ -12,9 +12,9 @@\n ;\n \n \n @mixin media_tablet{\n-    @media screen and (max-width:map-get($breakpoints, tablet)){\n+    @media screen and (m-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698423159330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-   \"mobile\": 600px,\n+   \"mobile\": 500px,\n   \"tablet-up\": 768px,\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n@@ -12,9 +12,9 @@\n ;\n \n \n @mixin media_tablet{\n-    @media screen and (m-width:map-get($breakpoints, tablet)){\n+    @media screen and (min-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698423298726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n    \"widescreen-up\": 1440px\n-        \"tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n )\n ;\n"
+                },
+                {
+                    "date": 1698423355100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n    \"widescreen-up\": 1440px\n+        \"tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n )\n ;\n"
+                },
+                {
+                    "date": 1698423364293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n    \"widescreen-up\": 1440px\n-        \"tablet\": 768px,\n+        tablet\": 768px,\n         \"desktop\": 992px,\n         \"large\": 1200px,\n )\n ;\n"
+                },
+                {
+                    "date": 1698423369508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n    \"widescreen-up\": 1440px\n-        tablet\": 768px,\n-        \"desktop\": 992px,\n+        tablet: 768px,\n+        desktop: 992px,\n         \"large\": 1200px,\n )\n ;\n \n"
+                },
+                {
+                    "date": 1698423388161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n    \"widescreen-up\": 1440px\n         tablet: 768px,\n-        desktop: 992px,\n-        \"large\": 1200px,\n+        desktop: 992px\n+        large: 1200px,\n )\n ;\n \n \n"
+                },
+                {
+                    "date": 1698423393485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n    \"widescreen-up\": 1440px\n-        tablet: 768px,\n-        desktop: 992px\n+        tablet: 768px;\n+        desktop: 992px;\n         large: 1200px,\n )\n ;\n \n"
+                },
+                {
+                    "date": 1698423405443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n    \"widescreen-up\": 1440px\n-        tablet: 768px;\n+        tablet: 768px\n         desktop: 992px;\n         large: 1200px,\n )\n ;\n"
+                },
+                {
+                    "date": 1698423412276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,15 +4,15 @@\n     \"tablet-down\": 900px,\n    \"desktop-up\": 1024px,\n    \"desktop-down\": 1280px,\n    \"widescreen-up\": 1440px\n-        tablet: 768px\n-        desktop: 992px;\n+        tablet: 768px,\n+        desktop: 992px,\n         large: 1200px,\n )\n-;\n \n \n+\n @mixin media_tablet{\n     @media screen and (min-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n"
+                },
+                {
+                    "date": 1698423480134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,11 @@\n $breakpoints: (\n-   \"mobile\": 500px,\n-  \"tablet-up\": 768px,\n-    \"tablet-down\": 900px,\n-   \"desktop-up\": 1024px,\n-   \"desktop-down\": 1280px,\n-   \"widescreen-up\": 1440px\n         tablet: 768px,\n         desktop: 992px,\n         large: 1200px,\n )\n \n \n-\n @mixin media_tablet{\n     @media screen and (min-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n"
+                },
+                {
+                    "date": 1698423506659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n         large: 1200px,\n )\n \n \n-@mixin media_tablet{\n-    @media screen and (min-width:map-get($breakpoints, tablet)){\n+@mixin media_mobile{\n+    @media screen and (min-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698423522540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         large: 1200px,\n )\n \n \n-@mixin media_mobile{\n+@mixin media_tablet{\n     @media screen and (min-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n"
+                },
+                {
+                    "date": 1698423528031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n )\n \n \n @mixin media_tablet{\n-    @media screen and (min-width:map-get($breakpoints, mobile)){\n+    @media screen and (min-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698423539316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n $breakpoints: (\n         tablet: 768px,\n         desktop: 992px,\n-        large: 1200px,\n+        large: 1200px\n )\n \n \n @mixin media_tablet{\n"
+                },
+                {
+                    "date": 1698423659662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n $breakpoints: (\n         tablet: 768px,\n         desktop: 992px,\n-        large: 1200px\n-)\n+        large: 1200px,\n+);\n \n \n @mixin media_tablet{\n     @media screen and (min-width:map-get($breakpoints, tablet)){\n"
+                },
+                {
+                    "date": 1698423719458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n $breakpoints: (\n+  \n         tablet: 768px,\n         desktop: 992px,\n         large: 1200px,\n );\n"
+                },
+                {
+                    "date": 1698423726283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-  \n+        mobile\n         tablet: 768px,\n         desktop: 992px,\n         large: 1200px,\n );\n"
+                },
+                {
+                    "date": 1698423734621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-        mobile\n+        mobile: 500px\n         tablet: 768px,\n         desktop: 992px,\n         large: 1200px,\n );\n"
+                },
+                {
+                    "date": 1698423776747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-        mobile: 500px\n+        mobile: 500px,\n         tablet: 768px,\n         desktop: 992px,\n         large: 1200px,\n );\n@@ -12,9 +12,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (min-width:map-get($breakpoints, mobile)){\n+    @media screen and (-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698423805911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (-width:map-get($breakpoints, mobile)){\n+    @media screen and (min-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698423811649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (min-width:map-get($breakpoints, mobile)){\n+    @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n @mixin media-max($_key) {\n"
+                },
+                {
+                    "date": 1698484557154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,86 @@\n+$breakpoints: (\n+        mobile: 500px,\n+        tablet: 768px,\n+        desktop: 992px,\n+        large: 1200px,\n+);\n+\n+\n+@mixin media_tablet{\n+    @media screen and (min-width:map-get($breakpoints, tablet)){\n+        @content;\n+    }\n+}\n+\n+@mixin media_mobile{\n+    @media screen and (max-width:map-get($breakpoints, mobile)){\n+        @content;\n+    }\n+}\n+@mixin media-max($_key) {\n+  @media screen and (min-width: map-get($breakpoints, $_key)) {\n+    @content; \n+  }\n+}\n+\n+\n+// $breakpoints2: (\n+//   \"phone-down\": 500px,\n+//   \"tablet-up\": 768px,\n+//   \"tablet-down\": 900px,\n+//   \"desktop-up\": 1024px,\n+//   \"desktop-down\": 1280px,\n+//   \"widescreen-up\": 1440px\n+// );\n+\n+// $media-desktop: \"only screen and (max-width : 1024px)\";\n+// $media-tablet: \"only screen and (max-width : 768px)\";\n+// $media-mobile: \"only screen and (max-width : 600px)\";\n+// $media-mobile-sm: \"only screen and (max-width : 480px)\";\n+\n+\n+// @media #{$media-desktop} {\n+//  @content;\n+// }\n+\n+// @media #{$media-tablet} {\n+//   @content;\n+// }\n+\n+// @media #{$media-mobile} {\n+//   @content;\n+// }\n+// @media #{$media-mobile-sm} {\n+//    @content;\n+// }\n+\n+\n+// @mixin for-size($size) {\n+//   @if $size == phone-only {\n+//     @media (max-width: 599px) { @content; }\n+//   } @else if $size == tablet-portrait-up {\n+//     @media (min-width: 600px) { @content; }\n+//   } @else if $size == tablet-landscape-up {\n+//     @media (min-width: 900px) { @content; }\n+//   } @else if $size == desktop-up {\n+//     @media (min-width: 1200px) { @content; }\n+//   } @else if $size == big-desktop-up {\n+//     @media (min-width: 1800px) { @content; }\n+//   }\n+// }\n+\n+// @mixin for-phone-only {\n+//   @media (max-width: 599px) { @content; }\n+// }\n+// @mixin for-tablet-portrait-up {\n+//   @media (min-width: 600px) { @content; }\n+// }\n+// @mixin for-tablet-landscape-up {\n+//   @media (min-width: 900px) { @content; }\n+// }\n+// @mixin for-desktop-up {\n+//   @media (min-width: 1200px) { @content; }\n+// }\n+// @mixin for-big-desktop-up {\n+//   @media (min-width: 1800px) { @content; }\n+// }\n"
+                },
+                {
+                    "date": 1698509995822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n );\n \n \n @mixin media_tablet{\n-    @media screen and (min-width:map-get($breakpoints, tablet)){\n+    @media screen and (m-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n@@ -83,90 +83,4 @@\n // }\n // @mixin for-big-desktop-up {\n //   @media (min-width: 1800px) { @content; }\n // }\n-$breakpoints: (\n-        mobile: 500px,\n-        tablet: 768px,\n-        desktop: 992px,\n-        large: 1200px,\n-);\n-\n-\n-@mixin media_tablet{\n-    @media screen and (min-width:map-get($breakpoints, tablet)){\n-        @content;\n-    }\n-}\n-\n-@mixin media_mobile{\n-    @media screen and (max-width:map-get($breakpoints, mobile)){\n-        @content;\n-    }\n-}\n-@mixin media-max($_key) {\n-  @media screen and (min-width: map-get($breakpoints, $_key)) {\n-    @content; \n-  }\n-}\n-\n-\n-// $breakpoints2: (\n-//   \"phone-down\": 500px,\n-//   \"tablet-up\": 768px,\n-//   \"tablet-down\": 900px,\n-//   \"desktop-up\": 1024px,\n-//   \"desktop-down\": 1280px,\n-//   \"widescreen-up\": 1440px\n-// );\n-\n-// $media-desktop: \"only screen and (max-width : 1024px)\";\n-// $media-tablet: \"only screen and (max-width : 768px)\";\n-// $media-mobile: \"only screen and (max-width : 600px)\";\n-// $media-mobile-sm: \"only screen and (max-width : 480px)\";\n-\n-\n-// @media #{$media-desktop} {\n-//  @content;\n-// }\n-\n-// @media #{$media-tablet} {\n-//   @content;\n-// }\n-\n-// @media #{$media-mobile} {\n-//   @content;\n-// }\n-// @media #{$media-mobile-sm} {\n-//    @content;\n-// }\n-\n-\n-// @mixin for-size($size) {\n-//   @if $size == phone-only {\n-//     @media (max-width: 599px) { @content; }\n-//   } @else if $size == tablet-portrait-up {\n-//     @media (min-width: 600px) { @content; }\n-//   } @else if $size == tablet-landscape-up {\n-//     @media (min-width: 900px) { @content; }\n-//   } @else if $size == desktop-up {\n-//     @media (min-width: 1200px) { @content; }\n-//   } @else if $size == big-desktop-up {\n-//     @media (min-width: 1800px) { @content; }\n-//   }\n-// }\n-\n-// @mixin for-phone-only {\n-//   @media (max-width: 599px) { @content; }\n-// }\n-// @mixin for-tablet-portrait-up {\n-//   @media (min-width: 600px) { @content; }\n-// }\n-// @mixin for-tablet-landscape-up {\n-//   @media (min-width: 900px) { @content; }\n-// }\n-// @mixin for-desktop-up {\n-//   @media (min-width: 1200px) { @content; }\n-// }\n-// @mixin for-big-desktop-up {\n-//   @media (min-width: 1800px) { @content; }\n-// }\n"
+                },
+                {
+                    "date": 1698510085427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n );\n \n \n @mixin media_tablet{\n-    @media screen and (m-width:map-get($breakpoints, tablet)){\n+    @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n@@ -16,13 +16,8 @@\n     @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n-@mixin media-max($_key) {\n-  @media screen and (min-width: map-get($breakpoints, $_key)) {\n-    @content; \n-  }\n-}\n \n \n // $breakpoints2: (\n //   \"phone-down\": 500px,\n"
+                },
+                {
+                    "date": 1698510486481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,15 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n+@mixin media-max($_key) {\n+  @media screen and (-width: map-get($breakpoints, $_key)) {\n+    @content; \n+  }\n+}\n \n+\n @mixin media_tablet{\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n"
+                },
+                {
+                    "date": 1698510508920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin media-max($_key) {\n-  @media screen and (-width: map-get($breakpoints, $_key)) {\n+@mixin media-($_key) {\n+  @media screen and (max-width: map-get($breakpoints, $_key)) {\n     @content; \n   }\n }\n \n"
+                },
+                {
+                    "date": 1698510516495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin media-($_key) {\n+@mixin media-desktop($_key) {\n   @media screen and (max-width: map-get($breakpoints, $_key)) {\n     @content; \n   }\n }\n"
+                },
+                {
+                    "date": 1698510552102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin media-desktop($_key) {\n+@mixin media-desktop($_key){\n   @media screen and (max-width: map-get($breakpoints, $_key)) {\n     @content; \n   }\n }\n"
+                },
+                {
+                    "date": 1698510675983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   }\n }\n \n \n-@mixin media_tablet{\n+@mixin media_tablet({\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n"
+                },
+                {
+                    "date": 1698510684042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   }\n }\n \n \n-@mixin media_tablet({\n+@mixin media_tablet(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!{\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n"
+                },
+                {
+                    "date": 1698510694685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   }\n }\n \n \n-@mixin media_tablet(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!{\n+@mixin media_tablet({\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n"
+                },
+                {
+                    "date": 1698510699995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   }\n }\n \n \n-@mixin media_tablet({\n+@mixin media_tablet($key){\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n"
+                },
+                {
+                    "date": 1698510861809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   }\n }\n \n \n-@mixin media_tablet($key){\n+@mixin media_tablet{\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n"
+                },
+                {
+                    "date": 1698510921987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n \n \n @mixin media_tablet{\n-    @media screen and (max-width:map-get($breakpoints, tablet)){\n+    @media screen and (min-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698510959710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         large: 1200px,\n );\n \n @mixin media-desktop($_key){\n-  @media screen and (max-width: map-get($breakpoints, $_key)) {\n+  @media screen and (-width: map-get($breakpoints, $_key)) {\n     @content; \n   }\n }\n \n"
+                },
+                {
+                    "date": 1698510965972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         large: 1200px,\n );\n \n @mixin media-desktop($_key){\n-  @media screen and (-width: map-get($breakpoints, $_key)) {\n+  @media screen and (m-width: map-get($breakpoints, $_key)) {\n     @content; \n   }\n }\n \n"
+                },
+                {
+                    "date": 1698510991630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin media-desktop($_key){\n-  @media screen and (m-width: map-get($breakpoints, $_key)) {\n+@mixin media-desktop{\n+  @media screen and (min-width: map-get($breakpoints, $_key)) {\n     @content; \n   }\n }\n \n"
+                },
+                {
+                    "date": 1698511239571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n \n \n @mixin media_tablet{\n-    @media screen and (min-width:map-get($breakpoints, tablet)){\n+    @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698511246410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         large: 1200px,\n );\n \n @mixin media-desktop{\n-  @media screen and (min-width: map-get($breakpoints, $_key)) {\n+  @media screen and (max-width: map-get($breakpoints, $_key)) {\n     @content; \n   }\n }\n \n"
+                },
+                {
+                    "date": 1698512014494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (max-width:map-get($breakpoints, mobile)){\n+    @media screen and (min-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698512218968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (min-width:map-get($breakpoints, mobile)){\n+    @media screen and (m-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698515416709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n $breakpoints: (\n         mobile: 500px,\n-        tablet: 768px,\n+        tablet: 76px,\n         desktop: 992px,\n         large: 1200px,\n );\n \n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (m-width:map-get($breakpoints, mobile)){\n+    @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698515424726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n $breakpoints: (\n         mobile: 500px,\n-        tablet: 76px,\n+        tablet: 767px,\n         desktop: 992px,\n         large: 1200px,\n );\n \n"
+                },
+                {
+                    "date": 1698515432346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-        mobile: 500px,\n+        mobile: 0px,\n         tablet: 767px,\n         desktop: 992px,\n         large: 1200px,\n );\n"
+                },
+                {
+                    "date": 1698516439621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $breakpoints: (\n-        mobile: 0px,\n+        mobile: 480px,\n         tablet: 767px,\n         desktop: 992px,\n         large: 1200px,\n );\n@@ -18,9 +18,9 @@\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (max-width:map-get($breakpoints, mobile)){\n+    @media screen and (-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698516590956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,15 +12,15 @@\n }\n \n \n @mixin media_tablet{\n-    @media screen and (max-width:map-get($breakpoints, tablet)){\n+    @media screen and (m-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (-width:map-get($breakpoints, mobile)){\n+    @media screen and (min-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698516953373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,15 +12,15 @@\n }\n \n \n @mixin media_tablet{\n-    @media screen and (m-width:map-get($breakpoints, tablet)){\n+    @media screen and (min-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n @mixin media_mobile{\n-    @media screen and (min-width:map-get($breakpoints, mobile)){\n+    @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698516960324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n \n \n @mixin media_tablet{\n-    @media screen and (min-width:map-get($breakpoints, tablet)){\n+    @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1698517592713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,38 @@\n     @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n+1\n+2\n+3\n+4\n+5\n+6\n+7\n+8\n+9\n+10\n+11\n+12\n+13\n+14\n+\t\n+/* For extremely small screen devices (595px and below) */\n+@media only screen and (max-width: 595px) {...}\n+ \n+/* Small screen devices (600px and above) */\n+@media only screen and (min-width: 600px) {...}\n+ \n+/* Medium screen devices (768px and above) */\n+@media only screen and (min-width: 768px) {...}\n+ \n+/* Big screen devices (889px and above) */\n+@media only screen and (min-width: 889px) {...}\n+ \n+/* Extra big screen devices (1200px and above) */\n+@media only screen and (min-width: 1200px) {...}\n \n-\n // $breakpoints2: (\n //   \"phone-down\": 500px,\n //   \"tablet-up\": 768px,\n //   \"tablet-down\": 900px,\n"
+                },
+                {
+                    "date": 1698520790582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,21 +38,21 @@\n 13\n 14\n \t\n /* For extremely small screen devices (595px and below) */\n-@media only screen and (max-width: 595px) {...}\n+// @media only screen and (max-width: 595px) {...}\n  \n-/* Small screen devices (600px and above) */\n-@media only screen and (min-width: 600px) {...}\n+// /* Small screen devices (600px and above) */\n+// @media only screen and (min-width: 600px) {...}\n  \n-/* Medium screen devices (768px and above) */\n-@media only screen and (min-width: 768px) {...}\n+// /* Medium screen devices (768px and above) */\n+// @media only screen and (min-width: 768px) {...}\n  \n-/* Big screen devices (889px and above) */\n-@media only screen and (min-width: 889px) {...}\n+// /* Big screen devices (889px and above) */\n+// @media only screen and (min-width: 889px) {...}\n  \n-/* Extra big screen devices (1200px and above) */\n-@media only screen and (min-width: 1200px) {...}\n+// /* Extra big screen devices (1200px and above) */\n+// @media only screen and (min-width: 1200px) {...}\n \n // $breakpoints2: (\n //   \"phone-down\": 500px,\n //   \"tablet-up\": 768px,\n"
+                },
+                {
+                    "date": 1698520906444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,94 +22,4 @@\n     @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n-1\n-2\n-3\n-4\n-5\n-6\n-7\n-8\n-9\n-10\n-11\n-12\n-13\n-14\n-\t\n-/* For extremely small screen devices (595px and below) */\n-// @media only screen and (max-width: 595px) {...}\n- \n-// /* Small screen devices (600px and above) */\n-// @media only screen and (min-width: 600px) {...}\n- \n-// /* Medium screen devices (768px and above) */\n-// @media only screen and (min-width: 768px) {...}\n- \n-// /* Big screen devices (889px and above) */\n-// @media only screen and (min-width: 889px) {...}\n- \n-// /* Extra big screen devices (1200px and above) */\n-// @media only screen and (min-width: 1200px) {...}\n-\n-// $breakpoints2: (\n-//   \"phone-down\": 500px,\n-//   \"tablet-up\": 768px,\n-//   \"tablet-down\": 900px,\n-//   \"desktop-up\": 1024px,\n-//   \"desktop-down\": 1280px,\n-//   \"widescreen-up\": 1440px\n-// );\n-\n-// $media-desktop: \"only screen and (max-width : 1024px)\";\n-// $media-tablet: \"only screen and (max-width : 768px)\";\n-// $media-mobile: \"only screen and (max-width : 600px)\";\n-// $media-mobile-sm: \"only screen and (max-width : 480px)\";\n-\n-\n-// @media #{$media-desktop} {\n-//  @content;\n-// }\n-\n-// @media #{$media-tablet} {\n-//   @content;\n-// }\n-\n-// @media #{$media-mobile} {\n-//   @content;\n-// }\n-// @media #{$media-mobile-sm} {\n-//    @content;\n-// }\n-\n-\n-// @mixin for-size($size) {\n-//   @if $size == phone-only {\n-//     @media (max-width: 599px) { @content; }\n-//   } @else if $size == tablet-portrait-up {\n-//     @media (min-width: 600px) { @content; }\n-//   } @else if $size == tablet-landscape-up {\n-//     @media (min-width: 900px) { @content; }\n-//   } @else if $size == desktop-up {\n-//     @media (min-width: 1200px) { @content; }\n-//   } @else if $size == big-desktop-up {\n-//     @media (min-width: 1800px) { @content; }\n-//   }\n-// }\n-\n-// @mixin for-phone-only {\n-//   @media (max-width: 599px) { @content; }\n-// }\n-// @mixin for-tablet-portrait-up {\n-//   @media (min-width: 600px) { @content; }\n-// }\n-// @mixin for-tablet-landscape-up {\n-//   @media (min-width: 900px) { @content; }\n-// }\n-// @mixin for-desktop-up {\n-//   @media (min-width: 1200px) { @content; }\n-// }\n-// @mixin for-big-desktop-up {\n-//   @media (min-width: 1800px) { @content; }\n-// }\n"
+                },
+                {
+                    "date": 1698520950851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,4 +22,94 @@\n     @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n+1\n+2\n+3\n+4\n+5\n+6\n+7\n+8\n+9\n+10\n+11\n+12\n+13\n+14\n+\t\n+/* For extremely small screen devices (595px and below) */\n+// @media only screen and (max-width: 595px) {...}\n+ \n+// /* Small screen devices (600px and above) */\n+// @media only screen and (min-width: 600px) {...}\n+ \n+// /* Medium screen devices (768px and above) */\n+// @media only screen and (min-width: 768px) {...}\n+ \n+// /* Big screen devices (889px and above) */\n+// @media only screen and (min-width: 889px) {...}\n+ \n+// /* Extra big screen devices (1200px and above) */\n+// @media only screen and (min-width: 1200px) {...}\n+\n+// $breakpoints2: (\n+//   \"phone-down\": 500px,\n+//   \"tablet-up\": 768px,\n+//   \"tablet-down\": 900px,\n+//   \"desktop-up\": 1024px,\n+//   \"desktop-down\": 1280px,\n+//   \"widescreen-up\": 1440px\n+// );\n+\n+// $media-desktop: \"only screen and (max-width : 1024px)\";\n+// $media-tablet: \"only screen and (max-width : 768px)\";\n+// $media-mobile: \"only screen and (max-width : 600px)\";\n+// $media-mobile-sm: \"only screen and (max-width : 480px)\";\n+\n+\n+// @media #{$media-desktop} {\n+//  @content;\n+// }\n+\n+// @media #{$media-tablet} {\n+//   @content;\n+// }\n+\n+// @media #{$media-mobile} {\n+//   @content;\n+// }\n+// @media #{$media-mobile-sm} {\n+//    @content;\n+// }\n+\n+\n+// @mixin for-size($size) {\n+//   @if $size == phone-only {\n+//     @media (max-width: 599px) { @content; }\n+//   } @else if $size == tablet-portrait-up {\n+//     @media (min-width: 600px) { @content; }\n+//   } @else if $size == tablet-landscape-up {\n+//     @media (min-width: 900px) { @content; }\n+//   } @else if $size == desktop-up {\n+//     @media (min-width: 1200px) { @content; }\n+//   } @else if $size == big-desktop-up {\n+//     @media (min-width: 1800px) { @content; }\n+//   }\n+// }\n+\n+// @mixin for-phone-only {\n+//   @media (max-width: 599px) { @content; }\n+// }\n+// @mixin for-tablet-portrait-up {\n+//   @media (min-width: 600px) { @content; }\n+// }\n+// @mixin for-tablet-landscape-up {\n+//   @media (min-width: 900px) { @content; }\n+// }\n+// @mixin for-desktop-up {\n+//   @media (min-width: 1200px) { @content; }\n+// }\n+// @mixin for-big-desktop-up {\n+//   @media (min-width: 1800px) { @content; }\n+// }\n"
+                },
+                {
+                    "date": 1698520970167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,94 +22,94 @@\n     @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n-1\n-2\n-3\n-4\n-5\n-6\n-7\n-8\n-9\n-10\n-11\n-12\n-13\n-14\n+// 1\n+// 2\n+// 3\n+// 4\n+// 5\n+// 6\n+// 7\n+// 8\n+// 9\n+// 10\n+// 11\n+// 12\n+// 13\n+// 14\n \t\n-/* For extremely small screen devices (595px and below) */\n-// @media only screen and (max-width: 595px) {...}\n+// /* For extremely small screen devices (595px and below) */\n+// // @media only screen and (max-width: 595px) {...}\n  \n-// /* Small screen devices (600px and above) */\n-// @media only screen and (min-width: 600px) {...}\n+// // /* Small screen devices (600px and above) */\n+// // @media only screen and (min-width: 600px) {...}\n  \n-// /* Medium screen devices (768px and above) */\n-// @media only screen and (min-width: 768px) {...}\n+// // /* Medium screen devices (768px and above) */\n+// // @media only screen and (min-width: 768px) {...}\n  \n-// /* Big screen devices (889px and above) */\n-// @media only screen and (min-width: 889px) {...}\n+// // /* Big screen devices (889px and above) */\n+// // @media only screen and (min-width: 889px) {...}\n  \n-// /* Extra big screen devices (1200px and above) */\n-// @media only screen and (min-width: 1200px) {...}\n+// // /* Extra big screen devices (1200px and above) */\n+// // @media only screen and (min-width: 1200px) {...}\n \n-// $breakpoints2: (\n-//   \"phone-down\": 500px,\n-//   \"tablet-up\": 768px,\n-//   \"tablet-down\": 900px,\n-//   \"desktop-up\": 1024px,\n-//   \"desktop-down\": 1280px,\n-//   \"widescreen-up\": 1440px\n-// );\n+// // $breakpoints2: (\n+// //   \"phone-down\": 500px,\n+// //   \"tablet-up\": 768px,\n+// //   \"tablet-down\": 900px,\n+// //   \"desktop-up\": 1024px,\n+// //   \"desktop-down\": 1280px,\n+// //   \"widescreen-up\": 1440px\n+// // );\n \n-// $media-desktop: \"only screen and (max-width : 1024px)\";\n-// $media-tablet: \"only screen and (max-width : 768px)\";\n-// $media-mobile: \"only screen and (max-width : 600px)\";\n-// $media-mobile-sm: \"only screen and (max-width : 480px)\";\n+// // $media-desktop: \"only screen and (max-width : 1024px)\";\n+// // $media-tablet: \"only screen and (max-width : 768px)\";\n+// // $media-mobile: \"only screen and (max-width : 600px)\";\n+// // $media-mobile-sm: \"only screen and (max-width : 480px)\";\n \n \n-// @media #{$media-desktop} {\n-//  @content;\n-// }\n+// // @media #{$media-desktop} {\n+// //  @content;\n+// // }\n \n-// @media #{$media-tablet} {\n-//   @content;\n-// }\n+// // @media #{$media-tablet} {\n+// //   @content;\n+// // }\n \n-// @media #{$media-mobile} {\n-//   @content;\n-// }\n-// @media #{$media-mobile-sm} {\n-//    @content;\n-// }\n+// // @media #{$media-mobile} {\n+// //   @content;\n+// // }\n+// // @media #{$media-mobile-sm} {\n+// //    @content;\n+// // }\n \n \n-// @mixin for-size($size) {\n-//   @if $size == phone-only {\n-//     @media (max-width: 599px) { @content; }\n-//   } @else if $size == tablet-portrait-up {\n-//     @media (min-width: 600px) { @content; }\n-//   } @else if $size == tablet-landscape-up {\n-//     @media (min-width: 900px) { @content; }\n-//   } @else if $size == desktop-up {\n-//     @media (min-width: 1200px) { @content; }\n-//   } @else if $size == big-desktop-up {\n-//     @media (min-width: 1800px) { @content; }\n-//   }\n-// }\n+// // @mixin for-size($size) {\n+// //   @if $size == phone-only {\n+// //     @media (max-width: 599px) { @content; }\n+// //   } @else if $size == tablet-portrait-up {\n+// //     @media (min-width: 600px) { @content; }\n+// //   } @else if $size == tablet-landscape-up {\n+// //     @media (min-width: 900px) { @content; }\n+// //   } @else if $size == desktop-up {\n+// //     @media (min-width: 1200px) { @content; }\n+// //   } @else if $size == big-desktop-up {\n+// //     @media (min-width: 1800px) { @content; }\n+// //   }\n+// // }\n \n-// @mixin for-phone-only {\n-//   @media (max-width: 599px) { @content; }\n-// }\n-// @mixin for-tablet-portrait-up {\n-//   @media (min-width: 600px) { @content; }\n-// }\n-// @mixin for-tablet-landscape-up {\n-//   @media (min-width: 900px) { @content; }\n-// }\n-// @mixin for-desktop-up {\n-//   @media (min-width: 1200px) { @content; }\n-// }\n-// @mixin for-big-desktop-up {\n-//   @media (min-width: 1800px) { @content; }\n-// }\n+// // @mixin for-phone-only {\n+// //   @media (max-width: 599px) { @content; }\n+// // }\n+// // @mixin for-tablet-portrait-up {\n+// //   @media (min-width: 600px) { @content; }\n+// // }\n+// // @mixin for-tablet-landscape-up {\n+// //   @media (min-width: 900px) { @content; }\n+// // }\n+// // @mixin for-desktop-up {\n+// //   @media (min-width: 1200px) { @content; }\n+// // }\n+// // @mixin for-big-desktop-up {\n+// //   @media (min-width: 1800px) { @content; }\n+// // }\n"
+                },
+                {
+                    "date": 1698670718001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin media-desktop{\n+@mixin media_desktop{\n   @media screen and (max-width: map-get($breakpoints, $_key)) {\n     @content; \n   }\n }\n"
+                },
+                {
+                    "date": 1698670945914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         large: 1200px,\n );\n \n @mixin media_desktop{\n-  @media screen and (max-width: map-get($breakpoints, $_key)) {\n+  @media screen and (max-width: map-get($breakpoints, deskt)) {\n     @content; \n   }\n }\n \n"
+                },
+                {
+                    "date": 1698670993861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,12 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n+\n+\n @mixin media_desktop{\n-  @media screen and (max-width: map-get($breakpoints, deskt)) {\n+  @media screen and (max-width: map-get($breakpoints, desktop)) {\n     @content; \n   }\n }\n \n"
+                },
+                {
+                    "date": 1698671002368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,14 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n+@mixin {\n+  @media screen and (max-width: map-get($breakpoints, desktop)) {\n+    @content; \n+  }\n+}\n \n-\n @mixin media_desktop{\n   @media screen and (max-width: map-get($breakpoints, desktop)) {\n     @content; \n   }\n"
+                },
+                {
+                    "date": 1698671009704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin {\n+@mixin media_desktop{\n   @media screen and (max-width: map-get($breakpoints, desktop)) {\n     @content; \n   }\n }\n"
+                },
+                {
+                    "date": 1698671018006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin media_desktop{\n+@mixin media_{\n   @media screen and (max-width: map-get($breakpoints, desktop)) {\n     @content; \n   }\n }\n"
+                },
+                {
+                    "date": 1698671030399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin media_{\n-  @media screen and (max-width: map-get($breakpoints, desktop)) {\n+@mixin media_large{\n+  @media screen and (max-width: map-get($breakpoints, large)) {\n     @content; \n   }\n }\n \n"
+                },
+                {
+                    "date": 1698671475284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,121 @@\n+$breakpoints: (\n+        mobile: 480px,\n+        tablet: 767px,\n+        desktop: 992px,\n+        large: 1200px,\n+);\n+\n+@mixin media_large{\n+  @media screen and (max-width: map-get($breakpoints, large)) {\n+    @content; \n+  }\n+}\n+\n+@mixin media_desktop{\n+  @media screen and (max-width: map-get($breakpoints, desktop)) {\n+    @content; \n+  }\n+}\n+\n+\n+@mixin media_tablet{\n+    @media screen and (max-width:map-get($breakpoints, tablet)){\n+        @content;\n+    }\n+}\n+\n+@mixin media_mobile{\n+    @media screen and (max-width:map-get($breakpoints, mobile)){\n+        @content;\n+    }\n+}\n+// 1\n+// 2\n+// 3\n+// 4\n+// 5\n+// 6\n+// 7\n+// 8\n+// 9\n+// 10\n+// 11\n+// 12\n+// 13\n+// 14\n+\t\n+// /* For extremely small screen devices (595px and below) */\n+// // @media only screen and (max-width: 595px) {...}\n+ \n+// // /* Small screen devices (600px and above) */\n+// // @media only screen and (min-width: 600px) {...}\n+ \n+// // /* Medium screen devices (768px and above) */\n+// // @media only screen and (min-width: 768px) {...}\n+ \n+// // /* Big screen devices (889px and above) */\n+// // @media only screen and (min-width: 889px) {...}\n+ \n+// // /* Extra big screen devices (1200px and above) */\n+// // @media only screen and (min-width: 1200px) {...}\n+\n+// // $breakpoints2: (\n+// //   \"phone-down\": 500px,\n+// //   \"tablet-up\": 768px,\n+// //   \"tablet-down\": 900px,\n+// //   \"desktop-up\": 1024px,\n+// //   \"desktop-down\": 1280px,\n+// //   \"widescreen-up\": 1440px\n+// // );\n+\n+// // $media-desktop: \"only screen and (max-width : 1024px)\";\n+// // $media-tablet: \"only screen and (max-width : 768px)\";\n+// // $media-mobile: \"only screen and (max-width : 600px)\";\n+// // $media-mobile-sm: \"only screen and (max-width : 480px)\";\n+\n+\n+// // @media #{$media-desktop} {\n+// //  @content;\n+// // }\n+\n+// // @media #{$media-tablet} {\n+// //   @content;\n+// // }\n+\n+// // @media #{$media-mobile} {\n+// //   @content;\n+// // }\n+// // @media #{$media-mobile-sm} {\n+// //    @content;\n+// // }\n+\n+\n+// // @mixin for-size($size) {\n+// //   @if $size == phone-only {\n+// //     @media (max-width: 599px) { @content; }\n+// //   } @else if $size == tablet-portrait-up {\n+// //     @media (min-width: 600px) { @content; }\n+// //   } @else if $size == tablet-landscape-up {\n+// //     @media (min-width: 900px) { @content; }\n+// //   } @else if $size == desktop-up {\n+// //     @media (min-width: 1200px) { @content; }\n+// //   } @else if $size == big-desktop-up {\n+// //     @media (min-width: 1800px) { @content; }\n+// //   }\n+// // }\n+\n+// // @mixin for-phone-only {\n+// //   @media (max-width: 599px) { @content; }\n+// // }\n+// // @mixin for-tablet-portrait-up {\n+// //   @media (min-width: 600px) { @content; }\n+// // }\n+// // @mixin for-tablet-landscape-up {\n+// //   @media (min-width: 900px) { @content; }\n+// // }\n+// // @mixin for-desktop-up {\n+// //   @media (min-width: 1200px) { @content; }\n+// // }\n+// // @mixin for-big-desktop-up {\n+// //   @media (min-width: 1800px) { @content; }\n+// // }\n"
+                }
+            ],
+            "date": 1698190544930,
+            "name": "Commit-0",
+            "content": "@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: 599px) { @content; }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: 600px) { @content; }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: 900px) { @content; }\n  } @else if $size == desktop-up {\n    @media (min-width: 1200px) { @content; }\n  } @else if $size == big-desktop-up {\n    @media (min-width: 1800px) { @content; }\n  }\n}\n"
+        }
+    ]
+}

@@ -1,60 +1,51 @@
 header { 
-  background-color: black;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-img{
-  border-radius: 50%;
-    width: 40%;
-    padding-left: 1vw;
-    box-shadow: 0px 0.5px 5px black;  
-}
-/**** NAVBAR ****/
-nav {
-  display: flex;
-  padding: 20px;
- ul {
-  display: flex;
-  justify-content: space-between;
- }
-
-}
-}
-#icons {
-  cursor: pointer;
-  display: none;
-}
-@media (max-width: 800px) {
-    header{
-        margin-bottom: 50px;
+    nav, ul{
+        display: flex;
+        justify-content: right;
     }
-  #icons {
-    display: block;
-  }
-  #icons:before {
-    content: "\2630";
-  }
-  .active #icons:before {
-    content: "\2715";
-  }
-  nav ul {
-    position: fixed;
-    left: -100%;
-    top: 5%;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transition: 0.25s;
-  }
-  nav li {
-    padding: 3px 0;
-  
-  }
-   a:hover {
-    color: lightblue;
-  }
-  nav.active ul {
-    left: 0;
-  }
+    input[type=checkbox] {
+        display: none;
+    }
+    label{
+        width: 20%;
+    }
+    .burger::before {
+        display: none;
 }
+}
+@include media_mobile {
+    .nav-links {
+        display: none;
+        border-bottom: 1px solid white;
+        
+
+    }
+    li, a, a:visited {
+        padding: 0px;
+        width: 40%;
+    }
+     .burger::after{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        content: "\2630";
+        background-color: orange;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        z-index: 1;
+        right: 5vh;
+        animation: bounce3 0.5s;
+        // animation-direction: alternate; 
+        animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
+        animation-iteration-count: 2 ;
+     }input[type=checkbox]:checked ~ .nav-links {
+        display: flex;
+        flex-direction: column;  
+        justify-content: flex-start;
+        width: 200px;
+        font-size: 12px; 
+    }
+}  
