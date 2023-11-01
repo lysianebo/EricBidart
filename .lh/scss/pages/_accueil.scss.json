@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 355,
+            "activePatchIndex": 358,
             "patches": [
                 {
                     "date": 1697987309928,
@@ -1428,6 +1428,18 @@
                 {
                     "date": 1698838903499,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,7 @@\n         object-fit: contain;\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n      }\n+    }  \n }\n-  \n-}\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698839901053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(/public/images/ericbidart_sculpteur3.webp);\n+     background-image: url(https://lysianebo.github.io/EricBidart/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698839907562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url(https://lysianebo.github.io/EricBidart/public/images/ericbidart_sculpteur3.webp);\n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698839916019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart_sculpteur3.webp);\n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart_sculpteur3.webp');\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
                 }
             ],
             "date": 1697987309928,
