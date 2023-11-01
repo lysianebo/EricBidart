@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 358,
+            "activePatchIndex": 359,
             "patches": [
                 {
                     "date": 1697987309928,
@@ -1440,6 +1440,10 @@
                 {
                     "date": 1698839916019,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #accueil{\n-     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart_sculpteur3.webp);\n+     background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart_sculpteur3.webp');\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698840558224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n #accueil{\n      background-image: url('https://lysianebo.github.io/EricBidart/public/images/ericbidart_sculpteur3.webp');\n      object-fit: 100% 100%;\n      @include media_tablet{\n-        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n+        background-image: url(https://lysianebo.github.io/EricBidart/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n"
                 }
             ],
             "date": 1697987309928,
