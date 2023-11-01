@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 76,
+            "activePatchIndex": 77,
             "patches": [
                 {
                     "date": 1697982677335,
@@ -312,6 +312,10 @@
                 {
                     "date": 1698227152755,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   grid-area: footer;\n   .contact{\n     display: flex;\n     align-items: center;\n-  \n     .logo_img {\n       margin-left: 1em;\n       border-radius: 50%;\n       width: 35%;\n@@ -21,8 +20,8 @@\n   img {\n     width: 25px;\n     height: 25px;\n   } \n-p{\n-  font-size: 12px;\n-}\n+  p{\n+    font-size: 12px;\n+  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698834219242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,37 @@\n+footer {\n+  padding: 20px;\n+  background: black;\n+  display: flex;\n+  justify-content: space-between;\n+  }\n+  .contact, .reseaux_sociaux{\n+    width: 200px;\n+    display: flex;\n+    align-items: center;\n+    justify-content: center;\n+  }\n+  .contact{\n+      display: flex;\n+      align-items: center;\n+      .logo_img, img{\n+        border-radius: 50%;\n+        width: 35%;\n+        margin-right: 1rem;\n+      }\n+  }\n+  .reseaux_sociaux img {\n+      width: 2rem;\n+      height: 2rem;\n+    }\n+\n+ @include media_tablet{\n+  footer{\n+height: 20vh;\n+  flex-direction: column;\n+  justify-content: space-between;\n+  align-items: center;\n+  div{\n+margin: 0.2rem; }\n+\n+ }\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1697982677335,

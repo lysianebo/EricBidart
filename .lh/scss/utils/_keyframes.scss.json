@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 119,
+            "activePatchIndex": 156,
             "patches": [
                 {
                     "date": 1698003759896,
@@ -484,6 +484,154 @@
                 {
                     "date": 1698497894783,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n           }\n         }\n  @keyframes bounce3 { \n             0% { \n-                transform: translate3d(20px, 50px, 80); \n+                transform: translate3d(20px, 50px, 80px); \n             } \n             50% { \n                 transform: translate3d(0px, 100px, 0px); \n             }\n"
+                },
+                {
+                    "date": 1698835897223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n           }\n           60% {opacity: 1;transform: translateY(50px);\n           }\n         }\n- @keyframes bounce3 { \n+@keyframes bounce3 { \n             0% { \n                 transform: translate3d(20px, 50px, 80px); \n             } \n             50% { \n"
+                },
+                {
+                    "date": 1698835902489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      from {top: 100%;}\n      50%  {top: 50%;}\n      to   {top: 100%;}\n }\n- @keyframes bounce2 {\n+@keyframes bounce2 {\n           0%, 20%, 50%, 80%, 100% {\n             opacity: 0;transform: translateY(0);\n           }\n           40% {opacity: 1; transform: tranlateY(20px);\n"
+                },
+                {
+                    "date": 1698835910626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,9 @@\n                 transform: translate3d(0px, 100px, 0px); \n             }\n            100%{transform: translate3d(0px, 0px, 200px)\n             }}\n-          \n- \n+\n         \n        \n         .grow {\n             animation: grow 2s ease infinite;\n"
+                },
+                {
+                    "date": 1698835915948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n                 transform: translate3d(0px, 100px, 0px); \n             }\n            100%{transform: translate3d(0px, 0px, 200px)\n             }}\n-\n         \n        \n         .grow {\n             animation: grow 2s ease infinite;\n"
+                },
+                {
+                    "date": 1698835923231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,8 @@\n                 transform: translate3d(0px, 100px, 0px); \n             }\n            100%{transform: translate3d(0px, 0px, 200px)\n             }}\n-        \n-       \n         .grow {\n             animation: grow 2s ease infinite;\n           }\n           @keyframes grow {\n"
+                },
+                {
+                    "date": 1698835939227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- @keyframes bounce{\n+@keyframes bounce{\n      from {top: 100%;}\n      50%  {top: 50%;}\n      to   {top: 100%;}\n }\n"
+                },
+                {
+                    "date": 1698835964153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n                 transform: translate3d(0px, 100px, 0px); \n             }\n            100%{transform: translate3d(0px, 0px, 200px)\n             }}\n-        .grow {\n+grow {\n             animation: grow 2s ease infinite;\n           }\n           @keyframes grow {\n             from { transform: scale(0); }\n"
+                },
+                {
+                    "date": 1698835972004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             }\n            100%{transform: translate3d(0px, 0px, 200px)\n             }}\n grow {\n-            animation: grow 2s ease infinite;\n+  animation: grow 2s ease infinite;\n           }\n           @keyframes grow {\n             from { transform: scale(0); }\n             to { transform: scale(1); }\n"
+                },
+                {
+                    "date": 1698835978150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n            100%{transform: translate3d(0px, 0px, 200px)\n             }}\n grow {\n   animation: grow 2s ease infinite;\n-          }\n+}\n           @keyframes grow {\n             from { transform: scale(0); }\n             to { transform: scale(1); }\n           }\n"
+                },
+                {
+                    "date": 1698835991144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,16 +3,16 @@\n      50%  {top: 50%;}\n      to   {top: 100%;}\n }\n @keyframes bounce2 {\n-          0%, 20%, 50%, 80%, 100% {\n-            opacity: 0;transform: translateY(0);\n-          }\n-          40% {opacity: 1; transform: tranlateY(20px);\n-          }\n-          60% {opacity: 1;transform: translateY(50px);\n-          }\n-        }\n+    0%, 20%, 50%, 80%, 100% {\n+      opacity: 0;transform: translateY(0);\n+    }\n+    40% {opacity: 1; transform: tranlateY(20px);\n+    }\n+    60% {opacity: 1;transform: translateY(50px);\n+    }\n+  }\n @keyframes bounce3 { \n             0% { \n                 transform: translate3d(20px, 50px, 80px); \n             } \n"
+                },
+                {
+                    "date": 1698836002486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n @keyframes bounce{\n-     from {top: 100%;}\n-     50%  {top: 50%;}\n-     to   {top: 100%;}\n+  from {top: 100%;}\n+  50%  {top: 50%;}\n+  to   {top: 100%;}\n }\n @keyframes bounce2 {\n-    0%, 20%, 50%, 80%, 100% {\n-      opacity: 0;transform: translateY(0);\n-    }\n-    40% {opacity: 1; transform: tranlateY(20px);\n-    }\n-    60% {opacity: 1;transform: translateY(50px);\n-    }\n+  0%, 20%, 50%, 80%, 100% {\n+    opacity: 0;transform: translateY(0);\n   }\n+  40% {opacity: 1; transform: tranlateY(20px);\n+  }\n+  60% {opacity: 1;transform: translateY(50px);\n+  }\n+  }\n @keyframes bounce3 { \n             0% { \n                 transform: translate3d(20px, 50px, 80px); \n             } \n"
+                },
+                {
+                    "date": 1698836008039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,16 +12,16 @@\n   60% {opacity: 1;transform: translateY(50px);\n   }\n   }\n @keyframes bounce3 { \n-            0% { \n-                transform: translate3d(20px, 50px, 80px); \n-            } \n-            50% { \n-                transform: translate3d(0px, 100px, 0px); \n-            }\n-           100%{transform: translate3d(0px, 0px, 200px)\n-            }}\n+  0% { \n+      transform: translate3d(20px, 50px, 80px); \n+  } \n+  50% { \n+      transform: translate3d(0px, 100px, 0px); \n+  }\n+  100%{transform: translate3d(0px, 0px, 200px)\n+  }}\n grow {\n   animation: grow 2s ease infinite;\n }\n           @keyframes grow {\n"
+                },
+                {
+                    "date": 1698836025001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,56 +23,56 @@\n   }}\n grow {\n   animation: grow 2s ease infinite;\n }\n-          @keyframes grow {\n-            from { transform: scale(0); }\n-            to { transform: scale(1); }\n-          }\n-          \n-          .fade-in {\n-            animation: fade-in 2s linear infinite;\n-          }\n-          @keyframes fade-in {\n-            from { opacity: 1; \n-            scale: 0%;}\n-            to { opacity: 1; \n-            scale: 1;}\n-          }\n-      \n-        .bounce-in {\n-            animation: bounce-in 2s ease 1s ;\n-          }\n-          @keyframes bounce-in {\n-            0% {\n-              opacity: 0;\n-              transform: scale(.3);\n-            }\n-            50% {\n-              opacity: 1;\n-              transform: scale(1.05);\n-            }\n-            70% { transform: scale(.9); }\n-            100% { transform: scale(1); }\n-          }\n-          \n-          .bounce-in-right {\n-            animation: bounce-in-right 2s ease 1s;\n-          }\n-          @keyframes bounce-in-right {\n-            0% {\n-              opacity: 0;\n-              transform: translateX(1000px);\n-            }\n-            60% {\n-              opacity: 1;\n-              transform: translateX(-30px);\n-            }\n-            100% { transform: translateX(100px); }\n-            // 100% { transform: translateX(0);\n-            //     transform: translateY(100px);  }\n-          }\n-          \n+@keyframes grow {\n+from { transform: scale(0); }\n+to { transform: scale(1); }\n+}\n+\n+.fade-in {\n+animation: fade-in 2s linear infinite;\n+}\n+@keyframes fade-in {\n+from { opacity: 1; \n+scale: 0%;}\n+to { opacity: 1; \n+scale: 1;}\n+}\n+\n+.bounce-in {\n+animation: bounce-in 2s ease 1s ;\n+}\n+@keyframes bounce-in {\n+0% {\n+  opacity: 0;\n+  transform: scale(.3);\n+}\n+50% {\n+  opacity: 1;\n+  transform: scale(1.05);\n+}\n+70% { transform: scale(.9); }\n+100% { transform: scale(1); }\n+}\n+\n+.bounce-in-right {\n+animation: bounce-in-right 2s ease 1s;\n+}\n+@keyframes bounce-in-right {\n+0% {\n+  opacity: 0;\n+  transform: translateX(1000px);\n+}\n+60% {\n+  opacity: 1;\n+  transform: translateX(-30px);\n+}\n+100% { transform: translateX(100px); }\n+// 100% { transform: translateX(0);\n+//     transform: translateY(100px);  }\n+}\n+\n @keyframes bounceInRight {\n             0% {\n                opacity: 0;\n                transform: translateX(2000px);\n"
+                },
+                {
+                    "date": 1698836037705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n 60% {\n   opacity: 1;\n   transform: translateX(-30px);\n }\n-100% { transform: translateX(100px); }\n+100% { transform: translateX(0px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n"
+                },
+                {
+                    "date": 1698836051600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n   transform: translateX(1000px);\n }\n 60% {\n   opacity: 1;\n-  transform: translateX(-30px);\n+  transform: translateX(30px);\n }\n 100% { transform: translateX(0px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n"
+                },
+                {
+                    "date": 1698836074846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n 60% {\n   opacity: 1;\n   transform: translateX(30px);\n }\n-100% { transform: translateX(0px); }\n+100% { transform: translate(0px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n"
+                },
+                {
+                    "date": 1698836187630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,11 +64,11 @@\n   transform: translateX(1000px);\n }\n 60% {\n   opacity: 1;\n-  transform: translateX(30px);\n+  transform: translateX(-30px);\n }\n-100% { transform: translate(0px); }\n+100% { transform: translateX(0px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n"
+                },
+                {
+                    "date": 1698836200924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n 60% {\n   opacity: 1;\n   transform: translateX(-30px);\n }\n-100% { transform: translateX(0px); }\n+100% { transform: translateX(30px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n"
+                },
+                {
+                    "date": 1698836213112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n   transform: translateX(1000px);\n }\n 60% {\n   opacity: 1;\n-  transform: translateX(-30px);\n+  transform: translateX(0px);\n }\n 100% { transform: translateX(30px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n"
+                },
+                {
+                    "date": 1698836224666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n 60% {\n   opacity: 1;\n   transform: translateX(0px);\n }\n-100% { transform: translateX(30px); }\n+100% { transform: translateX(0px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n"
+                },
+                {
+                    "date": 1698836233610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n }\n @keyframes bounce-in-right {\n 0% {\n   opacity: 0;\n-  transform: translateX(1000px);\n+  transform: translateX(100px);\n }\n 60% {\n   opacity: 1;\n   transform: translateX(0px);\n"
+                },
+                {
+                    "date": 1698836271896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n 60% {\n   opacity: 1;\n   transform: translateX(0px);\n }\n-100% { transform: translateX(0px); }\n+100% { transform: translate(0px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n"
+                },
+                {
+                    "date": 1698836279272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n 60% {\n   opacity: 1;\n   transform: translateX(0px);\n }\n-100% { transform: translate(0px); }\n+100% { transform: translatey(100px); }\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n"
+                },
+                {
+                    "date": 1698836374437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n \n .bounce-in-right {\n animation: bounce-in-right 2s ease 1s;\n }\n-@keyframes bounce-in-right {\n+@keyframes bounce-in-right2 {\n 0% {\n   opacity: 0;\n   transform: translateX(100px);\n }\n"
+                },
+                {
+                    "date": 1698836413779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,124 +89,124 @@\n             }\n          }\n \n \n-          .bounce-out {\n-            animation: bounce-out 2s ease 1s;\n-          }\n-          @keyframes bounce-out {\n-            0% { transform: scale(1); }\n-            25% { transform: scale(.95); }\n-            50% {\n-              opacity: 1;\n-              transform: scale(1.1);\n-            }\n-            100% {\n-              opacity: 0;\n-              transform: scale(.3);\n-            } \n-          }\n-          \n-          .bounce-out-down {\n-            animation: bounce-out-down 2s ease 2s;\n-          }\n-          @keyframes bounce-out-down {\n-            0% { transform: translateY(0); }\n-            20% {\n-              opacity: 1;\n-              transform: translateY(-200px);\n-            }\n-            100% {\n-              opacity: 0;\n-              transform: translateY(200px);\n-            }\n-          }\n-          @keyframes flipper{\n-            from{\n-               transform: scale(0.0); \n-            }\n-            to{\n-               transform: scale(1); \n-            }\n-        }\n+    .bounce-out {\n+      animation: bounce-out 2s ease 1s;\n+    }\n+    @keyframes bounce-out {\n+      0% { transform: scale(1); }\n+      25% { transform: scale(.95); }\n+      50% {\n+        opacity: 1;\n+        transform: scale(1.1);\n+      }\n+      100% {\n+        opacity: 0;\n+        transform: scale(.3);\n+      } \n+    }\n     \n-\n-        \n-    \n-    .bounce-in {\n-        animation: bounce-in 2s ease 1s ;\n+    .bounce-out-down {\n+      animation: bounce-out-down 2s ease 2s;\n+    }\n+    @keyframes bounce-out-down {\n+      0% { transform: translateY(0); }\n+      20% {\n+        opacity: 1;\n+        transform: translateY(-200px);\n       }\n-      @keyframes bounce-in {\n-        0% {\n-          opacity: 0;\n-          transform: scale(.3);\n-        }\n-        50% {\n-          opacity: 1;\n-          transform: scale(1.05);\n-        }\n-        70% { transform: scale(.9); }\n-        100% { transform: scale(1); }\n+      100% {\n+        opacity: 0;\n+        transform: translateY(200px);\n       }\n-      \n-      .bounce-in-right {\n-        animation: bounce-in-right 2s ease 3s;\n+    }\n+    @keyframes flipper{\n+      from{\n+          transform: scale(0.0); \n       }\n-      @keyframes bounce-in-right {\n-        0% {\n-          opacity: 0;\n-          transform: translateX(2000px);\n-        }\n-        60% {\n-          opacity: 1;\n-          transform: translateX(-30px);\n-        }\n-        80% { transform: translateX(10px); }\n-        100% { transform: translateX(0);\n-            transform: translateY(100px);  }\n+      to{\n+          transform: scale(1); \n       }\n-      \n-      .bounce-out {\n-        animation: bounce-out 2s ease 4s;\n-      }\n-      @keyframes bounce-out {\n-        0% { transform: scale(1); }\n-        25% { transform: scale(.95); }\n-        50% {\n-          opacity: 1;\n-          transform: scale(1.1);\n-        }\n-        100% {\n-          opacity: 0;\n-          transform: scale(.3);\n-        } \n-      }\n-      \n-      .bounce-out-down {\n-        animation: bounce-out-down 2s ease;\n-      }\n-      @keyframes bounce-out-down {\n-        0% { transform: translateY(0); }\n-        20% {\n-          opacity: 1;\n-          transform: translateY(-200px);\n-        }\n-        100% {\n-          opacity: 0;\n-          transform: translateY(200px);\n-        }\n-      }\n-      @keyframes flipper{\n-        from{\n-           transform: scale(0.0); \n-        }\n-        to{\n-           transform: scale(1); \n-        }\n-    }\n+  }\n \n-    @keyframes fadeInUp {\n-    to {\n-        opacity: 1;\n-        transform: translateY(0);\n-    }\n+\n+  \n+\n+.bounce-in {\n+  animation: bounce-in 2s ease 1s ;\n }\n+@keyframes bounce-in {\n+  0% {\n+    opacity: 0;\n+    transform: scale(.3);\n+  }\n+  50% {\n+    opacity: 1;\n+    transform: scale(1.05);\n+  }\n+  70% { transform: scale(.9); }\n+  100% { transform: scale(1); }\n+}\n+\n+.bounce-in-right {\n+  animation: bounce-in-right 2s ease 3s;\n+}\n+@keyframes bounce-in-right {\n+  0% {\n+    opacity: 0;\n+    transform: translateX(2000px);\n+  }\n+  60% {\n+    opacity: 1;\n+    transform: translateX(-30px);\n+  }\n+  80% { transform: translateX(10px); }\n+  100% { transform: translateX(0);\n+      transform: translateY(100px);  }\n+}\n+\n+.bounce-out {\n+  animation: bounce-out 2s ease 4s;\n+}\n+@keyframes bounce-out {\n+  0% { transform: scale(1); }\n+  25% { transform: scale(.95); }\n+  50% {\n+    opacity: 1;\n+    transform: scale(1.1);\n+  }\n+  100% {\n+    opacity: 0;\n+    transform: scale(.3);\n+  } \n+}\n+\n+.bounce-out-down {\n+  animation: bounce-out-down 2s ease;\n+}\n+@keyframes bounce-out-down {\n+  0% { transform: translateY(0); }\n+  20% {\n+    opacity: 1;\n+    transform: translateY(-200px);\n+  }\n+  100% {\n+    opacity: 0;\n+    transform: translateY(200px);\n+  }\n+}\n+@keyframes flipper{\n+  from{\n+      transform: scale(0.0); \n+  }\n+  to{\n+      transform: scale(1); \n+  }\n+}\n+\n+@keyframes fadeInUp {\n+to {\n+  opacity: 1;\n+  transform: translateY(0);\n+}\n+}\n"
+                },
+                {
+                    "date": 1698836451005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n 70% { transform: scale(.9); }\n 100% { transform: scale(1); }\n }\n \n-.bounce-in-right {\n+.bounce-in-right1 {\n animation: bounce-in-right 2s ease 1s;\n }\n @keyframes bounce-in-right2 {\n 0% {\n@@ -89,85 +89,10 @@\n             }\n          }\n \n \n-    .bounce-out {\n-      animation: bounce-out 2s ease 1s;\n-    }\n-    @keyframes bounce-out {\n-      0% { transform: scale(1); }\n-      25% { transform: scale(.95); }\n-      50% {\n-        opacity: 1;\n-        transform: scale(1.1);\n-      }\n-      100% {\n-        opacity: 0;\n-        transform: scale(.3);\n-      } \n-    }\n-    \n-    .bounce-out-down {\n-      animation: bounce-out-down 2s ease 2s;\n-    }\n-    @keyframes bounce-out-down {\n-      0% { transform: translateY(0); }\n-      20% {\n-        opacity: 1;\n-        transform: translateY(-200px);\n-      }\n-      100% {\n-        opacity: 0;\n-        transform: translateY(200px);\n-      }\n-    }\n-    @keyframes flipper{\n-      from{\n-          transform: scale(0.0); \n-      }\n-      to{\n-          transform: scale(1); \n-      }\n-  }\n-\n-\n-  \n-\n-.bounce-in {\n-  animation: bounce-in 2s ease 1s ;\n-}\n-@keyframes bounce-in {\n-  0% {\n-    opacity: 0;\n-    transform: scale(.3);\n-  }\n-  50% {\n-    opacity: 1;\n-    transform: scale(1.05);\n-  }\n-  70% { transform: scale(.9); }\n-  100% { transform: scale(1); }\n-}\n-\n-.bounce-in-right {\n-  animation: bounce-in-right 2s ease 3s;\n-}\n-@keyframes bounce-in-right {\n-  0% {\n-    opacity: 0;\n-    transform: translateX(2000px);\n-  }\n-  60% {\n-    opacity: 1;\n-    transform: translateX(-30px);\n-  }\n-  80% { transform: translateX(10px); }\n-  100% { transform: translateX(0);\n-      transform: translateY(100px);  }\n-}\n-\n .bounce-out {\n-  animation: bounce-out 2s ease 4s;\n+  animation: bounce-out 2s ease 1s;\n }\n @keyframes bounce-out {\n   0% { transform: scale(1); }\n   25% { transform: scale(.95); }\n@@ -181,9 +106,9 @@\n   } \n }\n \n .bounce-out-down {\n-  animation: bounce-out-down 2s ease;\n+  animation: bounce-out-down 2s ease 2s;\n }\n @keyframes bounce-out-down {\n   0% { transform: translateY(0); }\n   20% {\n@@ -203,10 +128,85 @@\n       transform: scale(1); \n   }\n }\n \n+\n+\n+\n+.bounce-in {\n+animation: bounce-in 2s ease 1s ;\n+}\n+@keyframes bounce-in {\n+0% {\n+opacity: 0;\n+transform: scale(.3);\n+}\n+50% {\n+opacity: 1;\n+transform: scale(1.05);\n+}\n+70% { transform: scale(.9); }\n+100% { transform: scale(1); }\n+}\n+\n+.bounce-in-right {\n+animation: bounce-in-right 2s ease 3s;\n+}\n+@keyframes bounce-in-right {\n+0% {\n+opacity: 0;\n+transform: translateX(2000px);\n+}\n+60% {\n+opacity: 1;\n+transform: translateX(-30px);\n+}\n+80% { transform: translateX(10px); }\n+100% { transform: translateX(0);\n+  transform: translateY(100px);  }\n+}\n+\n+.bounce-out {\n+animation: bounce-out 2s ease 4s;\n+}\n+@keyframes bounce-out {\n+0% { transform: scale(1); }\n+25% { transform: scale(.95); }\n+50% {\n+opacity: 1;\n+transform: scale(1.1);\n+}\n+100% {\n+opacity: 0;\n+transform: scale(.3);\n+} \n+}\n+\n+.bounce-out-down {\n+animation: bounce-out-down 2s ease;\n+}\n+@keyframes bounce-out-down {\n+0% { transform: translateY(0); }\n+20% {\n+opacity: 1;\n+transform: translateY(-200px);\n+}\n+100% {\n+opacity: 0;\n+transform: translateY(200px);\n+}\n+}\n+@keyframes flipper{\n+from{\n+  transform: scale(0.0); \n+}\n+to{\n+  transform: scale(1); \n+}\n+}\n+\n @keyframes fadeInUp {\n to {\n-  opacity: 1;\n-  transform: translateY(0);\n+opacity: 1;\n+transform: translateY(0);\n }\n }\n"
+                },
+                {
+                    "date": 1698836475785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,11 +128,8 @@\n       transform: scale(1); \n   }\n }\n \n-\n-\n-\n .bounce-in {\n animation: bounce-in 2s ease 1s ;\n }\n @keyframes bounce-in {\n"
+                },
+                {
+                    "date": 1698836485412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n 70% { transform: scale(.9); }\n 100% { transform: scale(1); }\n }\n \n-.bounce-in-right {\n+.bounce-in-right3 {\n animation: bounce-in-right 2s ease 3s;\n }\n @keyframes bounce-in-right {\n 0% {\n"
+                },
+                {
+                    "date": 1698836516887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n \n .bounce-in-right3 {\n animation: bounce-in-right 2s ease 3s;\n }\n-@keyframes bounce-in-right {\n+@keyframes bounce-in-right3 {\n 0% {\n opacity: 0;\n transform: translateX(2000px);\n }\n"
+                },
+                {
+                    "date": 1698836525332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n \n .bounce-in-right3 {\n animation: bounce-in-right 2s ease 3s;\n }\n-@keyframes bounce-in-right3 {\n+@keyframes bounce-in-right {\n 0% {\n opacity: 0;\n transform: translateX(2000px);\n }\n"
+                },
+                {
+                    "date": 1698836553627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -158,9 +158,9 @@\n transform: translateX(-30px);\n }\n 80% { transform: translateX(10px); }\n 100% { transform: translateX(0);\n-  transform: translateY(100px);  }\n+  // transform: translateY(100px);  }\n }\n \n .bounce-out {\n animation: bounce-out 2s ease 4s;\n"
+                },
+                {
+                    "date": 1698836559703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n 70% { transform: scale(.9); }\n 100% { transform: scale(1); }\n }\n \n-.bounce-in-right3 {\n+.bounce-in-right {\n animation: bounce-in-right 2s ease 3s;\n }\n @keyframes bounce-in-right {\n 0% {\n"
+                },
+                {
+                    "date": 1698836599310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n 80% { transform: translateX(10px); }\n 100% { transform: translateX(0);\n   // transform: translateY(100px);  }\n }\n-\n+}\n .bounce-out {\n animation: bounce-out 2s ease 4s;\n }\n @keyframes bounce-out {\n"
+                },
+                {
+                    "date": 1698836639514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,25 +144,9 @@\n 70% { transform: scale(.9); }\n 100% { transform: scale(1); }\n }\n \n-.bounce-in-right {\n-animation: bounce-in-right 2s ease 3s;\n-}\n-@keyframes bounce-in-right {\n-0% {\n-opacity: 0;\n-transform: translateX(2000px);\n-}\n-60% {\n-opacity: 1;\n-transform: translateX(-30px);\n-}\n-80% { transform: translateX(10px); }\n-100% { transform: translateX(0);\n-  // transform: translateY(100px);  }\n-}\n-}\n+\n .bounce-out {\n animation: bounce-out 2s ease 4s;\n }\n @keyframes bounce-out {\n"
+                },
+                {
+                    "date": 1698836664440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,25 @@\n }\n 70% { transform: scale(.9); }\n 100% { transform: scale(1); }\n }\n-\n+.bounce-in-right {\n+animation: bounce-in-right 2s ease 3s;\n+}\n+@keyframes bounce-in-right {\n+0% {\n+opacity: 0;\n+transform: translateX(2000px);\n+}\n+60% {\n+opacity: 1;\n+transform: translateX(-30px);\n+}\n+80% { transform: translateX(10px); }\n+100% { transform: translateX(0);\n+  // transform: translateY(100px);  }\n+}\n+}\n .bounce-in-right1 {\n animation: bounce-in-right 2s ease 1s;\n }\n @keyframes bounce-in-right2 {\n"
+                },
+                {
+                    "date": 1698836687131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n 70% { transform: scale(.9); }\n 100% { transform: scale(1); }\n }\n .bounce-in-right {\n-animation: bounce-in-right 2s ease 3s;\n+animation: bounce-in-right 2s ease s;\n }\n @keyframes bounce-in-right {\n 0% {\n opacity: 0;\n"
+                },
+                {
+                    "date": 1698836782691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n 70% { transform: scale(.9); }\n 100% { transform: scale(1); }\n }\n .bounce-in-right {\n-animation: bounce-in-right 2s ease s;\n+animation: bounce-in-right 2s ease 1s;\n }\n @keyframes bounce-in-right {\n 0% {\n opacity: 0;\n"
                 }
             ],
             "date": 1698003759896,

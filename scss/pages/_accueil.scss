@@ -1,8 +1,23 @@
 #accueil{
      background-image: url(/public/images/ericbidart_sculpteur3.webp);
-     object-fit: fill;
-}
-#sculpteur{
+     object-fit: 100% 100%;
+     @include media_tablet{
+        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);
+        background-position-y: bottom 100px;
+        object-fit: contain;
+        background-size: 100vw;
+        background-color: rgb(55, 55, 177);
+     }
+     #sculpteur{
     margin: 6% 0 0% 30%;
     text-align: center;
+    @include media_tablet{
+        margin: 6% 0 0% 0%;
+        background-position-y: bottom 100px;
+        object-fit: contain;
+        background-size: 100vw;
+        background-color: rgb(55, 55, 177);
+     }
+    }  
 }
+ 

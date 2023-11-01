@@ -11,14 +11,12 @@ header {
     }
     .burger::before {
         display: none;
-}
+    }
 }
 @include media_mobile {
     .nav-links {
         display: none;
         border-bottom: 1px solid white;
-        
-
     }
     li, a, a:visited {
         padding: 0px;

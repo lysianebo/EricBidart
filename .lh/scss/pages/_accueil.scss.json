@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 271,
+            "activePatchIndex": 355,
             "patches": [
                 {
                     "date": 1697987309928,
@@ -1092,6 +1092,342 @@
                 {
                     "date": 1698685104550,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n-    text-align: center;\n+    text-align: centder;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698837587774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n+     object-fit: cover;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n-    text-align: centder;\n+    text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698837604612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n-     object-fit: cover;\n+     object-fit: contain;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837613595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n-     object-fit: contain;\n+     object-fit: 100v;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837619581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n-     object-fit: 100v;\n+     object-fit: 100vh;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837625193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n-     object-fit: 100vh;\n+     object-fit: 100%;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837631244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n-     object-fit: 100%;\n+     object-fit: 100% 100%;\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837658868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n+     \n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837671575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     \n+     @\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837679744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     @\n+     @include\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837686281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     @include\n+     @include media_desktop{\n+        \n+     }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1698837693840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_desktop{\n-        \n+        background-image: ;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837699942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_desktop{\n-        background-image: ;\n+        background-image: url();\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837710003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_desktop{\n-        background-image: url();\n+        background-image: url(/public/);\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837725666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_desktop{\n-        background-image: url(/public/);\n+        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837786905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     @include media_desktop{\n+     @include{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n      }\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698837798281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     @include{\n+     @include med{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n      }\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698837803784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     @include med{\n+     @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n      }\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698837825659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n+        ba\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837840704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        ba\n+        background-position: bottom;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837846334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-position: bottom;\n+        background-position;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837862287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-position;\n+        background-position-y: ;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837872907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-position-y: ;\n+        b\n+        background-position-y: bottom;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837881517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        b\n+        background-size: ;\n         background-position-y: bottom;\n      }\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698837887962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-size: ;\n+        background-size: 50vh;\n         background-position-y: bottom;\n      }\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698837897239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-size: 50vh;\n+        background-size: 10vh;\n         background-position-y: bottom;\n      }\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698837909310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-size: 10vh;\n+        background-size: 200vh;\n         background-position-y: bottom;\n      }\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698837917715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-size: 200vh;\n+        background-size: 150vh;\n         background-position-y: bottom;\n      }\n }\n #sculpteur{\n"
+                },
+                {
+                    "date": 1698837952164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n+     a\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-size: 150vh;\n         background-position-y: bottom;\n"
+                },
+                {
+                    "date": 1698837957565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     a\n+     aspect-ratio: 1;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-size: 150vh;\n         background-position-y: bottom;\n"
+                },
+                {
+                    "date": 1698837983192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 1;\n+     aspect-ratio: 1:16;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-size: 150vh;\n         background-position-y: bottom;\n+        object-fit: cover;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698837997430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      object-fit: 100% 100%;\n      aspect-ratio: 1:16;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-size: 150vh;\n+        background-size: 50vh;\n         background-position-y: bottom;\n         object-fit: cover;\n      }\n }\n"
+                },
+                {
+                    "date": 1698838020581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      object-fit: 100% 100%;\n      aspect-ratio: 1:16;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-size: 50vh;\n+        background-size: 50vh ;\n         background-position-y: bottom;\n         object-fit: cover;\n      }\n }\n"
+                },
+                {
+                    "date": 1698838030908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n      object-fit: 100% 100%;\n      aspect-ratio: 1:16;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-size: 50vh ;\n+        background-size: 100vw;\n         background-position-y: bottom;\n         object-fit: cover;\n      }\n }\n"
+                },
+                {
+                    "date": 1698838038375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-size: 100vw;\n         background-position-y: bottom;\n-        object-fit: cover;\n+        object-fit: contain;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838046239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n      object-fit: 100% 100%;\n      aspect-ratio: 1:16;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-size: 100vw;\n         background-position-y: bottom;\n         object-fit: contain;\n      }\n }\n"
+                },
+                {
+                    "date": 1698838062766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 1:16;\n+     aspect-ratio: 1/16;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838074922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 1/16;\n+     aspect-ratio: 1/1;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838080844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 1/1;\n+     aspect-ratio: 1/;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838088430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 1/;\n+     aspect-ratio: 2/2;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838095007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 2/2;\n+     aspect-ratio: 2/1;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838106453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 2/1;\n+     aspect-ratio: 2/10;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838111524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 2/10;\n+     aspect-ratio: 2/5;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838117680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n #accueil{\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n-     aspect-ratio: 2/5;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838140481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n+        \n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838146206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n-        \n+        ba\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838152840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n-        ba\n+        background-size: 50vh;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838159162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n-        background-size: 50vh;\n+        background-size: 0vh;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838168709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n-        background-size: 0vh;\n+        background-size: 60vh 100vw;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838176326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n-        background-size: 60vh 100vw;\n+        background-size: 100vw;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838207048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n         background-size: 100vw;\n+        col\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838220405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n         background-size: 100vw;\n-        col\n+        ;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838229747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n         background-size: 100vw;\n-        ;\n+        background-color: pur;\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838236821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom;\n         object-fit: contain;\n         background-size: 100vw;\n-        background-color: pur;\n+        background-color: rgb(0, 0, 128);\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838265722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,12 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-position-y: bottom;\n+        background-position-y: bottom ;\n         object-fit: contain;\n         background-size: 100vw;\n-        background-color: rgb(0, 0, 128);\n+        background-color: rgb(55, 55, 177);\n      }\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n"
+                },
+                {
+                    "date": 1698838277763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n      background-image: url(/public/images/ericbidart_sculpteur3.webp);\n      object-fit: 100% 100%;\n      @include media_tablet{\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-position-y: bottom ;\n+        background-position-y: bottom 100px;\n         object-fit: contain;\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n      }\n"
+                },
+                {
+                    "date": 1698838316604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,6 @@\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698838357303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,13 @@\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n-    \n+    @include media_tablet{\n+        \n+        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n+        background-position-y: bottom 100px;\n+        object-fit: contain;\n+        background-size: 100vw;\n+        background-color: rgb(55, 55, 177);\n+     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698838363878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-        \n+        @\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n         background-size: 100vw;\n"
+                },
+                {
+                    "date": 1698838369954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-        @\n+        @extend\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n         background-size: 100vw;\n"
+                },
+                {
+                    "date": 1698838404920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-        @extend\n+        @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n         background-size: 100vw;\n"
+                },
+                {
+                    "date": 1698838440078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n+        \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838449271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-        \n+            margin: 0;\n+\n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838456297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n             margin: 0;\n+            w\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698838463082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n             margin: 0;\n-            w\n+            width: 100vw\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698838516379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-            margin: 0;\n-            width: 100vw\n+    margin: 6% 0 0% 30%;\n+            width: 100vw;\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698838528833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-    margin: 6% 0 0% 30%;\n+    margin: 6% 0 0% 00%;\n             width: 100vw;\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n"
+                },
+                {
+                    "date": 1698838543043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-    margin: 6% 0 0% 00%;\n+    margin: % 0 0% 0%;\n             width: 100vw;\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n"
+                },
+                {
+                    "date": 1698838554607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-    margin: % 0 0% 0%;\n+    margin: ;\n             width: 100vw;\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n"
+                },
+                {
+                    "date": 1698838565043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,9 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-    margin: ;\n-            width: 100vw;\n+    margin: unset;\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698838624208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,6 @@\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n-    @include media_tablet{\n-    margin: unset;\n-\n-        @extend %center;\n-        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-position-y: bottom 100px;\n-        object-fit: contain;\n-        background-size: 100vw;\n-        background-color: rgb(55, 55, 177);\n-     }\n+   \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698838644311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,16 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n    \n-}\n\\ No newline at end of file\n+}\n+ @include media_tablet{\n+    \n+    margin: unset;\n+\n+        @extend %center;\n+        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n+        background-position-y: bottom 100px;\n+        object-fit: contain;\n+        background-size: 100vw;\n+        background-color: rgb(55, 55, 177);\n+     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698838716111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,15 +13,5 @@\n     margin: 6% 0 0% 30%;\n     text-align: center;\n    \n }\n- @include media_tablet{\n-    \n-    margin: unset;\n-\n-        @extend %center;\n-        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n-        background-position-y: bottom 100px;\n-        object-fit: contain;\n-        background-size: 100vw;\n-        background-color: rgb(55, 55, 177);\n-     }\n\\ No newline at end of file\n+ \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698838722448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,18 @@\n }\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n+    @include media_tablet{\n+    \n+    margin: unset;\n+\n+        @extend %center;\n+        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n+        background-position-y: bottom 100px;\n+        object-fit: contain;\n+        background-size: 100vw;\n+        background-color: rgb(55, 55, 177);\n+     }\n    \n }\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698838758515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n     \n-    margin: unset;\n+    margin: 6% 0 0% 30%;\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698838768154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n     \n-    margin: 6% 0 0% 30%;\n+    margin: 6% 0 0% 10%;\n \n         @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n"
+                },
+                {
+                    "date": 1698838784099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n     @include media_tablet{\n     \n     margin: 6% 0 0% 10%;\n \n-        @extend %center;\n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n         background-size: 100vw;\n"
+                },
+                {
+                    "date": 1698838800750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n     \n-    margin: 6% 0 0% 10%;\n+    margin: 6% 0 0% 0%;\n \n         background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838814257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n     @include media_tablet{\n     \n     margin: 6% 0 0% 0%;\n \n-        background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);\n         background-position-y: bottom 100px;\n         object-fit: contain;\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n"
+                },
+                {
+                    "date": 1698838843270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,8 @@\n #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-    \n     margin: 6% 0 0% 0%;\n \n         background-position-y: bottom 100px;\n         object-fit: contain;\n"
+                },
+                {
+                    "date": 1698838854122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,18 +8,8 @@\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n      }\n }\n-#sculpteur{\n-    margin: 6% 0 0% 30%;\n-    text-align: center;\n-    @include media_tablet{\n-    margin: 6% 0 0% 0%;\n \n-        background-position-y: bottom 100px;\n-        object-fit: contain;\n-        background-size: 100vw;\n-        background-color: rgb(55, 55, 177);\n-     }\n    \n }\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698838860546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,18 @@\n         object-fit: contain;\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n      }\n+     #sculpteur{\n+    margin: 6% 0 0% 30%;\n+    text-align: center;\n+    @include media_tablet{\n+    margin: 6% 0 0% 0%;\n+        background-position-y: bottom 100px;\n+        object-fit: contain;\n+        background-size: 100vw;\n+        background-color: rgb(55, 55, 177);\n+     }\n }\n \n    \n }\n"
+                },
+                {
+                    "date": 1698838888479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n      #sculpteur{\n     margin: 6% 0 0% 30%;\n     text-align: center;\n     @include media_tablet{\n-    margin: 6% 0 0% 0%;\n+        margin: 6% 0 0% 0%;\n         background-position-y: bottom 100px;\n         object-fit: contain;\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n"
+                },
+                {
+                    "date": 1698838894848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,7 @@\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n      }\n }\n-\n-   \n+  \n }\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698838903499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,7 @@\n         object-fit: contain;\n         background-size: 100vw;\n         background-color: rgb(55, 55, 177);\n      }\n+    }  \n }\n-  \n-}\n  \n\\ No newline at end of file\n"
                 }
             ],
             "date": 1697987309928,

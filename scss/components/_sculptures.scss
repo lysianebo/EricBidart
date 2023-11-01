@@ -4,7 +4,6 @@
       background-repeat: no-repeat;
       background-size: 100vw ;
       .sculpture{
-         height: 100vh;
       }
          #oceane{
             background-image: url(/public/images/creations/oceane/oceane_background.jpg);
@@ -46,7 +45,6 @@
          #source{ 
             background-image: url(/public/images/creations/source/source_2.webp);
             @extend %background_none
-           
          }
          h3{
             font-size: calc(56px + 1.390625vw);

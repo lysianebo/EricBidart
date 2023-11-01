@@ -1,10 +1,12 @@
  #presentation{
-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); 
+    background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg'); 
  .content-container{
     display: flex;
     justify-content: space-around;
-    vertical-align: middle;
-    }  
+    @include media_tablet{
+        flex-direction: column ;
+    }
+}
 }
 .circle {
         background: black;
@@ -18,7 +20,6 @@
         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
         transition: transform 0.3s;
     &:hover {
-            // background-color: rgba(0, 0, 0, 0.2);
             transform: scale(1.5);
         }
     }

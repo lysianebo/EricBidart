@@ -1,12 +1,12 @@
  #expositions{
-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg') ;
+    background-image: url('/public/images/bg_expositions_image-from-rawpixel-id-12419401-jpeg.jpg') ;
  }
 .gallerie_expositions{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
     grid-gap: 1rem;
-    margin: 1rem 1rem;
-    // padding: 0px 0rem;
+    margin: 4rem 1rem;
+    @extend %center;
     .child {
         display: flex;
         flex-direction: column;
@@ -19,39 +19,36 @@
             transform: scale(1.2); 
         }
         &:hover .details{
-        opacity: 1;
+            opacity: 1;
             transform: translateY(-80px);
      } 
-       
-         img, video{
+        img, video{
             height: 400px;
             width: 100%;
             object-fit: cover;
-            
         }      
         &:nth-child(1)  {
-            animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */
+            animation: fadeInUp 0.5s ease-in-out 0.5s forwards; 
         }
         &:nth-child(2) {
-            animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */
+            animation: fadeInUp 0.5s ease-in-out 1s forwards; 
         }
         &:nth-child(3)  {
-            animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */
+            animation: fadeInUp 0.5s ease-in-out 1.5s forwards;
         }
         &:nth-child(4)  {
-            animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */
+            animation: fadeInUp 0.5s ease-in-out 2s forwards;
         }
         &:nth-child(5) {
-            animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */
+            animation: fadeInUp 0.5s ease-in-out 2.5s forwards; 
         }
         &:nth-child(6)  {
-            animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */
+            animation: fadeInUp 0.5s ease-in-out 3s forwards;
         }
         &:nth-child(7)  {
-            animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */
+            animation: fadeInUp 0.5s ease-in-out 3.5s forwards; 
         }
     }   
-    
 }
 .details {
         font-size: 11px;
@@ -65,6 +62,5 @@
         transition: opacity 0.3s ease, transform 0.3s ease;
         text-align: center;
         padding: 8px  5px 0px 10px ;
-      
     }
      

@@ -4,33 +4,26 @@ $breakpoints: (
         desktop: 992px,
         large: 1200px,
 );
-
 %center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 @mixin media_large{
   @media screen and (max-width: map-get($breakpoints, large)) {
     @content; 
   }
 }
-
 @mixin media_desktop{
   @media screen and (max-width: map-get($breakpoints, desktop)) {
     @content; 
   }
 }
-
-
 @mixin media_tablet{
     @media screen and (max-width:map-get($breakpoints, tablet)){
         @content;
     }
 }
-
 @mixin media_mobile{
     @media screen and (max-width:map-get($breakpoints, mobile)){
         @content;
@@ -39,8 +32,8 @@ $breakpoints: (
 %background_none {
 @include media_mobile{
   background-image: none!important;
-background-color: purple;
-margin-bottom: 1rem;
+  background-color: purple;
+  margin-bottom: 0.5rem;
 }
 }
 // 1

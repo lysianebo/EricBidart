@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 100,
+            "activePatchIndex": 125,
             "patches": [
                 {
                     "date": 1698190544930,
@@ -408,6 +408,106 @@
                 {
                     "date": 1698671475284,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,121 @@\n+$breakpoints: (\n+        mobile: 480px,\n+        tablet: 767px,\n+        desktop: 992px,\n+        large: 1200px,\n+);\n+\n+@mixin media_large{\n+  @media screen and (max-width: map-get($breakpoints, large)) {\n+    @content; \n+  }\n+}\n+\n+@mixin media_desktop{\n+  @media screen and (max-width: map-get($breakpoints, desktop)) {\n+    @content; \n+  }\n+}\n+\n+\n+@mixin media_tablet{\n+    @media screen and (max-width:map-get($breakpoints, tablet)){\n+        @content;\n+    }\n+}\n+\n+@mixin media_mobile{\n+    @media screen and (max-width:map-get($breakpoints, mobile)){\n+        @content;\n+    }\n+}\n+// 1\n+// 2\n+// 3\n+// 4\n+// 5\n+// 6\n+// 7\n+// 8\n+// 9\n+// 10\n+// 11\n+// 12\n+// 13\n+// 14\n+\t\n+// /* For extremely small screen devices (595px and below) */\n+// // @media only screen and (max-width: 595px) {...}\n+ \n+// // /* Small screen devices (600px and above) */\n+// // @media only screen and (min-width: 600px) {...}\n+ \n+// // /* Medium screen devices (768px and above) */\n+// // @media only screen and (min-width: 768px) {...}\n+ \n+// // /* Big screen devices (889px and above) */\n+// // @media only screen and (min-width: 889px) {...}\n+ \n+// // /* Extra big screen devices (1200px and above) */\n+// // @media only screen and (min-width: 1200px) {...}\n+\n+// // $breakpoints2: (\n+// //   \"phone-down\": 500px,\n+// //   \"tablet-up\": 768px,\n+// //   \"tablet-down\": 900px,\n+// //   \"desktop-up\": 1024px,\n+// //   \"desktop-down\": 1280px,\n+// //   \"widescreen-up\": 1440px\n+// // );\n+\n+// // $media-desktop: \"only screen and (max-width : 1024px)\";\n+// // $media-tablet: \"only screen and (max-width : 768px)\";\n+// // $media-mobile: \"only screen and (max-width : 600px)\";\n+// // $media-mobile-sm: \"only screen and (max-width : 480px)\";\n+\n+\n+// // @media #{$media-desktop} {\n+// //  @content;\n+// // }\n+\n+// // @media #{$media-tablet} {\n+// //   @content;\n+// // }\n+\n+// // @media #{$media-mobile} {\n+// //   @content;\n+// // }\n+// // @media #{$media-mobile-sm} {\n+// //    @content;\n+// // }\n+\n+\n+// // @mixin for-size($size) {\n+// //   @if $size == phone-only {\n+// //     @media (max-width: 599px) { @content; }\n+// //   } @else if $size == tablet-portrait-up {\n+// //     @media (min-width: 600px) { @content; }\n+// //   } @else if $size == tablet-landscape-up {\n+// //     @media (min-width: 900px) { @content; }\n+// //   } @else if $size == desktop-up {\n+// //     @media (min-width: 1200px) { @content; }\n+// //   } @else if $size == big-desktop-up {\n+// //     @media (min-width: 1800px) { @content; }\n+// //   }\n+// // }\n+\n+// // @mixin for-phone-only {\n+// //   @media (max-width: 599px) { @content; }\n+// // }\n+// // @mixin for-tablet-portrait-up {\n+// //   @media (min-width: 600px) { @content; }\n+// // }\n+// // @mixin for-tablet-landscape-up {\n+// //   @media (min-width: 900px) { @content; }\n+// // }\n+// // @mixin for-desktop-up {\n+// //   @media (min-width: 1200px) { @content; }\n+// // }\n+// // @mixin for-big-desktop-up {\n+// //   @media (min-width: 1800px) { @content; }\n+// // }\n"
+                },
+                {
+                    "date": 1698833500420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,129 +4,15 @@\n         desktop: 992px,\n         large: 1200px,\n );\n \n-@mixin media_large{\n-  @media screen and (max-width: map-get($breakpoints, large)) {\n-    @content; \n-  }\n+%center {\n+  display: block;\n+  margin-left: auto;\n+  margin-right: auto;\n }\n \n-@mixin media_desktop{\n-  @media screen and (max-width: map-get($breakpoints, desktop)) {\n-    @content; \n-  }\n-}\n \n-\n-@mixin media_tablet{\n-    @media screen and (max-width:map-get($breakpoints, tablet)){\n-        @content;\n-    }\n-}\n-\n-@mixin media_mobile{\n-    @media screen and (max-width:map-get($breakpoints, mobile)){\n-        @content;\n-    }\n-}\n-// 1\n-// 2\n-// 3\n-// 4\n-// 5\n-// 6\n-// 7\n-// 8\n-// 9\n-// 10\n-// 11\n-// 12\n-// 13\n-// 14\n-\t\n-// /* For extremely small screen devices (595px and below) */\n-// // @media only screen and (max-width: 595px) {...}\n- \n-// // /* Small screen devices (600px and above) */\n-// // @media only screen and (min-width: 600px) {...}\n- \n-// // /* Medium screen devices (768px and above) */\n-// // @media only screen and (min-width: 768px) {...}\n- \n-// // /* Big screen devices (889px and above) */\n-// // @media only screen and (min-width: 889px) {...}\n- \n-// // /* Extra big screen devices (1200px and above) */\n-// // @media only screen and (min-width: 1200px) {...}\n-\n-// // $breakpoints2: (\n-// //   \"phone-down\": 500px,\n-// //   \"tablet-up\": 768px,\n-// //   \"tablet-down\": 900px,\n-// //   \"desktop-up\": 1024px,\n-// //   \"desktop-down\": 1280px,\n-// //   \"widescreen-up\": 1440px\n-// // );\n-\n-// // $media-desktop: \"only screen and (max-width : 1024px)\";\n-// // $media-tablet: \"only screen and (max-width : 768px)\";\n-// // $media-mobile: \"only screen and (max-width : 600px)\";\n-// // $media-mobile-sm: \"only screen and (max-width : 480px)\";\n-\n-\n-// // @media #{$media-desktop} {\n-// //  @content;\n-// // }\n-\n-// // @media #{$media-tablet} {\n-// //   @content;\n-// // }\n-\n-// // @media #{$media-mobile} {\n-// //   @content;\n-// // }\n-// // @media #{$media-mobile-sm} {\n-// //    @content;\n-// // }\n-\n-\n-// // @mixin for-size($size) {\n-// //   @if $size == phone-only {\n-// //     @media (max-width: 599px) { @content; }\n-// //   } @else if $size == tablet-portrait-up {\n-// //     @media (min-width: 600px) { @content; }\n-// //   } @else if $size == tablet-landscape-up {\n-// //     @media (min-width: 900px) { @content; }\n-// //   } @else if $size == desktop-up {\n-// //     @media (min-width: 1200px) { @content; }\n-// //   } @else if $size == big-desktop-up {\n-// //     @media (min-width: 1800px) { @content; }\n-// //   }\n-// // }\n-\n-// // @mixin for-phone-only {\n-// //   @media (max-width: 599px) { @content; }\n-// // }\n-// // @mixin for-tablet-portrait-up {\n-// //   @media (min-width: 600px) { @content; }\n-// // }\n-// // @mixin for-tablet-landscape-up {\n-// //   @media (min-width: 900px) { @content; }\n-// // }\n-// // @mixin for-desktop-up {\n-// //   @media (min-width: 1200px) { @content; }\n-// // }\n-// // @mixin for-big-desktop-up {\n-// //   @media (min-width: 1800px) { @content; }\n-// // }\n-$breakpoints: (\n-        mobile: 480px,\n-        tablet: 767px,\n-        desktop: 992px,\n-        large: 1200px,\n-);\n-\n @mixin media_large{\n   @media screen and (max-width: map-get($breakpoints, large)) {\n     @content; \n   }\n@@ -149,8 +35,15 @@\n     @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n }\n+%background_none {\n+@include media_mobile{\n+//   background-image: none!important;\n+// background-color: purple;\n+margin-bottom: 1rem;\n+}\n+}\n // 1\n // 2\n // 3\n // 4\n"
+                },
+                {
+                    "date": 1698833509076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n+background-repeat: repeat;\n margin-bottom: 1rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833521859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-background-repeat: repeat;\n+background-repeat: repeat-;\n margin-bottom: 1rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833530291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-background-repeat: repeat-;\n+background-repeat: rou\n margin-bottom: 1rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833551938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-background-repeat: rou\n+background-repeat: round;\n margin-bottom: 1rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833571065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-background-repeat: round;\n+background-repeat: re;\n margin-bottom: 1rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833576548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-background-repeat: re;\n+background-repeat: repeat-x;\n margin-bottom: 1rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833603672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n background-repeat: repeat-x;\n-margin-bottom: 1rem;\n+margin-bottom: rem;\n }\n }\n // 1\n // 2\n"
+                },
+                {
+                    "date": 1698833669805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,10 +39,11 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n+ba\n background-repeat: repeat-x;\n-margin-bottom: rem;\n+margin-bottom: 0.5rem;\n }\n }\n // 1\n // 2\n"
+                },
+                {
+                    "date": 1698833677460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-ba\n+background-image: ur;\n background-repeat: repeat-x;\n margin-bottom: 0.5rem;\n }\n }\n"
+                },
+                {
+                    "date": 1698833684132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-background-image: ur;\n+background-image: url(public);\n background-repeat: repeat-x;\n margin-bottom: 0.5rem;\n }\n }\n"
+                },
+                {
+                    "date": 1698833694620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-background-image: url(public);\n+background-image: url(/public/);\n background-repeat: repeat-x;\n margin-bottom: 0.5rem;\n }\n }\n"
+                },
+                {
+                    "date": 1698833703808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n-background-image: url(/public/);\n+background-image: url(/public/images/GradientBlur.jpg);\n background-repeat: repeat-x;\n margin-bottom: 0.5rem;\n }\n }\n"
+                },
+                {
+                    "date": 1698833715122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,8 @@\n @include media_mobile{\n //   background-image: none!important;\n // background-color: purple;\n background-image: url(/public/images/GradientBlur.jpg);\n-background-repeat: repeat-x;\n margin-bottom: 0.5rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833757757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n         tablet: 767px,\n         desktop: 992px,\n         large: 1200px,\n );\n-\n %center {\n   display: block;\n   margin-left: auto;\n   margin-right: auto;\n"
+                },
+                {
+                    "date": 1698833777348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,8 @@\n   display: block;\n   margin-left: auto;\n   margin-right: auto;\n }\n-\n-\n @mixin media_large{\n   @media screen and (max-width: map-get($breakpoints, large)) {\n     @content; \n   }\n"
+                },
+                {
+                    "date": 1698833783224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,16 +13,13 @@\n   @media screen and (max-width: map-get($breakpoints, large)) {\n     @content; \n   }\n }\n-\n @mixin media_desktop{\n   @media screen and (max-width: map-get($breakpoints, desktop)) {\n     @content; \n   }\n }\n-\n-\n @mixin media_tablet{\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n"
+                },
+                {
+                    "date": 1698833793952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n     @media screen and (max-width:map-get($breakpoints, tablet)){\n         @content;\n     }\n }\n-\n @mixin media_mobile{\n     @media screen and (max-width:map-get($breakpoints, mobile)){\n         @content;\n     }\n"
+                },
+                {
+                    "date": 1698833915822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n }\n %background_none {\n @include media_mobile{\n //   background-image: none!important;\n-// background-color: purple;\n+ background-color: purple;\n background-image: url(/public/images/GradientBlur.jpg);\n margin-bottom: 0.5rem;\n }\n }\n"
+                },
+                {
+                    "date": 1698833966916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\n }\n %background_none {\n @include media_mobile{\n-//   background-image: none!important;\n+ background-image: none!important;\n  background-color: purple;\n background-image: url(/public/images/GradientBlur.jpg);\n margin-bottom: 0.5rem;\n }\n"
+                },
+                {
+                    "date": 1698833972314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\n }\n %background_none {\n @include media_mobile{\n- background-image: none!important;\n+  background-image: none!important;\n  background-color: purple;\n background-image: url(/public/images/GradientBlur.jpg);\n margin-bottom: 0.5rem;\n }\n"
+                },
+                {
+                    "date": 1698833980552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,8 @@\n %background_none {\n @include media_mobile{\n   background-image: none!important;\n  background-color: purple;\n-background-image: url(/public/images/GradientBlur.jpg);\n margin-bottom: 0.5rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833987987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,10 @@\n     }\n }\n %background_none {\n @include media_mobile{\n-  background-image: none!important;\n- background-color: purple;\n+background-image: none!important;\n+background-color: purple;\n margin-bottom: 0.5rem;\n }\n }\n // 1\n"
+                },
+                {
+                    "date": 1698833998553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,11 +30,11 @@\n     }\n }\n %background_none {\n @include media_mobile{\n-background-image: none!important;\n-background-color: purple;\n-margin-bottom: 0.5rem;\n+  background-image: none!important;\n+  background-color: purple;\n+  margin-bottom: 0.5rem;\n }\n }\n // 1\n // 2\n"
+                },
+                {
+                    "date": 1698838927496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,128 @@\n+$breakpoints: (\n+        mobile: 480px,\n+        tablet: 767px,\n+        desktop: 992px,\n+        large: 1200px,\n+);\n+%center {\n+  display: block;\n+  margin-left: auto;\n+  margin-right: auto;\n+}\n+@mixin media_large{\n+  @media screen and (max-width: map-get($breakpoints, large)) {\n+    @content; \n+  }\n+}\n+@mixin media_desktop{\n+  @media screen and (max-width: map-get($breakpoints, desktop)) {\n+    @content; \n+  }\n+}\n+@mixin media_tablet{\n+    @media screen and (max-width:map-get($breakpoints, tablet)){\n+        @content;\n+    }\n+}\n+@mixin media_mobile{\n+    @media screen and (max-width:map-get($breakpoints, mobile)){\n+        @content;\n+    }\n+}\n+%background_none {\n+@include media_mobile{\n+  background-image: none!important;\n+  background-color: purple;\n+  margin-bottom: 0.5rem;\n+}\n+}\n+// 1\n+// 2\n+// 3\n+// 4\n+// 5\n+// 6\n+// 7\n+// 8\n+// 9\n+// 10\n+// 11\n+// 12\n+// 13\n+// 14\n+\t\n+// /* For extremely small screen devices (595px and below) */\n+// // @media only screen and (max-width: 595px) {...}\n+ \n+// // /* Small screen devices (600px and above) */\n+// // @media only screen and (min-width: 600px) {...}\n+ \n+// // /* Medium screen devices (768px and above) */\n+// // @media only screen and (min-width: 768px) {...}\n+ \n+// // /* Big screen devices (889px and above) */\n+// // @media only screen and (min-width: 889px) {...}\n+ \n+// // /* Extra big screen devices (1200px and above) */\n+// // @media only screen and (min-width: 1200px) {...}\n+\n+// // $breakpoints2: (\n+// //   \"phone-down\": 500px,\n+// //   \"tablet-up\": 768px,\n+// //   \"tablet-down\": 900px,\n+// //   \"desktop-up\": 1024px,\n+// //   \"desktop-down\": 1280px,\n+// //   \"widescreen-up\": 1440px\n+// // );\n+\n+// // $media-desktop: \"only screen and (max-width : 1024px)\";\n+// // $media-tablet: \"only screen and (max-width : 768px)\";\n+// // $media-mobile: \"only screen and (max-width : 600px)\";\n+// // $media-mobile-sm: \"only screen and (max-width : 480px)\";\n+\n+\n+// // @media #{$media-desktop} {\n+// //  @content;\n+// // }\n+\n+// // @media #{$media-tablet} {\n+// //   @content;\n+// // }\n+\n+// // @media #{$media-mobile} {\n+// //   @content;\n+// // }\n+// // @media #{$media-mobile-sm} {\n+// //    @content;\n+// // }\n+\n+\n+// // @mixin for-size($size) {\n+// //   @if $size == phone-only {\n+// //     @media (max-width: 599px) { @content; }\n+// //   } @else if $size == tablet-portrait-up {\n+// //     @media (min-width: 600px) { @content; }\n+// //   } @else if $size == tablet-landscape-up {\n+// //     @media (min-width: 900px) { @content; }\n+// //   } @else if $size == desktop-up {\n+// //     @media (min-width: 1200px) { @content; }\n+// //   } @else if $size == big-desktop-up {\n+// //     @media (min-width: 1800px) { @content; }\n+// //   }\n+// // }\n+\n+// // @mixin for-phone-only {\n+// //   @media (max-width: 599px) { @content; }\n+// // }\n+// // @mixin for-tablet-portrait-up {\n+// //   @media (min-width: 600px) { @content; }\n+// // }\n+// // @mixin for-tablet-landscape-up {\n+// //   @media (min-width: 900px) { @content; }\n+// // }\n+// // @mixin for-desktop-up {\n+// //   @media (min-width: 1200px) { @content; }\n+// // }\n+// // @mixin for-big-desktop-up {\n+// //   @media (min-width: 1800px) { @content; }\n+// // }\n"
                 }
             ],
             "date": 1698190544930,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 154,
+            "activePatchIndex": 191,
             "patches": [
                 {
                     "date": 1698000730894,
@@ -624,6 +624,154 @@
                 {
                     "date": 1698660796054,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n-        width: 5em;\n-        height: 35em;\n+        width: 15em;\n+        height: 5em;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1698835296895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+ #presentation{\n+    background-image: url(public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n+ .content-container{\n+    display: flex;\n+    justify-content: space-around;\n+    vertical-align: middle;\n+    }  \n+}\n+.circle {\n+        background: black;\n+        border: none;\n+        cursor: pointer;\n+        font-weight: bold;\n+        padding: 10px;\n+        border-radius: 50%;\n+        width: 15em;\n+        height: 15em;\n+        box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n+        transition: transform 0.3s;\n+    &:hover {\n+            // background-color: rgba(0, 0, 0, 0.2);\n+            transform: scale(1.5);\n+        }\n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698835303390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n+    background-image: url(/public/images/bimage-from-rawpixel-id-12419376-jpeg.jpg'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n@@ -20,29 +20,5 @@\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-    }\n- #presentation{\n-    background-image: url('https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg'); \n- .content-container{\n-    display: flex;\n-    justify-content: space-around;\n-    vertical-align: middle;\n-    }  \n-}\n-.circle {\n-        background: black;\n-        border: none;\n-        cursor: pointer;\n-        font-weight: bold;\n-        padding: 10px;\n-        border-radius: 50%;\n-        width: 15em;\n-        height: 5em;\n-        box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-        transition: transform 0.3s;\n-    &:hover {\n-            // background-color: rgba(0, 0, 0, 0.2);\n-            transform: scale(1.5);\n-        }\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698835311081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(/public/images/bimage-from-rawpixel-id-12419376-jpeg.jpg'); \n+    background-image: url(/public/images/bg_presentationimage-from-rawpixel-id-12419376-jpeg.jpg'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835327360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(/public/images/bg_presentationimage-from-rawpixel-id-12419376-jpeg.jpg'); \n+    background-image: url(public/images/bg_presentation_image-from-rawpixel-id-12419376-jpeg.jpg'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835347955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(public/images/bg_presentation_image-from-rawpixel-id-12419376-jpeg.jpg'); \n+    background-image: url(public'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835358307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(public'); \n+    background-image: url(/public'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835364260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(/public'); \n+    background-image: url('); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835371055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url('); \n+    background-image: url(/); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835377834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(/); \n+    background-image: url(/public/images/); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835432810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(/public/images/); \n+    background-image: url(/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835442023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url(/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg); \n+    background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835449374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n  #presentation{\n-    background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg); \n+    background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     vertical-align: middle;\n"
+                },
+                {
+                    "date": 1698835479231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n     }  \n }\n .circle {\n         background: black;\n-        border: none;\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698835503463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,13 @@\n     background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n-    vertical-align: middle;\n     }  \n }\n .circle {\n         background: black;\n+        border: none;\n         cursor: pointer;\n         font-weight: bold;\n         padding: 10px;\n         border-radius: 50%;\n"
+                },
+                {
+                    "date": 1698836719605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n         border-radius: 50%;\n         width: 15em;\n         height: 15em;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n+        opacity: 0;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n"
+                },
+                {
+                    "date": 1698836732129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,7 @@\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n+            op\n         }\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698836755234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,10 @@\n         border-radius: 50%;\n         width: 15em;\n         height: 15em;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n-        opacity: 0;\n         transition: transform 0.3s;\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n-            op\n         }\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698836854237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,6 @@\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n+        \n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698836867392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,6 @@\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-        \n+        @in\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698836877374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,6 @@\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-        @in\n+        @include media_tablet\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698836883084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,8 @@\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-        @include media_tablet\n+        @include media_tablet{\n+            display: ;\n+        }\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698836901738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,6 @@\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-        @include media_tablet{\n-            display: ;\n-        }\n+     \n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698836912176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     }  \n+    \n }\n .circle {\n         background: black;\n         border: none;\n@@ -19,6 +20,5 @@\n     &:hover {\n             // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n-     \n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698836920837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n  .content-container{\n     display: flex;\n     justify-content: space-around;\n     }  \n-    \n+       @include media_tablet{\n+            f: ;\n+        }\n }\n .circle {\n         background: black;\n         border: none;\n"
+                },
+                {
+                    "date": 1698836928731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     display: flex;\n     justify-content: space-around;\n     }  \n        @include media_tablet{\n-            f: ;\n+            flex-direction: column ;\n         }\n }\n .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698836940988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     display: flex;\n     justify-content: space-around;\n     }  \n        @include media_tablet{\n+        display: flex;\n             flex-direction: column ;\n         }\n }\n .circle {\n"
+                },
+                {
+                    "date": 1698837055986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n  #presentation{\n     background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg'); \n  .content-container{\n     display: flex;\n+    fl\n     justify-content: space-around;\n     }  \n        @include media_tablet{\n         display: flex;\n"
+                },
+                {
+                    "date": 1698837296084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n  #presentation{\n     background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg'); \n  .content-container{\n     display: flex;\n-    fl\n+    flex-direction: row;\n     justify-content: space-around;\n     }  \n-       @include media_tablet{\n+       @include media_{\n         display: flex;\n             flex-direction: column ;\n         }\n }\n"
+                },
+                {
+                    "date": 1698837353973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     display: flex;\n     flex-direction: row;\n     justify-content: space-around;\n     }  \n-       @include media_{\n+       @include media_tablet{\n         display: flex;\n             flex-direction: column ;\n         }\n }\n"
+                },
+                {
+                    "date": 1698837380148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n  #presentation{\n     background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg'); \n  .content-container{\n     display: flex;\n-    flex-direction: row;\n     justify-content: space-around;\n     }  \n        @include media_tablet{\n         display: flex;\n"
+                },
+                {
+                    "date": 1698837407183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n     display: flex;\n     justify-content: space-around;\n     }  \n        @include media_tablet{\n-        display: flex;\n             flex-direction: column ;\n         }\n }\n .circle {\n"
+                },
+                {
+                    "date": 1698837418029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,9 @@\n     background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n-    }  \n-       @include media_tablet{\n+     @include media_tablet{\n             flex-direction: column ;\n         }\n }\n .circle {\n"
+                },
+                {
+                    "date": 1698837427535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     justify-content: space-around;\n      @include media_tablet{\n             flex-direction: column ;\n         }\n-}\n+}}\n .circle {\n         background: black;\n         border: none;\n         cursor: pointer;\n"
+                },
+                {
+                    "date": 1698837485293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n  .content-container{\n     display: flex;\n     justify-content: space-around;\n      @include media_tablet{\n-            flex-direction: column ;\n+        flex-direction: column ;\n         }\n }}\n .circle {\n         background: black;\n"
+                },
+                {
+                    "date": 1698837492919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n     background-image: url('/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg'); \n  .content-container{\n     display: flex;\n     justify-content: space-around;\n-     @include media_tablet{\n+    @include media_tablet{\n         flex-direction: column ;\n-        }\n+    }\n }}\n .circle {\n         background: black;\n         border: none;\n"
+                },
+                {
+                    "date": 1698837498227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n     justify-content: space-around;\n     @include media_tablet{\n         flex-direction: column ;\n     }\n-}}\n+}\n+}\n .circle {\n         background: black;\n         border: none;\n         cursor: pointer;\n"
+                },
+                {
+                    "date": 1698837506084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,7 @@\n         height: 15em;\n         box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;\n         transition: transform 0.3s;\n     &:hover {\n-            // background-color: rgba(0, 0, 0, 0.2);\n             transform: scale(1.5);\n         }\n     }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1698000730894,

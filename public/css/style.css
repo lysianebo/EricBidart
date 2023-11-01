@@ -78,7 +78,7 @@ li a:hover, a a:hover, a:visited a:hover {
   border-radius: 15px;
 }
 
-.gallerie_creations, #sculptures * .card_sculpture_img {
+.gallerie_expositions, .gallerie_creations, #sculptures * .card_sculpture_img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -88,7 +88,7 @@ li a:hover, a a:hover, a:visited a:hover {
   #sculptures * #source, #sculptures * #joie, #sculptures * #envolee, #sculptures * #denouement, #sculptures * #cocon, #sculptures * #coeur, #sculptures * #paix, #sculptures * #epitres, #sculptures * #fleur, #sculptures * #oceane {
     background-image: none !important;
     background-color: purple;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -140,9 +140,6 @@ footer {
   font-family: "Cormorant Upright", serif;
   background-repeat: no-repeat;
   background-size: 100vw;
-}
-#sculptures * .sculpture {
-  height: 100vh;
 }
 #sculptures * #oceane {
   background-image: url(/public/images/creations/oceane/oceane_background.jpg);
@@ -308,27 +305,43 @@ header .burger::before {
 }
 #accueil {
   background-image: url(/public/images/ericbidart_sculpteur3.webp);
-  object-fit: fill;
+  object-fit: 100% 100%;
 }
-
-#sculpteur {
+@media screen and (max-width: 767px) {
+  #accueil {
+    background-image: url(/public/images/ericbidart-fotor-bg-remover-202310050519.png);
+    background-position-y: bottom 100px;
+    object-fit: contain;
+    background-size: 100vw;
+    background-color: rgb(55, 55, 177);
+  }
+}
+#accueil #sculpteur {
   margin: 6% 0 0% 30%;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  #accueil #sculpteur {
+    margin: 6% 0 0% 0%;
+    background-position-y: bottom 100px;
+    object-fit: contain;
+    background-size: 100vw;
+    background-color: rgb(55, 55, 177);
+  }
+}
 
 #creations {
-  background-image: url("https://lysianebo.github.io/EricBidart/public/images/dark-blue-light-waves-2i61u57tfa11oriq.jpg");
+  background-image: url("https://lysianebo.github.io/EricBidart/public/images/bg_creations_dark-blue-light-waves-2i61u57tfa11oriq.jpg");
 }
 
 .gallerie_creations {
   columns: 5;
-  row-gap: 30px;
+  gap: 1rem;
   width: 90vw;
 }
 .gallerie_creations .card_creation {
   position: relative;
   overflow: hidden;
-  margin-bottom: 0.5rem;
 }
 .gallerie_creations .card_creation img {
   display: inline-block;
@@ -347,11 +360,10 @@ header .burger::before {
   position: absolute;
   height: 5vh;
   bottom: 0;
-  left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
+  background-size: 100%;
   color: white;
-  padding: 5px;
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -374,19 +386,22 @@ header .burger::before {
   }
 }
 @media screen and (max-width: 480px) {
+  #creations {
+    background-repeat: repeat;
+  }
   .gallerie_creations {
     columns: 1;
   }
 }
 #expositions {
-  background-image: url("https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419401-jpeg.jpg");
+  background-image: url("/public/images/bg_expositions_image-from-rawpixel-id-12419401-jpeg.jpg");
 }
 
 .gallerie_expositions {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 1rem;
-  margin: 1rem 1rem;
+  margin: 4rem 1rem;
 }
 .gallerie_expositions .child {
   display: flex;
@@ -410,25 +425,25 @@ header .burger::before {
   object-fit: cover;
 }
 .gallerie_expositions .child:nth-child(1) {
-  animation: fadeInUp 0.5s ease-in-out 0.5s forwards; /* 0.5s de délai */
+  animation: fadeInUp 0.5s ease-in-out 0.5s forwards;
 }
 .gallerie_expositions .child:nth-child(2) {
-  animation: fadeInUp 0.5s ease-in-out 1s forwards; /* 1s de délai */
+  animation: fadeInUp 0.5s ease-in-out 1s forwards;
 }
 .gallerie_expositions .child:nth-child(3) {
-  animation: fadeInUp 0.5s ease-in-out 1.5s forwards; /* 1.5s de délai */
+  animation: fadeInUp 0.5s ease-in-out 1.5s forwards;
 }
 .gallerie_expositions .child:nth-child(4) {
-  animation: fadeInUp 0.5s ease-in-out 2s forwards; /* 0.5s de délai */
+  animation: fadeInUp 0.5s ease-in-out 2s forwards;
 }
 .gallerie_expositions .child:nth-child(5) {
-  animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* 1s de délai */
+  animation: fadeInUp 0.5s ease-in-out 2.5s forwards;
 }
 .gallerie_expositions .child:nth-child(6) {
-  animation: fadeInUp 0.5s ease-in-out 3s forwards; /* 1.5s de délai */
+  animation: fadeInUp 0.5s ease-in-out 3s forwards;
 }
 .gallerie_expositions .child:nth-child(7) {
-  animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* 0.5s de délai */
+  animation: fadeInUp 0.5s ease-in-out 3.5s forwards;
 }
 
 .details {
@@ -446,12 +461,16 @@ header .burger::before {
 }
 
 #presentation {
-  background-image: url("https://lysianebo.github.io/EricBidart/public/images/image-from-rawpixel-id-12419376-jpeg.jpg");
+  background-image: url("/public/images/bp_presentation_image-from-rawpixel-id-12419376.jpg");
 }
 #presentation .content-container {
   display: flex;
   justify-content: space-around;
-  vertical-align: middle;
+}
+@media screen and (max-width: 767px) {
+  #presentation .content-container {
+    flex-direction: column;
+  }
 }
 
 .circle {
@@ -546,7 +565,7 @@ footer {
     transform: translate3d(0px, 0px, 200px);
   }
 }
-.grow {
+grow {
   animation: grow 2s ease infinite;
 }
 
@@ -599,14 +618,34 @@ footer {
 @keyframes bounce-in-right {
   0% {
     opacity: 0;
-    transform: translateX(1000px);
+    transform: translateX(2000px);
   }
   60% {
     opacity: 1;
     transform: translateX(-30px);
   }
+  80% {
+    transform: translateX(10px);
+  }
   100% {
+    transform: translateX(0);
+  }
+}
+.bounce-in-right1 {
+  animation: bounce-in-right 2s ease 1s;
+}
+
+@keyframes bounce-in-right2 {
+  0% {
+    opacity: 0;
     transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translatey(100px);
   }
 }
 @keyframes bounceInRight {
@@ -688,27 +727,6 @@ footer {
   }
   100% {
     transform: scale(1);
-  }
-}
-.bounce-in-right {
-  animation: bounce-in-right 2s ease 3s;
-}
-
-@keyframes bounce-in-right {
-  0% {
-    opacity: 0;
-    transform: translateX(2000px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateX(-30px);
-  }
-  80% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
-    transform: translateY(100px);
   }
 }
 .bounce-out {
