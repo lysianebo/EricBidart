@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // border: 1.5px solid red;
+   border: 1.5px solid red;
 } 
-body{
+html body{
     --header: 5vh; /* hauteur du header*/
     --footer: 10vh; /*hauteur du footer */
-    --main: 85vh; /* hauteur du main*/
-    
+     --main: fit-content; /* hauteur du main*/
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     display: grid;
@@ -16,13 +15,7 @@ body{
     grid-template-areas: "header"
                          "main"
                          "footer" ;
-@include media_mobile{
-    --header: 12vh;
-    header{
-      height: 11vh;
-    }
-  }
-}
+
 header{
   grid-area: header;
   margin-top: 1rem;
@@ -34,7 +27,10 @@ footer{
     grid-area: footer;
 }
 @include media_mobile {
-
+ header{
+      height: 12vh;
+    }
+  }
 h2{
   text-align: center;
   margin-top: 3vh;

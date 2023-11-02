@@ -1,0 +1,146 @@
+.dialogBox{
+    background:transparent;
+    // border: 5px solid #DFDFDF;
+    background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+    font-size: 12px;
+    padding-top: 1.5rem;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    top: -20vh;
+    right: 50vw;
+    text-transform: uppercase;
+    display:none;
+    .shadow{
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    height: 5rem;
+    width: 5rem;
+    background-color: red;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+     transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+
+}
+}
+// .dialogBox:after{
+//     // content:'';
+//     // position:absolute;
+//     // bottom:-10px; 
+//     // width:20px;
+//     // height:20px;
+//     // border-bottom:5px solid #dfdfdf;
+//     // border-right:5px solid #dfdfdf;
+//     // background:#f8f8f8;
+//     // left:50%;
+//     // margin-left:-10px;
+//     transform:rotate(45deg);
+// }
+h1{
+    position:relative;
+    cursor:pointer;
+    width: fit-content;
+    @extend %flex_align_center ;
+
+}
+h1:hover .dialogBox{
+    display:block;
+}
+.dialogBox, span{
+    animation: bounce3 0.5s;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
+    animation-iteration-count: 2 ;
+    position: relative;
+
+}
+// ------
+
+// .dialogBox2{
+//     background:black;
+//     // border: 5px solid #DFDFDF;
+//     background: radial-gradient(circle at 100px 100px, #d2b12b, #c15050);
+//     font-size: 12px;
+//     padding-top: 1.5rem;
+//     border-radius: 50%;
+//     height: 7rem;
+//     width: 7rem;
+//     position: relative;
+//     top: -10vh;
+//     bottom: -50vw;
+//     text-transform: uppercase;
+//     display:none;
+//    }
+
+
+
+// h2{
+//     width: fit-content;
+//     position:relative;
+//     cursor:pointer;
+//     width: fit-content;
+//     padding-left: 14vw;
+//     @extend %flex_align_center ;
+
+// }
+// h2:hover .dialogBox2{
+//     display:block;
+// }
+
+.info {
+    position: relative;
+    display: inline-block;
+}
+
+.info .info_text {
+    visibility: hidden;
+    background: radial-gradient(circle at 100px 100px, #d2b12b, #c15050);
+    font-size: calc(13% + 1vw );
+    font-weight: 200;
+    // padding-top: 0.8rem;
+    border-radius: 50%;
+    min-height:  min(5vh,7rem);
+    min-width: min(10vw,6rem);
+    padding: 0.5rem;
+// line-height: min(0.6,2);  
+display: flex;
+align-items: center;
+justify-content: center;
+    /* Position the info */
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    right: -5vw;
+}
+  .info_name{
+    position: relative;
+    display: inline-block;
+}
+    .info_name .info_text{
+         visibility: hidden;
+            background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+   font-size: calc(13% + 1vw );
+    font-weight: 200;
+    padding-top: 0.8rem;
+    border-radius: 50%;
+     min-height:  min(5vh,7rem);
+    min-width: min(10vw,6rem);
+
+    position: absolute;
+    z-index: 1;
+    bottom: 6vh;
+    left: -12vw;
+        
+    }
+a{
+    font-size: unset;
+}
+
+
+.info:hover .info_text {
+    visibility: visible;
+}
+.info_name:hover .info_text {
+    visibility: visible;
+}

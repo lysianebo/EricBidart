@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 156,
+            "activePatchIndex": 171,
             "patches": [
                 {
                     "date": 1698003759896,
@@ -632,6 +632,66 @@
                 {
                     "date": 1698836782691,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n 70% { transform: scale(.9); }\n 100% { transform: scale(1); }\n }\n .bounce-in-right {\n-animation: bounce-in-right 2s ease s;\n+animation: bounce-in-right 2s ease 1s;\n }\n @keyframes bounce-in-right {\n 0% {\n opacity: 0;\n"
+                },
+                {
+                    "date": 1698918450126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,11 @@\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n-@keyframes bounceInRight {\n+@keyframes \n+\n+{\n             0% {\n                opacity: 0;\n                transform: translateX(2000px);\n             }\n"
+                },
+                {
+                    "date": 1698918455203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,11 +87,9 @@\n // 100% { transform: translateX(0);\n //     transform: translateY(100px);  }\n }\n \n-@keyframes \n-\n-{\n+@keyframes bounceInRight {\n             0% {\n                opacity: 0;\n                transform: translateX(2000px);\n             }\n"
+                },
+                {
+                    "date": 1698918468379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\n @keyframes bounce{\n   from {top: 100%;}\n   50%  {top: 50%;}\n   to   {top: 100%;}\n"
+                },
+                {
+                    "date": 1698918479389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n-\n+@keyframes  {\n+  from {left: 0px;}\n+  to {left: 200px;}\n+}\n @keyframes bounce{\n   from {top: 100%;}\n   50%  {top: 50%;}\n   to   {top: 100%;}\n"
+                },
+                {
+                    "date": 1698918493787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-@keyframes  {\n-  from {left: 0px;}\n+@keyframes moveIn {\n+  from : 0px;}\n   to {left: 200px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n"
+                },
+                {
+                    "date": 1698918508563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @keyframes moveIn {\n-  from : 0px;}\n+  from {: 0px;}\n   to {left: 200px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n"
+                },
+                {
+                    "date": 1698918516517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @keyframes moveIn {\n-  from {: 0px;}\n-  to {left: 200px;}\n+  from {right: 0px;}\n+  to {: 200px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n   50%  {top: 50%;}\n"
+                },
+                {
+                    "date": 1698918573088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @keyframes moveIn {\n   from {right: 0px;}\n-  to {: 200px;}\n+  to {right: 100px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n   50%  {top: 50%;}\n"
+                },
+                {
+                    "date": 1698918584435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @keyframes moveIn {\n-  from {right: 0px;}\n+  from {right: px;}\n   to {right: 100px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n"
+                },
+                {
+                    "date": 1698918603314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @keyframes moveIn {\n-  from {right: px;}\n-  to {right: 100px;}\n+  from {right: -100px;}\n+  to {right: 50px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n   50%  {top: 50%;}\n"
+                },
+                {
+                    "date": 1698918618556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @keyframes moveIn {\n   from {right: -100px;}\n-  to {right: 50px;}\n+  to {right: 0px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n   50%  {top: 50%;}\n"
+                },
+                {
+                    "date": 1698918630705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @keyframes moveIn {\n-  from {right: -100px;}\n-  to {right: 0px;}\n+  from {right: -0px;}\n+  to {right: 30px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n   50%  {top: 50%;}\n"
+                },
+                {
+                    "date": 1698918646603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @keyframes moveIn {\n-  from {right: -0px;}\n+  from {right: 0px;}\n   to {right: 30px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n"
+                },
+                {
+                    "date": 1698918657434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @keyframes moveIn {\n-  from {right: 0px;}\n+  from {right: px;}\n   to {right: 30px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n"
+                },
+                {
+                    "date": 1698918678887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @keyframes moveIn {\n-  from {right: px;}\n-  to {right: 30px;}\n+  from {right: -200px;}\n+  to {right: 0px;}\n }\n @keyframes bounce{\n   from {top: 100%;}\n   50%  {top: 50%;}\n"
                 }
             ],
             "date": 1698003759896,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 77,
+            "activePatchIndex": 124,
             "patches": [
                 {
                     "date": 1697982677335,
@@ -316,6 +316,194 @@
                 {
                     "date": 1698834219242,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,37 @@\n+footer {\n+  padding: 20px;\n+  background: black;\n+  display: flex;\n+  justify-content: space-between;\n+  }\n+  .contact, .reseaux_sociaux{\n+    width: 200px;\n+    display: flex;\n+    align-items: center;\n+    justify-content: center;\n+  }\n+  .contact{\n+      display: flex;\n+      align-items: center;\n+      .logo_img, img{\n+        border-radius: 50%;\n+        width: 35%;\n+        margin-right: 1rem;\n+      }\n+  }\n+  .reseaux_sociaux img {\n+      width: 2rem;\n+      height: 2rem;\n+    }\n+\n+ @include media_tablet{\n+  footer{\n+height: 20vh;\n+  flex-direction: column;\n+  justify-content: space-between;\n+  align-items: center;\n+  div{\n+margin: 0.2rem; }\n+\n+ }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698848734510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,37 @@\n+footer {p\n+  padding: 20px;\n+  background: black;\n+  display: flex;\n+  justify-content: space-between;\n+  }\n+  .contact, .reseaux_sociaux{\n+    width: 200px;\n+    display: flex;\n+    align-items: center;\n+    justify-content: center;\n+  }\n+  .contact{\n+      display: flex;\n+      align-items: center;\n+      .logo_img, img{\n+        border-radius: 50%;\n+        width: 35%;\n+        margin-right: 1rem;\n+      }\n+  }\n+  .reseaux_sociaux img {\n+      width: 2rem;\n+      height: 2rem;\n+    }\n+\n+ @include media_tablet{\n+  footer{\n+height: 20vh;\n+  flex-direction: column;\n+  justify-content: space-between;\n+  align-items: center;\n+  div{\n+margin: 0.2rem; }\n+\n+ }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698848740331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,42 +1,6 @@\n-footer {p\n-  padding: 20px;\n-  background: black;\n-  display: flex;\n-  justify-content: space-between;\n-  }\n-  .contact, .reseaux_sociaux{\n-    width: 200px;\n-    display: flex;\n-    align-items: center;\n-    justify-content: center;\n-  }\n-  .contact{\n-      display: flex;\n-      align-items: center;\n-      .logo_img, img{\n-        border-radius: 50%;\n-        width: 35%;\n-        margin-right: 1rem;\n-      }\n-  }\n-  .reseaux_sociaux img {\n-      width: 2rem;\n-      height: 2rem;\n-    }\n-\n- @include media_tablet{\n-  footer{\n-height: 20vh;\n-  flex-direction: column;\n-  justify-content: space-between;\n-  align-items: center;\n-  div{\n-margin: 0.2rem; }\n-\n- }\n-}\n footer {\n+  pos\n   padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n@@ -70,32 +34,5 @@\n   div{\n margin: 0.2rem; }\n \n  }\n-}\n-footer {\n-  font-family: 'Courier New', Courier, monospace;\n-  display: flex;\n-  justify-content: space-between;\n-  align-items: center;\n-  padding: 20px;\n-  background: black;\n-  grid-area: footer;\n-  .contact{\n-    display: flex;\n-    align-items: center;\n-    .logo_img {\n-      margin-left: 1em;\n-      border-radius: 50%;\n-      width: 35%;\n-      padding: 1vw;\n-      box-shadow: 0px 0.5px 5px black; \n-    }\n-  } \n-  img {\n-    width: 25px;\n-    height: 25px;\n-  } \n-  p{\n-    font-size: 12px;\n-  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698848748750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n footer {\n-  pos\n+  position: relative;\n   padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698848755251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n footer {\n   position: relative;\n+  bottom: ;\n   padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698849296119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n footer {\n-  position: relative;\n-  bottom: ;\n+  position: a;\n+  bottom: 0;\n   padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698849352615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n footer {\n-  position: a;\n+  position: absolute;\n   bottom: 0;\n-  padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n   }\n"
+                },
+                {
+                    "date": 1698849366943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n footer {\n   position: absolute;\n   bottom: 0;\n+  wi\n+  padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n   }\n"
+                },
+                {
+                    "date": 1698850043645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n footer {\n-  position: absolute;\n+  position: fixe;\n   bottom: 0;\n-  wi\n+  width: 100vw;\n   padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698850244685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   justify-content: space-between;\n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n-    display: flex;\n     align-items: center;\n     justify-content: center;\n   }\n   .contact{\n"
+                },
+                {
+                    "date": 1698850254824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n   justify-content: space-between;\n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n+    display: flex;\n     align-items: center;\n     justify-content: center;\n   }\n   .contact{\n"
+                },
+                {
+                    "date": 1698850269571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   justify-content: space-between;\n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n-    display: flex;\n     align-items: center;\n     justify-content: center;\n   }\n   .contact{\n"
+                },
+                {
+                    "date": 1698850278501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   justify-content: space-between;\n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n-    align-items: center;\n     justify-content: center;\n   }\n   .contact{\n       display: flex;\n"
+                },
+                {
+                    "date": 1698850294252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   justify-content: space-between;\n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n-    justify-content: center;\n   }\n   .contact{\n       display: flex;\n       align-items: center;\n"
+                },
+                {
+                    "date": 1698850319858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n     width: 200px;\n   }\n   .contact{\n       display: flex;\n-      align-items: center;\n       .logo_img, img{\n         border-radius: 50%;\n         width: 35%;\n         margin-right: 1rem;\n"
+                },
+                {
+                    "date": 1698850329449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   .contact, .reseaux_sociaux{\n     width: 200px;\n   }\n   .contact{\n-      display: flex;\n+      align-items: center;\n       .logo_img, img{\n         border-radius: 50%;\n         width: 35%;\n         margin-right: 1rem;\n"
+                },
+                {
+                    "date": 1698850358680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n   .contact, .reseaux_sociaux{\n     width: 200px;\n   }\n   .contact{\n+      display: flex;\n       align-items: center;\n       .logo_img, img{\n         border-radius: 50%;\n         width: 35%;\n"
+                },
+                {
+                    "date": 1698850392859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,8 @@\n     }\n \n  @include media_tablet{\n   footer{\n-height: 20vh;\n   flex-direction: column;\n   justify-content: space-between;\n   align-items: center;\n   div{\n"
+                },
+                {
+                    "date": 1698850414070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n     }\n \n  @include media_tablet{\n   footer{\n+height: 20vh;\n   flex-direction: column;\n   justify-content: space-between;\n   align-items: center;\n   div{\n"
+                },
+                {
+                    "date": 1698850458397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,8 @@\n     }\n \n  @include media_tablet{\n   footer{\n-height: 20vh;\n   flex-direction: column;\n   justify-content: space-between;\n   align-items: center;\n   div{\n"
+                },
+                {
+                    "date": 1698850464998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n     }\n \n  @include media_tablet{\n   footer{\n+height: 20vh;\n   flex-direction: column;\n   justify-content: space-between;\n   align-items: center;\n   div{\n"
+                },
+                {
+                    "date": 1698850479042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,11 @@\n     }\n \n  @include media_tablet{\n   footer{\n-height: 20vh;\n+// height: 20vh;\n   flex-direction: column;\n-  justify-content: space-between;\n+  // justify-content: space-between;\n   align-items: center;\n   div{\n margin: 0.2rem; }\n \n"
+                },
+                {
+                    "date": 1698850487778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n   footer{\n // height: 20vh;\n   flex-direction: column;\n   // justify-content: space-between;\n-  align-items: center;\n+  // align-items: center;\n   div{\n margin: 0.2rem; }\n \n  }\n"
+                },
+                {
+                    "date": 1698850501605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n // height: 20vh;\n   flex-direction: column;\n   // justify-content: space-between;\n   // align-items: center;\n+  \n   div{\n margin: 0.2rem; }\n \n  }\n"
+                },
+                {
+                    "date": 1698850511249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n // height: 20vh;\n   flex-direction: column;\n   // justify-content: space-between;\n   // align-items: center;\n-  \n+  @ex\n   div{\n margin: 0.2rem; }\n \n  }\n"
+                },
+                {
+                    "date": 1698850518966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n // height: 20vh;\n   flex-direction: column;\n   // justify-content: space-between;\n   // align-items: center;\n-  @ex\n+  @extend %center\n   div{\n margin: 0.2rem; }\n \n  }\n"
+                },
+                {
+                    "date": 1698850558324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n   footer{\n // height: 20vh;\n   flex-direction: column;\n   // justify-content: space-between;\n-  // align-items: center;\n-  @extend %center\n+  align-items: center;\n+  @extend %center;\n   div{\n margin: 0.2rem; }\n \n  }\n"
+                },
+                {
+                    "date": 1698850566591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,8 @@\n // height: 20vh;\n   flex-direction: column;\n   // justify-content: space-between;\n   align-items: center;\n-  @extend %center;\n   div{\n margin: 0.2rem; }\n \n  }\n"
+                },
+                {
+                    "date": 1698850641561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n+  align-items: center;\n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n   }\n"
+                },
+                {
+                    "date": 1698850657927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n-  align-items: center;\n+  align-items: ce;\n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n   }\n"
+                },
+                {
+                    "date": 1698850699165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 20px;\n   background: black;\n   display: flex;\n   justify-content: space-between;\n-  align-items: ce;\n+\n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n   }\n"
+                },
+                {
+                    "date": 1698850704627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   width: 100vw;\n   padding: 20px;\n   background: black;\n   display: flex;\n+    align-items: center;\n   justify-content: space-between;\n \n   }\n   .contact, .reseaux_sociaux{\n"
+                },
+                {
+                    "date": 1698850712022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   width: 100vw;\n   padding: 20px;\n   background: black;\n   display: flex;\n-    align-items: center;\n+  align-items: center;\n   justify-content: space-between;\n \n   }\n   .contact, .reseaux_sociaux{\n"
+                },
+                {
+                    "date": 1698850805625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,9 @@\n   bottom: 0;\n   width: 100vw;\n   padding: 20px;\n   background: black;\n-  display: flex;\n-  align-items: center;\n+%flex_align_center \n   justify-content: space-between;\n \n   }\n   .contact, .reseaux_sociaux{\n"
+                },
+                {
+                    "date": 1698850812268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   bottom: 0;\n   width: 100vw;\n   padding: 20px;\n   background: black;\n-%flex_align_center \n+%flex_align_center @include \n   justify-content: space-between;\n \n   }\n   .contact, .reseaux_sociaux{\n"
+                },
+                {
+                    "date": 1698850823018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   bottom: 0;\n   width: 100vw;\n   padding: 20px;\n   background: black;\n-%flex_align_center @include \n+%flex_align_center\n   justify-content: space-between;\n \n   }\n   .contact, .reseaux_sociaux{\n"
+                },
+                {
+                    "date": 1698850834668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n   bottom: 0;\n   width: 100vw;\n   padding: 20px;\n   background: black;\n-%flex_align_center\n   justify-content: space-between;\n \n   }\n   .contact, .reseaux_sociaux{\n"
+                },
+                {
+                    "date": 1698850868090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   width: 100vw;\n   padding: 20px;\n   background: black;\n   justify-content: space-between;\n+ @include %flex_align_center\n \n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n"
+                },
+                {
+                    "date": 1698850873210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   width: 100vw;\n   padding: 20px;\n   background: black;\n   justify-content: space-between;\n- @include %flex_align_center\n+ @include %flex_align_center;\n \n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n"
+                },
+                {
+                    "date": 1698850881197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   width: 100vw;\n   padding: 20px;\n   background: black;\n   justify-content: space-between;\n- @include %flex_align_center;\n+ @include flex_align_center;\n \n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n"
+                },
+                {
+                    "date": 1698850894415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n   width: 100vw;\n   padding: 20px;\n   background: black;\n   justify-content: space-between;\n- @include flex_align_center;\n \n   }\n   .contact, .reseaux_sociaux{\n     width: 200px;\n"
+                },
+                {
+                    "date": 1698850900417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n   bottom: 0;\n   width: 100vw;\n   padding: 20px;\n   background: black;\n+ @include %flex_align_center\n   justify-content: space-between;\n \n   }\n   .contact, .reseaux_sociaux{\n"
+                },
+                {
+                    "date": 1698850927164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n   bottom: 0;\n   width: 100vw;\n   padding: 20px;\n   background: black;\n- @include %flex_align_center\n+  @include flex_align_center;\n+\n   justify-content: space-between;\n \n   }\n   .contact, .reseaux_sociaux{\n"
+                },
+                {
+                    "date": 1698850935086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   bottom: 0;\n   width: 100vw;\n   padding: 20px;\n   background: black;\n-  @include flex_align_center;\n+  @ flex_align_center;\n \n   justify-content: space-between;\n \n   }\n"
+                },
+                {
+                    "date": 1698850950717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   bottom: 0;\n   width: 100vw;\n   padding: 20px;\n   background: black;\n-  @ flex_align_center;\n+  @extend %flex_align_center;\n \n   justify-content: space-between;\n \n   }\n"
+                },
+                {
+                    "date": 1698850963095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,9 @@\n   .contact, .reseaux_sociaux{\n     width: 200px;\n   }\n   .contact{\n-      display: flex;\n-      align-items: center;\n+  @extend %flex_align_center;\n       .logo_img, img{\n         border-radius: 50%;\n         width: 35%;\n         margin-right: 1rem;\n"
+                },
+                {
+                    "date": 1698851057494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n footer {\n   position: fixe;\n   bottom: 0;\n   width: 100vw;\n-  padding: 20px;\n+  padding: 2;\n   background: black;\n   @extend %flex_align_center;\n \n   justify-content: space-between;\n"
+                },
+                {
+                    "date": 1698851066765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n footer {\n   position: fixe;\n   bottom: 0;\n   width: 100vw;\n-  padding: rem;\n+  padding: 1rem;\n   background: black;\n   @extend %flex_align_center;\n \n   justify-content: space-between;\n"
                 }
             ],
             "date": 1697982677335,

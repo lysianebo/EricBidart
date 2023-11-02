@@ -8,7 +8,7 @@
 }
 
 h1 {
-  font-size: calc(110% + 4.390625vw);
+  font-size: calc(100% + 2.390625vw);
   animation: flipper 1s;
   text-shadow: 1px 2px 10px black;
 }
@@ -34,7 +34,7 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: calc(30% + 1vw);
   animation: flipper 3s;
 }
 
@@ -75,13 +75,20 @@ li a:hover, a a:hover, a:visited a:hover {
   top: 2vh;
   right: 2vh;
   background-color: blue;
-  border-radius: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 5px;
 }
 
-.gallerie_expositions, .gallerie_creations, #sculptures * .card_sculpture_img {
+.gallerie_expositions, .gallerie_creations {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact, footer, h1 {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -96,50 +103,144 @@ li a:hover, a a:hover, a:visited a:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1.5px solid red;
 }
 
-body {
+html body {
   --header: 5vh; /* hauteur du header*/
   --footer: 10vh; /*hauteur du footer */
-  --main: 85vh; /* hauteur du main*/
+  --main: fit-content; /* hauteur du main*/
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   display: grid;
   grid-template-rows: var(--header) var(--main) var(--footer);
   grid-template-areas: "header" "main" "footer";
 }
-@media screen and (max-width: 480px) {
-  body {
-    --header: 12vh;
-  }
-  body header {
-    height: 11vh;
-  }
-}
-
-header {
+html body header {
   grid-area: header;
   margin-top: 1rem;
 }
-
-main {
+html body main {
   grid-area: main;
 }
-
-footer {
+html body footer {
   grid-area: footer;
 }
-
 @media screen and (max-width: 480px) {
-  h2 {
-    text-align: center;
-    margin-top: 3vh;
+  html body header {
+    height: 12vh;
   }
 }
+html body h2 {
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.dialogBox {
+  background: transparent;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+  font-size: 12px;
+  padding-top: 1.5rem;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  position: relative;
+  top: -20vh;
+  right: 50vw;
+  text-transform: uppercase;
+  display: none;
+}
+.dialogBox .shadow {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  height: 5rem;
+  width: 5rem;
+  background-color: red;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+}
+
+h1 {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
+h1:hover .dialogBox {
+  display: block;
+}
+
+.dialogBox, span {
+  animation: bounce3 0.5s;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: 2;
+  position: relative;
+}
+
+.info {
+  position: relative;
+  display: inline-block;
+}
+
+.info .info_text {
+  visibility: hidden;
+  background: radial-gradient(circle at 100px 100px, #d2b12b, #c15050);
+  font-size: calc(13% + 1vw);
+  font-weight: 200;
+  border-radius: 50%;
+  min-height: min(5vh, 7rem);
+  min-width: min(10vw, 6rem);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Position the info */
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  right: -5vw;
+}
+
+.info_name {
+  position: relative;
+  display: inline-block;
+}
+
+.info_name .info_text {
+  visibility: hidden;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+  font-size: calc(13% + 1vw);
+  font-weight: 200;
+  padding-top: 0.8rem;
+  border-radius: 50%;
+  min-height: min(5vh, 7rem);
+  min-width: min(10vw, 6rem);
+  position: absolute;
+  z-index: 1;
+  bottom: 6vh;
+  left: -12vw;
+}
+
+a {
+  font-size: unset;
+}
+
+.info:hover .info_text {
+  visibility: visible;
+}
+
+.info_name:hover .info_text {
+  visibility: visible;
+}
+
 #sculptures * {
-  font-family: "Cormorant Upright", serif;
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
+}
+#sculptures * .sculpture {
+  height: 100vh;
 }
 #sculptures * #oceane {
   background-image: url(/public/images/creations/oceane/oceane_background.jpg);
@@ -173,25 +274,27 @@ footer {
   background-image: url(/public/images/creations/source/source_2.webp);
 }
 #sculptures * h3 {
-  font-size: calc(56px + 1.390625vw);
+  font-size: calc(46px + 1.390625vw);
   margin-bottom: 1rem;
   font-weight: 900;
   text-align: center;
+  font-family: "Cormorant Upright", serif;
 }
 #sculptures * .card_sculpture_img {
   display: flex;
   flex-flow: wrap;
-  width: fit-content;
+  justify-content: space-around;
+  gap: 1rem;
 }
 #sculptures * .card_sculpture_img img {
   max-width: 28vw;
-  max-height: 62vh;
-  margin-right: 1rem;
+  max-height: 30vh;
   border-radius: 15px;
   border: 1px solid white;
   box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 #sculptures * .description p {
+  font-family: "Cormorant Upright", serif;
   font-size: 1.5rem;
   margin: 1rem 25rem;
   text-align: center;
@@ -263,7 +366,7 @@ header input[type=checkbox] {
   display: none;
 }
 header label {
-  width: 20%;
+  width: 0%;
 }
 header .burger::before {
   display: none;
@@ -272,11 +375,11 @@ header .burger::before {
 @media screen and (max-width: 480px) {
   .nav-links {
     display: none;
-    border-bottom: 1px solid white;
+    padding: 40px 0 0 20px;
   }
   li, a, a:visited {
     padding: 0px;
-    width: 40%;
+    width: 45%;
   }
   .burger::after {
     display: flex;
@@ -289,8 +392,8 @@ header .burger::before {
     width: 30px;
     height: 30px;
     position: fixed;
-    z-index: 1;
-    right: 5vh;
+    z-index: 2;
+    right: 3vh;
     animation: bounce3 0.5s;
     animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
     animation-iteration-count: 2;
@@ -298,9 +401,16 @@ header .burger::before {
   input[type=checkbox]:checked ~ .nav-links {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 200px;
-    font-size: 12px;
+    width: 46vw;
+    height: 18vh;
+    border-radius: 0 30%;
+    margin-top: -45px;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(65, 76, 119);
+    animation: moveIn 0.8s;
+    animation-timing-function: linear;
   }
 }
 #accueil {
@@ -327,14 +437,15 @@ header .burger::before {
   }
 }
 
-#creations {
+#gallerie {
   background-image: url("https://lysianebo.github.io/EricBidart/public/images/bg_creations_dark-blue-light-waves-2i61u57tfa11oriq.jpg");
 }
 
 .gallerie_creations {
   columns: 5;
-  gap: 1rem;
+  gap: 0.5rem;
   width: 90vw;
+  overflow: hidden;
 }
 .gallerie_creations .card_creation {
   position: relative;
@@ -343,7 +454,7 @@ header .burger::before {
 .gallerie_creations .card_creation img {
   display: inline-block;
   width: 100%;
-  height: 32vh;
+  height: 33vh;
   object-fit: cover;
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
   filter: grayscale(100%);
@@ -355,7 +466,7 @@ header .burger::before {
 }
 .gallerie_creations .card_creation h4 {
   position: absolute;
-  height: 5vh;
+  height: 0vh;
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
@@ -369,10 +480,15 @@ header .burger::before {
 }
 .gallerie_creations .card_creation .creation_img:hover h4 {
   opacity: 1;
+  height: 5vh;
   transform: translateY(0);
 }
 
 @media screen and (max-width: 992px) {
+  #gallerie {
+    background-repeat: repeat;
+    background-size: unset unset !important;
+  }
   .gallerie_creations {
     columns: 3;
   }
@@ -383,27 +499,26 @@ header .burger::before {
   }
 }
 @media screen and (max-width: 480px) {
-  #creations {
-    background-repeat: repeat;
-  }
   .gallerie_creations {
     columns: 1;
+    height: 100%;
   }
 }
 #expositions {
   background-image: url("https://lysianebo.github.io/EricBidart/public/images/bg_expositions_image-from-rawpixel-id-12419401-jpeg.jpg");
+  background-repeat: repeat;
 }
 
 .gallerie_expositions {
+  width: 94vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 1rem;
-  margin: 4rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
 }
 .gallerie_expositions .child {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   border-radius: 1rem;
   border-radius: 1rem;
   border: 2px solid white;
@@ -487,23 +602,18 @@ header .burger::before {
 }
 
 footer {
-  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  padding: 0.5rem;
   background: black;
-  display: flex;
   justify-content: space-between;
 }
 
-.contact, .reseaux_sociaux {
+.contact, .reseaux_sociaux, .creator_site {
   width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.contact {
-  display: flex;
-  align-items: center;
-}
 .contact .logo_img, .contact img {
   border-radius: 50%;
   width: 35%;
@@ -517,13 +627,18 @@ footer {
 
 @media screen and (max-width: 767px) {
   footer {
-    height: 20vh;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
   footer div {
     margin: 0.2rem;
+  }
+}
+@keyframes moveIn {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 0px;
   }
 }
 @keyframes bounce {

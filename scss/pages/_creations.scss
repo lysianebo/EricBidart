@@ -1,10 +1,11 @@
-    #creations {
+    #gallerie{
         background-image: url('https://lysianebo.github.io/EricBidart/public/images/bg_creations_dark-blue-light-waves-2i61u57tfa11oriq.jpg');
     }
      .gallerie_creations {
         columns: 5;
-        gap: 1rem;
+        gap: 0.5rem;
         width: 90vw;
+        overflow: hidden;
         @extend %center;
         .card_creation {
             position: relative;
@@ -12,7 +13,7 @@
             img {
                 display: inline-block;
                 width: 100%;
-                height: 32vh;
+                height: 33vh;
                 object-fit: cover;
                 box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
                 filter: grayscale(100%);
@@ -24,7 +25,7 @@
             }
             h4 {
                 position: absolute;
-                height: 5vh;
+                height: 0vh;
                 bottom: 0;
                 width: 100%;
                 background: rgba(0, 0, 0, 0.7);
@@ -36,27 +37,30 @@
                 text-align: center;
                 padding: 10px;
                 }
-                .creation_img:hover h4 {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+            .creation_img:hover h4 {
+                opacity: 1;
+                height: 5vh;
+                transform: translateY(0);
+            }
     }
      }
  @include media_desktop{
-     .gallerie_creations {
-  columns: 3;
+    #gallerie{
+        background-repeat: repeat;
+        background-size: unset unset!important;
+        }
+    .gallerie_creations {
+        columns: 3;
      }
       }
-       @include media_tablet{
-     .gallerie_creations {
-  columns: 2;
-     }
+    @include media_tablet{
+        .gallerie_creations {
+        columns: 2;
+        }
       }
        @include media_mobile{
-        #creations{
-            background-repeat: repeat;
-        }
-     .gallerie_creations {
-  columns: 1;
+        .gallerie_creations {
+        columns: 1;
+        height: 100%;
      }
        }

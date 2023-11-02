@@ -7,7 +7,7 @@ header {
         display: none;
     }
     label{
-        width: 20%;
+        width: 0%;
     }
     .burger::before {
         display: none;
@@ -16,11 +16,11 @@ header {
 @include media_mobile {
     .nav-links {
         display: none;
-        border-bottom: 1px solid white;
+        padding: 40px 0 0 20px;
     }
     li, a, a:visited {
         padding: 0px;
-        width: 40%;
+        width: 45%;
     }
      .burger::after{
         display: flex;
@@ -33,17 +33,24 @@ header {
         width: 30px;
         height: 30px;
         position: fixed;
-        z-index: 1;
-        right: 5vh;
+        z-index: 2;
+        right: 3vh;
         animation: bounce3 0.5s;
         // animation-direction: alternate; 
         animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
         animation-iteration-count: 2 ;
      }input[type=checkbox]:checked ~ .nav-links {
         display: flex;
-        flex-direction: column;  
-        justify-content: flex-start;
-        width: 200px;
-        font-size: 12px; 
-    }
+        flex-direction: column; 
+        width: 46vw;
+        height: 18vh;
+        border-radius: 0 30% ;
+        margin-top: -45px;
+        font-size: 1rem;
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(65, 76, 119);
+animation: moveIn 0.8s;
+animation-timing-function: linear;
 }  
+}

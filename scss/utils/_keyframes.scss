@@ -1,3 +1,7 @@
+@keyframes moveIn {
+  from {right: -200px;}
+  to {right: 0px;}
+}
 @keyframes bounce{
   from {top: 100%;}
   50%  {top: 50%;}

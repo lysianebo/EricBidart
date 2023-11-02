@@ -1,16 +1,18 @@
  #expositions{
     background-image: url('https://lysianebo.github.io/EricBidart/public/images/bg_expositions_image-from-rawpixel-id-12419401-jpeg.jpg') ;
+    background-repeat: repeat;
+
  }
 .gallerie_expositions{
+    width: 94vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
-    grid-gap: 1rem;
-    margin: 4rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-gap: 1.5rem;
     @extend %center;
     .child {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         border-radius: 1rem;
         border-radius: 1rem;
         border: 2px solid white;

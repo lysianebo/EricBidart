@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 104,
+            "activePatchIndex": 219,
             "patches": [
                 {
                     "date": 1697999597398,
@@ -424,6 +424,466 @@
                 {
                     "date": 1698834210438,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n       font-family: 'Cormorant Upright', serif;\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n-         height: 100vh;\n       }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n"
+                },
+                {
+                    "date": 1698881279094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,77 @@\n+\n+   #sculptures *{\n+      font-family: 'Cormorant Upright', serif;\n+      background-repeat: no-repeat;\n+      background-size: 100vw ;\n+      .sculpture{\n+      }\n+         #oceane{\n+            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n+            @extend %background_none;\n+            background-color: rgb(34, 34, 124);\n+         } \n+         #fleur{ \n+            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n+            @extend %background_none\n+         }\n+         #epitres{ \n+            background-image: url(/public/images/creations/epitres/epitres_background.webp);\n+             @extend %background_none\n+         }\n+         #paix{ \n+            background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n+             @extend %background_none\n+         }\n+         #coeur{ \n+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+             @extend %background_none\n+         }\n+         #cocon{ \n+            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n+             @extend %background_none\n+         }\n+         #denouement{ \n+            background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n+            @extend %background_none\n+         }\n+         #envolee{ \n+            background-image: url(/public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n+            @extend %background_none\n+         }\n+         #joie{ \n+            background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n+            @extend %background_none\n+         }\n+         #source{ \n+            background-image: url(/public/images/creations/source/source_2.webp);\n+            @extend %background_none\n+         }\n+         h3{\n+            font-size: calc(46px + 1.390625vw);\n+            margin-bottom: 1rem;\n+            font-weight: 900;\n+            text-align: center;\n+         }\n+         .card_sculpture_img{\n+            display: flex;\n+            flex-flow: wrap;\n+            width: fit-content;\n+            @extend %center;\n+         img{\n+            max-width: 28vw;\n+             max-height: 62vh;\n+             margin-right: 1rem;\n+            border-radius: 15px;\n+            border: 1px solid white;\n+            box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n+         }\n+      }\n+         .description p{\n+            font-size: 1.5rem;\n+            margin: 1rem 25rem;\n+            text-align: center;\n+            width: 65%;\n+            margin: 20px auto;\n+      }\n+   }\n+\n"
+                },
+                {
+                    "date": 1698881334654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,81 +74,4 @@\n             margin: 20px auto;\n       }\n    }\n \n-\n-   #sculptures *{\n-      font-family: 'Cormorant Upright', serif;\n-      background-repeat: no-repeat;\n-      background-size: 100vw ;\n-      .sculpture{\n-      }\n-         #oceane{\n-            background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n-            @extend %background_none;\n-            background-color: rgb(34, 34, 124);\n-         } \n-         #fleur{ \n-            background-image: url(/public/images/creations/fleur/fleur_background.webp);\n-            @extend %background_none\n-         }\n-         #epitres{ \n-            background-image: url(/public/images/creations/epitres/epitres_background.webp);\n-             @extend %background_none\n-         }\n-         #paix{ \n-            background-image: url(/public/images/creations/paix/50ff2b_066da4f0793f4e4e86996128692cbb80~mv2.webp);\n-             @extend %background_none\n-         }\n-         #coeur{ \n-            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n-             @extend %background_none\n-         }\n-         #cocon{ \n-            background-image: url(/public/images/creations/coeur/50ff2b_1f8e841af30d4583a52b801f7b36e09f~mv2.webp);\n-             @extend %background_none\n-         }\n-         #denouement{ \n-            background-image: url(/public/images/creations/denouement/50ff2b_6f5468e37e664f869bc5baf8fd1e5293-mv2.webp);\n-            @extend %background_none\n-         }\n-         #envolee{ \n-            background-image: url(/public/images/creations/envolee/50ff2b_e6575cac650e4bbcb1d905cdbd4c8e75~mv2_002.jpg);\n-            @extend %background_none\n-         }\n-         #joie{ \n-            background-image: url(/public/images/creations/joie/50ff2b_6876b8f736af47d2adf165d948918473~mv2_005.webp);\n-            @extend %background_none\n-         }\n-         #source{ \n-            background-image: url(/public/images/creations/source/source_2.webp);\n-            @extend %background_none\n-         }\n-         h3{\n-            font-size: calc(56px + 1.390625vw);\n-            margin-bottom: 1rem;\n-            font-weight: 900;\n-            text-align: center;\n-         }\n-         .card_sculpture_img{\n-            display: flex;\n-            flex-flow: wrap;\n-            width: fit-content;\n-            @extend %center;\n-         img{\n-            max-width: 28vw;\n-             max-height: 62vh;\n-             margin-right: 1rem;\n-            border-radius: 15px;\n-            border: 1px solid white;\n-            box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n-         }\n-      }\n-         .description p{\n-            font-size: 1.5rem;\n-            margin: 1rem 25rem;\n-            text-align: center;\n-            width: 65%;\n-            margin: 20px auto;\n-      }\n-   }\n-\n"
+                },
+                {
+                    "date": 1698881362805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n             background-image: url(/public/images/creations/source/source_2.webp);\n             @extend %background_none\n          }\n          h3{\n-            font-size: calc(46px + 1.390625vw);\n+            font-size: calc(6px + 1.390625vw);\n             margin-bottom: 1rem;\n             font-weight: 900;\n             text-align: center;\n          }\n"
+                },
+                {
+                    "date": 1698881368159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n       font-family: 'Cormorant Upright', serif;\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n+         height: 100vh;\n       }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n@@ -46,9 +47,9 @@\n             background-image: url(/public/images/creations/source/source_2.webp);\n             @extend %background_none\n          }\n          h3{\n-            font-size: calc(6px + 1.390625vw);\n+            font-size: calc(56px + 1.390625vw);\n             margin-bottom: 1rem;\n             font-weight: 900;\n             text-align: center;\n          }\n"
+                },
+                {
+                    "date": 1698881417984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n    #sculptures *{\n       font-family: 'Cormorant Upright', serif;\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n-      .sculpture{\n-         height: 100vh;\n-      }\n+      // .sculpture{\n+      //    height: 100vh;\n+      // }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n             background-color: rgb(34, 34, 124);\n"
+                },
+                {
+                    "date": 1698881431990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n    #sculptures *{\n       font-family: 'Cormorant Upright', serif;\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n-      // .sculpture{\n-      //    height: 100vh;\n-      // }\n+      .sculpture{\n+         height: 100vh;\n+      }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n             background-color: rgb(34, 34, 124);\n"
+                },
+                {
+                    "date": 1698881467954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n             background-image: url(/public/images/creations/source/source_2.webp);\n             @extend %background_none\n          }\n          h3{\n-            font-size: calc(56px + 1.390625vw);\n+            font-size: calc(46px + 1.390625vw);\n             margin-bottom: 1rem;\n             font-weight: 900;\n             text-align: center;\n          }\n"
+                },
+                {
+                    "date": 1698881673333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n+         \n       }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n"
+                },
+                {
+                    "date": 1698881681611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n-         \n+         background-image: ;\n       }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n"
+                },
+                {
+                    "date": 1698881692364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n-         background-image: ;\n+         background-image: unset;\n       }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n"
+                },
+                {
+                    "date": 1698881705091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n-         background-image: unset;\n       }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n"
+                },
+                {
+                    "date": 1698881713048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n \n    #sculptures *{\n       font-family: 'Cormorant Upright', serif;\n+      \n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n"
+                },
+                {
+                    "date": 1698881750158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \n    #sculptures *{\n       font-family: 'Cormorant Upright', serif;\n-      \n-      background-repeat: no-repeat;\n+               background-image: unset;\n+\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n       }\n"
+                },
+                {
+                    "date": 1698881765108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \n    #sculptures *{\n       font-family: 'Cormorant Upright', serif;\n-               background-image: unset;\n-\n+      \n+      background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n       }\n"
+                },
+                {
+                    "date": 1698882983081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,6 @@\n \n    #sculptures *{\n-      font-family: 'Cormorant Upright', serif;\n-      \n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n"
+                },
+                {
+                    "date": 1698882988756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n       background-repeat: no-repeat;\n       background-size: 100vw ;\n       .sculpture{\n          height: 100vh;\n+         \n       }\n          #oceane{\n             background-image: url(/public/images/creations/oceane/oceane_background.jpg);\n             @extend %background_none;\n"
+                },
+                {
+                    "date": 1698883012402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n             font-size: calc(46px + 1.390625vw);\n             margin-bottom: 1rem;\n             font-weight: 900;\n             text-align: center;\n+            \n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n"
+                },
+                {
+                    "date": 1698883024647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,15 +51,17 @@\n             font-size: calc(46px + 1.390625vw);\n             margin-bottom: 1rem;\n             font-weight: 900;\n             text-align: center;\n-            \n+                  font-family: 'Cormorant Upright', serif;\n+\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             width: fit-content;\n             @extend %center;\n+            \n          img{\n             max-width: 28vw;\n              max-height: 62vh;\n              margin-right: 1rem;\n"
+                },
+                {
+                    "date": 1698883040524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,10 @@\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n       }\n          .description p{\n+                  font-family: 'Cormorant Upright', serif;\n+\n             font-size: 1.5rem;\n             margin: 1rem 25rem;\n             text-align: center;\n             width: 65%;\n"
+                },
+                {
+                    "date": 1698883159639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n+            \n             width: fit-content;\n             @extend %center;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698883167057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,8 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            \n             width: fit-content;\n             @extend %center;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698883191977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n+            r\n             width: fit-content;\n             @extend %center;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698883197563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            r\n+            row-gap: 1re;\n             width: fit-content;\n             @extend %center;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698883229883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,11 +57,10 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            row-gap: 1re;\n+            row-gap: 1rem;\n             width: fit-content;\n-            @extend %center;\n             \n          img{\n             max-width: 28vw;\n              max-height: 62vh;\n"
+                },
+                {
+                    "date": 1698883238790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n             width: fit-content;\n+            @extend %center;\n             \n          img{\n             max-width: 28vw;\n              max-height: 62vh;\n"
+                },
+                {
+                    "date": 1698883271985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,8 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n-            width: fit-content;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883286491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n+            width: fit-content;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883302175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n-            width: fit-content;\n+            width: ;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883310455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n-            width: ;\n+            width: 98;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883323159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n-            width: 98;\n+            width: 9vw;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883340721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n-            width: 9vw;\n+            width: 94vw;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883358024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n             width: 94vw;\n+            \n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883363346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n             width: 94vw;\n-            \n+            align-items: center\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883372343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n             width: 94vw;\n-            align-items: center\n+            align-items: center;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883386468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,8 @@\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n             width: 94vw;\n-            align-items: center;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883395640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n-            width: 94vw;\n+            width: 9vw;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883481637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,15 +58,14 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             row-gap: 1rem;\n-            width: 9vw;\n+            width: 98vw;\n             @extend %center;\n             \n          img{\n             max-width: 28vw;\n              max-height: 62vh;\n-             margin-right: 1rem;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698883496979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            row-gap: 1rem;\n+            gap: 1rem;\n             width: 98vw;\n             @extend %center;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698883523963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,8 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            gap: 1rem;\n             width: 98vw;\n             @extend %center;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698883529303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n+            gap: 1rem;\n             width: 98vw;\n             @extend %center;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698883633269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n-            @extend %center;\n+            @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n              max-height: 62vh;\n"
+                },
+                {
+                    "date": 1698883662914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n-            @extend %center!important;\n+            // @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n              max-height: 62vh;\n"
+                },
+                {
+                    "date": 1698883700033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,8 @@\n             width: 98vw;\n             // @extend %center!important;\n             \n          img{\n-            max-width: 28vw;\n              max-height: 62vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698883705514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n             width: 98vw;\n             // @extend %center!important;\n             \n          img{\n+            max-width: 28vw;\n              max-height: 62vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698883746892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n+            margin\n             // @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883758207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n-            margin\n+            margin: 0 auto;\n             // @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883766273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n-            margin: 0 auto;\n+            margin: 0 ;\n             // @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883772052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n-            margin: 0 ;\n+            margin: 0 1vw;\n             // @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883785301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n-            margin: 0 1vw;\n+            margin: 0 vw;\n             // @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883799609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n-            margin: 0 vw;\n+            margin: 0 3vw;\n             // @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698883819922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n             margin: 0 3vw;\n-            // @extend %center!important;\n+             @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n              max-height: 62vh;\n"
+                },
+                {
+                    "date": 1698883859412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n             margin: 0 3vw;\n              @extend %center!important;\n             \n          img{\n-            max-width: 28vw;\n+            max-width: vw;\n              max-height: 62vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698883879214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,14 +58,12 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n-            width: 98vw;\n-            margin: 0 3vw;\n              @extend %center!important;\n             \n          img{\n-            max-width: vw;\n+            max-width: 30vw;\n              max-height: 62vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698883885678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,10 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n+            width: 98vw;\n+            margin: 0 3vw;\n              @extend %center!important;\n             \n          img{\n             max-width: 30vw;\n"
+                },
+                {
+                    "date": 1698883911459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n             margin: 0 3vw;\n              @extend %center!important;\n             \n          img{\n-            max-width: 30vw;\n+            width: 30vw;\n              max-height: 62vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698883952207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n             margin: 0 3vw;\n              @extend %center!important;\n             \n          img{\n-            width: 30vw;\n+            max-width: 30vw;\n              max-height: 62vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698883963152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n             margin: 0 3vw;\n              @extend %center!important;\n             \n          img{\n-            max-width: 30vw;\n+            max-width: vw;\n              max-height: 62vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698883985051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,10 +63,10 @@\n             margin: 0 3vw;\n              @extend %center!important;\n             \n          img{\n-            max-width: vw;\n-             max-height: 62vh;\n+            max-width: 28vw;\n+             max-height: 64vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698883994468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n-             max-height: 64vh;\n+             mmax-height: 64vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884002845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center!important;\n             \n          img{\n             max-width: 28vw;\n-             mmax-height: 64vh;\n+             min-height: 64vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884023348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n             flex-flow: wrap;\n             gap: 1rem;\n             width: 98vw;\n             margin: 0 3vw;\n-             @extend %center!important;\n+             @extend %center;\n             \n          img{\n             max-width: 28vw;\n              min-height: 64vh;\n"
+                },
+                {
+                    "date": 1698884037050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-             min-height: 64vh;\n+             min-height: 6vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884052561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-             min-height: 6vh;\n+             m-height: 62vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884065224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-             m-height: 62vh;\n+             max-height: 64vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884082525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-             max-height: 64vh;\n+            height: 64vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884096775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            height: 64vh;\n+            height: 6vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884133524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            height: 6vh;\n+            minheight: 60vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884144224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            minheight: 60vh;\n+            min-height: 60vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884160371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min-height: 60vh;\n+            min-height: vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884183203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min-height: vh;\n+            mi-height: 55vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884189119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            mi-height: 55vh;\n+            max-height: 55vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884201110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n+            min\n             max-height: 55vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884207155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min\n+            min-height: ;\n             max-height: 55vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884215694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min-height: ;\n+            min-height: 40;\n             max-height: 55vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884225865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,10 +64,10 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min-height: 40;\n-            max-height: 55vh;\n+            min-height: 40wh;\n+            max-height: 5vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884233032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,10 +64,10 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min-height: 40wh;\n-            max-height: 5vh;\n+            min-height: 50wh;\n+            max-height: 65vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884257703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min-height: 50wh;\n+            min-height: wh;\n             max-height: 65vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884267160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,10 +64,10 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min-height: wh;\n-            max-height: 65vh;\n+            min-height: 60wh;\n+            max-height: 5vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884290141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,8 @@\n             \n          img{\n             max-width: 28vw;\n             min-height: 60wh;\n-            max-height: 5vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884313697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,11 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-            min-height: 60wh;\n+                        max-height: 75vh;\n+\n+            min-height: 160wh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884323609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n          img{\n             max-width: 28vw;\n                         max-height: 75vh;\n \n-            min-height: 160wh;\n+            min-height: ;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884335568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,11 +64,11 @@\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n-                        max-height: 75vh;\n+                        max-height: 75;\n \n-            min-height: ;\n+            min-height: 60%;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884346652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,10 +63,9 @@\n             margin: 0 3vw;\n              @extend %center;\n             \n          img{\n-            max-width: 28vw;\n-                        max-height: 75;\n+                        max-height: 75%;\n \n             min-height: 60%;\n             border-radius: 15px;\n             border: 1px solid white;\n"
+                },
+                {
+                    "date": 1698884355641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n             margin: 0 3vw;\n              @extend %center;\n             \n          img{\n+            max-width: 28vw;\n                         max-height: 75%;\n \n             min-height: 60%;\n             border-radius: 15px;\n"
+                },
+                {
+                    "date": 1698884361699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n             margin: 0 3vw;\n              @extend %center;\n             \n          img{\n-            max-width: 28vw;\n+            width: 28vw;\n                         max-height: 75%;\n \n             min-height: 60%;\n             border-radius: 15px;\n"
+                },
+                {
+                    "date": 1698884396075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n             margin: 0 3vw;\n              @extend %center;\n             \n          img{\n-            width: 28vw;\n+            width: vw;\n                         max-height: 75%;\n \n             min-height: 60%;\n             border-radius: 15px;\n"
+                },
+                {
+                    "date": 1698884407470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n             margin: 0 3vw;\n              @extend %center;\n             \n          img{\n-            width: vw;\n+            width: 28vw;\n                         max-height: 75%;\n \n             min-height: 60%;\n             border-radius: 15px;\n"
+                },
+                {
+                    "date": 1698884413080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,8 @@\n              @extend %center;\n             \n          img{\n             width: 28vw;\n-                        max-height: 75%;\n \n             min-height: 60%;\n             border-radius: 15px;\n             border: 1px solid white;\n"
+                },
+                {
+                    "date": 1698884418395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,8 @@\n              @extend %center;\n             \n          img{\n             width: 28vw;\n-\n             min-height: 60%;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884432326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             width: 28vw;\n-            min-height: 60%;\n+            min-height: 60;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884464566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             width: 28vw;\n-            min-height: 60;\n+            min-height: 50vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884481504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             width: 28vw;\n-            min-height: 50vh;\n+            min-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884492356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             width: 28vw;\n-            min-height: 40vh;\n+            -height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884512618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             width: 28vw;\n-            -height: 40vh;\n+            max-height: 50vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884551113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n    #sculptures *{\n       background-repeat: no-repeat;\n-      background-size: 100vw ;\n+      background-size: cover ;\n       .sculpture{\n          height: 100vh;\n          \n       }\n"
+                },
+                {
+                    "date": 1698884634799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n              @extend %center;\n             \n          img{\n             width: 28vw;\n-            max-height: 50vh;\n+            max-height: 0vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884703943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,10 +63,10 @@\n             margin: 0 3vw;\n              @extend %center;\n             \n          img{\n-            width: 28vw;\n-            max-height: 0vh;\n+            mawidth: 28vw;\n+            max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698884843093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,14 +58,12 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n-            width: 98vw;\n-            margin: 0 3vw;\n              @extend %center;\n             \n          img{\n-            mawidth: 28vw;\n+            max-width: 28vw;\n             max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884851899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,10 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n+            width: 98vw;\n+            margin: 0 3vw;\n              @extend %center;\n             \n          img{\n             max-width: 28vw;\n"
+                },
+                {
+                    "date": 1698884862841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,11 +58,9 @@\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n             gap: 1rem;\n-            width: 98vw;\n             margin: 0 3vw;\n-             @extend %center;\n             \n          img{\n             max-width: 28vw;\n             max-height: 40vh;\n"
+                },
+                {
+                    "date": 1698884877502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n+            \n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698884884954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            \n+            jus\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698884891133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            jus\n+            justify-content: space-between;\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698884897732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            justify-content: space-between;\n+            justify-content: space-arou;\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n"
+                },
+                {
+                    "date": 1698884924734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,14 +57,14 @@\n          }\n          .card_sculpture_img{\n             display: flex;\n             flex-flow: wrap;\n-            justify-content: space-arou;\n+            justify-content: space-around;\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n-            max-width: 28vw;\n+            m-width: 28vw;\n             max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884939768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n-            m-width: 28vw;\n+            max-width: 28vw;\n             max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884948047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n-            max-width: 28vw;\n+            max-width: vw;\n             max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884955948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n-            max-width: vw;\n+            max-width: 300vw;\n             max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884962404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n-            max-width: 300vw;\n+            max-width: 60vw;\n             max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698884970037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             gap: 1rem;\n             margin: 0 3vw;\n             \n          img{\n-            max-width: 60vw;\n+            max-width: vw;\n             max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698885001799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,12 +59,11 @@\n             display: flex;\n             flex-flow: wrap;\n             justify-content: space-around;\n             gap: 1rem;\n-            margin: 0 3vw;\n             \n          img{\n-            max-width: vw;\n+            max-width: 40vw;\n             max-height: 40vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698885018219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             gap: 1rem;\n             \n          img{\n             max-width: 40vw;\n-            max-height: 40vh;\n+            max-height: 30vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n          }\n"
+                },
+                {
+                    "date": 1698885027872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n             justify-content: space-around;\n             gap: 1rem;\n             \n          img{\n-            max-width: 40vw;\n+            max-width: 0vw;\n             max-height: 30vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698885037864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n             justify-content: space-around;\n             gap: 1rem;\n             \n          img{\n-            max-width: 0vw;\n+            max-width: vw;\n             max-height: 30vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
+                },
+                {
+                    "date": 1698885059901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n             justify-content: space-around;\n             gap: 1rem;\n             \n          img{\n-            max-width: vw;\n+            max-width: 28vw;\n             max-height: 30vh;\n             border-radius: 15px;\n             border: 1px solid white;\n             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n"
                 }
             ],
             "date": 1697999597398,

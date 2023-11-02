@@ -1,9 +1,10 @@
 
    #sculptures *{
-      font-family: 'Cormorant Upright', serif;
       background-repeat: no-repeat;
-      background-size: 100vw ;
+      background-size: cover ;
       .sculpture{
+         height: 100vh;
+         
       }
          #oceane{
             background-image: url(/public/images/creations/oceane/oceane_background.jpg);
@@ -47,26 +48,30 @@
             @extend %background_none
          }
          h3{
-            font-size: calc(56px + 1.390625vw);
+            font-size: calc(46px + 1.390625vw);
             margin-bottom: 1rem;
             font-weight: 900;
             text-align: center;
+                  font-family: 'Cormorant Upright', serif;
+
          }
          .card_sculpture_img{
             display: flex;
             flex-flow: wrap;
-            width: fit-content;
-            @extend %center;
+            justify-content: space-around;
+            gap: 1rem;
+            
          img{
             max-width: 28vw;
-             max-height: 62vh;
-             margin-right: 1rem;
+            max-height: 30vh;
             border-radius: 15px;
             border: 1px solid white;
             box-shadow: black 0px 20px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
          }
       }
          .description p{
+                  font-family: 'Cormorant Upright', serif;
+
             font-size: 1.5rem;
             margin: 1rem 25rem;
             text-align: center;

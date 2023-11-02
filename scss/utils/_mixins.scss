@@ -9,6 +9,13 @@ $breakpoints: (
   margin-left: auto;
   margin-right: auto;
 }
+%flex_align_center {
+  display: flex;
+  align-items: center;
+}
+
+
+
 @mixin media_large{
   @media screen and (max-width: map-get($breakpoints, large)) {
     @content; 
