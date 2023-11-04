@@ -103,7 +103,6 @@ li a:hover, a a:hover, a:visited a:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1.5px solid red;
 }
 
 html body {
@@ -213,10 +212,14 @@ h1:hover .dialogBox {
   background: radial-gradient(circle at 100px 100px, #5cabff, #000);
   font-size: calc(13% + 1vw);
   font-weight: 200;
-  padding-top: 0.8rem;
   border-radius: 50%;
   min-height: min(5vh, 7rem);
   min-width: min(10vw, 6rem);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
   position: absolute;
   z-index: 1;
   bottom: 6vh;
